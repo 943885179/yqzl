@@ -1,0 +1,230 @@
+2019-03-06 9:19:44:请求：请求参数：<?xml version="1.0" encoding="gb2312"?>
+<CMBSDKPGK xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <INFO>
+    <FUNNAM>GetTransInfo</FUNNAM>
+    <DATTYP>2</DATTYP>
+    <LGNNAM>wszm1978</LGNNAM>
+  </INFO>
+  <SDKTSINFX>
+    <C_BBKNBR>广州</C_BBKNBR>
+    <ACCNBR>120907722510701</ACCNBR>
+    <BGNDAT>20190305</BGNDAT>
+    <ENDDAT>20190305</ENDDAT>
+    <LOWAMT>0</LOWAMT>
+    <HGHAMT>0</HGHAMT>
+  </SDKTSINFX>
+</CMBSDKPGK>
+返回参数：
+
+2019-03-06 9:20:15:请求：请求参数：<?xml version="1.0" encoding="gb2312"?>
+<CMBSDKPGK xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <INFO>
+    <FUNNAM>GetTransInfo</FUNNAM>
+    <DATTYP>2</DATTYP>
+    <LGNNAM>wszm1978</LGNNAM>
+  </INFO>
+  <SDKTSINFX>
+    <C_BBKNBR>广州</C_BBKNBR>
+    <ACCNBR>120907722510701</ACCNBR>
+    <BGNDAT>20190305</BGNDAT>
+    <ENDDAT>20190305</ENDDAT>
+    <LOWAMT>0</LOWAMT>
+    <HGHAMT>0</HGHAMT>
+  </SDKTSINFX>
+</CMBSDKPGK>
+返回参数：
+
+2019-03-06 16:09:39:请求：请求参数：<?xml version="1.0" encoding="gb2312"?>
+<CMBSDKPGK xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <INFO>
+    <FUNNAM>NTECKOPR</FUNNAM>
+    <DATTYP>2</DATTYP>
+    <LGNNAM>wszm1978</LGNNAM>
+  </INFO>
+  <NTOPRMODX>
+    <BUSMOD>00009</BUSMOD>
+  </NTOPRMODX>
+  <NTECKOPRX>
+    <YURREF>20190306163207</YURREF>
+    <BBKNBR>20</BBKNBR>
+    <EACNBR>120907722510701</EACNBR>
+    <CCYNBR>10</CCYNBR>
+    <MAXAMT>3036.00</MAXAMT>
+    <EFTDAT>20190306</EFTDAT>
+    <EXPDAT>20190308</EXPDAT>
+    <ADDDAT>20190306</ADDDAT>
+    <AUTUSR>N028570937</AUTUSR>
+  </NTECKOPRX>
+  <NTECKRCVX>
+    <SQRNBR>20190306163207</SQRNBR>
+    <RCVACC>717257738027</RCVACC>
+    <RCVNAM>广州市佳兴物流有限公司</RCVNAM>
+    <SYSFLG>N</SYSFLG>
+    <PAYCHN>CPS</PAYCHN>
+    <RCVBBK>中国银行股份有限公司广州天河南一路支行</RCVBBK>
+    <BNKADR>广东广州</BNKADR>
+    <STLCHN>N</STLCHN>
+    <NUSAGE>物流部蒋思萍报销客户发货费（1月）的费</NUSAGE>
+    <BUSNAR>物流部蒋思萍报销客户发货费（1月）的费</BUSNAR>
+  </NTECKRCVX>
+</CMBSDKPGK>
+返回参数：
+<?xml version="1.0" encoding="GBK"?><CMBSDKPGK><INFO><DATTYP>2</DATTYP><ERRMSG>FBCN026: 字符串类型字段SQRNBR长度不合法</ERRMSG><FUNNAM>NTECKOPR</FUNNAM><LGNNAM>wszm1978</LGNNAM><RETCOD>-3</RETCOD></INFO></CMBSDKPGK>
+2019-03-06 16:12:22:请求：请求参数：<?xml version="1.0" encoding="gb2312"?>
+<CMBSDKPGK xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <INFO>
+    <FUNNAM>NTECKOPR</FUNNAM>
+    <DATTYP>2</DATTYP>
+    <LGNNAM>wszm1978</LGNNAM>
+  </INFO>
+  <NTOPRMODX>
+    <BUSMOD>00009</BUSMOD>
+  </NTOPRMODX>
+  <NTECKOPRX>
+    <YURREF>20190306163207</YURREF>
+    <BBKNBR>20</BBKNBR>
+    <EACNBR>120907722510701</EACNBR>
+    <CCYNBR>10</CCYNBR>
+    <MAXAMT>3036.00</MAXAMT>
+    <EFTDAT>20190306</EFTDAT>
+    <EXPDAT>20190308</EXPDAT>
+    <ADDDAT>20190306</ADDDAT>
+    <AUTUSR>N028570937</AUTUSR>
+  </NTECKOPRX>
+  <NTECKRCVX>
+    <SQRNBR>20190306163207</SQRNBR>
+    <RCVACC>717257738027</RCVACC>
+    <RCVNAM>广州市佳兴物流有限公司</RCVNAM>
+    <SYSFLG>N</SYSFLG>
+    <PAYCHN>CPS</PAYCHN>
+    <RCVBBK>中国银行股份有限公司广州天河南一路支行</RCVBBK>
+    <BNKADR>广东广州</BNKADR>
+    <STLCHN>N</STLCHN>
+    <NUSAGE>物流部蒋思萍报销客户发货费（1月）的费</NUSAGE>
+    <BUSNAR>物流部蒋思萍报销客户发货费（1月）的费</BUSNAR>
+  </NTECKRCVX>
+</CMBSDKPGK>
+返回参数：
+<?xml version="1.0" encoding="GBK"?><CMBSDKPGK><INFO><DATTYP>2</DATTYP><ERRMSG>FBCN026: 字符串类型字段SQRNBR长度不合法</ERRMSG><FUNNAM>NTECKOPR</FUNNAM><LGNNAM>wszm1978</LGNNAM><RETCOD>-3</RETCOD></INFO></CMBSDKPGK>
+2019-03-06 16:14:33:请求：请求参数：<?xml version="1.0" encoding="gb2312"?>
+<CMBSDKPGK xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <INFO>
+    <FUNNAM>NTECKOPR</FUNNAM>
+    <DATTYP>2</DATTYP>
+    <LGNNAM>wszm1978</LGNNAM>
+  </INFO>
+  <NTOPRMODX>
+    <BUSMOD>00009</BUSMOD>
+  </NTOPRMODX>
+  <NTECKOPRX>
+    <YURREF>20190306163207</YURREF>
+    <BBKNBR>20</BBKNBR>
+    <EACNBR>120907722510701</EACNBR>
+    <CCYNBR>10</CCYNBR>
+    <MAXAMT>3036.00</MAXAMT>
+    <EFTDAT>20190306</EFTDAT>
+    <EXPDAT>20190308</EXPDAT>
+    <ADDDAT>20190306</ADDDAT>
+    <AUTUSR>N028570937</AUTUSR>
+  </NTECKOPRX>
+  <NTECKRCVX>
+    <SQRNBR>1903061632</SQRNBR>
+    <RCVACC>717257738027</RCVACC>
+    <RCVNAM>广州市佳兴物流有限公司</RCVNAM>
+    <SYSFLG>N</SYSFLG>
+    <PAYCHN>CPS</PAYCHN>
+    <RCVBBK>中国银行股份有限公司广州天河南一路支行</RCVBBK>
+    <BNKADR>广东广州</BNKADR>
+    <STLCHN>N</STLCHN>
+    <NUSAGE>物流部蒋思萍报销客户发货费（1月）的费</NUSAGE>
+    <BUSNAR>物流部蒋思萍报销客户发货费（1月）的费</BUSNAR>
+  </NTECKRCVX>
+</CMBSDKPGK>
+返回参数：
+<?xml version="1.0" encoding="GBK"?><CMBSDKPGK><INFO><DATTYP>2</DATTYP><ERRMSG>NCB5823: -输入的有权使用人不合法，请检查</ERRMSG><FUNNAM>NTECKOPR</FUNNAM><LGNNAM>wszm1978</LGNNAM><RETCOD>-1</RETCOD></INFO></CMBSDKPGK>
+2019-03-06 16:15:30:请求：请求参数：<?xml version="1.0" encoding="gb2312"?>
+<CMBSDKPGK xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <INFO>
+    <FUNNAM>NTECKUSR</FUNNAM>
+    <DATTYP>2</DATTYP>
+    <LGNNAM>wszm1978</LGNNAM>
+  </INFO>
+</CMBSDKPGK>
+返回参数：
+<?xml version="1.0" encoding="GBK"?><CMBSDKPGK><INFO><DATTYP>2</DATTYP><ERRMSG></ERRMSG><FUNNAM>NTECKUSR</FUNNAM><LGNNAM>wszm1978</LGNNAM><RETCOD>0</RETCOD></INFO><NTECKUSRZ><LGNNAM>wsxs1977</LGNNAM><USRNAM>黄晓姝</USRNAM><USRNBR>N009373327</USRNBR><USRSTS>A</USRSTS></NTECKUSRZ><NTECKUSRZ><LGNNAM>wszm1978</LGNNAM><USRNAM>黄晓东</USRNAM><USRNBR>N009373336</USRNBR><USRSTS>A</USRSTS></NTECKUSRZ></CMBSDKPGK>
+2019-03-06 16:16:31:请求：请求参数：<?xml version="1.0" encoding="gb2312"?>
+<CMBSDKPGK xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <INFO>
+    <FUNNAM>NTECKOPR</FUNNAM>
+    <DATTYP>2</DATTYP>
+    <LGNNAM>wszm1978</LGNNAM>
+  </INFO>
+  <NTOPRMODX>
+    <BUSMOD>00009</BUSMOD>
+  </NTOPRMODX>
+  <NTECKOPRX>
+    <YURREF>20190306163207</YURREF>
+    <BBKNBR>20</BBKNBR>
+    <EACNBR>120907722510701</EACNBR>
+    <CCYNBR>10</CCYNBR>
+    <MAXAMT>3036.00</MAXAMT>
+    <EFTDAT>20190306</EFTDAT>
+    <EXPDAT>20190308</EXPDAT>
+    <ADDDAT>20190306</ADDDAT>
+    <AUTUSR>N009373336</AUTUSR>
+  </NTECKOPRX>
+  <NTECKRCVX>
+    <SQRNBR>1903061632</SQRNBR>
+    <RCVACC>717257738027</RCVACC>
+    <RCVNAM>广州市佳兴物流有限公司</RCVNAM>
+    <SYSFLG>N</SYSFLG>
+    <PAYCHN>CPS</PAYCHN>
+    <RCVBBK>中国银行股份有限公司广州天河南一路支行</RCVBBK>
+    <BNKADR>广东广州</BNKADR>
+    <STLCHN>N</STLCHN>
+    <NUSAGE>物流部蒋思萍报销客户发货费（1月）的费</NUSAGE>
+    <BUSNAR>物流部蒋思萍报销客户发货费（1月）的费</BUSNAR>
+  </NTECKRCVX>
+</CMBSDKPGK>
+返回参数：
+<?xml version="1.0" encoding="GBK"?><CMBSDKPGK><INFO><DATTYP>2</DATTYP><ERRMSG>NCB4209: -业务模式不存在，企业编号:N3579385,业务类型:N40010,模式编号:00009</ERRMSG><FUNNAM>NTECKOPR</FUNNAM><LGNNAM>wszm1978</LGNNAM><RETCOD>-1</RETCOD></INFO></CMBSDKPGK>
+2019-03-06 16:24:07:请求：请求参数：<?xml version="1.0" encoding="gb2312"?>
+<CMBSDKPGK xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <INFO>
+    <FUNNAM>ListMode</FUNNAM>
+    <DATTYP>2</DATTYP>
+    <LGNNAM>wszm1978</LGNNAM>
+  </INFO>
+</CMBSDKPGK>
+返回参数：
+<?xml version="1.0" encoding="GBK"?><CMBSDKPGK><INFO><DATTYP>2</DATTYP><ERRMSG>there is a lack of interface SDKMDLSTX!</ERRMSG><FUNNAM>ListMode</FUNNAM><LGNNAM>wszm1978</LGNNAM><RETCOD>-3</RETCOD></INFO></CMBSDKPGK>
+2019-03-06 16:24:07:请求：请求参数：<?xml version="1.0" encoding="gb2312"?>
+<CMBSDKPGK xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <INFO>
+    <FUNNAM>ListMode</FUNNAM>
+    <DATTYP>2</DATTYP>
+    <LGNNAM>wszm1978</LGNNAM>
+  </INFO>
+</CMBSDKPGK>
+返回参数：
+<?xml version="1.0" encoding="GBK"?><CMBSDKPGK><INFO><DATTYP>2</DATTYP><ERRMSG>there is a lack of interface SDKMDLSTX!</ERRMSG><FUNNAM>ListMode</FUNNAM><LGNNAM>wszm1978</LGNNAM><RETCOD>-3</RETCOD></INFO></CMBSDKPGK>
+2019-03-06 16:25:23:请求：请求参数：<?xml version="1.0" encoding="gb2312"?>
+<CMBSDKPGK xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <INFO>
+    <FUNNAM>ListMode</FUNNAM>
+    <DATTYP>2</DATTYP>
+    <LGNNAM>wszm1978</LGNNAM>
+  </INFO>
+</CMBSDKPGK>
+返回参数：
+<?xml version="1.0" encoding="GBK"?><CMBSDKPGK><INFO><DATTYP>2</DATTYP><ERRMSG>there is a lack of interface SDKMDLSTX!</ERRMSG><FUNNAM>ListMode</FUNNAM><LGNNAM>wszm1978</LGNNAM><RETCOD>-3</RETCOD></INFO></CMBSDKPGK>
+2019-03-06 16:26:01:请求：请求参数：<?xml version="1.0" encoding="gb2312"?>
+<CMBSDKPGK xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <INFO>
+    <FUNNAM>ListMode</FUNNAM>
+    <DATTYP>2</DATTYP>
+    <LGNNAM>wszm1978</LGNNAM>
+  </INFO>
+</CMBSDKPGK>
+返回参数：
+<?xml version="1.0" encoding="GBK"?><CMBSDKPGK><INFO><DATTYP>2</DATTYP><ERRMSG>there is a lack of interface SDKMDLSTX!</ERRMSG><FUNNAM>ListMode</FUNNAM><LGNNAM>wszm1978</LGNNAM><RETCOD>-3</RETCOD></INFO></CMBSDKPGK>

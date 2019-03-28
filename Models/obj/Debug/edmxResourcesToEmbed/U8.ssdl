@@ -1,0 +1,1366 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="UFDATA_999_2017Model.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2008" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="Ap_CloseBill">
+    <Key>
+      <PropertyRef Name="iID" />
+    </Key>
+    <Property Name="cVouchType" Type="nvarchar" MaxLength="2" Nullable="false" />
+    <Property Name="cVouchID" Type="nvarchar" MaxLength="30" Nullable="false" />
+    <Property Name="dVouchDate" Type="datetime" Nullable="false" />
+    <Property Name="iPeriod" Type="tinyint" Nullable="false" />
+    <Property Name="cDwCode" Type="nvarchar" MaxLength="20" Nullable="false" />
+    <Property Name="cDeptCode" Type="nvarchar" MaxLength="12" />
+    <Property Name="cPerson" Type="nvarchar" MaxLength="20" />
+    <Property Name="cItem_Class" Type="nvarchar" MaxLength="2" />
+    <Property Name="cItemCode" Type="nvarchar" MaxLength="60" />
+    <Property Name="cSSCode" Type="nvarchar" MaxLength="3" />
+    <Property Name="cNoteNo" Type="nvarchar" MaxLength="30" />
+    <Property Name="cCoVouchType" Type="nvarchar" MaxLength="10" />
+    <Property Name="cCoVouchID" Type="nvarchar" MaxLength="30" />
+    <Property Name="cDigest" Type="nvarchar" MaxLength="255" />
+    <Property Name="cBankAccount" Type="nvarchar" MaxLength="50" />
+    <Property Name="cexch_name" Type="nvarchar" MaxLength="8" Nullable="false" />
+    <Property Name="iExchRate" Type="float" />
+    <Property Name="iAmount" Type="money" />
+    <Property Name="iAmount_f" Type="money" />
+    <Property Name="iRAmount" Type="money" />
+    <Property Name="iRAmount_f" Type="money" />
+    <Property Name="cOperator" Type="nvarchar" MaxLength="20" Nullable="false" />
+    <Property Name="cCancelMan" Type="nvarchar" MaxLength="20" />
+    <Property Name="cRPMan" Type="nvarchar" MaxLength="20" />
+    <Property Name="bPrePay" Type="bit" />
+    <Property Name="bStartFlag" Type="bit" />
+    <Property Name="cOrderNo" Type="nvarchar" MaxLength="30" />
+    <Property Name="cCode" Type="nvarchar" MaxLength="40" />
+    <Property Name="cPreCode" Type="nvarchar" MaxLength="40" />
+    <Property Name="iPayForOther" Type="bit" />
+    <Property Name="cSrcFlag" Type="nvarchar" MaxLength="1" />
+    <Property Name="cPzID" Type="nvarchar" MaxLength="30" />
+    <Property Name="cFlag" Type="nvarchar" MaxLength="2" Nullable="false" />
+    <Property Name="bSend" Type="bit" />
+    <Property Name="bReceived" Type="bit" />
+    <Property Name="csItemCode" Type="nvarchar" MaxLength="20" />
+    <Property Name="iID" Type="int" Nullable="false" />
+    <Property Name="cCancelNo" Type="nvarchar" MaxLength="20" />
+    <Property Name="cBank" Type="nvarchar" MaxLength="100" />
+    <Property Name="cNatBank" Type="nvarchar" MaxLength="100" />
+    <Property Name="cNatBankAccount" Type="nvarchar" MaxLength="50" />
+    <Property Name="bFromBank" Type="bit" Nullable="false" />
+    <Property Name="bToBank" Type="bit" Nullable="false" />
+    <Property Name="bSure" Type="bit" Nullable="false" />
+    <Property Name="VT_ID" Type="int" Nullable="false" />
+    <Property Name="cCheckMan" Type="nvarchar" MaxLength="20" />
+    <Property Name="cDefine1" Type="nvarchar" MaxLength="20" />
+    <Property Name="cDefine2" Type="nvarchar" MaxLength="20" />
+    <Property Name="cDefine3" Type="nvarchar" MaxLength="20" />
+    <Property Name="cDefine4" Type="datetime" />
+    <Property Name="cDefine5" Type="int" />
+    <Property Name="cDefine6" Type="datetime" />
+    <Property Name="cDefine7" Type="float" />
+    <Property Name="cDefine8" Type="nvarchar" MaxLength="4" />
+    <Property Name="cDefine9" Type="nvarchar" MaxLength="8" />
+    <Property Name="cDefine10" Type="nvarchar" MaxLength="60" />
+    <Property Name="cDefine11" Type="nvarchar" MaxLength="120" />
+    <Property Name="cDefine12" Type="nvarchar" MaxLength="120" />
+    <Property Name="cDefine13" Type="nvarchar" MaxLength="120" />
+    <Property Name="cDefine14" Type="nvarchar" MaxLength="120" />
+    <Property Name="cDefine15" Type="int" />
+    <Property Name="cDefine16" Type="float" />
+    <Property Name="Ufts" Type="timestamp" StoreGeneratedPattern="Computed" />
+    <Property Name="cItemName" Type="nvarchar" MaxLength="255" />
+    <Property Name="cContractType" Type="nvarchar" MaxLength="10" />
+    <Property Name="cContractID" Type="nvarchar" MaxLength="64" />
+    <Property Name="iAmount_s" Type="float" />
+    <Property Name="IsWfControlled" Type="bit" />
+    <Property Name="iSource" Type="tinyint" />
+    <Property Name="sDLCode" Type="nvarchar" MaxLength="30" />
+    <Property Name="RegisterFlag" Type="int" />
+    <Property Name="iverifystate" Type="int" />
+    <Property Name="ireturncount" Type="int" />
+    <Property Name="dcreatesystime" Type="datetime" />
+    <Property Name="dverifysystime" Type="datetime" />
+    <Property Name="dmodifysystime" Type="datetime" />
+    <Property Name="cmodifier" Type="nvarchar" MaxLength="20" />
+    <Property Name="dmoddate" Type="datetime" />
+    <Property Name="dverifydate" Type="datetime" />
+    <Property Name="ibg_overflag" Type="smallint" />
+    <Property Name="cbg_auditor" Type="nvarchar" MaxLength="20" />
+    <Property Name="cbg_audittime" Type="nvarchar" MaxLength="20" />
+    <Property Name="controlresult" Type="smallint" />
+    <Property Name="cbg_itemcode" Type="nvarchar" MaxLength="50" />
+    <Property Name="cbg_itemname" Type="nvarchar" MaxLength="100" />
+    <Property Name="cbg_caliberkey1" Type="nvarchar" MaxLength="50" />
+    <Property Name="cbg_caliberkeyname1" Type="nvarchar" MaxLength="100" />
+    <Property Name="cbg_caliberkey2" Type="nvarchar" MaxLength="50" />
+    <Property Name="cbg_caliberkeyname2" Type="nvarchar" MaxLength="100" />
+    <Property Name="cbg_caliberkey3" Type="nvarchar" MaxLength="50" />
+    <Property Name="cbg_caliberkeyname3" Type="nvarchar" MaxLength="100" />
+    <Property Name="cbg_calibercode1" Type="nvarchar" MaxLength="90" />
+    <Property Name="cbg_calibername1" Type="nvarchar" MaxLength="100" />
+    <Property Name="cbg_calibercode2" Type="nvarchar" MaxLength="90" />
+    <Property Name="cbg_calibername2" Type="nvarchar" MaxLength="100" />
+    <Property Name="cbg_calibercode3" Type="nvarchar" MaxLength="90" />
+    <Property Name="cbg_calibername3" Type="nvarchar" MaxLength="100" />
+    <Property Name="ibg_ctrl" Type="bit" />
+    <Property Name="cbg_auditopinion" Type="nvarchar" MaxLength="100" />
+    <Property Name="cApplyCode" Type="nvarchar" MaxLength="255" />
+    <Property Name="cPZNum" Type="nvarchar" MaxLength="20" />
+    <Property Name="doutbilldate" Type="datetime" />
+    <Property Name="cbg_caliberkey4" Type="nvarchar" MaxLength="50" />
+    <Property Name="cbg_caliberkeyname4" Type="nvarchar" MaxLength="100" />
+    <Property Name="cbg_caliberkey5" Type="nvarchar" MaxLength="50" />
+    <Property Name="cbg_caliberkeyname5" Type="nvarchar" MaxLength="100" />
+    <Property Name="cbg_caliberkey6" Type="nvarchar" MaxLength="50" />
+    <Property Name="cbg_caliberkeyname6" Type="nvarchar" MaxLength="100" />
+    <Property Name="cbg_calibercode4" Type="nvarchar" MaxLength="90" />
+    <Property Name="cbg_calibername4" Type="nvarchar" MaxLength="100" />
+    <Property Name="cbg_calibercode5" Type="nvarchar" MaxLength="90" />
+    <Property Name="cbg_calibername5" Type="nvarchar" MaxLength="100" />
+    <Property Name="cbg_calibercode6" Type="nvarchar" MaxLength="90" />
+    <Property Name="cbg_calibername6" Type="nvarchar" MaxLength="100" />
+    <Property Name="iPrintCount" Type="int" Nullable="false" />
+    <Property Name="cReserveDeptCode" Type="nvarchar" MaxLength="12" />
+    <Property Name="bDealMode" Type="bit" />
+    <Property Name="iBusType" Type="int" />
+    <Property Name="iPayType" Type="int" Nullable="false" />
+    <Property Name="cagentcuscode" Type="nvarchar" MaxLength="30" />
+    <Property Name="csysbarcode" Type="nvarchar" MaxLength="60" />
+    <Property Name="cCurrentAuditor" Type="nvarchar" MaxLength="200" />
+    <Property Name="lAcctID" Type="int" />
+  </EntityType>
+  <EntityType Name="Ap_CloseBills">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="iID" Type="int" Nullable="false" />
+    <Property Name="ID" Type="int" Nullable="false" />
+    <Property Name="iType" Type="tinyint" Nullable="false" />
+    <Property Name="bPrePay" Type="bit" Nullable="false" />
+    <Property Name="cCusVen" Type="nvarchar" MaxLength="20" Nullable="false" />
+    <Property Name="iAmt_f" Type="money" Nullable="false" />
+    <Property Name="iAmt" Type="money" Nullable="false" />
+    <Property Name="iRAmt_f" Type="money" Nullable="false" />
+    <Property Name="iRAmt" Type="money" Nullable="false" />
+    <Property Name="cKm" Type="nvarchar" MaxLength="40" />
+    <Property Name="cXmClass" Type="nvarchar" MaxLength="2" />
+    <Property Name="cXm" Type="nvarchar" MaxLength="60" />
+    <Property Name="cDepCode" Type="nvarchar" MaxLength="12" />
+    <Property Name="cPersonCode" Type="nvarchar" MaxLength="20" />
+    <Property Name="cOrderID" Type="nvarchar" MaxLength="30" />
+    <Property Name="cItemName" Type="nvarchar" MaxLength="255" />
+    <Property Name="cConType" Type="nvarchar" MaxLength="10" />
+    <Property Name="cConID" Type="nvarchar" MaxLength="64" />
+    <Property Name="iAmt_s" Type="float" />
+    <Property Name="iRAmt_s" Type="float" />
+    <Property Name="iOrderType" Type="tinyint" />
+    <Property Name="cDLCode" Type="nvarchar" MaxLength="30" />
+    <Property Name="ccItemCode" Type="nvarchar" MaxLength="50" />
+    <Property Name="RegisterFlag" Type="int" />
+    <Property Name="cDefine22" Type="nvarchar" MaxLength="60" />
+    <Property Name="cDefine23" Type="nvarchar" MaxLength="60" />
+    <Property Name="cDefine24" Type="nvarchar" MaxLength="60" />
+    <Property Name="cDefine25" Type="nvarchar" MaxLength="60" />
+    <Property Name="cDefine26" Type="float" />
+    <Property Name="cDefine27" Type="float" />
+    <Property Name="cDefine28" Type="nvarchar" MaxLength="120" />
+    <Property Name="cDefine29" Type="nvarchar" MaxLength="120" />
+    <Property Name="cDefine30" Type="nvarchar" MaxLength="120" />
+    <Property Name="cDefine31" Type="nvarchar" MaxLength="120" />
+    <Property Name="cDefine32" Type="nvarchar" MaxLength="120" />
+    <Property Name="cDefine33" Type="nvarchar" MaxLength="120" />
+    <Property Name="cDefine34" Type="int" />
+    <Property Name="cDefine35" Type="int" />
+    <Property Name="cDefine36" Type="datetime" />
+    <Property Name="cDefine37" Type="datetime" />
+    <Property Name="cStageCode" Type="nvarchar" MaxLength="60" />
+    <Property Name="cCoVouchID" Type="nvarchar" MaxLength="30" />
+    <Property Name="cExecID" Type="nvarchar" MaxLength="30" />
+    <Property Name="cMemo" Type="nvarchar" MaxLength="255" />
+    <Property Name="iSrcClosesID" Type="int" />
+    <Property Name="ifaresettled_f" Type="money" Nullable="false" />
+    <Property Name="cEBOrderCode" Type="nvarchar" MaxLength="30" />
+  </EntityType>
+  <EntityType Name="Ap_Detail">
+    <Key>
+      <PropertyRef Name="Auto_ID" />
+    </Key>
+    <Property Name="Auto_ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="iPeriod" Type="tinyint" Nullable="false" />
+    <Property Name="cVouchType" Type="nvarchar" MaxLength="10" />
+    <Property Name="cVouchSType" Type="nvarchar" MaxLength="2" />
+    <Property Name="cVouchID" Type="nvarchar" MaxLength="30" Nullable="false" />
+    <Property Name="dVouchDate" Type="datetime" Nullable="false" />
+    <Property Name="dRegDate" Type="datetime" Nullable="false" />
+    <Property Name="cDwCode" Type="nvarchar" MaxLength="20" Nullable="false" />
+    <Property Name="cDeptCode" Type="nvarchar" MaxLength="12" />
+    <Property Name="cPerson" Type="nvarchar" MaxLength="20" />
+    <Property Name="cInvCode" Type="nvarchar" MaxLength="60" />
+    <Property Name="iBVid" Type="int" />
+    <Property Name="cCode" Type="nvarchar" MaxLength="40" />
+    <Property Name="cItem_Class" Type="nvarchar" MaxLength="2" />
+    <Property Name="cItemCode" Type="nvarchar" MaxLength="60" />
+    <Property Name="csign" Type="nvarchar" MaxLength="2" />
+    <Property Name="isignseq" Type="tinyint" />
+    <Property Name="ino_id" Type="smallint" />
+    <Property Name="cDigest" Type="nvarchar" MaxLength="255" />
+    <Property Name="iPrice" Type="float" />
+    <Property Name="cexch_name" Type="nvarchar" MaxLength="8" Nullable="false" />
+    <Property Name="iExchRate" Type="float" />
+    <Property Name="iDAmount" Type="money" />
+    <Property Name="iCAmount" Type="money" />
+    <Property Name="iDAmount_f" Type="money" />
+    <Property Name="iCAmount_f" Type="money" />
+    <Property Name="iDAmount_s" Type="float" />
+    <Property Name="iCAmount_s" Type="float" />
+    <Property Name="cOrderNo" Type="nvarchar" MaxLength="30" />
+    <Property Name="cSSCode" Type="nvarchar" MaxLength="3" />
+    <Property Name="cPayCode" Type="nvarchar" MaxLength="3" />
+    <Property Name="cProcStyle" Type="nvarchar" MaxLength="10" />
+    <Property Name="cCancelNo" Type="nvarchar" MaxLength="40" />
+    <Property Name="cPZid" Type="nvarchar" MaxLength="30" />
+    <Property Name="bPrePay" Type="bit" />
+    <Property Name="iFlag" Type="tinyint" />
+    <Property Name="cCoVouchType" Type="nvarchar" MaxLength="10" />
+    <Property Name="cCoVouchID" Type="nvarchar" MaxLength="30" />
+    <Property Name="cFlag" Type="nvarchar" MaxLength="2" Nullable="false" />
+    <Property Name="cDefine1" Type="nvarchar" MaxLength="20" />
+    <Property Name="cDefine2" Type="nvarchar" MaxLength="20" />
+    <Property Name="cDefine3" Type="nvarchar" MaxLength="20" />
+    <Property Name="cDefine4" Type="datetime" />
+    <Property Name="cDefine5" Type="int" />
+    <Property Name="cDefine6" Type="datetime" />
+    <Property Name="cDefine7" Type="float" />
+    <Property Name="cDefine8" Type="nvarchar" MaxLength="4" />
+    <Property Name="cDefine9" Type="nvarchar" MaxLength="8" />
+    <Property Name="cDefine10" Type="nvarchar" MaxLength="60" />
+    <Property Name="iClosesID" Type="int" Nullable="false" />
+    <Property Name="iCoClosesID" Type="int" Nullable="false" />
+    <Property Name="cDefine11" Type="nvarchar" MaxLength="120" />
+    <Property Name="cDefine12" Type="nvarchar" MaxLength="120" />
+    <Property Name="cDefine13" Type="nvarchar" MaxLength="120" />
+    <Property Name="cDefine14" Type="nvarchar" MaxLength="120" />
+    <Property Name="cDefine15" Type="int" />
+    <Property Name="cDefine16" Type="float" />
+    <Property Name="cGLSign" Type="nvarchar" MaxLength="8" />
+    <Property Name="iGLno_id" Type="smallint" />
+    <Property Name="dPZDate" Type="datetime" />
+    <Property Name="cItemName" Type="nvarchar" MaxLength="255" />
+    <Property Name="cContractType" Type="nvarchar" MaxLength="10" />
+    <Property Name="cContractID" Type="nvarchar" MaxLength="64" />
+    <Property Name="BalancesGuid" Type="uniqueidentifier" />
+    <Property Name="dHideDate" Type="datetime" />
+    <Property Name="cGatheringPlan" Type="nvarchar" MaxLength="10" />
+    <Property Name="dCreditStart" Type="datetime" />
+    <Property Name="iCreditPeriod" Type="int" />
+    <Property Name="dGatheringDate" Type="datetime" />
+    <Property Name="bCredit" Type="bit" />
+    <Property Name="cOperator" Type="nvarchar" MaxLength="20" />
+    <Property Name="cCheckMan" Type="nvarchar" MaxLength="20" />
+    <Property Name="iOrderType" Type="tinyint" />
+    <Property Name="cDLCode" Type="nvarchar" MaxLength="30" />
+    <Property Name="idlsid" Type="int" />
+    <Property Name="copcode" Type="nvarchar" MaxLength="20" />
+    <Property Name="dVouDate" Type="datetime" />
+    <Property Name="cDefine22" Type="nvarchar" MaxLength="60" />
+    <Property Name="cDefine23" Type="nvarchar" MaxLength="60" />
+    <Property Name="cDefine24" Type="nvarchar" MaxLength="60" />
+    <Property Name="cDefine25" Type="nvarchar" MaxLength="60" />
+    <Property Name="cDefine26" Type="float" />
+    <Property Name="cDefine27" Type="float" />
+    <Property Name="cDefine28" Type="nvarchar" MaxLength="120" />
+    <Property Name="cDefine29" Type="nvarchar" MaxLength="120" />
+    <Property Name="cDefine30" Type="nvarchar" MaxLength="120" />
+    <Property Name="cDefine31" Type="nvarchar" MaxLength="120" />
+    <Property Name="cDefine32" Type="nvarchar" MaxLength="120" />
+    <Property Name="cDefine33" Type="nvarchar" MaxLength="120" />
+    <Property Name="cDefine34" Type="int" />
+    <Property Name="cDefine35" Type="int" />
+    <Property Name="cDefine36" Type="datetime" />
+    <Property Name="cDefine37" Type="datetime" />
+    <Property Name="iAmount" Type="money" />
+    <Property Name="iAmount_f" Type="money" />
+    <Property Name="iAmount_s" Type="float" />
+    <Property Name="iVouchAmount" Type="money" />
+    <Property Name="iVouchAmount_f" Type="money" />
+    <Property Name="iVouchAmount_s" Type="float" />
+    <Property Name="dtZbjEndDate" Type="datetime" />
+    <Property Name="cExecID" Type="nvarchar" MaxLength="30" />
+    <Property Name="cBusType" Type="nvarchar" MaxLength="8" />
+  </EntityType>
+  <EntityType Name="CN_AcctBook">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="AcctID" Type="int" Nullable="false" />
+    <Property Name="AcctType" Type="int" />
+    <Property Name="AcctDate" Type="datetime" />
+    <Property Name="VoucherStr" Type="nvarchar" MaxLength="50" />
+    <Property Name="VoucherNum" Type="int" />
+    <Property Name="Period" Type="int" />
+    <Property Name="Debit" Type="money" />
+    <Property Name="Credit" Type="money" />
+    <Property Name="FDebit" Type="money" />
+    <Property Name="FCredit" Type="money" />
+    <Property Name="ExchangeRate" Type="float" />
+    <Property Name="Summary" Type="nvarchar" MaxLength="255" />
+    <Property Name="SettleTypeID" Type="int" />
+    <Property Name="SettleID" Type="nvarchar" MaxLength="50" />
+    <Property Name="DeptID" Type="int" />
+    <Property Name="PersonID" Type="int" />
+    <Property Name="ProjectID" Type="int" />
+    <Property Name="UnitID" Type="int" />
+    <Property Name="UnitType" Type="int" />
+    <Property Name="SourceType" Type="int" />
+    <Property Name="Cashier" Type="nvarchar" MaxLength="50" />
+    <Property Name="IsAudited" Type="int" />
+    <Property Name="Auditor" Type="nvarchar" MaxLength="50" />
+    <Property Name="IsDelete" Type="int" />
+    <Property Name="IsRegGLVouch" Type="int" />
+    <Property Name="RectifyID" Type="int" />
+    <Property Name="RectifyType" Type="char" MaxLength="10" />
+    <Property Name="CACheckFlag" Type="int" />
+    <Property Name="CBCheckFlag" Type="int" />
+    <Property Name="CustomCol1" Type="int" />
+    <Property Name="CustomCol2" Type="int" />
+    <Property Name="CustomCol3" Type="int" />
+    <Property Name="CashNum" Type="int" />
+    <Property Name="CashStr" Type="nvarchar" MaxLength="50" />
+    <Property Name="ProjectClass" Type="int" />
+    <Property Name="CorrVouchID" Type="nvarchar" MaxLength="50" />
+    <Property Name="GLSubjectCode" Type="nvarchar" MaxLength="50" />
+    <Property Name="CustomerID" Type="int" />
+    <Property Name="VendorID" Type="int" />
+    <Property Name="InOutDate" Type="datetime" />
+    <Property Name="CashInk" Type="int" />
+    <Property Name="cDefine1" Type="nvarchar" MaxLength="20" />
+    <Property Name="cDefine2" Type="nvarchar" MaxLength="20" />
+    <Property Name="cDefine3" Type="nvarchar" MaxLength="20" />
+    <Property Name="cDefine4" Type="datetime" />
+    <Property Name="cDefine5" Type="int" />
+    <Property Name="cDefine6" Type="datetime" />
+    <Property Name="cDefine7" Type="float" />
+    <Property Name="cDefine8" Type="nvarchar" MaxLength="50" />
+    <Property Name="cDefine9" Type="nvarchar" MaxLength="50" />
+    <Property Name="cDefine10" Type="nvarchar" MaxLength="60" />
+    <Property Name="cDefine11" Type="nvarchar" MaxLength="120" />
+    <Property Name="cDefine12" Type="nvarchar" MaxLength="120" />
+    <Property Name="cDefine13" Type="nvarchar" MaxLength="120" />
+    <Property Name="cDefine14" Type="nvarchar" MaxLength="120" />
+    <Property Name="cDefine15" Type="int" />
+    <Property Name="cDefine16" Type="float" />
+    <Property Name="VouchOutSignNum" Type="varchar" MaxLength="50" />
+    <Property Name="RateCalType" Type="int" />
+    <Property Name="CSNCashSign" Type="varchar" MaxLength="8" />
+    <Property Name="CSNCashID" Type="int" />
+    <Property Name="CBCheckDate" Type="datetime" />
+    <Property Name="ID_Old" Type="int" Nullable="false" />
+    <Property Name="lYear" Type="int" Nullable="false" />
+    <Property Name="iBankrecpid" Type="int" Nullable="false" />
+    <Property Name="CBCheckSerialNum" Type="nvarchar" MaxLength="50" />
+    <Property Name="lParentID" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="CN_AcctInfo">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="AcctName" Type="nvarchar" MaxLength="100" Nullable="false" />
+    <Property Name="AcctType" Type="int" Nullable="false" />
+    <Property Name="Period" Type="int" />
+    <Property Name="PreBalance" Type="money" />
+    <Property Name="PreDebit" Type="money" />
+    <Property Name="PreCredit" Type="money" />
+    <Property Name="PreBankBalance" Type="money" />
+    <Property Name="FPreBalance" Type="money" />
+    <Property Name="FPreDebit" Type="money" />
+    <Property Name="FPreCredit" Type="money" />
+    <Property Name="FPreBankBalance" Type="money" />
+    <Property Name="CurrencyID" Type="int" />
+    <Property Name="CreateDate" Type="datetime" />
+    <Property Name="Creator" Type="nvarchar" MaxLength="100" />
+    <Property Name="BankName" Type="nvarchar" MaxLength="100" />
+    <Property Name="BankAcct" Type="nvarchar" MaxLength="100" />
+    <Property Name="UnitName" Type="nvarchar" MaxLength="100" />
+    <Property Name="Province" Type="nvarchar" MaxLength="100" />
+    <Property Name="City" Type="nvarchar" MaxLength="100" />
+    <Property Name="IsUsed" Type="int" />
+    <Property Name="Subject2ndClass" Type="int" />
+    <Property Name="Subject2ndFld" Type="int" />
+    <Property Name="SubjectCode" Type="nvarchar" MaxLength="100" />
+    <Property Name="IsFreeze" Type="int" Nullable="false" />
+    <Property Name="UnitType" Type="int" />
+    <Property Name="ProjectClass" Type="int" />
+    <Property Name="FullBankName" Type="varchar" MaxLength="80" />
+    <Property Name="csAcctNum" Type="nvarchar" MaxLength="100" Nullable="false" />
+    <Property Name="PreBalance_Old" Type="money" />
+    <Property Name="FPreBalance_Old" Type="money" />
+    <Property Name="PreBankBalance_Old" Type="money" />
+    <Property Name="FPreBankBalance_Old" Type="money" />
+    <Property Name="lModify" Type="int" Nullable="false" />
+    <Property Name="lYear" Type="int" Nullable="false" />
+    <Property Name="ID_Old" Type="int" Nullable="false" />
+    <Property Name="lClose12" Type="int" Nullable="false" />
+    <Property Name="cBCode" Type="nvarchar" MaxLength="10" />
+    <Property Name="lParentID" Type="int" Nullable="false" />
+    <Property Name="lHaveChild" Type="int" Nullable="false" />
+  </EntityType>
+  <!--生成过程中发现错误:
+警告 6002: 表/视图“UFDATA_999_2017.dbo.CN_CashSerialNumber”未定义主键。已推断出该键，并将定义创建为只读的表/视图。-->
+  <EntityType Name="CN_CashSerialNumber">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="SNWord" Type="varchar" MaxLength="8" />
+    <Property Name="SNText" Type="varchar" MaxLength="30" />
+    <Property Name="U8VouchSign" Type="varchar" MaxLength="50" />
+  </EntityType>
+  <!--生成过程中发现错误:
+警告 6002: 表/视图“UFDATA_999_2017.dbo.CN_CashSignRelate”未定义主键。已推断出该键，并将定义创建为只读的表/视图。-->
+  <EntityType Name="CN_CashSignRelate">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="VouchID" Type="int" />
+    <Property Name="AcctBookID" Type="int" />
+    <Property Name="AccountID" Type="int" />
+    <Property Name="SubjectCode" Type="nvarchar" MaxLength="50" />
+    <Property Name="JobID" Type="int" />
+  </EntityType>
+  <EntityType Name="CN_GLVouch">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="AcctID" Type="int" />
+    <Property Name="GLAVID" Type="int" />
+    <Property Name="SubjectCode" Type="nvarchar" MaxLength="50" />
+    <Property Name="ino_id" Type="int" />
+    <Property Name="inid" Type="int" />
+    <Property Name="VouchPeriod" Type="int" />
+    <Property Name="VouchType" Type="nvarchar" MaxLength="50" />
+    <Property Name="VouchID" Type="nvarchar" MaxLength="50" />
+    <Property Name="VouchDate" Type="datetime" />
+    <Property Name="SettleTypeCode" Type="nvarchar" MaxLength="1" />
+    <Property Name="SettleTypeName" Type="nvarchar" MaxLength="1" />
+    <Property Name="SettleID" Type="nvarchar" MaxLength="50" />
+    <Property Name="SettleDate" Type="datetime" />
+    <Property Name="Summary" Type="nvarchar" MaxLength="200" />
+    <Property Name="Debit" Type="money" />
+    <Property Name="Credit" Type="money" />
+    <Property Name="FDebit" Type="money" />
+    <Property Name="FCredit" Type="money" />
+    <Property Name="ExchangeRate" Type="float" />
+    <Property Name="DeptName" Type="nvarchar" MaxLength="200" />
+    <Property Name="DeptCode" Type="nvarchar" MaxLength="50" />
+    <Property Name="PersonName" Type="nvarchar" MaxLength="100" />
+    <Property Name="PersonCode" Type="nvarchar" MaxLength="50" />
+    <Property Name="CustomerName" Type="nvarchar" MaxLength="200" />
+    <Property Name="CustomerCode" Type="nvarchar" MaxLength="50" />
+    <Property Name="VendorName" Type="nvarchar" MaxLength="200" />
+    <Property Name="VendorCode" Type="nvarchar" MaxLength="50" />
+    <Property Name="ProjectName" Type="nvarchar" MaxLength="100" />
+    <Property Name="ProjectCode" Type="nvarchar" MaxLength="50" />
+    <Property Name="ProjectClassName" Type="nvarchar" MaxLength="100" />
+    <Property Name="ProjectClassCode" Type="nvarchar" MaxLength="50" />
+    <Property Name="Cashier" Type="nvarchar" MaxLength="50" />
+    <Property Name="Auditor" Type="nvarchar" MaxLength="50" />
+    <Property Name="CheckFlag" Type="int" />
+    <Property Name="IsPrint" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="CN_LevelClass">
+    <Key>
+      <PropertyRef Name="ClassID" />
+    </Key>
+    <Property Name="ClassID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="ClassName" Type="nvarchar" MaxLength="50" />
+    <Property Name="TableName" Type="nvarchar" MaxLength="50" />
+    <Property Name="ClassFlag" Type="int" />
+    <Property Name="IsCancel" Type="int" />
+    <Property Name="IsAutoSave" Type="int" />
+    <Property Name="IsUseMCode" Type="int" />
+    <Property Name="IsAsk" Type="int" />
+    <Property Name="LoadID" Type="varchar" MaxLength="50" />
+    <Property Name="ClassID_N" Type="int" Nullable="false" />
+    <Property Name="lYear" Type="int" Nullable="false" />
+    <Property Name="ClassName_Eng" Type="nvarchar" MaxLength="50" />
+  </EntityType>
+  <!--生成过程中发现错误:
+警告 6002: 表/视图“UFDATA_999_2017.dbo.CN_LevelListID”未定义主键。已推断出该键，并将定义创建为只读的表/视图。-->
+  <EntityType Name="CN_LevelListID">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="ClassID" Type="int" />
+    <Property Name="LevelName" Type="nvarchar" MaxLength="100" />
+    <Property Name="ParentID" Type="int" />
+    <Property Name="MCode" Type="nvarchar" MaxLength="50" />
+    <Property Name="LoadID" Type="nvarchar" MaxLength="50" />
+    <Property Name="IsCancel" Type="int" />
+    <Property Name="Flag" Type="int" />
+  </EntityType>
+  <EntityType Name="CN_PayedRecord">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="iMainID" Type="int" />
+    <Property Name="iSubID" Type="int" />
+    <Property Name="iAcctBookID" Type="int" />
+    <Property Name="fMoneyF" Type="float" />
+    <Property Name="fMoney" Type="float" />
+    <Property Name="lMakeVouch" Type="int" />
+    <Property Name="cMainID" Type="nvarchar" MaxLength="20" />
+    <Property Name="cSubID" Type="nvarchar" MaxLength="100" />
+  </EntityType>
+  <EntityType Name="CN_UnitID">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Type" Type="int" />
+    <Property Name="Province" Type="nvarchar" MaxLength="50" />
+    <Property Name="City" Type="nvarchar" MaxLength="50" />
+    <Property Name="LoadCusID" Type="nvarchar" MaxLength="50" />
+    <Property Name="LoadVenID" Type="nvarchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="CN_UserInfo">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="UserName" Type="nvarchar" MaxLength="50" />
+    <Property Name="UserPw" Type="nvarchar" MaxLength="50" />
+    <Property Name="Flag" Type="int" />
+    <Property Name="UserCode" Type="nvarchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="CN_VARelate">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="AcctID" Type="int" />
+    <Property Name="VouchID" Type="int" />
+    <Property Name="IsPrint" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="code">
+    <Key>
+      <PropertyRef Name="ccode" />
+      <PropertyRef Name="iyear" />
+    </Key>
+    <Property Name="i_id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="cclass" Type="nvarchar" MaxLength="14" Nullable="false" />
+    <Property Name="cclass_engl" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="cclassany" Type="nvarchar" MaxLength="14" />
+    <Property Name="cclassany_engl" Type="nvarchar" MaxLength="50" />
+    <Property Name="ccode" Type="nvarchar" MaxLength="40" Nullable="false" />
+    <Property Name="ccode_name" Type="nvarchar" MaxLength="100" />
+    <Property Name="ccode_engl" Type="nvarchar" MaxLength="100" />
+    <Property Name="igrade" Type="tinyint" Nullable="false" />
+    <Property Name="bproperty" Type="bit" Nullable="false" />
+    <Property Name="cbook_type" Type="nvarchar" MaxLength="10" Nullable="false" />
+    <Property Name="cbook_type_engl" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="chelp" Type="nvarchar" MaxLength="6" />
+    <Property Name="cexch_name" Type="nvarchar" MaxLength="8" />
+    <Property Name="cmeasure" Type="nvarchar" MaxLength="6" />
+    <Property Name="bperson" Type="bit" Nullable="false" />
+    <Property Name="bcus" Type="bit" Nullable="false" />
+    <Property Name="bsup" Type="bit" Nullable="false" />
+    <Property Name="bdept" Type="bit" Nullable="false" />
+    <Property Name="bitem" Type="bit" Nullable="false" />
+    <Property Name="cass_item" Type="nvarchar" MaxLength="2" />
+    <Property Name="br" Type="bit" Nullable="false" />
+    <Property Name="be" Type="bit" Nullable="false" />
+    <Property Name="cgather" Type="nvarchar" MaxLength="15" />
+    <Property Name="bend" Type="bit" Nullable="false" />
+    <Property Name="bexchange" Type="bit" Nullable="false" />
+    <Property Name="bcash" Type="bit" Nullable="false" />
+    <Property Name="bbank" Type="bit" Nullable="false" />
+    <Property Name="bused" Type="bit" Nullable="false" />
+    <Property Name="bd_c" Type="bit" Nullable="false" />
+    <Property Name="dbegin" Type="datetime" />
+    <Property Name="dend" Type="datetime" />
+    <Property Name="itrans" Type="tinyint" />
+    <Property Name="bclose" Type="bit" Nullable="false" />
+    <Property Name="cother" Type="nvarchar" MaxLength="10" />
+    <Property Name="iotherused" Type="int" />
+    <Property Name="bcDefine1" Type="bit" />
+    <Property Name="bcDefine2" Type="bit" />
+    <Property Name="bcDefine3" Type="bit" />
+    <Property Name="bcDefine4" Type="bit" />
+    <Property Name="bcDefine5" Type="bit" />
+    <Property Name="bcDefine6" Type="bit" />
+    <Property Name="bcDefine7" Type="bit" />
+    <Property Name="bcDefine8" Type="bit" />
+    <Property Name="bcDefine9" Type="bit" />
+    <Property Name="bcDefine10" Type="bit" />
+    <Property Name="iViewItem" Type="int" Nullable="false" />
+    <Property Name="bGCJS" Type="bit" Nullable="false" />
+    <Property Name="bCashItem" Type="bit" Nullable="false" />
+    <Property Name="pubufts" Type="timestamp" StoreGeneratedPattern="Computed" />
+    <Property Name="bcDefine11" Type="bit" />
+    <Property Name="bcDefine12" Type="bit" />
+    <Property Name="bcDefine13" Type="bit" />
+    <Property Name="bcDefine14" Type="bit" />
+    <Property Name="bcDefine15" Type="bit" />
+    <Property Name="bcDefine16" Type="bit" />
+    <Property Name="bReport" Type="bit" />
+    <Property Name="cUserDefineType" Type="nvarchar" MaxLength="100" />
+    <Property Name="iyear" Type="smallint" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Customer">
+    <Key>
+      <PropertyRef Name="cCusCode" />
+    </Key>
+    <Property Name="cCusCode" Type="nvarchar" MaxLength="20" Nullable="false" />
+    <Property Name="cCusName" Type="nvarchar" MaxLength="98" />
+    <Property Name="cCusAbbName" Type="nvarchar" MaxLength="60" Nullable="false" />
+    <Property Name="cCCCode" Type="nvarchar" MaxLength="12" />
+    <Property Name="cDCCode" Type="nvarchar" MaxLength="12" />
+    <Property Name="cTrade" Type="nvarchar" MaxLength="50" />
+    <Property Name="cCusAddress" Type="nvarchar" MaxLength="255" />
+    <Property Name="cCusPostCode" Type="nvarchar" MaxLength="20" />
+    <Property Name="cCusRegCode" Type="nvarchar" MaxLength="50" />
+    <Property Name="cCusBank" Type="nvarchar" MaxLength="100" />
+    <Property Name="cCusAccount" Type="nvarchar" MaxLength="50" />
+    <Property Name="dCusDevDate" Type="datetime" />
+    <Property Name="cCusLPerson" Type="nvarchar" MaxLength="100" />
+    <Property Name="cCusEmail" Type="nvarchar" MaxLength="100" />
+    <Property Name="cCusPerson" Type="nvarchar" MaxLength="50" />
+    <Property Name="cCusPhone" Type="nvarchar" MaxLength="100" />
+    <Property Name="cCusFax" Type="nvarchar" MaxLength="100" />
+    <Property Name="cCusBP" Type="nvarchar" MaxLength="20" />
+    <Property Name="cCusHand" Type="nvarchar" MaxLength="20" />
+    <Property Name="cCusPPerson" Type="nvarchar" MaxLength="20" />
+    <Property Name="iCusDisRate" Type="float" />
+    <Property Name="cCusCreGrade" Type="nvarchar" MaxLength="6" />
+    <Property Name="iCusCreLine" Type="float" />
+    <Property Name="iCusCreDate" Type="int" />
+    <Property Name="cCusPayCond" Type="nvarchar" MaxLength="20" />
+    <Property Name="cCusOAddress" Type="nvarchar" MaxLength="255" />
+    <Property Name="cCusOType" Type="nvarchar" MaxLength="10" />
+    <Property Name="cCusHeadCode" Type="nvarchar" MaxLength="20" />
+    <Property Name="cCusWhCode" Type="nvarchar" MaxLength="10" />
+    <Property Name="cCusDepart" Type="nvarchar" MaxLength="12" />
+    <Property Name="iARMoney" Type="float" />
+    <Property Name="dLastDate" Type="datetime" />
+    <Property Name="iLastMoney" Type="float" />
+    <Property Name="dLRDate" Type="datetime" />
+    <Property Name="iLRMoney" Type="float" />
+    <Property Name="dEndDate" Type="datetime" />
+    <Property Name="iFrequency" Type="int" />
+    <Property Name="cCusDefine1" Type="nvarchar" MaxLength="20" />
+    <Property Name="cCusDefine2" Type="nvarchar" MaxLength="20" />
+    <Property Name="cCusDefine3" Type="nvarchar" MaxLength="20" />
+    <Property Name="iCostGrade" Type="smallint" />
+    <Property Name="cCreatePerson" Type="nvarchar" MaxLength="20" />
+    <Property Name="cModifyPerson" Type="nvarchar" MaxLength="20" />
+    <Property Name="dModifyDate" Type="datetime" />
+    <Property Name="cRelVendor" Type="nvarchar" MaxLength="20" />
+    <Property Name="iId" Type="nvarchar" MaxLength="40" />
+    <Property Name="cPriceGroup" Type="nvarchar" MaxLength="20" />
+    <Property Name="cOfferGrade" Type="nvarchar" MaxLength="20" />
+    <Property Name="iOfferRate" Type="float" />
+    <Property Name="cCusDefine4" Type="nvarchar" MaxLength="60" />
+    <Property Name="cCusDefine5" Type="nvarchar" MaxLength="60" />
+    <Property Name="cCusDefine6" Type="nvarchar" MaxLength="60" />
+    <Property Name="cCusDefine7" Type="nvarchar" MaxLength="120" />
+    <Property Name="cCusDefine8" Type="nvarchar" MaxLength="120" />
+    <Property Name="cCusDefine9" Type="nvarchar" MaxLength="120" />
+    <Property Name="cCusDefine10" Type="nvarchar" MaxLength="120" />
+    <Property Name="cCusDefine11" Type="int" />
+    <Property Name="cCusDefine12" Type="int" />
+    <Property Name="cCusDefine13" Type="float" />
+    <Property Name="cCusDefine14" Type="float" />
+    <Property Name="cCusDefine15" Type="datetime" />
+    <Property Name="cCusDefine16" Type="datetime" />
+    <Property Name="pubufts" Type="timestamp" StoreGeneratedPattern="Computed" />
+    <Property Name="cInvoiceCompany" Type="nvarchar" MaxLength="60" />
+    <Property Name="bCredit" Type="bit" Nullable="false" />
+    <Property Name="bCreditDate" Type="bit" Nullable="false" />
+    <Property Name="bCreditByHead" Type="bit" Nullable="false" />
+    <Property Name="bLicenceDate" Type="bit" Nullable="false" />
+    <Property Name="dLicenceSDate" Type="datetime" />
+    <Property Name="dLicenceEDate" Type="datetime" />
+    <Property Name="iLicenceADays" Type="int" />
+    <Property Name="bBusinessDate" Type="bit" Nullable="false" />
+    <Property Name="dBusinessSDate" Type="datetime" />
+    <Property Name="dBusinessEDate" Type="datetime" />
+    <Property Name="iBusinessADays" Type="int" />
+    <Property Name="bProxy" Type="bit" Nullable="false" />
+    <Property Name="dProxySDate" Type="datetime" />
+    <Property Name="dProxyEDate" Type="datetime" />
+    <Property Name="iProxyADays" Type="int" />
+    <Property Name="cMemo" Type="nvarchar" MaxLength="240" />
+    <Property Name="bLimitSale" Type="bit" Nullable="false" />
+    <Property Name="cCusContactCode" Type="uniqueidentifier" />
+    <Property Name="cCusCountryCode" Type="nvarchar" MaxLength="10" />
+    <Property Name="cCusEnName" Type="nvarchar" MaxLength="100" />
+    <Property Name="cCusEnAddr1" Type="nvarchar" MaxLength="60" />
+    <Property Name="cCusEnAddr2" Type="nvarchar" MaxLength="60" />
+    <Property Name="cCusEnAddr3" Type="nvarchar" MaxLength="60" />
+    <Property Name="cCusEnAddr4" Type="nvarchar" MaxLength="60" />
+    <Property Name="cCusPortCode" Type="nvarchar" MaxLength="10" />
+    <Property Name="cPrimaryVen" Type="nvarchar" MaxLength="20" />
+    <Property Name="fCommisionRate" Type="float" />
+    <Property Name="fInsueRate" Type="float" />
+    <Property Name="bHomeBranch" Type="bit" Nullable="false" />
+    <Property Name="cBranchAddr" Type="nvarchar" MaxLength="255" />
+    <Property Name="cBranchPhone" Type="nvarchar" MaxLength="100" />
+    <Property Name="cBranchPerson" Type="nvarchar" MaxLength="50" />
+    <Property Name="cCusTradeCCode" Type="nvarchar" MaxLength="12" />
+    <Property Name="CustomerKCode" Type="nvarchar" MaxLength="4" />
+    <Property Name="bCusState" Type="bit" Nullable="false" />
+    <Property Name="bShop" Type="smallint" />
+    <Property Name="cCusBankCode" Type="nvarchar" MaxLength="50" />
+    <Property Name="cCusExch_name" Type="nvarchar" MaxLength="50" />
+    <Property Name="iCusGSPType" Type="smallint" Nullable="false" />
+    <Property Name="iCusGSPAuth" Type="smallint" />
+    <Property Name="cCusGSPAuthNo" Type="nvarchar" MaxLength="120" />
+    <Property Name="cCusBusinessNo" Type="nvarchar" MaxLength="120" />
+    <Property Name="cCusLicenceNo" Type="nvarchar" MaxLength="20" />
+    <Property Name="bCusDomestic" Type="bit" Nullable="false" />
+    <Property Name="bCusOverseas" Type="bit" Nullable="false" />
+    <Property Name="cCusCreditCompany" Type="nvarchar" MaxLength="20" />
+    <Property Name="cCusSAProtocol" Type="nvarchar" MaxLength="20" />
+    <Property Name="cCusExProtocol" Type="nvarchar" MaxLength="20" />
+    <Property Name="cCusOtherProtocol" Type="nvarchar" MaxLength="20" />
+    <Property Name="fCusDiscountRate" Type="float" />
+    <Property Name="cCusSSCode" Type="nvarchar" MaxLength="20" />
+    <Property Name="cCusCMProtocol" Type="nvarchar" MaxLength="20" />
+    <Property Name="dCusCreateDatetime" Type="datetime" Nullable="false" />
+    <Property Name="cCusAppDocNo" Type="nvarchar" MaxLength="50" />
+    <Property Name="cCusMnemCode" Type="nvarchar" MaxLength="98" />
+    <Property Name="fAdvancePaymentRatio" Type="float" />
+    <Property Name="bServiceAttribute" Type="bit" Nullable="false" />
+    <Property Name="bRequestSign" Type="bit" Nullable="false" />
+    <Property Name="bOnGPinStore" Type="bit" />
+    <Property Name="cCusMngTypeCode" Type="nvarchar" MaxLength="32" />
+    <Property Name="account_type" Type="numeric" Precision="22" Scale="0" />
+    <Property Name="cCusImAgentProtocol" Type="nvarchar" MaxLength="20" />
+    <Property Name="iSourceType" Type="smallint" />
+    <Property Name="iSourceId" Type="varchar" MaxLength="20" />
+    <Property Name="fExpense" Type="float" />
+    <Property Name="fApprovedExpense" Type="float" />
+    <Property Name="dTouchedTime" Type="datetime" />
+    <Property Name="dRecentlyInvoiceTime" Type="datetime" />
+    <Property Name="dRecentlyQuoteTime" Type="datetime" />
+    <Property Name="dRecentlyActivityTime" Type="datetime" />
+    <Property Name="dRecentlyChanceTime" Type="datetime" />
+    <Property Name="dRecentlyContractTime" Type="datetime" />
+    <Property Name="cLtcCustomerCode" Type="nvarchar" MaxLength="100" />
+    <Property Name="bTransFlag" Type="bit" />
+    <Property Name="cLtcPerson" Type="nvarchar" MaxLength="40" />
+    <Property Name="dLtcDate" Type="datetime" />
+    <Property Name="cLocationSite" Type="nvarchar" MaxLength="128" />
+    <Property Name="iCusTaxRate" Type="float" />
+    <Property Name="alloct_dept_time" Type="datetime" />
+    <Property Name="allot_user_time" Type="datetime" />
+    <Property Name="recyle_dept_time" Type="datetime" />
+    <Property Name="recyle_pub_time" Type="datetime" />
+    <Property Name="cLicenceNo" Type="nvarchar" MaxLength="120" />
+    <Property Name="cLicenceRange" Type="nvarchar" MaxLength="255" />
+    <Property Name="cCusBusinessRange" Type="nvarchar" MaxLength="255" />
+    <Property Name="cCusGSPAuthRange" Type="nvarchar" MaxLength="255" />
+    <Property Name="dCusGSPEDate" Type="datetime" />
+    <Property Name="dCusGSPSDate" Type="datetime" />
+    <Property Name="iCusGSPADays" Type="int" />
+    <Property Name="bIsCusAttachFile" Type="bit" />
+    <Property Name="dRecentContractDate" Type="datetime" />
+    <Property Name="dRecentDeliveryDate" Type="datetime" />
+    <Property Name="dRecentOutboundDate" Type="datetime" />
+  </EntityType>
+  <EntityType Name="Department">
+    <Key>
+      <PropertyRef Name="cDepCode" />
+    </Key>
+    <Property Name="cDepCode" Type="nvarchar" MaxLength="12" Nullable="false" />
+    <Property Name="bDepEnd" Type="bit" Nullable="false" />
+    <Property Name="cDepName" Type="nvarchar" MaxLength="255" Nullable="false" />
+    <Property Name="iDepGrade" Type="tinyint" Nullable="false" />
+    <Property Name="cDepPerson" Type="nvarchar" MaxLength="20" />
+    <Property Name="cDepProp" Type="nvarchar" MaxLength="10" />
+    <Property Name="cDepPhone" Type="nvarchar" MaxLength="100" />
+    <Property Name="cDepAddress" Type="nvarchar" MaxLength="255" />
+    <Property Name="cDepMemo" Type="nvarchar" MaxLength="20" />
+    <Property Name="iCreLine" Type="float" />
+    <Property Name="cCreGrade" Type="nvarchar" MaxLength="20" />
+    <Property Name="iCreDate" Type="int" />
+    <Property Name="cOfferGrade" Type="nvarchar" MaxLength="20" />
+    <Property Name="iOfferRate" Type="float" />
+    <Property Name="pubufts" Type="timestamp" StoreGeneratedPattern="Computed" />
+    <Property Name="bShop" Type="bit" Nullable="false" />
+    <Property Name="cDepGUID" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="dDepBeginDate" Type="datetime" />
+    <Property Name="dDepEndDate" Type="datetime" />
+    <Property Name="vAuthorizeDoc" Type="nvarchar" MaxLength="50" />
+    <Property Name="vAuthorizeUnit" Type="nvarchar" MaxLength="100" />
+    <Property Name="cDepFax" Type="nvarchar" MaxLength="20" />
+    <Property Name="cDepPostCode" Type="nvarchar" MaxLength="6" />
+    <Property Name="cDepEmail" Type="nvarchar" MaxLength="100" />
+    <Property Name="cDepType" Type="nvarchar" MaxLength="20" />
+    <Property Name="bInheritDutyBasic" Type="int" />
+    <Property Name="bInheritWorkCalendar" Type="int" />
+    <Property Name="cDutyCode" Type="nvarchar" MaxLength="50" />
+    <Property Name="cRestCode" Type="nvarchar" MaxLength="50" />
+    <Property Name="bIM" Type="bit" />
+    <Property Name="cDepNameEn" Type="nvarchar" MaxLength="255" />
+    <Property Name="bRetail" Type="bit" />
+    <Property Name="cDepFullName" Type="nvarchar" MaxLength="800" />
+    <Property Name="iDepOrder" Type="int" />
+    <Property Name="cDepLeader" Type="nvarchar" MaxLength="20" />
+    <Property Name="dModifyDate" Type="datetime" />
+  </EntityType>
+  <EntityType Name="dsign">
+    <Key>
+      <PropertyRef Name="csign" />
+    </Key>
+    <Property Name="i_id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="csign" Type="nvarchar" MaxLength="8" Nullable="false" />
+    <Property Name="isignseq" Type="int" Nullable="false" />
+    <Property Name="ctext" Type="nvarchar" MaxLength="30" />
+    <Property Name="itype" Type="tinyint" />
+    <Property Name="iotherused" Type="int" />
+    <Property Name="cOtherName" Type="nvarchar" MaxLength="4" />
+    <Property Name="iAdjustFlag" Type="tinyint" Nullable="false" />
+  </EntityType>
+  <EntityType Name="fitemss98">
+    <Key>
+      <PropertyRef Name="I_id" />
+    </Key>
+    <Property Name="I_id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="citemcode" Type="nvarchar" MaxLength="60" Nullable="false" />
+    <Property Name="citemname" Type="nvarchar" MaxLength="255" />
+    <Property Name="bclose" Type="bit" />
+    <Property Name="citemccode" Type="nvarchar" MaxLength="22" Nullable="false" />
+    <Property Name="iotherused" Type="int" />
+    <Property Name="cDirection" Type="nvarchar" MaxLength="4" />
+  </EntityType>
+  <EntityType Name="GL_accvouch">
+    <Key>
+      <PropertyRef Name="i_id" />
+    </Key>
+    <Property Name="i_id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="iperiod" Type="tinyint" Nullable="false" />
+    <Property Name="csign" Type="nvarchar" MaxLength="8" />
+    <Property Name="isignseq" Type="int" />
+    <Property Name="ino_id" Type="smallint" />
+    <Property Name="inid" Type="smallint" Nullable="false" />
+    <Property Name="dbill_date" Type="datetime" Nullable="false" />
+    <Property Name="idoc" Type="smallint" Nullable="false" />
+    <Property Name="cbill" Type="nvarchar" MaxLength="20" />
+    <Property Name="ccheck" Type="nvarchar" MaxLength="20" />
+    <Property Name="cbook" Type="nvarchar" MaxLength="20" />
+    <Property Name="ibook" Type="tinyint" Nullable="false" />
+    <Property Name="ccashier" Type="nvarchar" MaxLength="20" />
+    <Property Name="iflag" Type="tinyint" />
+    <Property Name="ctext1" Type="nvarchar" MaxLength="10" />
+    <Property Name="ctext2" Type="nvarchar" MaxLength="10" />
+    <Property Name="cdigest" Type="nvarchar" MaxLength="120" />
+    <Property Name="ccode" Type="nvarchar" MaxLength="40" Nullable="false" />
+    <Property Name="cexch_name" Type="nvarchar" MaxLength="8" />
+    <Property Name="md" Type="money" Nullable="false" />
+    <Property Name="mc" Type="money" Nullable="false" />
+    <Property Name="md_f" Type="money" Nullable="false" />
+    <Property Name="mc_f" Type="money" Nullable="false" />
+    <Property Name="nfrat" Type="float" Nullable="false" />
+    <Property Name="nd_s" Type="float" Nullable="false" />
+    <Property Name="nc_s" Type="float" Nullable="false" />
+    <Property Name="csettle" Type="nvarchar" MaxLength="3" />
+    <Property Name="cn_id" Type="nvarchar" MaxLength="30" />
+    <Property Name="dt_date" Type="datetime" />
+    <Property Name="cdept_id" Type="nvarchar" MaxLength="12" />
+    <Property Name="cperson_id" Type="nvarchar" MaxLength="20" />
+    <Property Name="ccus_id" Type="nvarchar" MaxLength="20" />
+    <Property Name="csup_id" Type="nvarchar" MaxLength="20" />
+    <Property Name="citem_id" Type="nvarchar" MaxLength="60" />
+    <Property Name="citem_class" Type="nvarchar" MaxLength="2" />
+    <Property Name="cname" Type="nvarchar" MaxLength="40" />
+    <Property Name="ccode_equal" Type="nvarchar" MaxLength="50" />
+    <Property Name="iflagbank" Type="tinyint" />
+    <Property Name="iflagPerson" Type="tinyint" />
+    <Property Name="bdelete" Type="bit" />
+    <Property Name="coutaccset" Type="nvarchar" MaxLength="3" />
+    <Property Name="ioutyear" Type="smallint" />
+    <Property Name="coutsysname" Type="nvarchar" MaxLength="10" />
+    <Property Name="coutsysver" Type="nvarchar" MaxLength="10" />
+    <Property Name="doutbilldate" Type="datetime" />
+    <Property Name="ioutperiod" Type="tinyint" />
+    <Property Name="coutsign" Type="nvarchar" MaxLength="100" />
+    <Property Name="coutno_id" Type="nvarchar" MaxLength="50" />
+    <Property Name="doutdate" Type="datetime" />
+    <Property Name="coutbillsign" Type="nvarchar" MaxLength="100" />
+    <Property Name="coutid" Type="nvarchar" MaxLength="50" />
+    <Property Name="bvouchedit" Type="bit" />
+    <Property Name="bvouchAddordele" Type="bit" />
+    <Property Name="bvouchmoneyhold" Type="bit" />
+    <Property Name="bvalueedit" Type="bit" />
+    <Property Name="bcodeedit" Type="bit" />
+    <Property Name="ccodecontrol" Type="nvarchar" MaxLength="50" />
+    <Property Name="bPCSedit" Type="bit" />
+    <Property Name="bDeptedit" Type="bit" />
+    <Property Name="bItemedit" Type="bit" />
+    <Property Name="bCusSupInput" Type="bit" />
+    <Property Name="cDefine1" Type="nvarchar" MaxLength="20" />
+    <Property Name="cDefine2" Type="nvarchar" MaxLength="20" />
+    <Property Name="cDefine3" Type="nvarchar" MaxLength="20" />
+    <Property Name="cDefine4" Type="datetime" />
+    <Property Name="cDefine5" Type="int" />
+    <Property Name="cDefine6" Type="datetime" />
+    <Property Name="cDefine7" Type="float" />
+    <Property Name="cDefine8" Type="nvarchar" MaxLength="4" />
+    <Property Name="cDefine9" Type="nvarchar" MaxLength="8" />
+    <Property Name="cDefine10" Type="nvarchar" MaxLength="60" />
+    <Property Name="cDefine11" Type="nvarchar" MaxLength="120" />
+    <Property Name="cDefine12" Type="nvarchar" MaxLength="120" />
+    <Property Name="cDefine13" Type="nvarchar" MaxLength="120" />
+    <Property Name="cDefine14" Type="nvarchar" MaxLength="120" />
+    <Property Name="cDefine15" Type="int" />
+    <Property Name="cDefine16" Type="float" />
+    <Property Name="dReceive" Type="datetime" />
+    <Property Name="cWLDZFlag" Type="nvarchar" MaxLength="1" />
+    <Property Name="dWLDZTime" Type="datetime" />
+    <Property Name="bFlagOut" Type="bit" Nullable="false" />
+    <Property Name="iBG_OverFlag" Type="int" />
+    <Property Name="cBG_Auditor" Type="nvarchar" MaxLength="40" />
+    <Property Name="dBG_AuditTime" Type="datetime" />
+    <Property Name="cBG_AuditOpinion" Type="nvarchar" MaxLength="50" />
+    <Property Name="bWH_BgFlag" Type="bit" />
+    <Property Name="ssxznum" Type="int" />
+    <Property Name="CErrReason" Type="nvarchar" MaxLength="512" />
+    <Property Name="BG_AuditRemark" Type="nvarchar" MaxLength="512" />
+    <Property Name="cBudgetBuffer" Type="nvarchar" MaxLength="10" />
+    <Property Name="iBG_ControlResult" Type="smallint" />
+    <Property Name="NCVouchID" Type="nvarchar" MaxLength="60" />
+    <Property Name="daudit_date" Type="datetime" />
+    <Property Name="RowGuid" Type="varchar" MaxLength="60" Nullable="false" />
+    <Property Name="cBankReconNo" Type="nvarchar" MaxLength="30" />
+    <Property Name="iyear" Type="smallint" />
+    <Property Name="iYPeriod" Type="int" />
+    <Property Name="wllqDate" Type="datetime" />
+    <Property Name="wllqPeriod" Type="int" />
+    <Property Name="tvouchtime" Type="datetime" />
+    <Property Name="cblueoutno_id" Type="nvarchar" MaxLength="50" />
+    <Property Name="ccodeexch_equal" Type="nvarchar" MaxLength="2000" />
+  </EntityType>
+  <EntityType Name="GL_CashTable">
+    <Key>
+      <PropertyRef Name="i_id" />
+    </Key>
+    <Property Name="i_id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="iPeriod" Type="tinyint" Nullable="false" />
+    <Property Name="iSignSeq" Type="int" />
+    <Property Name="iNo_id" Type="smallint" />
+    <Property Name="inid" Type="smallint" />
+    <Property Name="cCashItem" Type="nvarchar" MaxLength="20" Nullable="false" />
+    <Property Name="md" Type="money" />
+    <Property Name="mc" Type="money" />
+    <Property Name="ccode" Type="nvarchar" MaxLength="40" />
+    <Property Name="md_f" Type="money" />
+    <Property Name="mc_f" Type="money" />
+    <Property Name="nd_s" Type="float" />
+    <Property Name="nc_s" Type="float" />
+    <Property Name="cdept_id" Type="nvarchar" MaxLength="12" />
+    <Property Name="cperson_id" Type="nvarchar" MaxLength="20" />
+    <Property Name="ccus_id" Type="nvarchar" MaxLength="20" />
+    <Property Name="csup_id" Type="nvarchar" MaxLength="20" />
+    <Property Name="citem_class" Type="nvarchar" MaxLength="2" />
+    <Property Name="citem_id" Type="nvarchar" MaxLength="60" />
+    <Property Name="cDefine1" Type="nvarchar" MaxLength="20" />
+    <Property Name="cDefine2" Type="nvarchar" MaxLength="20" />
+    <Property Name="cDefine3" Type="nvarchar" MaxLength="20" />
+    <Property Name="cDefine4" Type="datetime" />
+    <Property Name="cDefine5" Type="int" />
+    <Property Name="cDefine6" Type="datetime" />
+    <Property Name="cDefine7" Type="float" />
+    <Property Name="cDefine8" Type="nvarchar" MaxLength="4" />
+    <Property Name="cDefine9" Type="nvarchar" MaxLength="8" />
+    <Property Name="cDefine10" Type="nvarchar" MaxLength="60" />
+    <Property Name="cDefine11" Type="nvarchar" MaxLength="120" />
+    <Property Name="cDefine12" Type="nvarchar" MaxLength="120" />
+    <Property Name="cDefine13" Type="nvarchar" MaxLength="120" />
+    <Property Name="cDefine14" Type="nvarchar" MaxLength="120" />
+    <Property Name="cDefine15" Type="int" />
+    <Property Name="cDefine16" Type="float" />
+    <Property Name="dbill_date" Type="datetime" />
+    <Property Name="csign" Type="nvarchar" MaxLength="8" />
+    <Property Name="iyear" Type="smallint" />
+    <Property Name="iYPeriod" Type="int" />
+    <Property Name="RowGuid" Type="varchar" MaxLength="60" Nullable="false" />
+    <Property Name="cexch_name" Type="nvarchar" MaxLength="16" />
+  </EntityType>
+  <EntityType Name="GL_CodeRemark">
+    <Key>
+      <PropertyRef Name="i_id" />
+    </Key>
+    <Property Name="i_id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="iPeriod" Type="tinyint" Nullable="false" />
+    <Property Name="csign" Type="nvarchar" MaxLength="8" Nullable="false" />
+    <Property Name="iNo_id" Type="smallint" Nullable="false" />
+    <Property Name="inid" Type="smallint" Nullable="false" />
+    <Property Name="iyear" Type="smallint" />
+    <Property Name="iYPeriod" Type="int" />
+  </EntityType>
+  <EntityType Name="Person">
+    <Key>
+      <PropertyRef Name="cPersonCode" />
+    </Key>
+    <Property Name="cPersonCode" Type="nvarchar" MaxLength="20" Nullable="false" />
+    <Property Name="cPersonName" Type="nvarchar" MaxLength="40" />
+    <Property Name="cDepCode" Type="nvarchar" MaxLength="12" Nullable="false" />
+    <Property Name="cPersonProp" Type="nvarchar" MaxLength="20" />
+    <Property Name="fCreditQuantity" Type="float" />
+    <Property Name="iCreDate" Type="int" />
+    <Property Name="cCreGrade" Type="nvarchar" MaxLength="6" />
+    <Property Name="iLowRate" Type="float" />
+    <Property Name="cOfferGrade" Type="nvarchar" MaxLength="20" />
+    <Property Name="iOfferRate" Type="float" />
+    <Property Name="pubufts" Type="timestamp" StoreGeneratedPattern="Computed" />
+    <Property Name="cPersonEmail" Type="nvarchar" MaxLength="100" />
+    <Property Name="cPersonPhone" Type="nvarchar" MaxLength="100" />
+    <Property Name="dPValidDate" Type="datetime" />
+    <Property Name="dPInValidDate" Type="datetime" />
+  </EntityType>
+  <EntityType Name="SettleStyle">
+    <Key>
+      <PropertyRef Name="cSSCode" />
+    </Key>
+    <Property Name="cSSCode" Type="nvarchar" MaxLength="3" Nullable="false" />
+    <Property Name="cSSName" Type="nvarchar" MaxLength="12" Nullable="false" />
+    <Property Name="bSSFlag" Type="bit" Nullable="false" />
+    <Property Name="iSSGrade" Type="tinyint" Nullable="false" />
+    <Property Name="bSSEnd" Type="bit" Nullable="false" />
+    <Property Name="pubufts" Type="timestamp" StoreGeneratedPattern="Computed" />
+    <Property Name="iSSBillType" Type="smallint" Nullable="false" />
+    <Property Name="bPortalSettle" Type="bit" />
+  </EntityType>
+  <EntityType Name="Vendor">
+    <Key>
+      <PropertyRef Name="cVenCode" />
+    </Key>
+    <Property Name="cVenCode" Type="nvarchar" MaxLength="20" Nullable="false" />
+    <Property Name="cVenName" Type="nvarchar" MaxLength="98" />
+    <Property Name="cVenAbbName" Type="nvarchar" MaxLength="60" Nullable="false" />
+    <Property Name="cVCCode" Type="nvarchar" MaxLength="12" />
+    <Property Name="cDCCode" Type="nvarchar" MaxLength="12" />
+    <Property Name="cTrade" Type="nvarchar" MaxLength="50" />
+    <Property Name="cVenAddress" Type="nvarchar" MaxLength="255" />
+    <Property Name="cVenPostCode" Type="nvarchar" MaxLength="20" />
+    <Property Name="cVenRegCode" Type="nvarchar" MaxLength="50" />
+    <Property Name="cVenBank" Type="nvarchar" MaxLength="100" />
+    <Property Name="cVenAccount" Type="nvarchar" MaxLength="50" />
+    <Property Name="dVenDevDate" Type="datetime" />
+    <Property Name="cVenLPerson" Type="nvarchar" MaxLength="100" />
+    <Property Name="cVenPhone" Type="nvarchar" MaxLength="100" />
+    <Property Name="cVenFax" Type="nvarchar" MaxLength="100" />
+    <Property Name="cVenEmail" Type="nvarchar" MaxLength="100" />
+    <Property Name="cVenPerson" Type="nvarchar" MaxLength="50" />
+    <Property Name="cVenBP" Type="nvarchar" MaxLength="20" />
+    <Property Name="cVenHand" Type="nvarchar" MaxLength="20" />
+    <Property Name="cVenPPerson" Type="nvarchar" MaxLength="20" />
+    <Property Name="iVenDisRate" Type="float" />
+    <Property Name="iVenCreGrade" Type="nvarchar" MaxLength="6" />
+    <Property Name="iVenCreLine" Type="float" />
+    <Property Name="iVenCreDate" Type="int" />
+    <Property Name="cVenPayCond" Type="nvarchar" MaxLength="20" />
+    <Property Name="cVenIAddress" Type="nvarchar" MaxLength="255" />
+    <Property Name="cVenIType" Type="nvarchar" MaxLength="10" />
+    <Property Name="cVenHeadCode" Type="nvarchar" MaxLength="20" />
+    <Property Name="cVenWhCode" Type="nvarchar" MaxLength="10" />
+    <Property Name="cVenDepart" Type="nvarchar" MaxLength="12" />
+    <Property Name="iAPMoney" Type="float" />
+    <Property Name="dLastDate" Type="datetime" />
+    <Property Name="iLastMoney" Type="float" />
+    <Property Name="dLRDate" Type="datetime" />
+    <Property Name="iLRMoney" Type="float" />
+    <Property Name="dEndDate" Type="datetime" />
+    <Property Name="iFrequency" Type="int" />
+    <Property Name="bVenTax" Type="bit" Nullable="false" />
+    <Property Name="cVenDefine1" Type="nvarchar" MaxLength="20" />
+    <Property Name="cVenDefine2" Type="nvarchar" MaxLength="20" />
+    <Property Name="cVenDefine3" Type="nvarchar" MaxLength="20" />
+    <Property Name="cCreatePerson" Type="nvarchar" MaxLength="20" />
+    <Property Name="cModifyPerson" Type="nvarchar" MaxLength="20" />
+    <Property Name="dModifyDate" Type="datetime" />
+    <Property Name="cRelCustomer" Type="nvarchar" MaxLength="20" />
+    <Property Name="iId" Type="int" />
+    <Property Name="cBarCode" Type="nvarchar" MaxLength="30" />
+    <Property Name="cVenDefine4" Type="nvarchar" MaxLength="60" />
+    <Property Name="cVenDefine5" Type="nvarchar" MaxLength="60" />
+    <Property Name="cVenDefine6" Type="nvarchar" MaxLength="60" />
+    <Property Name="cVenDefine7" Type="nvarchar" MaxLength="120" />
+    <Property Name="cVenDefine8" Type="nvarchar" MaxLength="120" />
+    <Property Name="cVenDefine9" Type="nvarchar" MaxLength="120" />
+    <Property Name="cVenDefine10" Type="nvarchar" MaxLength="120" />
+    <Property Name="cVenDefine11" Type="int" />
+    <Property Name="cVenDefine12" Type="int" />
+    <Property Name="cVenDefine13" Type="float" />
+    <Property Name="cVenDefine14" Type="float" />
+    <Property Name="cVenDefine15" Type="datetime" />
+    <Property Name="cVenDefine16" Type="datetime" />
+    <Property Name="pubufts" Type="timestamp" StoreGeneratedPattern="Computed" />
+    <Property Name="fRegistFund" Type="float" />
+    <Property Name="iEmployeeNum" Type="int" />
+    <Property Name="iGradeABC" Type="smallint" />
+    <Property Name="cMemo" Type="nvarchar" MaxLength="240" />
+    <Property Name="bLicenceDate" Type="bit" Nullable="false" />
+    <Property Name="dLicenceSDate" Type="datetime" />
+    <Property Name="dLicenceEDate" Type="datetime" />
+    <Property Name="iLicenceADays" Type="int" />
+    <Property Name="bBusinessDate" Type="bit" Nullable="false" />
+    <Property Name="dBusinessSDate" Type="datetime" />
+    <Property Name="dBusinessEDate" Type="datetime" />
+    <Property Name="iBusinessADays" Type="int" />
+    <Property Name="bProxyDate" Type="bit" Nullable="false" />
+    <Property Name="dProxySDate" Type="datetime" />
+    <Property Name="dProxyEDate" Type="datetime" />
+    <Property Name="iProxyADays" Type="int" />
+    <Property Name="bPassGMP" Type="bit" Nullable="false" />
+    <Property Name="bVenCargo" Type="bit" Nullable="false" />
+    <Property Name="bProxyForeign" Type="bit" Nullable="false" />
+    <Property Name="bVenService" Type="bit" Nullable="false" />
+    <Property Name="cVenTradeCCode" Type="nvarchar" MaxLength="12" />
+    <Property Name="cVenBankCode" Type="nvarchar" MaxLength="5" />
+    <Property Name="cVenExch_name" Type="nvarchar" MaxLength="50" />
+    <Property Name="iVenGSPType" Type="smallint" Nullable="false" />
+    <Property Name="iVenGSPAuth" Type="smallint" />
+    <Property Name="cVenGSPAuthNo" Type="nvarchar" MaxLength="40" />
+    <Property Name="cVenBusinessNo" Type="nvarchar" MaxLength="20" />
+    <Property Name="cVenLicenceNo" Type="nvarchar" MaxLength="20" />
+    <Property Name="bVenOverseas" Type="bit" Nullable="false" />
+    <Property Name="bVenAccPeriodMng" Type="bit" Nullable="false" />
+    <Property Name="cVenPUOMProtocol" Type="nvarchar" MaxLength="20" />
+    <Property Name="cVenOtherProtocol" Type="nvarchar" MaxLength="20" />
+    <Property Name="cVenCountryCode" Type="nvarchar" MaxLength="10" />
+    <Property Name="cVenEnName" Type="nvarchar" MaxLength="100" />
+    <Property Name="cVenEnAddr1" Type="nvarchar" MaxLength="60" />
+    <Property Name="cVenEnAddr2" Type="nvarchar" MaxLength="60" />
+    <Property Name="cVenEnAddr3" Type="nvarchar" MaxLength="60" />
+    <Property Name="cVenEnAddr4" Type="nvarchar" MaxLength="60" />
+    <Property Name="cVenPortCode" Type="nvarchar" MaxLength="10" />
+    <Property Name="cVenPrimaryVen" Type="nvarchar" MaxLength="20" />
+    <Property Name="fVenCommisionRate" Type="float" />
+    <Property Name="fVenInsueRate" Type="float" />
+    <Property Name="bVenHomeBranch" Type="bit" Nullable="false" />
+    <Property Name="cVenBranchAddr" Type="nvarchar" MaxLength="200" />
+    <Property Name="cVenBranchPhone" Type="nvarchar" MaxLength="100" />
+    <Property Name="cVenBranchPerson" Type="nvarchar" MaxLength="50" />
+    <Property Name="cVenSSCode" Type="nvarchar" MaxLength="20" />
+    <Property Name="cOMWhCode" Type="nvarchar" MaxLength="20" />
+    <Property Name="cVenCMProtocol" Type="nvarchar" MaxLength="20" />
+    <Property Name="cVenIMProtocol" Type="nvarchar" MaxLength="20" />
+    <Property Name="iVenTaxRate" Type="float" />
+    <Property Name="dVenCreateDatetime" Type="datetime" Nullable="false" />
+    <Property Name="cVenMnemCode" Type="nvarchar" MaxLength="98" />
+    <Property Name="cVenContactCode" Type="uniqueidentifier" />
+    <Property Name="cvenbankall" Type="nvarchar" MaxLength="50" />
+    <Property Name="bIsVenAttachFile" Type="bit" />
+    <Property Name="cLicenceRange" Type="nvarchar" MaxLength="255" />
+    <Property Name="cBusinessRange" Type="nvarchar" MaxLength="255" />
+    <Property Name="cVenGSPRange" Type="nvarchar" MaxLength="255" />
+    <Property Name="dVenGSPEDate" Type="datetime" />
+    <Property Name="dVenGSPSDate" Type="datetime" />
+    <Property Name="iVenGSPADays" Type="int" />
+  </EntityType>
+  <Association Name="FK__Ap_CloseB__cDept__21CBDF4D">
+    <End Role="Department" Type="Self.Department" Multiplicity="0..1" />
+    <End Role="Ap_CloseBill" Type="Self.Ap_CloseBill" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Department">
+        <PropertyRef Name="cDepCode" />
+      </Principal>
+      <Dependent Role="Ap_CloseBill">
+        <PropertyRef Name="cDeptCode" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Ap_CloseB__cSSCo__5145E845">
+    <End Role="SettleStyle" Type="Self.SettleStyle" Multiplicity="0..1" />
+    <End Role="Ap_CloseBill" Type="Self.Ap_CloseBill" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="SettleStyle">
+        <PropertyRef Name="cSSCode" />
+      </Principal>
+      <Dependent Role="Ap_CloseBill">
+        <PropertyRef Name="cSSCode" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__GL_accvou__ccus___23B427BF">
+    <End Role="Customer" Type="Self.Customer" Multiplicity="0..1" />
+    <End Role="GL_accvouch" Type="Self.GL_accvouch" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Customer">
+        <PropertyRef Name="cCusCode" />
+      </Principal>
+      <Dependent Role="GL_accvouch">
+        <PropertyRef Name="ccus_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__GL_accvou__cdept__2F25DA6B">
+    <End Role="Department" Type="Self.Department" Multiplicity="0..1" />
+    <End Role="GL_accvouch" Type="Self.GL_accvouch" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Department">
+        <PropertyRef Name="cDepCode" />
+      </Principal>
+      <Dependent Role="GL_accvouch">
+        <PropertyRef Name="cdept_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__GL_accvou__cpers__106C4921">
+    <End Role="Person" Type="Self.Person" Multiplicity="0..1" />
+    <End Role="GL_accvouch" Type="Self.GL_accvouch" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Person">
+        <PropertyRef Name="cPersonCode" />
+      </Principal>
+      <Dependent Role="GL_accvouch">
+        <PropertyRef Name="cperson_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__GL_accvou__csup___5CB79AF1">
+    <End Role="Vendor" Type="Self.Vendor" Multiplicity="0..1" />
+    <End Role="GL_accvouch" Type="Self.GL_accvouch" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Vendor">
+        <PropertyRef Name="cVenCode" />
+      </Principal>
+      <Dependent Role="GL_accvouch">
+        <PropertyRef Name="csup_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Person__cDepCode__35D2D7FA">
+    <End Role="Department" Type="Self.Department" Multiplicity="1" />
+    <End Role="Person" Type="Self.Person" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Department">
+        <PropertyRef Name="cDepCode" />
+      </Principal>
+      <Dependent Role="Person">
+        <PropertyRef Name="cDepCode" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Vendor__cVenDepa__3E681DFB">
+    <End Role="Department" Type="Self.Department" Multiplicity="0..1" />
+    <End Role="Vendor" Type="Self.Vendor" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Department">
+        <PropertyRef Name="cDepCode" />
+      </Principal>
+      <Dependent Role="Vendor">
+        <PropertyRef Name="cVenDepart" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Ap_CloseBills_Ap_CloseBill">
+    <End Role="Ap_CloseBill" Type="Self.Ap_CloseBill" Multiplicity="1" />
+    <End Role="Ap_CloseBills" Type="Self.Ap_CloseBills" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Ap_CloseBill">
+        <PropertyRef Name="iID" />
+      </Principal>
+      <Dependent Role="Ap_CloseBills">
+        <PropertyRef Name="iID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="UFDATA_999_2017ModelStoreContainer">
+    <EntitySet Name="Ap_CloseBill" EntityType="Self.Ap_CloseBill" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Ap_CloseBills" EntityType="Self.Ap_CloseBills" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Ap_Detail" EntityType="Self.Ap_Detail" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="CN_AcctBook" EntityType="Self.CN_AcctBook" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="CN_AcctInfo" EntityType="Self.CN_AcctInfo" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="CN_GLVouch" EntityType="Self.CN_GLVouch" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="CN_LevelClass" EntityType="Self.CN_LevelClass" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="CN_PayedRecord" EntityType="Self.CN_PayedRecord" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="CN_UnitID" EntityType="Self.CN_UnitID" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="CN_UserInfo" EntityType="Self.CN_UserInfo" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="CN_VARelate" EntityType="Self.CN_VARelate" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="code" EntityType="Self.code" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Customer" EntityType="Self.Customer" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Department" EntityType="Self.Department" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="dsign" EntityType="Self.dsign" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="fitemss98" EntityType="Self.fitemss98" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="GL_accvouch" EntityType="Self.GL_accvouch" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="GL_CashTable" EntityType="Self.GL_CashTable" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="GL_CodeRemark" EntityType="Self.GL_CodeRemark" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Person" EntityType="Self.Person" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="SettleStyle" EntityType="Self.SettleStyle" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Vendor" EntityType="Self.Vendor" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="CN_CashSerialNumber" EntityType="Self.CN_CashSerialNumber" store:Type="Tables" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [CN_CashSerialNumber].[ID] AS [ID], 
+    [CN_CashSerialNumber].[SNWord] AS [SNWord], 
+    [CN_CashSerialNumber].[SNText] AS [SNText], 
+    [CN_CashSerialNumber].[U8VouchSign] AS [U8VouchSign]
+    FROM [dbo].[CN_CashSerialNumber] AS [CN_CashSerialNumber]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="CN_CashSignRelate" EntityType="Self.CN_CashSignRelate" store:Type="Tables" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [CN_CashSignRelate].[ID] AS [ID], 
+    [CN_CashSignRelate].[VouchID] AS [VouchID], 
+    [CN_CashSignRelate].[AcctBookID] AS [AcctBookID], 
+    [CN_CashSignRelate].[AccountID] AS [AccountID], 
+    [CN_CashSignRelate].[SubjectCode] AS [SubjectCode], 
+    [CN_CashSignRelate].[JobID] AS [JobID]
+    FROM [dbo].[CN_CashSignRelate] AS [CN_CashSignRelate]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="CN_LevelListID" EntityType="Self.CN_LevelListID" store:Type="Tables" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [CN_LevelListID].[ID] AS [ID], 
+    [CN_LevelListID].[ClassID] AS [ClassID], 
+    [CN_LevelListID].[LevelName] AS [LevelName], 
+    [CN_LevelListID].[ParentID] AS [ParentID], 
+    [CN_LevelListID].[MCode] AS [MCode], 
+    [CN_LevelListID].[LoadID] AS [LoadID], 
+    [CN_LevelListID].[IsCancel] AS [IsCancel], 
+    [CN_LevelListID].[Flag] AS [Flag]
+    FROM [dbo].[CN_LevelListID] AS [CN_LevelListID]</DefiningQuery>
+    </EntitySet>
+    <AssociationSet Name="FK__Ap_CloseB__cDept__21CBDF4D" Association="Self.FK__Ap_CloseB__cDept__21CBDF4D">
+      <End Role="Department" EntitySet="Department" />
+      <End Role="Ap_CloseBill" EntitySet="Ap_CloseBill" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Ap_CloseB__cSSCo__5145E845" Association="Self.FK__Ap_CloseB__cSSCo__5145E845">
+      <End Role="SettleStyle" EntitySet="SettleStyle" />
+      <End Role="Ap_CloseBill" EntitySet="Ap_CloseBill" />
+    </AssociationSet>
+    <AssociationSet Name="FK__GL_accvou__ccus___23B427BF" Association="Self.FK__GL_accvou__ccus___23B427BF">
+      <End Role="Customer" EntitySet="Customer" />
+      <End Role="GL_accvouch" EntitySet="GL_accvouch" />
+    </AssociationSet>
+    <AssociationSet Name="FK__GL_accvou__cdept__2F25DA6B" Association="Self.FK__GL_accvou__cdept__2F25DA6B">
+      <End Role="Department" EntitySet="Department" />
+      <End Role="GL_accvouch" EntitySet="GL_accvouch" />
+    </AssociationSet>
+    <AssociationSet Name="FK__GL_accvou__cpers__106C4921" Association="Self.FK__GL_accvou__cpers__106C4921">
+      <End Role="Person" EntitySet="Person" />
+      <End Role="GL_accvouch" EntitySet="GL_accvouch" />
+    </AssociationSet>
+    <AssociationSet Name="FK__GL_accvou__csup___5CB79AF1" Association="Self.FK__GL_accvou__csup___5CB79AF1">
+      <End Role="Vendor" EntitySet="Vendor" />
+      <End Role="GL_accvouch" EntitySet="GL_accvouch" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Person__cDepCode__35D2D7FA" Association="Self.FK__Person__cDepCode__35D2D7FA">
+      <End Role="Department" EntitySet="Department" />
+      <End Role="Person" EntitySet="Person" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Vendor__cVenDepa__3E681DFB" Association="Self.FK__Vendor__cVenDepa__3E681DFB">
+      <End Role="Department" EntitySet="Department" />
+      <End Role="Vendor" EntitySet="Vendor" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Ap_CloseBills_Ap_CloseBill" Association="Self.FK_Ap_CloseBills_Ap_CloseBill">
+      <End Role="Ap_CloseBill" EntitySet="Ap_CloseBill" />
+      <End Role="Ap_CloseBills" EntitySet="Ap_CloseBills" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>

@@ -1,0 +1,112 @@
+
+ 
+记录时间：2019-03-18 13:44:08,084 
+线程ID:[57] 
+日志级别：  INFO  
+出错类：dal.YYDal property: [(null)] - 
+错误描述：用户登录记录:admin
+ 
+
+ 
+记录时间：2019-03-18 13:44:08,099 
+线程ID:[57] 
+日志级别：  INFO  
+出错类：BLL.UserInfoBll property: [(null)] - 
+错误描述：账号:admin在：IP为::1登录
+ 
+
+ 
+记录时间：2019-03-18 16:14:39,788 
+线程ID:[6] 
+日志级别：  INFO  
+出错类：dal.YYDal property: [(null)] - 
+错误描述：用户登录记录:admin
+ 
+
+ 
+记录时间：2019-03-18 16:14:39,800 
+线程ID:[6] 
+日志级别：  INFO  
+出错类：BLL.UserInfoBll property: [(null)] - 
+错误描述：账号:admin在：IP为::1登录
+ 
+
+ 
+记录时间：2019-03-18 16:32:14,273 
+线程ID:[6] 
+日志级别：  INFO  
+出错类：dal.YYDal property: [(null)] - 
+错误描述：用户登录记录:admin
+ 
+
+ 
+记录时间：2019-03-18 16:32:14,284 
+线程ID:[6] 
+日志级别：  INFO  
+出错类：BLL.UserInfoBll property: [(null)] - 
+错误描述：账号:admin在：IP为::1登录
+ 
+
+ 
+记录时间：2019-03-18 16:49:04,282 
+线程ID:[8] 
+日志级别：  INFO  
+出错类：dal.YYDal property: [(null)] - 
+错误描述：用户登录记录:admin
+ 
+
+ 
+记录时间：2019-03-18 16:49:04,294 
+线程ID:[8] 
+日志级别：  INFO  
+出错类：BLL.UserInfoBll property: [(null)] - 
+错误描述：账号:admin在：IP为::1登录
+ 
+
+ 
+记录时间：2019-03-18 18:04:09,084 
+线程ID:[35] 
+日志级别：  INFO  
+出错类：dal.YYDal property: [(null)] - 
+错误描述：用户登录记录:admin
+ 
+
+ 
+记录时间：2019-03-18 18:04:09,096 
+线程ID:[35] 
+日志级别：  INFO  
+出错类：BLL.UserInfoBll property: [(null)] - 
+错误描述：账号:admin在：IP为::1登录
+ 
+
+ 
+记录时间：2019-03-18 18:09:48,996 
+线程ID:[5] 
+日志级别：  INFO  
+出错类：dal.YYDal property: [(null)] - 
+错误描述：用户登录记录:admin
+ 
+
+ 
+记录时间：2019-03-18 18:09:49,014 
+线程ID:[5] 
+日志级别：  INFO  
+出错类：BLL.UserInfoBll property: [(null)] - 
+错误描述：账号:admin在：IP为::1登录
+ 
+
+ 
+记录时间：2019-03-18 18:37:16,427 
+线程ID:[10] 
+日志级别：  INFO  
+出错类：dal.YYDal property: [(null)] - 
+错误描述：用户登录记录:admin
+ 
+
+ 
+记录时间：2019-03-18 18:37:16,437 
+线程ID:[10] 
+日志级别：  INFO  
+出错类：BLL.UserInfoBll property: [(null)] - 
+错误描述：账号:admin在：IP为::1登录
+ 

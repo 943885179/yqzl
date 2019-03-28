@@ -1,0 +1,10 @@
+E:\stu\wuzhihua - 最终版\BaiduAI\bin\Release\BaiduAI.dll
+E:\stu\wuzhihua - 最终版\BaiduAI\bin\Release\BaiduAI.pdb
+E:\stu\wuzhihua - 最终版\BaiduAI\bin\Release\AipSdk.dll
+E:\stu\wuzhihua - 最终版\BaiduAI\bin\Release\Newtonsoft.Json.dll
+E:\stu\wuzhihua - 最终版\BaiduAI\bin\Release\Newtonsoft.Json.xml
+E:\stu\wuzhihua - 最终版\BaiduAI\obj\Release\BaiduAI.csprojAssemblyReference.cache
+E:\stu\wuzhihua - 最终版\BaiduAI\obj\Release\BaiduAI.csproj.CoreCompileInputs.cache
+E:\stu\wuzhihua - 最终版\BaiduAI\obj\Release\BaiduAI.csproj.CopyComplete
+E:\stu\wuzhihua - 最终版\BaiduAI\obj\Release\BaiduAI.dll
+E:\stu\wuzhihua - 最终版\BaiduAI\obj\Release\BaiduAI.pdb

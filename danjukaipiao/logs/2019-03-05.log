@@ -1,0 +1,176 @@
+
+ 
+记录时间：2019-03-05 09:17:29,909 
+线程ID:[10] 
+日志级别：  INFO  
+出错类：dal.YYDal property: [(null)] - 
+错误描述：用户登录记录:admin
+ 
+
+ 
+记录时间：2019-03-05 09:17:29,919 
+线程ID:[10] 
+日志级别：  INFO  
+出错类：BLL.UserInfoBll property: [(null)] - 
+错误描述：账号:admin在：IP为::1登录
+ 
+
+ 
+记录时间：2019-03-05 09:35:37,221 
+线程ID:[6] 
+日志级别：  INFO  
+出错类：dal.YYDal property: [(null)] - 
+错误描述：用户登录记录:admin
+ 
+
+ 
+记录时间：2019-03-05 09:35:37,236 
+线程ID:[6] 
+日志级别：  INFO  
+出错类：BLL.UserInfoBll property: [(null)] - 
+错误描述：账号:admin在：IP为::1登录
+ 
+
+ 
+记录时间：2019-03-05 14:03:26,924 
+线程ID:[6] 
+日志级别：  INFO  
+出错类：dal.YYDal property: [(null)] - 
+错误描述：用户登录记录:李亚玲_admin
+ 
+
+ 
+记录时间：2019-03-05 14:03:26,972 
+线程ID:[6] 
+日志级别：  INFO  
+出错类：BLL.UserInfoBll property: [(null)] - 
+错误描述：账号:李亚玲_admin在：IP为::1登录
+ 
+
+ 
+记录时间：2019-03-05 17:11:51,505 
+线程ID:[8] 
+日志级别：  INFO  
+出错类：dal.YYDal property: [(null)] - 
+错误描述：用户登录记录:黄晓姝
+ 
+
+ 
+记录时间：2019-03-05 17:11:51,532 
+线程ID:[8] 
+日志级别：  INFO  
+出错类：BLL.UserInfoBll property: [(null)] - 
+错误描述：账号:黄晓姝在：IP为::1登录
+ 
+
+ 
+记录时间：2019-03-05 17:16:37,919 
+线程ID:[6] 
+日志级别：  INFO  
+出错类：dal.YYDal property: [(null)] - 
+错误描述：用户登录记录:黄晓姝
+ 
+
+ 
+记录时间：2019-03-05 17:16:37,948 
+线程ID:[6] 
+日志级别：  INFO  
+出错类：BLL.UserInfoBll property: [(null)] - 
+错误描述：账号:黄晓姝在：IP为::1登录
+ 
+
+ 
+记录时间：2019-03-05 17:24:20,780 
+线程ID:[8] 
+日志级别：  INFO  
+出错类：dal.YYDal property: [(null)] - 
+错误描述：用户登录记录:黄晓姝
+ 
+
+ 
+记录时间：2019-03-05 17:24:20,802 
+线程ID:[8] 
+日志级别：  INFO  
+出错类：BLL.UserInfoBll property: [(null)] - 
+错误描述：账号:黄晓姝在：IP为::1登录
+ 
+
+ 
+记录时间：2019-03-05 17:37:51,533 
+线程ID:[8] 
+日志级别：  INFO  
+出错类：dal.YYDal property: [(null)] - 
+错误描述：用户登录记录:黄晓姝
+ 
+
+ 
+记录时间：2019-03-05 17:37:51,559 
+线程ID:[8] 
+日志级别：  INFO  
+出错类：BLL.UserInfoBll property: [(null)] - 
+错误描述：账号:黄晓姝在：IP为::1登录
+ 
+
+ 
+记录时间：2019-03-05 18:15:05,280 
+线程ID:[6] 
+日志级别：  INFO  
+出错类：dal.YYDal property: [(null)] - 
+错误描述：用户登录记录:李亚玲_admin
+ 
+
+ 
+记录时间：2019-03-05 18:15:05,311 
+线程ID:[6] 
+日志级别：  INFO  
+出错类：BLL.UserInfoBll property: [(null)] - 
+错误描述：账号:李亚玲_admin在：IP为::1登录
+ 
+
+ 
+记录时间：2019-03-05 18:16:01,790 
+线程ID:[5] 
+日志级别：  INFO  
+出错类：dal.YYDal property: [(null)] - 
+错误描述：用户登录记录:黄晓姝
+ 
+
+ 
+记录时间：2019-03-05 18:16:01,792 
+线程ID:[5] 
+日志级别：  INFO  
+出错类：BLL.UserInfoBll property: [(null)] - 
+错误描述：账号:黄晓姝在：IP为::1登录
+ 
+
+ 
+记录时间：2019-03-05 18:21:05,540 
+线程ID:[6] 
+日志级别：  INFO  
+出错类：dal.YYDal property: [(null)] - 
+错误描述：用户登录记录:李亚玲_admin
+ 
+
+ 
+记录时间：2019-03-05 18:21:05,555 
+线程ID:[6] 
+日志级别：  INFO  
+出错类：BLL.UserInfoBll property: [(null)] - 
+错误描述：账号:李亚玲_admin在：IP为::1登录
+ 
+
+ 
+记录时间：2019-03-05 18:22:08,405 
+线程ID:[14] 
+日志级别：  INFO  
+出错类：dal.YYDal property: [(null)] - 
+错误描述：用户登录记录:黄晓姝
+ 
+
+ 
+记录时间：2019-03-05 18:22:08,426 
+线程ID:[14] 
+日志级别：  INFO  
+出错类：BLL.UserInfoBll property: [(null)] - 
+错误描述：账号:黄晓姝在：IP为::1登录
+ 

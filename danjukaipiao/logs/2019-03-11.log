@@ -1,0 +1,96 @@
+
+ 
+记录时间：2019-03-11 09:50:34,919 
+线程ID:[6] 
+日志级别：  INFO  
+出错类：dal.YYDal property: [(null)] - 
+错误描述：用户登录记录:李欢欢_admin
+ 
+
+ 
+记录时间：2019-03-11 09:50:35,029 
+线程ID:[6] 
+日志级别：  INFO  
+出错类：BLL.UserInfoBll property: [(null)] - 
+错误描述：账号:李欢欢_admin在：IP为::1登录
+ 
+
+ 
+记录时间：2019-03-11 13:48:18,294 
+线程ID:[6] 
+日志级别：  INFO  
+出错类：dal.YYDal property: [(null)] - 
+错误描述：用户登录记录:李欢欢_admin
+ 
+
+ 
+记录时间：2019-03-11 13:48:18,309 
+线程ID:[6] 
+日志级别：  INFO  
+出错类：BLL.UserInfoBll property: [(null)] - 
+错误描述：账号:李欢欢_admin在：IP为::1登录
+ 
+
+ 
+记录时间：2019-03-11 14:00:50,122 
+线程ID:[10] 
+日志级别：  INFO  
+出错类：dal.YYDal property: [(null)] - 
+错误描述：用户登录记录:李欢欢_admin
+ 
+
+ 
+记录时间：2019-03-11 14:00:50,145 
+线程ID:[10] 
+日志级别：  INFO  
+出错类：BLL.UserInfoBll property: [(null)] - 
+错误描述：账号:李欢欢_admin在：IP为::1登录
+ 
+
+ 
+记录时间：2019-03-11 14:07:03,261 
+线程ID:[14] 
+日志级别：  INFO  
+出错类：dal.YYDal property: [(null)] - 
+错误描述：日记账成功,出纳编号为010101收-00317
+ 
+
+ 
+记录时间：2019-03-11 14:07:09,483 
+线程ID:[14] 
+日志级别：  INFO  
+出错类：dal.YYDal property: [(null)] - 
+错误描述：日记账成功,出纳编号为010101收-00318
+ 
+
+ 
+记录时间：2019-03-11 14:46:10,357 
+线程ID:[7] 
+日志级别：  INFO  
+出错类：dal.YYDal property: [(null)] - 
+错误描述：用户登录记录:admin
+ 
+
+ 
+记录时间：2019-03-11 14:46:10,835 
+线程ID:[7] 
+日志级别：  INFO  
+出错类：BLL.UserInfoBll property: [(null)] - 
+错误描述：账号:admin在：IP为::1登录
+ 
+
+ 
+记录时间：2019-03-11 17:22:49,321 
+线程ID:[5] 
+日志级别：  INFO  
+出错类：dal.YYDal property: [(null)] - 
+错误描述：用户登录记录:admin
+ 
+
+ 
+记录时间：2019-03-11 17:22:49,338 
+线程ID:[5] 
+日志级别：  INFO  
+出错类：BLL.UserInfoBll property: [(null)] - 
+错误描述：账号:admin在：IP为::1登录
+ 

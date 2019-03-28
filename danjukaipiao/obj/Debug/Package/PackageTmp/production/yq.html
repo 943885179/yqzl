@@ -1,0 +1,699 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <!-- Meta, title, CSS, favicons, etc. -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" href="images/favicon.ico" type="image/ico" />
+
+    <title>单据无纸化 </title>
+
+    <!-- Bootstrap -->
+    <link href="../vendors/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link href="../vendors/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+    <!-- NProgress -->
+    <link href="../vendors/nprogress/nprogress.css" rel="stylesheet">
+    <!-- iCheck -->
+    <link href="../vendors/iCheck/skins/flat/green.css" rel="stylesheet">
+
+    <!-- bootstrap-progressbar -->
+    <link href="../vendors/bootstrap-progressbar/css/bootstrap-progressbar-3.3.4.min.css" rel="stylesheet">
+    <!-- JQVMap -->
+    <link href="../vendors/jqvmap/dist/jqvmap.min.css" rel="stylesheet" />
+    <!-- bootstrap-daterangepicker -->
+    <link href="../vendors/bootstrap-daterangepicker/daterangepicker.css" rel="stylesheet">
+
+    <!-- Custom Theme Style -->
+    <link href="../build/css/custom.min.css" rel="stylesheet">
+
+    <link href="../Content/sweetalert2.min.css" rel="stylesheet" />
+    <link href="../Content/bootstrap-datetimepicker.min.css" rel="stylesheet" media="screen">
+    <link href="../Content/datatables.min.css" rel="stylesheet" />
+
+    <style type="text/css">
+        .loading {
+            padding-left: 50%;
+            padding-top: 20%;
+            display: none;
+            width: 100%;
+            height: 100%;
+            z-index: 2;
+            position: absolute;
+        }
+
+        .form-control1 {
+            height: 34px;
+            padding: 6px 12px;
+            font-size: 14px;
+            line-height: 1.428571429;
+            color: #555555;
+            vertical-align: middle;
+            background-color: #ffffff;
+            border: 1px solid #cccccc;
+            border-radius: 0px;
+            -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+            box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+            -webkit-transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s;
+            transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s;
+        }
+
+        td.details-control {
+            background: url('../Img/details_open.png') no-repeat center center;
+            cursor: pointer;
+        }
+
+        tr.shown td.details-control {
+            background: url('../Img/details_close.png') no-repeat center center;
+        }
+
+        .btn {
+            -webkit-border-radius: 0;
+            -moz-border-radius: 0;
+            border-radius: 0;
+        }
+    </style>
+</head>
+
+<body class="nav-md">
+    <div class="container body">
+        <div class="main_container" ng-app="myApp" ng-controller="myCtrl">
+            <div class="col-md-3 left_col">
+                <div class="left_col scroll-view">
+                    <div class="navbar nav_title" style="border: 0;">
+                        <a href="index.html" class="site_title"><i class="fa fa-wheelchair"></i> <span>单据无纸化</span></a>
+                    </div>
+                    <div class="clearfix"></div>
+                    <!-- sidebar menu -->
+                    <div id="sidebar-menu" class="main_menu_side hidden-print main_menu">
+                        <div class="menu_section">
+                            <ul class="nav side-menu">
+                                <li><a onclick="location.href='index.html'" href="javascript:;"><i class="fa fa-bookmark"></i>财务单据列表</a></li>
+
+                                <li><a onclick="location.href='FinancialRecords.html'" href="javascript:;"><i class="fa fa-edit"></i> 审单财务转移记录</a></li>
+                                <!--<li><a href="editShenpi.html"><i class="fa fa-edit"></i> 付款审批单修改</a></li>
+    <li><a href="javascript:void(0)"><i class="fa fa-bookmark"></i> 差旅费报销单修改</a></li>
+    <li><a href="javascript:void(0)"><i class="fa fa-life-bouy"></i> 预支单修改</a></li>-->
+                                <li><a href="yq.html"><i class="fa fa-paypal"></i> 系统付款记录(待审批)</a></li>
+                                <li>
+                                    <a onclick="location.href='yqOready.html'" href="javascript:;"><i class="fa fa-paypal"></i> 系统付款记录(已审批)</a>
+
+                                </li>
+                                <li><a onclick="location.href='yqlist.html'" href="javascript:;"><i class="fa fa-cc-mastercard"></i> 银行收款记录</a></li>
+                                <li><a onclick="location.href='yqpaylist.html'" href="javascript:;"><i class="fa fa-google-wallet"></i> 银行付款记录</a></li>
+                                <li><a onclick="location.href='yqzllist.html'" href="javascript:;"><i class="fa fa-google-wallet"></i> 银行记录(包含收付款，对账日记账专用)</a></li>
+                                <li><a onclick="location.href='yqsp.html'" href="javascript:;"><i class="fa fa-cc-amex"></i> 付款审批</a></li>
+
+                            </ul>
+                        </div>
+
+                    </div>
+                    <!-- /sidebar menu -->
+                </div>
+            </div>
+
+            <!-- top navigation -->
+            <div class="top_nav">
+                <div class="nav_menu">
+                    <nav>
+                        <div class="nav toggle">
+                            <a id="menu_toggle"><i class="fa fa-bars"></i></a>
+                        </div>
+
+                        <ul class="nav navbar-nav navbar-right">
+                            <li class="">
+                                <a href="javascript:;" class="user-profile dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
+                                    <img src="images/img.jpg" alt="">{{userInfo.name}}
+                                    <span class=" fa fa-angle-down"></span>
+                                </a>
+                                <ul class="dropdown-menu dropdown-usermenu pull-right">
+                                    <li><a href="login.html"><i class="fa fa-sign-out pull-right"></i> 退出登录</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+            <!-- /top navigation -->
+            <!-- page content -->
+            <div class="right_col" role="main">
+                <div class="loading">
+                    <img src="../Img/loading.gif" />
+                </div>
+                <div>
+                    <div id="tabDiv">
+                        <table id="table" class="display" style="width:100%"></table>
+                    </div>
+                </div>
+            </div>
+            <!-- /page content -->
+            <!-- footer content -->
+            <footer>
+                <div class="pull-right">
+                    单据无纸化
+                </div>
+                <div class="clearfix"></div>
+            </footer>
+            <!-- /footer content -->
+        </div>
+    </div>
+
+    <!-- jQuery -->
+    <script src="../vendors/jquery/dist/jquery.min.js"></script>
+    <!-- Bootstrap -->
+    <script src="../vendors/bootstrap/dist/js/bootstrap.min.js"></script>
+    <!-- FastClick -->
+    <script src="../vendors/fastclick/lib/fastclick.js"></script>
+    <!-- NProgress -->
+    <script src="../vendors/nprogress/nprogress.js"></script>
+    <!-- Chart.js -->
+    <script src="../vendors/Chart.js/dist/Chart.min.js"></script>
+    <!-- gauge.js -->
+    <script src="../vendors/gauge.js/dist/gauge.min.js"></script>
+    <!-- bootstrap-progressbar -->
+    <script src="../vendors/bootstrap-progressbar/bootstrap-progressbar.min.js"></script>
+    <!-- iCheck -->
+    <script src="../vendors/iCheck/icheck.min.js"></script>
+    <!-- Skycons -->
+    <script src="../vendors/skycons/skycons.js"></script>
+    <!-- Flot -->
+    <script src="../vendors/Flot/jquery.flot.js"></script>
+    <script src="../vendors/Flot/jquery.flot.pie.js"></script>
+    <script src="../vendors/Flot/jquery.flot.time.js"></script>
+    <script src="../vendors/Flot/jquery.flot.stack.js"></script>
+    <script src="../vendors/Flot/jquery.flot.resize.js"></script>
+    <!-- Flot plugins -->
+    <script src="../vendors/flot.orderbars/js/jquery.flot.orderBars.js"></script>
+    <script src="../vendors/flot-spline/js/jquery.flot.spline.min.js"></script>
+    <script src="../vendors/flot.curvedlines/curvedLines.js"></script>
+    <!-- DateJS -->
+    <script src="../vendors/DateJS/build/date.js"></script>
+    <!-- JQVMap -->
+    <script src="../vendors/jqvmap/dist/jquery.vmap.js"></script>
+    <script src="../vendors/jqvmap/dist/maps/jquery.vmap.world.js"></script>
+    <script src="../vendors/jqvmap/examples/js/jquery.vmap.sampledata.js"></script>
+    <!-- bootstrap-daterangepicker -->
+    <script src="../vendors/moment/min/moment.min.js"></script>
+    <script src="../vendors/bootstrap-daterangepicker/daterangepicker.js"></script>
+
+    <!-- Custom Theme Scripts -->
+    <script src="../build/js/custom.min.js"></script>
+
+    <script type="text/javascript" src="../Scripts/bootstrap-datetimepicker.js" charset="UTF-8"></script>
+    <script type="text/javascript" src="../Scripts/locales/bootstrap-datetimepicker.zh-CN.js" charset="UTF-8"></script>
+    <script src="../Scripts/angular.min.js"></script>
+    <script src="../Scripts/datatables.min.js"></script>
+    <script src="../Scripts/xlsx.full.min.js"></script>
+    <script src="../Scripts/sweetalert2.min.js"></script>
+    <script>
+        var userInfo = [];
+        var app = angular.module('myApp', []);
+        app.controller('myCtrl', function ($scope, $http) {
+            $scope.getSesstion = function () {
+                $http({
+                    method: 'Post',
+                    url: '../api/UserInfo/getUserInfo',
+                    // params: search
+                }).success(function (data) {
+                    if (data == null || data.type == 2) {
+                        window.location.href = "login.html";
+                    }
+                    $scope.userInfo = data;
+                    userInfo = data;
+                    $scope.getList();
+                }).error(function (msg) {
+                    window.location.href = "login.html";
+                })
+            }
+            $scope.getSesstion();
+            $scope.getList = function () {
+                $(".loading").css("display", "block");
+                $http({
+                    method: 'get',
+                    url: '../api/Yqzl/yq_paymentRecordList?isPay=No',
+                    // params: search
+                    //data: search
+                }).success(function (list) {
+                    $scope.list = list;
+                    tableShow($scope.list);
+                    $(".loading").css("display", "none");
+                }).error(function (msg) {
+                    console.log(msg);
+                    $(".loading").css("display", "none");
+                })
+            }
+        });
+        /*常量*/
+        var CONSTANT = {
+            DATA_TABLES: {
+                DEFAULT_OPTION: { //DataTables初始化选项
+                    language: {
+                        "sProcessing": "处理中...",
+                        "sLengthMenu": "每页 _MENU_ 项",
+                        "sZeroRecords": "没有匹配结果",
+                        "sInfo": "当前显示第 _START_ 至 _END_ 项，共 _TOTAL_ 项。",
+                        "sInfoEmpty": "当前显示第 0 至 0 项，共 0 项",
+                        "sInfoFiltered": "(由 _MAX_ 项结果过滤)",
+                        "sInfoPostFix": "",
+                        "sSearch": "搜索:",
+                        "sUrl": "",
+                        "sEmptyTable": "表中数据为空",
+                        "sLoadingRecords": "载入中...",
+                        "sInfoThousands": ",",
+                        "oPaginate": {
+                            "sFirst": "首页",
+                            "sPrevious": "上页",
+                            "sNext": "下页",
+                            "sLast": "末页",
+                            "sJump": "跳转"
+                        },
+                        "oAria": {
+                            "sSortAscending": ": 以升序排列此列",
+                            "sSortDescending": ": 以降序排列此列"
+                        }
+                    },
+                    autoWidth: false,   //禁用自动调整列宽
+                    stripeClasses: ["odd", "even"],//为奇偶行加上样式，兼容不支持CSS伪类的场合
+                    order: [],          //取消默认排序查询,否则复选框一列会出现小箭头
+                    processing: false,  //隐藏加载提示,自行处理
+                    serverSide: true,   //启用服务器端分页
+                    searching: false    //禁用原生搜索
+                },
+                COLUMN: {
+                    CHECKBOX: { //复选框单元格
+                        className: "td-checkbox",
+                        orderable: false,
+                        width: "30px",
+                        data: null,
+                        render: function (data, type, row, meta) {
+                            return '<input type="checkbox" class="iCheck">';
+                        }
+                    }
+                },
+                RENDER: {   //常用render可以抽取出来，如日期时间、头像等
+                    ELLIPSIS: function (data, type, row, meta) {
+                        data = data || "";
+                        return '<span title="' + data + '">' + data + '</span>';
+                    }
+                }
+            }
+        };
+        function tableShow(dataList) {
+            console.log(dataList);
+            //显示给用户看的视图
+            //由于datatables会有一个缓存问题，导致保存了上一次该行的内容会造成多次请求，先销毁这个table再重构table就不会有这个问题了
+            $("#tabDiv").html("");
+            $("#tabDiv").html(' <table id="table" class="display" style="width:100%"></table>');
+            var table = $('#table').DataTable({
+                data: dataList,
+                "bFilter": false,
+                "ordering": true,
+                "info": false,
+                "destroy": true,
+                bAutoWidth: false,//自动宽度
+                paging: true,
+                searching: true,
+                stateSave: true,
+                "order": [[8, "desc"]],
+               // "pagingType": "full_numbers"
+                "language": {
+                    "decimal": ",",
+                    "thousands": "."
+                },
+                "oLanguage": { // 国际化配置
+                    "sProcessing": "正在获取数据，请稍后...",
+                    "sLengthMenu": "显示 _MENU_ 条",
+                    "sZeroRecords": "没有找到数据",
+                    "sInfo": "从 _START_ 到  _END_ 条记录 总记录数为 _TOTAL_ 条",
+                    "sInfoEmpty": "记录数为0",
+                    "sInfoFiltered": "(全部记录数 _MAX_ 条)",
+                    "sInfoPostFix": "",
+                    "sSearch": "快速查询",
+                    "sUrl": "",
+                    "oPaginate": {
+                        "sFirst": "第一页",
+                        "sPrevious": "上一页",
+                        "sNext": "下一页",
+                        "sLast": "最后一页"
+                    }
+                },
+                // "scrollX": true,//x方向滚动
+               /* 'ajax': {
+                    'url': '../api/List/getList'
+                },*/
+                columns: [
+                    // CONSTANT.DATA_TABLES.COLUMN.CHECKBOX,左侧多选按钮  
+                    {
+                    "width": "5%",
+                    "class": 'details-control',
+                    "orderable": false,
+                    "data": null,
+                    "defaultContent": ''
+                    },
+                   {
+                        'title': '转账凭证号',
+                        "orderable": true, 
+                        "defaultContent": "",
+                        "width":"10%",
+                        "render": function (data, type, row, meta) {
+                            return row.thirdVoucher;
+                        }
+                    }, {
+                        'title': 'OA流水号',
+                        "orderable": true,
+                        "defaultContent": "", 
+                        "render": function (data, type, row, meta) {
+                            return row.cstInnerFlowNo;
+                        }
+                    },/* {
+                        'title': '货币类型',
+                        "orderable": true,
+                        "defaultContent": "", 
+                        "render": function (data, type, row, meta) {
+                            return row.ccyCode;
+                        }
+                    },*/ {
+                        'title': '付款人账户',
+                        "orderable": true,
+                        "defaultContent": "", 
+                        "render": function (data, type, row, meta) {
+                            return row.outAcctNo;
+                        }
+                    }, {
+                        'title': '付款人名称',
+                        "orderable": true,
+                        "defaultContent": "",
+                        "render": function (data, type, row, meta) {
+                            return row.outAcctName;
+                        }
+                    }, {
+                        'title': '收款人账户',
+                        "orderable": true,
+                        "defaultContent": "",
+                        "render": function (data, type, row, meta) {
+                            return row.inAcctNo;
+                        }
+                    }, {
+                        'title': '收款人账户户名',
+                        "orderable": true,
+                        "defaultContent": "",
+                        "render": function (data, type, row, meta) {
+                            return row.inAcctName;
+                        }
+                    }, {
+                        'title': '收款人开户行名称',
+                        "orderable": true,
+                        "defaultContent": "", 
+                        "render": function (data, type, row, meta) {
+                            return row.inAcctBankName;
+                        }
+                    }, {
+                        'title': '转出金额',
+                        "orderable": true,
+                        "defaultContent": "", 
+                        "render": function (data, type, row, meta) {
+                            return row.tranAmount;
+                        }
+                    },{
+                        'title': '资金用途',
+                        "orderable": true,
+                        "defaultContent": "", 
+                        "render": function (data, type, row, meta) {
+                            return row.useEx;
+                        }
+                    }, {
+                        'title': '跨行',
+                        "orderable": true,
+                        "defaultContent": "", 
+                        "render": function (data, type, row, meta) {
+
+                            if (row.unionFlag == 0) {
+                                return "跨行转账";
+                            }
+                            return "行内转账";
+                        }
+                    },  {
+                        'title': '转账加急标志',
+                        "orderable": true,
+                        "defaultContent": "", 
+                        "render": function (data, type, row, meta) {
+                            if (row.inAcctBankName == "Y") {
+                                return "加急 （大额）";
+                            }
+
+                            if (row.inAcctBankName == "S") {
+                                return "特急(超级网银)";
+                            }
+
+                            if (row.inAcctBankName == "T1") {
+                                return "深圳同城普通";
+                            }
+                            if (row.inAcctBankName == "T2") {
+                                return "深圳同城实时";
+                            }
+                            return "普通";
+                        }
+                    }, {
+                        'title': '同城标志',
+                        "orderable": true,
+                        "defaultContent": "", 
+                        "render": function (data, type, row, meta) {
+
+                            if (row.addrFlag == 1) {
+                                return "同城";
+                            }
+                            return "异地";
+                        }
+                    }, {
+                        'title': '交易状态',
+                        "orderable": true,
+                        "defaultContent": "", "width": "5%",
+                        "render": function (data, type, row, meta) {
+                            if (row.stt == null) {//成功完成交易
+                               return  '<a class="text-info" >未审批</a>';
+                            }
+                            if (row.stt == 20 || row.stt == "S") {
+                                return "<lable class='text-success'>交易成功</lable>";
+                            }
+                            if (row.stt == 30 ) {
+                                return "<lable class='text-danger'>交易失败</lable>";
+                            }
+                            return "<lable class='text-primary'>受理中</lable>";
+                        }
+                    },/*{
+                        'title': '付款虚子账户',
+                        "orderable": true,
+                        "defaultContent": "", "width": "5%",
+                        "render": function (data, type, row, meta) {
+                            return row.mainAcctNo;
+                        }
+                    } , {
+                        'title': '银行流水号',
+                        "orderable": true,
+                        "defaultContent": "", "width": "5%",
+                        "render": function (data, type, row, meta) {
+                            return row.frontLogNo;
+                        }
+                    }, {
+                        'title': '手续费',
+                        "orderable": true,
+                        "defaultContent": "", "width": "5%",
+                        "render": function (data, type, row, meta) {
+                            return row.fee1;
+                        }
+                    }, {
+                        'title': '邮电费',
+                        "orderable": true,
+                        "defaultContent": "", "width": "5%",
+                        "render": function (data, type, row, meta) {
+                            return row.fee2;
+                        }
+                    },  {
+                        'title': '银行返回流水号',
+                        "orderable": true,
+                        "defaultContent": "", "width": "5%",
+                        "render": function (data, type, row, meta) {
+                            return row.hostFlowNo;
+                        }
+                    }, {
+                        'title': '记账日期',
+                        "orderable": true,
+                        "defaultContent": "", "width": "5%",
+                        "render": function (data, type, row, meta) {
+                            return row.hostTxDate;
+                        }
+                    }, {
+                        'title': '退票',
+                        "orderable": true,
+                        "defaultContent": "", "width": "5%",
+                        "render": function (data, type, row, meta) {
+                            return row.isBack;
+                        }
+                    }, {
+                        'title': '描述',
+                        "orderable": true,
+                        "defaultContent": "", "width": "5%",
+                        "render": function (data, type, row, meta) {
+                            return row.backRem;
+                        }
+                    },*/
+                    {
+                        'title': '操作',
+                        "orderable": true, // 禁用排序
+                        "defaultContent": "",
+                        "width": "5%",
+                        "render": function (data, type, row, meta) {
+                          
+                            var btn = '';
+                            if (row.stt == null) {//成功完成交易
+                                btn = '<button class="btn btn-success btn-sm" onclick="removePay(\'' + row.thirdVoucher + '\')">撤销</button>';
+                            }
+                            else if (row.stt == 20 || row.stt=="S") {//成功完成交易
+                                //btn = '<button class="btn btn-success btn-sm" onclick="changeStt(\'' + row.thirdVoucher + '\')">状态更新</button>';
+
+                                btn += '<button class="btn btn-error btn-sm" >发票下载</button>';
+                            }
+                            else if (row.stt == 30) {//交易失败或者未发生交易
+                                btn = '<a class="text-danger">交易失败</a>';
+                                if (row.errMessage != null && row.errMessage != "") {
+                                    btn = '<a class="text-danger" >' + row.errMessage + '</a>';
+                                }
+                            }
+                            else {
+                                btn = '<button class="btn btn-success btn-sm" onclick="removePay(\'' + row.thirdVoucher + '\')">撤销</button>';
+                            }
+                            return btn;
+                        }
+                    }
+                ]
+            });
+            $('#table tbody').on('click', 'td.details-control', function () {
+                var tr = $(this).closest('tr');
+                var row = table.row(tr);
+                if (row.child.isShown()) {
+                    row.child.hide();
+                    tr.removeClass('shown');
+                }
+                else { row.child(format(row.data())).show(); tr.addClass('shown');}
+                
+            })
+            /*$('#table').dataTable().fnClearTable();   //将数据清除
+            $("#table").dataTable().fnDestroy();*/
+            //点击表格+时触发事件
+        }
+        //详细信息，点击表格的+号显示详细信息
+        function format(data) {
+            return '<table class=" " >' +
+                '<tr style="background:#AEEEEE">' +
+                '<td>用途:</td>' +
+                '<td>' + data.useEx + '</td>' +
+                '<tr style="background:#AEEEEE">' +
+                '<td>银行流水号:</td>' +
+                '<td>' + data.frontLogNo + '</td>' +
+                '</tr>' +
+                '<tr style="background:#AEEEEE">' +
+                '<td>银行返回流水号:</td>' +
+                '<td>' + data.hostFlowNo + '</td>' +
+                '</tr>' +
+                '<tr style="background:#AEEEEE">' +
+                '<td>手续费:</td>' +
+                '<td>￥' + data.fee1 + '</td>' +
+                '</tr>' +
+                '<tr style="background:#AEEEEE">' +
+                '<td>邮电费:</td>' +
+                '<td>￥' + data.fee2 + '</td>' +
+                '<tr style="background:#AEEEEE">' +
+                '<td>记账日期:</td>' +
+                '<td>' + data.hostTxDate + '</td>' +
+                '<tr style="background:#AEEEEE">' +
+                '<td>退票:</td>' +
+                '<td>' + data.isBack + '</td>' +
+                '</tr>' +
+                '<tr style="background:#AEEEEE">' +
+                '<td>支付失败/退票原因描述:</td>' +
+                '<td>￥' + data.backRem + '</td>' +
+                '</tr>' +
+                '<tr style="background:#AEEEEE">' +
+                '<td>货币类型:</td>' +
+                '<td>' + data.ccyCode + '</td>' +
+                '</tr>' +
+                '<tr>' +
+                '<td>旭子账号:</td>' +
+                '<td>' + data.mainAcctNo + '</td>' +
+                '</tr>' +
+                '</table>';
+        }
+        function changeStt(tid) {//跳转界面
+            $.ajax({
+                type: 'get',
+                url: '../api/Yqzl/qryDtlByOrig?ThirdVoucher=' + tid,
+                contentType: 'application/json;charset=utf-8',
+                success: function (data) { //返回json结果
+                    console.log(data);
+                    if (data.code =="000000") {
+                        swal({
+                            title: data.message,
+                            text: data.sucess,
+                            type: 'success',
+                        })
+                        window.location.reload();
+                    }
+                    else {
+                        swal({
+                            title: data.message,
+                            text: data.errorMsg,
+                            type: 'error',
+                        })
+                    }
+
+                }
+            });
+
+        }
+        function removePay(tid) {//跳转界面
+            swal({
+                title: '确定撤销此次审批?',
+                text: "审批撤销后将无法恢复!",
+                type: 'info',
+                showCancelButton: true,
+                confirmButtonColor: '#5cb85c',
+                cancelButtonColor: '#999',
+                confirmButtonText: '确定',
+                cancelButtonText: '取消',
+                //confirmButtonClass: 'btn btn-success',
+                //cancelButtonClass: 'btn  btn-default',
+                buttonsStyling: true
+            }).then(function (isConfirm) {
+                if (isConfirm === true) {
+                    $.ajax({
+                        type: 'get',
+                        url: '../api/Yqzl/RemovePay?liushuihao=' + tid,
+                        contentType: 'application/json;charset=utf-8',
+                        success: function (data) { //返回json结果
+                            console.log(data);
+                            if (data.errMsg=="撤销成功") {
+                                swal({
+                                    title: data.errMsg,
+                                    type: 'success',
+                                })
+                                window.location.reload();
+                            }
+                            else {
+                                swal({
+                                    title: data.errMsg,
+                                    type: 'error',
+                                })
+                            }
+                        }
+                    });
+                }
+                else {
+                }
+            })
+        }
+
+    </script>
+</body>
+</html>

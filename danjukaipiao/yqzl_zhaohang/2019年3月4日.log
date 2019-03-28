@@ -1,0 +1,30 @@
+2019-03-04 11:49:21:请求：请求参数：<?xml version="1.0" encoding="gb2312"?>
+<CMBSDKPGK xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <INFO>
+    <FUNNAM>NTECKUSR</FUNNAM>
+    <DATTYP>2</DATTYP>
+    <LGNNAM>yueji1</LGNNAM>
+  </INFO>
+</CMBSDKPGK>
+返回参数：
+
+2019-03-04 11:49:47:请求：请求参数：<?xml version="1.0" encoding="gb2312"?>
+<CMBSDKPGK xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <INFO>
+    <FUNNAM>NTECKUSR</FUNNAM>
+    <DATTYP>2</DATTYP>
+    <LGNNAM>yueji1</LGNNAM>
+  </INFO>
+</CMBSDKPGK>
+返回参数：
+
+2019-03-04 11:51:50:请求：请求参数：<?xml version="1.0" encoding="gb2312"?>
+<CMBSDKPGK xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <INFO>
+    <FUNNAM>NTECKUSR</FUNNAM>
+    <DATTYP>2</DATTYP>
+    <LGNNAM>yueji1</LGNNAM>
+  </INFO>
+</CMBSDKPGK>
+返回参数：
+

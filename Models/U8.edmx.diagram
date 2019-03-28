@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="c8169f64a350423eba1883156d868baa" Name="Diagram1" ZoomLevel="48">
+        <EntityTypeShape EntityType="UFDATA_999_2017Model.CN_AcctBook" Width="1.5" PointX="5.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="UFDATA_999_2017Model.CN_GLVouch" Width="1.5" PointX="7.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="UFDATA_999_2017Model.CN_UnitID" Width="1.5" PointX="2.75" PointY="8.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="UFDATA_999_2017Model.CN_UserInfo" Width="1.5" PointX="9.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="UFDATA_999_2017Model.code" Width="1.5" PointX="9.75" PointY="3.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="UFDATA_999_2017Model.Department" Width="1.5" PointX="0.75" PointY="1.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="UFDATA_999_2017Model.fitemss98" Width="1.5" PointX="11.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="UFDATA_999_2017Model.Person" Width="1.5" PointX="3" PointY="3.25" IsExpanded="true" />
+        <AssociationConnector Association="UFDATA_999_2017Model.FK__Person__cDepCode__35D2D7FA" ManuallyRouted="false" />
+        <EntityTypeShape EntityType="UFDATA_999_2017Model.Ap_CloseBill" Width="1.5" PointX="14.375" PointY="0.75" />
+        <EntityTypeShape EntityType="UFDATA_999_2017Model.Ap_CloseBills" Width="1.5" PointX="16.625" PointY="24.25" />
+        <EntityTypeShape EntityType="UFDATA_999_2017Model.CN_AcctInfo" Width="1.5" PointX="0.75" PointY="19.5" />
+        <EntityTypeShape EntityType="UFDATA_999_2017Model.Customer" Width="1.5" PointX="5.75" PointY="23.5" />
+        <EntityTypeShape EntityType="UFDATA_999_2017Model.SettleStyle" Width="1.5" PointX="12.125" PointY="24.875" />
+        <EntityTypeShape EntityType="UFDATA_999_2017Model.Vendor" Width="1.5" PointX="3.375" PointY="44" />
+        <EntityTypeShape EntityType="UFDATA_999_2017Model.CN_CashSerialNumber" Width="1.5" PointX="2.75" PointY="19.5" />
+        <EntityTypeShape EntityType="UFDATA_999_2017Model.CN_CashSignRelate" Width="1.5" PointX="2.75" PointY="22.5" />
+        <EntityTypeShape EntityType="UFDATA_999_2017Model.CN_LevelListID" Width="1.5" PointX="16.75" PointY="8.5" />
+        <AssociationConnector Association="UFDATA_999_2017Model.FK__Ap_CloseB__cDept__21CBDF4D" />
+        <AssociationConnector Association="UFDATA_999_2017Model.FK__Ap_CloseB__cSSCo__5145E845" />
+        <AssociationConnector Association="UFDATA_999_2017Model.FK_Ap_CloseBills_Ap_CloseBill" />
+        <AssociationConnector Association="UFDATA_999_2017Model.FK__Vendor__cVenDepa__3E681DFB" />
+        <EntityTypeShape EntityType="UFDATA_999_2017Model.Ap_Detail" Width="1.5" PointX="19.75" PointY="1.125" />
+        <EntityTypeShape EntityType="UFDATA_999_2017Model.CN_PayedRecord" Width="1.5" PointX="0.75" PointY="12.125" />
+        <EntityTypeShape EntityType="UFDATA_999_2017Model.GL_accvouch" Width="1.5" PointX="8.375" PointY="24.875" />
+        <EntityTypeShape EntityType="UFDATA_999_2017Model.GL_CashTable" Width="1.5" PointX="16.75" PointY="13.125" />
+        <AssociationConnector Association="UFDATA_999_2017Model.FK__GL_accvou__ccus___23B427BF" />
+        <AssociationConnector Association="UFDATA_999_2017Model.FK__GL_accvou__cdept__2F25DA6B" />
+        <AssociationConnector Association="UFDATA_999_2017Model.FK__GL_accvou__cpers__106C4921" />
+        <AssociationConnector Association="UFDATA_999_2017Model.FK__GL_accvou__csup___5CB79AF1" />
+        <EntityTypeShape EntityType="UFDATA_999_2017Model.CN_VARelate" Width="1.5" PointX="0.75" PointY="15.75" />
+        <EntityTypeShape EntityType="UFDATA_999_2017Model.dsign" Width="1.5" PointX="2.75" PointY="15.75" />
+        <EntityTypeShape EntityType="UFDATA_999_2017Model.GL_CodeRemark" Width="1.5" PointX="4.75" PointY="15.75" />
+        <EntityTypeShape EntityType="UFDATA_999_2017Model.CN_LevelClass" Width="1.5" PointX="16.375" PointY="1.125" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

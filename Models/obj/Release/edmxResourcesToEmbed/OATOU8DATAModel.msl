@@ -1,0 +1,354 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="OAtoU8DATAModelStoreContainer" CdmEntityContainer="OAtoU8DATAEntities">
+    <EntitySetMapping Name="triggerSummary">
+      <EntityTypeMapping TypeName="OAtoU8DATAModel.triggerSummary">
+        <MappingFragment StoreEntitySet="triggerSummary">
+          <ScalarProperty Name="start_member_id" ColumnName="start_member_id" />
+          <ScalarProperty Name="templete_id" ColumnName="templete_id" />
+          <ScalarProperty Name="finish_date" ColumnName="finish_date" />
+          <ScalarProperty Name="start_date" ColumnName="start_date" />
+          <ScalarProperty Name="create_date" ColumnName="create_date" />
+          <ScalarProperty Name="subject" ColumnName="subject" />
+          <ScalarProperty Name="state" ColumnName="state" />
+          <ScalarProperty Name="id" ColumnName="id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="producehelp">
+      <EntityTypeMapping TypeName="OAtoU8DATAModel.producehelp">
+        <MappingFragment StoreEntitySet="producehelp">
+          <ScalarProperty Name="intoForm" ColumnName="intoForm" />
+          <ScalarProperty Name="isShow" ColumnName="isShow" />
+          <ScalarProperty Name="col_id" ColumnName="col_id" />
+          <ScalarProperty Name="id" ColumnName="id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="userInfo">
+      <EntityTypeMapping TypeName="OAtoU8DATAModel.userInfo">
+        <MappingFragment StoreEntitySet="userInfo">
+          <ScalarProperty Name="pinganYqdm" ColumnName="pinganYqdm" />
+          <ScalarProperty Name="zhaohangUser" ColumnName="zhaohangUser" />
+          <ScalarProperty Name="pinganport" ColumnName="pinganport" />
+          <ScalarProperty Name="zhaohangport" ColumnName="zhaohangport" />
+          <ScalarProperty Name="company" ColumnName="company" />
+          <ScalarProperty Name="mac" ColumnName="mac" />
+          <ScalarProperty Name="phnoe" ColumnName="phnoe" />
+          <ScalarProperty Name="type" ColumnName="type" />
+          <ScalarProperty Name="start" ColumnName="start" />
+          <ScalarProperty Name="password" ColumnName="password" />
+          <ScalarProperty Name="name" ColumnName="name" />
+          <ScalarProperty Name="id" ColumnName="id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="contrast">
+      <EntityTypeMapping TypeName="OAtoU8DATAModel.contrast">
+        <MappingFragment StoreEntitySet="contrast">
+          <ScalarProperty Name="l13" ColumnName="l13" />
+          <ScalarProperty Name="l7" ColumnName="l7" />
+          <ScalarProperty Name="l6" ColumnName="l6" />
+          <ScalarProperty Name="l5" ColumnName="l5" />
+          <ScalarProperty Name="l4" ColumnName="l4" />
+          <ScalarProperty Name="yuzhiId" ColumnName="yuzhiId" />
+          <ScalarProperty Name="baoxiaoId" ColumnName="baoxiaoId" />
+          <ScalarProperty Name="id" ColumnName="id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="MessageShow">
+      <EntityTypeMapping TypeName="OAtoU8DATAModel.MessageShow">
+        <MappingFragment StoreEntitySet="MessageShow">
+          <ScalarProperty Name="name" ColumnName="name" />
+          <ScalarProperty Name="phone" ColumnName="phone" />
+          <ScalarProperty Name="isOut" ColumnName="isOut" />
+          <ScalarProperty Name="createdate" ColumnName="createdate" />
+          <ScalarProperty Name="msg" ColumnName="msg" />
+          <ScalarProperty Name="id" ColumnName="id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="PrintRecordBody">
+      <EntityTypeMapping TypeName="OAtoU8DATAModel.PrintRecordBody">
+        <MappingFragment StoreEntitySet="PrintRecordBody">
+          <ScalarProperty Name="ip" ColumnName="ip" />
+          <ScalarProperty Name="pid" ColumnName="pid" />
+          <ScalarProperty Name="createdate" ColumnName="createdate" />
+          <ScalarProperty Name="colid" ColumnName="colid" />
+          <ScalarProperty Name="userid" ColumnName="userid" />
+          <ScalarProperty Name="id" ColumnName="id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="PrintRecord">
+      <EntityTypeMapping TypeName="OAtoU8DATAModel.PrintRecord">
+        <MappingFragment StoreEntitySet="PrintRecord">
+          <ScalarProperty Name="num" ColumnName="num" />
+          <ScalarProperty Name="createdate" ColumnName="createdate" />
+          <ScalarProperty Name="colid" ColumnName="colid" />
+          <ScalarProperty Name="id" ColumnName="id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ChangeBankMiddle">
+      <EntityTypeMapping TypeName="OAtoU8DATAModel.ChangeBankMiddle">
+        <MappingFragment StoreEntitySet="ChangeBankMiddle">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="isSave" ColumnName="isSave" />
+          <ScalarProperty Name="bankCarId" ColumnName="bankCarId" />
+          <ScalarProperty Name="bank" ColumnName="bank" />
+          <ScalarProperty Name="supplier" ColumnName="supplier" />
+          <ScalarProperty Name="allstr" ColumnName="allstr" />
+          <ScalarProperty Name="fid" ColumnName="fid" />
+          <ScalarProperty Name="tabName" ColumnName="tabName" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="dbConfig">
+      <EntityTypeMapping TypeName="OAtoU8DATAModel.dbConfig">
+        <MappingFragment StoreEntitySet="dbConfig">
+          <ScalarProperty Name="oatype" ColumnName="oatype" />
+          <ScalarProperty Name="oamid" ColumnName="oamid" />
+          <ScalarProperty Name="oacolId" ColumnName="oacolId" />
+          <ScalarProperty Name="oafaqibumen" ColumnName="oafaqibumen" />
+          <ScalarProperty Name="oafinish_date" ColumnName="oafinish_date" />
+          <ScalarProperty Name="oatitle" ColumnName="oatitle" />
+          <ScalarProperty Name="oabody_type" ColumnName="oabody_type" />
+          <ScalarProperty Name="oashouyibumen" ColumnName="oashouyibumen" />
+          <ScalarProperty Name="oacAmount" ColumnName="oacAmount" />
+          <ScalarProperty Name="oalAmount" ColumnName="oalAmount" />
+          <ScalarProperty Name="oaphone" ColumnName="oaphone" />
+          <ScalarProperty Name="oacompany" ColumnName="oacompany" />
+          <ScalarProperty Name="oafaqiren" ColumnName="oafaqiren" />
+          <ScalarProperty Name="oachuangjinshijin" ColumnName="oachuangjinshijin" />
+          <ScalarProperty Name="oaCreateName" ColumnName="oaCreateName" />
+          <ScalarProperty Name="oaFormainId" ColumnName="oaFormainId" />
+          <ScalarProperty Name="oaFormsonTab" ColumnName="oaFormsonTab" />
+          <ScalarProperty Name="oaFormmainTab" ColumnName="oaFormmainTab" />
+          <ScalarProperty Name="yydbConfigName" ColumnName="yydbConfigName" />
+          <ScalarProperty Name="name" ColumnName="name" />
+          <ScalarProperty Name="id" ColumnName="id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="FinancialRecords">
+      <EntityTypeMapping TypeName="OAtoU8DATAModel.FinancialRecords">
+        <MappingFragment StoreEntitySet="FinancialRecords">
+          <ScalarProperty Name="createMan" ColumnName="createMan" />
+          <ScalarProperty Name="createDate" ColumnName="createDate" />
+          <ScalarProperty Name="endFinancial" ColumnName="endFinancial" />
+          <ScalarProperty Name="beginFinancial" ColumnName="beginFinancial" />
+          <ScalarProperty Name="liushuiId" ColumnName="liushuiId" />
+          <ScalarProperty Name="id" ColumnName="id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="userOATab">
+      <EntityTypeMapping TypeName="OAtoU8DATAModel.userOATab">
+        <MappingFragment StoreEntitySet="userOATab">
+          <ScalarProperty Name="id" ColumnName="id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="yq_certificates">
+      <EntityTypeMapping TypeName="OAtoU8DATAModel.yq_certificates">
+        <MappingFragment StoreEntitySet="yq_certificates">
+          <ScalarProperty Name="name" ColumnName="name" />
+          <ScalarProperty Name="code" ColumnName="code" />
+          <ScalarProperty Name="id" ColumnName="id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="yq_cityCode">
+      <EntityTypeMapping TypeName="OAtoU8DATAModel.yq_cityCode">
+        <MappingFragment StoreEntitySet="yq_cityCode">
+          <ScalarProperty Name="name" ColumnName="name" />
+          <ScalarProperty Name="code" ColumnName="code" />
+          <ScalarProperty Name="id" ColumnName="id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="yq_code">
+      <EntityTypeMapping TypeName="OAtoU8DATAModel.yq_code">
+        <MappingFragment StoreEntitySet="yq_code">
+          <ScalarProperty Name="iskey" ColumnName="iskey" />
+          <ScalarProperty Name="describe" ColumnName="describe" />
+          <ScalarProperty Name="code" ColumnName="code" />
+          <ScalarProperty Name="id" ColumnName="id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="yq_customerAccount">
+      <EntityTypeMapping TypeName="OAtoU8DATAModel.yq_customerAccount">
+        <MappingFragment StoreEntitySet="yq_customerAccount">
+          <ScalarProperty Name="iDType" ColumnName="iDType" />
+          <ScalarProperty Name="iDNo" ColumnName="iDNo" />
+          <ScalarProperty Name="acctCityName" ColumnName="acctCityName" />
+          <ScalarProperty Name="acctProvinceCode" ColumnName="acctProvinceCode" />
+          <ScalarProperty Name="acctRecCode" ColumnName="acctRecCode" />
+          <ScalarProperty Name="acctBankName" ColumnName="acctBankName" />
+          <ScalarProperty Name="acctName" ColumnName="acctName" />
+          <ScalarProperty Name="acctNo" ColumnName="acctNo" />
+          <ScalarProperty Name="id" ColumnName="id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="yq_log">
+      <EntityTypeMapping TypeName="OAtoU8DATAModel.yq_log">
+        <MappingFragment StoreEntitySet="yq_log">
+          <ScalarProperty Name="responseXml" ColumnName="responseXml" />
+          <ScalarProperty Name="requestXml" ColumnName="requestXml" />
+          <ScalarProperty Name="ip" ColumnName="ip" />
+          <ScalarProperty Name="userName" ColumnName="userName" />
+          <ScalarProperty Name="message" ColumnName="message" />
+          <ScalarProperty Name="yqCode" ColumnName="yqCode" />
+          <ScalarProperty Name="createTime" ColumnName="createTime" />
+          <ScalarProperty Name="id" ColumnName="id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="yq_userAccount">
+      <EntityTypeMapping TypeName="OAtoU8DATAModel.yq_userAccount">
+        <MappingFragment StoreEntitySet="yq_userAccount">
+          <ScalarProperty Name="carId" ColumnName="carId" />
+          <ScalarProperty Name="carType" ColumnName="carType" />
+          <ScalarProperty Name="bank" ColumnName="bank" />
+          <ScalarProperty Name="accountName" ColumnName="accountName" />
+          <ScalarProperty Name="accountId" ColumnName="accountId" />
+          <ScalarProperty Name="yqdm" ColumnName="yqdm" />
+          <ScalarProperty Name="id" ColumnName="id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="yq_error">
+      <EntityTypeMapping TypeName="OAtoU8DATAModel.yq_error">
+        <MappingFragment StoreEntitySet="yq_error">
+          <ScalarProperty Name="errMessage" ColumnName="errMessage" />
+          <ScalarProperty Name="errCode" ColumnName="errCode" />
+          <ScalarProperty Name="id" ColumnName="id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="yq_cityCode_zhaohang">
+      <EntityTypeMapping TypeName="OAtoU8DATAModel.yq_cityCode_zhaohang">
+        <MappingFragment StoreEntitySet="yq_cityCode_zhaohang">
+          <ScalarProperty Name="name" ColumnName="name" />
+          <ScalarProperty Name="code" ColumnName="code" />
+          <ScalarProperty Name="id" ColumnName="id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="yq_paymentRecord">
+      <EntityTypeMapping TypeName="OAtoU8DATAModel.yq_paymentRecord">
+        <MappingFragment StoreEntitySet="yq_paymentRecord">
+          <ScalarProperty Name="isDel" ColumnName="isDel" />
+          <ScalarProperty Name="company" ColumnName="company" />
+          <ScalarProperty Name="requestModelYQ" ColumnName="requestModelYQ" />
+          <ScalarProperty Name="requestModelYY" ColumnName="requestModelYY" />
+          <ScalarProperty Name="approvalDate" ColumnName="approvalDate" />
+          <ScalarProperty Name="approvalMan" ColumnName="approvalMan" />
+          <ScalarProperty Name="isApproval" ColumnName="isApproval" />
+          <ScalarProperty Name="responsedata" ColumnName="responsedata" />
+          <ScalarProperty Name="requestdata" ColumnName="requestdata" />
+          <ScalarProperty Name="epttim" ColumnName="epttim" />
+          <ScalarProperty Name="eptdat" ColumnName="eptdat" />
+          <ScalarProperty Name="backRem" ColumnName="backRem" />
+          <ScalarProperty Name="isBack" ColumnName="isBack" />
+          <ScalarProperty Name="updateMan" ColumnName="updateMan" />
+          <ScalarProperty Name="updateTime" ColumnName="updateTime" />
+          <ScalarProperty Name="createMan" ColumnName="createMan" />
+          <ScalarProperty Name="createTime" ColumnName="createTime" />
+          <ScalarProperty Name="errMessage" ColumnName="errMessage" />
+          <ScalarProperty Name="errCode" ColumnName="errCode" />
+          <ScalarProperty Name="stt" ColumnName="stt" />
+          <ScalarProperty Name="hostTxDate" ColumnName="hostTxDate" />
+          <ScalarProperty Name="hostFlowNo" ColumnName="hostFlowNo" />
+          <ScalarProperty Name="fee2" ColumnName="fee2" />
+          <ScalarProperty Name="fee1" ColumnName="fee1" />
+          <ScalarProperty Name="frontLogNo" ColumnName="frontLogNo" />
+          <ScalarProperty Name="inIDNo" ColumnName="inIDNo" />
+          <ScalarProperty Name="inIDType" ColumnName="inIDType" />
+          <ScalarProperty Name="mainAcctNo" ColumnName="mainAcctNo" />
+          <ScalarProperty Name="addrFlag" ColumnName="addrFlag" />
+          <ScalarProperty Name="sysFlag" ColumnName="sysFlag" />
+          <ScalarProperty Name="unionFlag" ColumnName="unionFlag" />
+          <ScalarProperty Name="useEx" ColumnName="useEx" />
+          <ScalarProperty Name="tranAmount" ColumnName="tranAmount" />
+          <ScalarProperty Name="inAcctCityName" ColumnName="inAcctCityName" />
+          <ScalarProperty Name="inAcctProvinceCode" ColumnName="inAcctProvinceCode" />
+          <ScalarProperty Name="inAcctBankName" ColumnName="inAcctBankName" />
+          <ScalarProperty Name="inAcctName" ColumnName="inAcctName" />
+          <ScalarProperty Name="inAcctNo" ColumnName="inAcctNo" />
+          <ScalarProperty Name="inAcctRecCode" ColumnName="inAcctRecCode" />
+          <ScalarProperty Name="inAcctBankNode" ColumnName="inAcctBankNode" />
+          <ScalarProperty Name="outAcctAddr" ColumnName="outAcctAddr" />
+          <ScalarProperty Name="outAcctName" ColumnName="outAcctName" />
+          <ScalarProperty Name="outAcctNo" ColumnName="outAcctNo" />
+          <ScalarProperty Name="ccyCode" ColumnName="ccyCode" />
+          <ScalarProperty Name="cstInnerFlowNo" ColumnName="cstInnerFlowNo" />
+          <ScalarProperty Name="thirdVoucher" ColumnName="thirdVoucher" />
+          <ScalarProperty Name="payCode" ColumnName="payCode" />
+          <ScalarProperty Name="id" ColumnName="id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="RecordTable">
+      <EntityTypeMapping TypeName="OAtoU8DATAModel.RecordTable">
+        <MappingFragment StoreEntitySet="RecordTable">
+          <ScalarProperty Name="yyDate" ColumnName="yyDate" />
+          <ScalarProperty Name="isDel" ColumnName="isDel" />
+          <ScalarProperty Name="l13" ColumnName="l13" />
+          <ScalarProperty Name="l7" ColumnName="l7" />
+          <ScalarProperty Name="l6" ColumnName="l6" />
+          <ScalarProperty Name="l5" ColumnName="l5" />
+          <ScalarProperty Name="l4" ColumnName="l4" />
+          <ScalarProperty Name="userName" ColumnName="userName" />
+          <ScalarProperty Name="danjubianhao" ColumnName="danjubianhao" />
+          <ScalarProperty Name="pingzhenhao" ColumnName="pingzhenhao" />
+          <ScalarProperty Name="chunabianhao" ColumnName="chunabianhao" />
+          <ScalarProperty Name="amountMoney" ColumnName="amountMoney" />
+          <ScalarProperty Name="type" ColumnName="type" />
+          <ScalarProperty Name="liushuihao" ColumnName="liushuihao" />
+          <ScalarProperty Name="piaojuId" ColumnName="piaojuId" />
+          <ScalarProperty Name="voucherno" ColumnName="voucherno" />
+          <ScalarProperty Name="contents" ColumnName="contents" />
+          <ScalarProperty Name="Bid" ColumnName="Bid" />
+          <ScalarProperty Name="ip3" ColumnName="ip3" />
+          <ScalarProperty Name="ip2" ColumnName="ip2" />
+          <ScalarProperty Name="ip" ColumnName="ip" />
+          <ScalarProperty Name="updateTime3" ColumnName="updateTime3" />
+          <ScalarProperty Name="updateTime2" ColumnName="updateTime2" />
+          <ScalarProperty Name="updateTime" ColumnName="updateTime" />
+          <ScalarProperty Name="voucher" ColumnName="voucher" />
+          <ScalarProperty Name="PayingBank" ColumnName="PayingBank" />
+          <ScalarProperty Name="IsIntoAccvouch" ColumnName="IsIntoAccvouch" />
+          <ScalarProperty Name="IsIntoCloseBill" ColumnName="IsIntoCloseBill" />
+          <ScalarProperty Name="IsIntoBook" ColumnName="IsIntoBook" />
+          <ScalarProperty Name="Pid" ColumnName="Pid" />
+          <ScalarProperty Name="id" ColumnName="id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ecs_region">
+      <EntityTypeMapping TypeName="OAtoU8DATAModel.ecs_region">
+        <MappingFragment StoreEntitySet="ecs_region">
+          <ScalarProperty Name="agency_id" ColumnName="agency_id" />
+          <ScalarProperty Name="region_type" ColumnName="region_type" />
+          <ScalarProperty Name="region_name" ColumnName="region_name" />
+          <ScalarProperty Name="parent_id" ColumnName="parent_id" />
+          <ScalarProperty Name="region_id" ColumnName="region_id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="yq_zhaohang_yhCode">
+      <EntityTypeMapping TypeName="OAtoU8DATAModel.yq_zhaohang_yhCode">
+        <MappingFragment StoreEntitySet="yq_zhaohang_yhCode">
+          <ScalarProperty Name="code" ColumnName="code" />
+          <ScalarProperty Name="name" ColumnName="name" />
+          <ScalarProperty Name="id" ColumnName="id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

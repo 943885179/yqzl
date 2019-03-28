@@ -1,0 +1,20 @@
+2019-01-16 16:33:17:开始请求付款。。。。
+
+2019-01-16 16:34:29:开始请求付款。。。。
+
+2019-01-16 16:34:37:请求：4004
+请求参数：A0010101010030307980000011700000000006784004  000000120190116163427YQMFPA20190116163427000000                                                                                                    000001            00000000000<?xml version ="1.0" encoding="GB2312"?><Result><ThirdVoucher>2019341616SS</ThirdVoucher><CstInnerFlowNo>032018122100298</CstInnerFlowNo><CcyCode>RMB</CcyCode><OutAcctNo>11002923034501</OutAcctNo><OutAcctName>平安测试六零零零三三八二八五九八</OutAcctName><OutAcctAddr/><InAcctBankNode/><InAcctRecCode/><InAcctNo>82210078801100000100</InAcctNo><InAcctName>广东高捷航运物流有限公司</InAcctName><InAcctBankName>上海浦东发展银行广州开发区支行</InAcctBankName><TranAmount>165716</TranAmount><AmountCode/><UseEx>物流部蒋思萍报销广东高捷航运物流有限公司10月运费的费用</UseEx><UnionFlag>1</UnionFlag><SysFlag>N</SysFlag><AddrFlag>1</AddrFlag><RealFlag>2</RealFlag><MainAcctNo/></Result>
+返回参数：
+A0010101010030307980000011700000000000004004  000000220190116163427YQMFPA20190116163427SE0000:[SE0000][输入的号码[82210078801100000100]非法]!                                                    000001            00000000000
+2019-01-16 16:57:31:开始请求付款。。。。
+
+2019-01-16 16:57:37:请求：4004
+请求参数：A0010101010030307980000011700000000006784004  000000120190116165726YQMFPA20190116165726000000                                                                                                    000001            00000000000<?xml version ="1.0" encoding="GB2312"?><Result><ThirdVoucher>2019571616SS</ThirdVoucher><CstInnerFlowNo>032018122100298</CstInnerFlowNo><CcyCode>RMB</CcyCode><OutAcctNo>11002923034501</OutAcctNo><OutAcctName>平安测试六零零零三三八二八五九八</OutAcctName><OutAcctAddr/><InAcctBankNode/><InAcctRecCode/><InAcctNo>82210078801100000100</InAcctNo><InAcctName>广东高捷航运物流有限公司</InAcctName><InAcctBankName>上海浦东发展银行广州开发区支行</InAcctBankName><TranAmount>165716</TranAmount><AmountCode/><UseEx>物流部蒋思萍报销广东高捷航运物流有限公司10月运费的费用</UseEx><UnionFlag>1</UnionFlag><SysFlag>N</SysFlag><AddrFlag>1</AddrFlag><RealFlag>2</RealFlag><MainAcctNo/></Result>
+返回参数：
+A0010101010030307980000011700000000000004004  000000220190116165726YQMFPA20190116165726SE0000:[SE0000][输入的号码[82210078801100000100]非法]!                                                    000001            00000000000
+2019-01-16 17:21:51:开始请求付款。。。。
+
+2019-01-16 17:21:53:请求：4004
+请求参数：A0010101010030307980000011700000000006574004  000000120190116172151YQMFPA20190116172151000000                                                                                                    000001            00000000000<?xml version ="1.0" encoding="GB2312"?><Result><ThirdVoucher>2019211617SS</ThirdVoucher><CstInnerFlowNo>032018122100298</CstInnerFlowNo><CcyCode>RMB</CcyCode><OutAcctNo>11002923034501</OutAcctNo><OutAcctName>平安测试六零零零三三八二八五九八</OutAcctName><OutAcctAddr/><InAcctBankNode/><InAcctRecCode/><InAcctNo>0122100598214</InAcctNo><InAcctName>平安测试零零一五九二四零三一九五</InAcctName><InAcctBankName>平安银行</InAcctBankName><TranAmount>165716</TranAmount><AmountCode/><UseEx>物流部蒋思萍报销广东高捷航运物流有限公司10月运费的费用</UseEx><UnionFlag>1</UnionFlag><SysFlag>N</SysFlag><AddrFlag>1</AddrFlag><RealFlag>2</RealFlag><MainAcctNo/></Result>
+返回参数：
+A0010101010030307980000011700000000006694004  000000220190116172151YQMFPA20190116172151000000:交易受理成功                                                                                       000001            00000000000<?xml version="1.0" encoding="GBK" ?><Result><ThirdVoucher>2019211617SS</ThirdVoucher><FrontLogNo>8043431901166179807522</FrontLogNo><CcyCode>RMB</CcyCode><OutAcctName>平安测试六零零零三三八二八五九八</OutAcctName><OutAcctNo>11002923034501</OutAcctNo><InAcctBankName>平安银行</InAcctBankName><InAcctNo>0122100598214</InAcctNo><InAcctName>平安测试零零一五九二四零三一九五</InAcctName><TranAmount>165716.00</TranAmount><UnionFlag>1</UnionFlag><Fee1>0.00</Fee1><Fee2>0.00</Fee2><SOA_VOUCHER></SOA_VOUCHER><hostFlowNo>3240791808102005379514</hostFlowNo><hostTxDate>20180810</hostTxDate><Mobile></Mobile><CstInnerFlowNo>032018122100298</CstInnerFlowNo><stt>20</stt></Result>

@@ -1,0 +1,403 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="v3xModelStoreContainer" CdmEntityContainer="v3xEntities1">
+    <EntitySetMapping Name="form_enumlist">
+      <EntityTypeMapping TypeName="v3xModel.form_enumlist">
+        <MappingFragment StoreEntitySet="form_enumlist">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="enumname" ColumnName="enumname" />
+          <ScalarProperty Name="enumtype" ColumnName="enumtype" />
+          <ScalarProperty Name="ref_apptypeid" ColumnName="ref_apptypeid" />
+          <ScalarProperty Name="showtype" ColumnName="showtype" />
+          <ScalarProperty Name="ref_appmain_id" ColumnName="ref_appmain_id" />
+          <ScalarProperty Name="sortnumber" ColumnName="sortnumber" />
+          <ScalarProperty Name="ifuse" ColumnName="ifuse" />
+          <ScalarProperty Name="enumstate" ColumnName="enumstate" />
+          <ScalarProperty Name="description" ColumnName="description" />
+          <ScalarProperty Name="org_account_id" ColumnName="org_account_id" />
+          <ScalarProperty Name="parent_id" ColumnName="parent_id" />
+          <ScalarProperty Name="is_formEnum" ColumnName="is_formEnum" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="form_enumvalue">
+      <EntityTypeMapping TypeName="v3xModel.form_enumvalue">
+        <MappingFragment StoreEntitySet="form_enumvalue">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="ref_enumid" ColumnName="ref_enumid" />
+          <ScalarProperty Name="ref_apptypeid" ColumnName="ref_apptypeid" />
+          <ScalarProperty Name="ref_appmain_id" ColumnName="ref_appmain_id" />
+          <ScalarProperty Name="showValue" ColumnName="showValue" />
+          <ScalarProperty Name="enumvalue" ColumnName="enumvalue" />
+          <ScalarProperty Name="sortnumber" ColumnName="sortnumber" />
+          <ScalarProperty Name="is_ref" ColumnName="is_ref" />
+          <ScalarProperty Name="state" ColumnName="state" />
+          <ScalarProperty Name="output_switch" ColumnName="output_switch" />
+          <ScalarProperty Name="ifuse" ColumnName="ifuse" />
+          <ScalarProperty Name="writestate" ColumnName="writestate" />
+          <ScalarProperty Name="querystate" ColumnName="querystate" />
+          <ScalarProperty Name="org_account_id" ColumnName="org_account_id" />
+          <ScalarProperty Name="parent_id" ColumnName="parent_id" />
+          <ScalarProperty Name="root_id" ColumnName="root_id" />
+          <ScalarProperty Name="level_num" ColumnName="level_num" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="col_body">
+      <EntityTypeMapping TypeName="v3xModel.col_body">
+        <MappingFragment StoreEntitySet="col_body">
+          <ScalarProperty Name="content_name" ColumnName="content_name" />
+          <ScalarProperty Name="col_id" ColumnName="col_id" />
+          <ScalarProperty Name="update_date" ColumnName="update_date" />
+          <ScalarProperty Name="create_date" ColumnName="create_date" />
+          <ScalarProperty Name="content" ColumnName="content" />
+          <ScalarProperty Name="body_type" ColumnName="body_type" />
+          <ScalarProperty Name="id" ColumnName="id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="v3x_affair">
+      <EntityTypeMapping TypeName="v3xModel.v3x_affair">
+        <MappingFragment StoreEntitySet="v3x_affair">
+          <ScalarProperty Name="sub_app" ColumnName="sub_app" />
+          <ScalarProperty Name="deal_term_userid" ColumnName="deal_term_userid" />
+          <ScalarProperty Name="deal_term_type" ColumnName="deal_term_type" />
+          <ScalarProperty Name="run_time" ColumnName="run_time" />
+          <ScalarProperty Name="over_time" ColumnName="over_time" />
+          <ScalarProperty Name="run_worktime" ColumnName="run_worktime" />
+          <ScalarProperty Name="over_worktime" ColumnName="over_worktime" />
+          <ScalarProperty Name="from_id" ColumnName="from_id" />
+          <ScalarProperty Name="templete_id" ColumnName="templete_id" />
+          <ScalarProperty Name="form_operation_id" ColumnName="form_operation_id" />
+          <ScalarProperty Name="form_id" ColumnName="form_id" />
+          <ScalarProperty Name="form_app_id" ColumnName="form_app_id" />
+          <ScalarProperty Name="activity_id" ColumnName="activity_id" />
+          <ScalarProperty Name="node_policy" ColumnName="node_policy" />
+          <ScalarProperty Name="transactor_id" ColumnName="transactor_id" />
+          <ScalarProperty Name="identifier" ColumnName="identifier" />
+          <ScalarProperty Name="forward_member" ColumnName="forward_member" />
+          <ScalarProperty Name="resent_time" ColumnName="resent_time" />
+          <ScalarProperty Name="important_level" ColumnName="important_level" />
+          <ScalarProperty Name="body_type" ColumnName="body_type" />
+          <ScalarProperty Name="is_finish" ColumnName="is_finish" />
+          <ScalarProperty Name="update_date" ColumnName="update_date" />
+          <ScalarProperty Name="ext_props" ColumnName="ext_props" />
+          <ScalarProperty Name="addition" ColumnName="addition" />
+          <ScalarProperty Name="is_track" ColumnName="is_track" />
+          <ScalarProperty Name="archive_id" ColumnName="archive_id" />
+          <ScalarProperty Name="is_delete" ColumnName="is_delete" />
+          <ScalarProperty Name="remind_interval" ColumnName="remind_interval" />
+          <ScalarProperty Name="complete_time" ColumnName="complete_time" />
+          <ScalarProperty Name="receive_time" ColumnName="receive_time" />
+          <ScalarProperty Name="create_date" ColumnName="create_date" />
+          <ScalarProperty Name="can_due_remind" ColumnName="can_due_remind" />
+          <ScalarProperty Name="deadline_date" ColumnName="deadline_date" />
+          <ScalarProperty Name="remind_date" ColumnName="remind_date" />
+          <ScalarProperty Name="hasten_times" ColumnName="hasten_times" />
+          <ScalarProperty Name="sub_state" ColumnName="sub_state" />
+          <ScalarProperty Name="state" ColumnName="state" />
+          <ScalarProperty Name="sub_object_id" ColumnName="sub_object_id" />
+          <ScalarProperty Name="object_id" ColumnName="object_id" />
+          <ScalarProperty Name="app" ColumnName="app" />
+          <ScalarProperty Name="subject" ColumnName="subject" />
+          <ScalarProperty Name="sender_id" ColumnName="sender_id" />
+          <ScalarProperty Name="member_id" ColumnName="member_id" />
+          <ScalarProperty Name="is_over_time" ColumnName="is_over_time" />
+          <ScalarProperty Name="id" ColumnName="id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="v3x_attachment">
+      <EntityTypeMapping TypeName="v3xModel.v3x_attachment">
+        <MappingFragment StoreEntitySet="v3x_attachment">
+          <ScalarProperty Name="sort" ColumnName="sort" />
+          <ScalarProperty Name="genesis_id" ColumnName="genesis_id" />
+          <ScalarProperty Name="description" ColumnName="description" />
+          <ScalarProperty Name="attachment_size" ColumnName="attachment_size" />
+          <ScalarProperty Name="createdate" ColumnName="createdate" />
+          <ScalarProperty Name="mime_type" ColumnName="mime_type" />
+          <ScalarProperty Name="file_url" ColumnName="file_url" />
+          <ScalarProperty Name="filename" ColumnName="filename" />
+          <ScalarProperty Name="type" ColumnName="type" />
+          <ScalarProperty Name="category" ColumnName="category" />
+          <ScalarProperty Name="sub_reference" ColumnName="sub_reference" />
+          <ScalarProperty Name="reference" ColumnName="reference" />
+          <ScalarProperty Name="id" ColumnName="id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="formmain_0190">
+      <EntityTypeMapping TypeName="v3xModel.formmain_0190">
+        <MappingFragment StoreEntitySet="formmain_0190">
+          <ScalarProperty Name="field0025" ColumnName="field0025" />
+          <ScalarProperty Name="field0024" ColumnName="field0024" />
+          <ScalarProperty Name="field0023" ColumnName="field0023" />
+          <ScalarProperty Name="field0022" ColumnName="field0022" />
+          <ScalarProperty Name="field0021" ColumnName="field0021" />
+          <ScalarProperty Name="sort" ColumnName="sort" />
+          <ScalarProperty Name="field0016" ColumnName="field0016" />
+          <ScalarProperty Name="field0015" ColumnName="field0015" />
+          <ScalarProperty Name="field0014" ColumnName="field0014" />
+          <ScalarProperty Name="field0013" ColumnName="field0013" />
+          <ScalarProperty Name="field0012" ColumnName="field0012" />
+          <ScalarProperty Name="field0011" ColumnName="field0011" />
+          <ScalarProperty Name="field0010" ColumnName="field0010" />
+          <ScalarProperty Name="field0009" ColumnName="field0009" />
+          <ScalarProperty Name="field0008" ColumnName="field0008" />
+          <ScalarProperty Name="field0007" ColumnName="field0007" />
+          <ScalarProperty Name="field0006" ColumnName="field0006" />
+          <ScalarProperty Name="field0005" ColumnName="field0005" />
+          <ScalarProperty Name="field0004" ColumnName="field0004" />
+          <ScalarProperty Name="field0003" ColumnName="field0003" />
+          <ScalarProperty Name="field0002" ColumnName="field0002" />
+          <ScalarProperty Name="field0001" ColumnName="field0001" />
+          <ScalarProperty Name="ratify_date" ColumnName="ratify_date" />
+          <ScalarProperty Name="ratify_member_id" ColumnName="ratify_member_id" />
+          <ScalarProperty Name="ratifyflag" ColumnName="ratifyflag" />
+          <ScalarProperty Name="finishedflag" ColumnName="finishedflag" />
+          <ScalarProperty Name="approve_date" ColumnName="approve_date" />
+          <ScalarProperty Name="approve_member_id" ColumnName="approve_member_id" />
+          <ScalarProperty Name="start_date" ColumnName="start_date" />
+          <ScalarProperty Name="start_member_id" ColumnName="start_member_id" />
+          <ScalarProperty Name="state" ColumnName="state" />
+          <ScalarProperty Name="id" ColumnName="id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="formmain_0545">
+      <EntityTypeMapping TypeName="v3xModel.formmain_0545">
+        <MappingFragment StoreEntitySet="formmain_0545">
+          <ScalarProperty Name="sort" ColumnName="sort" />
+          <ScalarProperty Name="field0023" ColumnName="field0023" />
+          <ScalarProperty Name="field0022" ColumnName="field0022" />
+          <ScalarProperty Name="field0021" ColumnName="field0021" />
+          <ScalarProperty Name="field0020" ColumnName="field0020" />
+          <ScalarProperty Name="field0019" ColumnName="field0019" />
+          <ScalarProperty Name="field0018" ColumnName="field0018" />
+          <ScalarProperty Name="field0017" ColumnName="field0017" />
+          <ScalarProperty Name="field0016" ColumnName="field0016" />
+          <ScalarProperty Name="field0015" ColumnName="field0015" />
+          <ScalarProperty Name="field0014" ColumnName="field0014" />
+          <ScalarProperty Name="field0013" ColumnName="field0013" />
+          <ScalarProperty Name="field0012" ColumnName="field0012" />
+          <ScalarProperty Name="field0011" ColumnName="field0011" />
+          <ScalarProperty Name="field0010" ColumnName="field0010" />
+          <ScalarProperty Name="field0009" ColumnName="field0009" />
+          <ScalarProperty Name="field0008" ColumnName="field0008" />
+          <ScalarProperty Name="field0007" ColumnName="field0007" />
+          <ScalarProperty Name="field0006" ColumnName="field0006" />
+          <ScalarProperty Name="field0005" ColumnName="field0005" />
+          <ScalarProperty Name="field0004" ColumnName="field0004" />
+          <ScalarProperty Name="field0003" ColumnName="field0003" />
+          <ScalarProperty Name="field0002" ColumnName="field0002" />
+          <ScalarProperty Name="field0001" ColumnName="field0001" />
+          <ScalarProperty Name="ratify_date" ColumnName="ratify_date" />
+          <ScalarProperty Name="ratify_member_id" ColumnName="ratify_member_id" />
+          <ScalarProperty Name="ratifyflag" ColumnName="ratifyflag" />
+          <ScalarProperty Name="finishedflag" ColumnName="finishedflag" />
+          <ScalarProperty Name="approve_date" ColumnName="approve_date" />
+          <ScalarProperty Name="approve_member_id" ColumnName="approve_member_id" />
+          <ScalarProperty Name="start_date" ColumnName="start_date" />
+          <ScalarProperty Name="start_member_id" ColumnName="start_member_id" />
+          <ScalarProperty Name="state" ColumnName="state" />
+          <ScalarProperty Name="id" ColumnName="id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="formson_0191">
+      <EntityTypeMapping TypeName="v3xModel.formson_0191">
+        <MappingFragment StoreEntitySet="formson_0191">
+          <ScalarProperty Name="sort" ColumnName="sort" />
+          <ScalarProperty Name="field0020" ColumnName="field0020" />
+          <ScalarProperty Name="field0019" ColumnName="field0019" />
+          <ScalarProperty Name="field0018" ColumnName="field0018" />
+          <ScalarProperty Name="field0017" ColumnName="field0017" />
+          <ScalarProperty Name="formmain_0190Id" ColumnName="formmain_0190Id" />
+          <ScalarProperty Name="id" ColumnName="id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="formson_0546">
+      <EntityTypeMapping TypeName="v3xModel.formson_0546">
+        <MappingFragment StoreEntitySet="formson_0546">
+          <ScalarProperty Name="sort" ColumnName="sort" />
+          <ScalarProperty Name="field0029" ColumnName="field0029" />
+          <ScalarProperty Name="field0028" ColumnName="field0028" />
+          <ScalarProperty Name="field0027" ColumnName="field0027" />
+          <ScalarProperty Name="field0026" ColumnName="field0026" />
+          <ScalarProperty Name="field0025" ColumnName="field0025" />
+          <ScalarProperty Name="field0024" ColumnName="field0024" />
+          <ScalarProperty Name="formmain_0545Id" ColumnName="formmain_0545Id" />
+          <ScalarProperty Name="id" ColumnName="id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="v3x_org_department">
+      <EntityTypeMapping TypeName="v3xModel.v3x_org_department">
+        <MappingFragment StoreEntitySet="v3x_org_department">
+          <ScalarProperty Name="dept_short_name" ColumnName="dept_short_name" />
+          <ScalarProperty Name="status" ColumnName="status" />
+          <ScalarProperty Name="is_deleted" ColumnName="is_deleted" />
+          <ScalarProperty Name="org_account_id" ColumnName="org_account_id" />
+          <ScalarProperty Name="description" ColumnName="description" />
+          <ScalarProperty Name="update_time" ColumnName="update_time" />
+          <ScalarProperty Name="create_time" ColumnName="create_time" />
+          <ScalarProperty Name="sort_id" ColumnName="sort_id" />
+          <ScalarProperty Name="is_internal" ColumnName="is_internal" />
+          <ScalarProperty Name="enable" ColumnName="enable" />
+          <ScalarProperty Name="path" ColumnName="path" />
+          <ScalarProperty Name="code" ColumnName="code" />
+          <ScalarProperty Name="name" ColumnName="name" />
+          <ScalarProperty Name="id" ColumnName="id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="v3x_org_member">
+      <EntityTypeMapping TypeName="v3xModel.v3x_org_member">
+        <MappingFragment StoreEntitySet="v3x_org_member">
+          <ScalarProperty Name="org_duty_level_id" ColumnName="org_duty_level_id" />
+          <ScalarProperty Name="birthday" ColumnName="birthday" />
+          <ScalarProperty Name="gender" ColumnName="gender" />
+          <ScalarProperty Name="status" ColumnName="status" />
+          <ScalarProperty Name="email_address" ColumnName="email_address" />
+          <ScalarProperty Name="is_deleted" ColumnName="is_deleted" />
+          <ScalarProperty Name="tel_number" ColumnName="tel_number" />
+          <ScalarProperty Name="agent_time" ColumnName="agent_time" />
+          <ScalarProperty Name="agent_to_id" ColumnName="agent_to_id" />
+          <ScalarProperty Name="agent_id" ColumnName="agent_id" />
+          <ScalarProperty Name="org_post_id" ColumnName="org_post_id" />
+          <ScalarProperty Name="org_account_id" ColumnName="org_account_id" />
+          <ScalarProperty Name="org_level_id" ColumnName="org_level_id" />
+          <ScalarProperty Name="org_department_id" ColumnName="org_department_id" />
+          <ScalarProperty Name="description" ColumnName="description" />
+          <ScalarProperty Name="update_time" ColumnName="update_time" />
+          <ScalarProperty Name="create_time" ColumnName="create_time" />
+          <ScalarProperty Name="is_admin" ColumnName="is_admin" />
+          <ScalarProperty Name="is_assigned" ColumnName="is_assigned" />
+          <ScalarProperty Name="is_virtual" ColumnName="is_virtual" />
+          <ScalarProperty Name="is_loginable" ColumnName="is_loginable" />
+          <ScalarProperty Name="is_internal" ColumnName="is_internal" />
+          <ScalarProperty Name="type" ColumnName="type" />
+          <ScalarProperty Name="state" ColumnName="state" />
+          <ScalarProperty Name="sort_id" ColumnName="sort_id" />
+          <ScalarProperty Name="enabled" ColumnName="enabled" />
+          <ScalarProperty Name="primary_languange" ColumnName="primary_languange" />
+          <ScalarProperty Name="code" ColumnName="code" />
+          <ScalarProperty Name="name" ColumnName="name" />
+          <ScalarProperty Name="id" ColumnName="id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="col_summary">
+      <EntityTypeMapping TypeName="v3xModel.col_summary">
+        <MappingFragment StoreEntitySet="col_summary">
+          <ScalarProperty Name="can_autostopflow" ColumnName="can_autostopflow" />
+          <ScalarProperty Name="run_time" ColumnName="run_time" />
+          <ScalarProperty Name="over_time" ColumnName="over_time" />
+          <ScalarProperty Name="run_worktime" ColumnName="run_worktime" />
+          <ScalarProperty Name="over_worktime" ColumnName="over_worktime" />
+          <ScalarProperty Name="is_vouch" ColumnName="is_vouch" />
+          <ScalarProperty Name="can_edit_attachment" ColumnName="can_edit_attachment" />
+          <ScalarProperty Name="newflow_type" ColumnName="newflow_type" />
+          <ScalarProperty Name="parentform_summaryid" ColumnName="parentform_summaryid" />
+          <ScalarProperty Name="source" ColumnName="source" />
+          <ScalarProperty Name="org_account_id" ColumnName="org_account_id" />
+          <ScalarProperty Name="org_department_id" ColumnName="org_department_id" />
+          <ScalarProperty Name="form_appid" ColumnName="form_appid" />
+          <ScalarProperty Name="formid" ColumnName="formid" />
+          <ScalarProperty Name="form_recordid" ColumnName="form_recordid" />
+          <ScalarProperty Name="body_type" ColumnName="body_type" />
+          <ScalarProperty Name="webservice_code" ColumnName="webservice_code" />
+          <ScalarProperty Name="workflow_rule" ColumnName="workflow_rule" />
+          <ScalarProperty Name="templete_id" ColumnName="templete_id" />
+          <ScalarProperty Name="forward_member" ColumnName="forward_member" />
+          <ScalarProperty Name="identifier" ColumnName="identifier" />
+          <ScalarProperty Name="advance_remind" ColumnName="advance_remind" />
+          <ScalarProperty Name="case_id" ColumnName="case_id" />
+          <ScalarProperty Name="process_id" ColumnName="process_id" />
+          <ScalarProperty Name="start_member_id" ColumnName="start_member_id" />
+          <ScalarProperty Name="archive_id" ColumnName="archive_id" />
+          <ScalarProperty Name="is_audited" ColumnName="is_audited" />
+          <ScalarProperty Name="finish_date" ColumnName="finish_date" />
+          <ScalarProperty Name="start_date" ColumnName="start_date" />
+          <ScalarProperty Name="create_date" ColumnName="create_date" />
+          <ScalarProperty Name="resent_time" ColumnName="resent_time" />
+          <ScalarProperty Name="important_level" ColumnName="important_level" />
+          <ScalarProperty Name="project_id" ColumnName="project_id" />
+          <ScalarProperty Name="remind_interval" ColumnName="remind_interval" />
+          <ScalarProperty Name="can_track" ColumnName="can_track" />
+          <ScalarProperty Name="can_edit" ColumnName="can_edit" />
+          <ScalarProperty Name="can_forward" ColumnName="can_forward" />
+          <ScalarProperty Name="can_due_reminder" ColumnName="can_due_reminder" />
+          <ScalarProperty Name="can_modify" ColumnName="can_modify" />
+          <ScalarProperty Name="can_archive" ColumnName="can_archive" />
+          <ScalarProperty Name="col_type" ColumnName="col_type" />
+          <ScalarProperty Name="deadline" ColumnName="deadline" />
+          <ScalarProperty Name="subject" ColumnName="subject" />
+          <ScalarProperty Name="state" ColumnName="state" />
+          <ScalarProperty Name="id" ColumnName="id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="formmain_0593">
+      <EntityTypeMapping TypeName="v3xModel.formmain_0593">
+        <MappingFragment StoreEntitySet="formmain_0593">
+          <ScalarProperty Name="field0034" ColumnName="field0034" />
+          <ScalarProperty Name="sort" ColumnName="sort" />
+          <ScalarProperty Name="field0025" ColumnName="field0025" />
+          <ScalarProperty Name="field0024" ColumnName="field0024" />
+          <ScalarProperty Name="field0023" ColumnName="field0023" />
+          <ScalarProperty Name="field0022" ColumnName="field0022" />
+          <ScalarProperty Name="field0021" ColumnName="field0021" />
+          <ScalarProperty Name="field0020" ColumnName="field0020" />
+          <ScalarProperty Name="field0019" ColumnName="field0019" />
+          <ScalarProperty Name="field0018" ColumnName="field0018" />
+          <ScalarProperty Name="field0017" ColumnName="field0017" />
+          <ScalarProperty Name="field0016" ColumnName="field0016" />
+          <ScalarProperty Name="field0015" ColumnName="field0015" />
+          <ScalarProperty Name="field0014" ColumnName="field0014" />
+          <ScalarProperty Name="field0013" ColumnName="field0013" />
+          <ScalarProperty Name="field0012" ColumnName="field0012" />
+          <ScalarProperty Name="field0011" ColumnName="field0011" />
+          <ScalarProperty Name="field0010" ColumnName="field0010" />
+          <ScalarProperty Name="field0009" ColumnName="field0009" />
+          <ScalarProperty Name="field0008" ColumnName="field0008" />
+          <ScalarProperty Name="field0007" ColumnName="field0007" />
+          <ScalarProperty Name="field0006" ColumnName="field0006" />
+          <ScalarProperty Name="field0005" ColumnName="field0005" />
+          <ScalarProperty Name="field0004" ColumnName="field0004" />
+          <ScalarProperty Name="field0003" ColumnName="field0003" />
+          <ScalarProperty Name="field0002" ColumnName="field0002" />
+          <ScalarProperty Name="field0001" ColumnName="field0001" />
+          <ScalarProperty Name="ratify_date" ColumnName="ratify_date" />
+          <ScalarProperty Name="ratify_member_id" ColumnName="ratify_member_id" />
+          <ScalarProperty Name="ratifyflag" ColumnName="ratifyflag" />
+          <ScalarProperty Name="finishedflag" ColumnName="finishedflag" />
+          <ScalarProperty Name="approve_date" ColumnName="approve_date" />
+          <ScalarProperty Name="approve_member_id" ColumnName="approve_member_id" />
+          <ScalarProperty Name="start_date" ColumnName="start_date" />
+          <ScalarProperty Name="start_member_id" ColumnName="start_member_id" />
+          <ScalarProperty Name="state" ColumnName="state" />
+          <ScalarProperty Name="id" ColumnName="id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="formson_0594">
+      <EntityTypeMapping TypeName="v3xModel.formson_0594">
+        <MappingFragment StoreEntitySet="formson_0594">
+          <ScalarProperty Name="sort" ColumnName="sort" />
+          <ScalarProperty Name="field0033" ColumnName="field0033" />
+          <ScalarProperty Name="field0032" ColumnName="field0032" />
+          <ScalarProperty Name="field0031" ColumnName="field0031" />
+          <ScalarProperty Name="field0030" ColumnName="field0030" />
+          <ScalarProperty Name="field0029" ColumnName="field0029" />
+          <ScalarProperty Name="field0028" ColumnName="field0028" />
+          <ScalarProperty Name="field0027" ColumnName="field0027" />
+          <ScalarProperty Name="field0026" ColumnName="field0026" />
+          <ScalarProperty Name="formmain_0593Id" ColumnName="formmain_0593Id" />
+          <ScalarProperty Name="id" ColumnName="id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

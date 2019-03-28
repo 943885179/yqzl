@@ -1,0 +1,1 @@
+2019-01-16 10:48:23:概念端类型“OAtoU8DATAModel.yq_paymentRecord”中的成员“unionFlag”的类型“Edm.String”与对象端类型“EntityFromework.yq_paymentRecord”中的成员“unionFlag”的类型“System.Int32”不匹配。

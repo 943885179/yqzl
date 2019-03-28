@@ -1,0 +1,135 @@
+E:\stu\danjukaipiao1\dal\bin\Debug\dal.dll
+E:\stu\danjukaipiao1\dal\bin\Debug\dal.pdb
+E:\stu\danjukaipiao1\dal\bin\Debug\common.dll
+E:\stu\danjukaipiao1\dal\bin\Debug\Model.dll
+E:\stu\danjukaipiao1\dal\bin\Debug\common.pdb
+E:\stu\danjukaipiao1\dal\bin\Debug\Model.pdb
+E:\stu\danjukaipiao1\dal\obj\Debug\dal.csprojResolveAssemblyReference.cache
+E:\stu\danjukaipiao1\dal\obj\Debug\dal.dll
+E:\stu\danjukaipiao1\dal\obj\Debug\dal.pdb
+E:\stu\danjukaipiao1\dal\bin\Debug\dal.dll.config
+E:\stu\danjukaipiao1\dal\bin\Debug\EntityFramework.dll
+E:\stu\danjukaipiao1\dal\bin\Debug\EntityFramework.SqlServer.dll
+E:\stu\danjukaipiao1\dal\bin\Debug\EntityFramework.SqlServerCompact.dll
+E:\stu\danjukaipiao1\dal\bin\Debug\Models.dll
+E:\stu\danjukaipiao1\dal\bin\Debug\System.Data.SqlServerCe.dll
+E:\stu\danjukaipiao1\dal\bin\Debug\Models.pdb
+E:\stu\danjukaipiao1\dal\bin\Debug\EntityFramework.xml
+E:\stu\danjukaipiao1\dal\bin\Debug\EntityFramework.SqlServer.xml
+E:\stu\danjukaipiao1\dal\bin\Debug\EntityFramework.SqlServerCompact.xml
+E:\stu\danjukaipiao1\dal\bin\Debug\ChnCharInfo.dll
+E:\stu\danjukaipiao1\dal\bin\Debug\Newtonsoft.Json.dll
+E:\stu\danjukaipiao1\dal\bin\Debug\Newtonsoft.Json.xml
+E:\stu\票据无纸化代码优化1.0\dal\obj\Debug\dal.csprojResolveAssemblyReference.cache
+E:\stu\票据无纸化代码优化1.0\dal\obj\Debug\dal.dll
+E:\stu\票据无纸化代码优化1.0\dal\obj\Debug\dal.pdb
+E:\stu\票据无纸化代码优化1.0\dal\bin\Debug\dal.dll.config
+E:\stu\票据无纸化代码优化1.0\dal\bin\Debug\dal.dll
+E:\stu\票据无纸化代码优化1.0\dal\bin\Debug\dal.pdb
+E:\stu\票据无纸化代码优化1.0\dal\bin\Debug\common.dll
+E:\stu\票据无纸化代码优化1.0\dal\bin\Debug\EntityFramework.dll
+E:\stu\票据无纸化代码优化1.0\dal\bin\Debug\EntityFramework.SqlServer.dll
+E:\stu\票据无纸化代码优化1.0\dal\bin\Debug\EntityFramework.SqlServerCompact.dll
+E:\stu\票据无纸化代码优化1.0\dal\bin\Debug\Log.dll
+E:\stu\票据无纸化代码优化1.0\dal\bin\Debug\Model.dll
+E:\stu\票据无纸化代码优化1.0\dal\bin\Debug\Models.dll
+E:\stu\票据无纸化代码优化1.0\dal\bin\Debug\Newtonsoft.Json.dll
+E:\stu\票据无纸化代码优化1.0\dal\bin\Debug\System.Data.SqlServerCe.dll
+E:\stu\票据无纸化代码优化1.0\dal\bin\Debug\ChnCharInfo.dll
+E:\stu\票据无纸化代码优化1.0\dal\bin\Debug\common.pdb
+E:\stu\票据无纸化代码优化1.0\dal\bin\Debug\Log.pdb
+E:\stu\票据无纸化代码优化1.0\dal\bin\Debug\Models.pdb
+E:\stu\票据无纸化代码优化1.0\dal\bin\Debug\Model.pdb
+E:\stu\票据无纸化代码优化1.0\dal\bin\Debug\EntityFramework.xml
+E:\stu\票据无纸化代码优化1.0\dal\bin\Debug\EntityFramework.SqlServer.xml
+E:\stu\票据无纸化代码优化1.0\dal\bin\Debug\EntityFramework.SqlServerCompact.xml
+E:\stu\票据无纸化代码优化1.0\dal\bin\Debug\Newtonsoft.Json.xml
+E:\stu\wuzhihua\dal\bin\Debug\dal.dll.config
+E:\stu\wuzhihua\dal\bin\Debug\dal.xml
+E:\stu\wuzhihua\dal\bin\Debug\dal.dll
+E:\stu\wuzhihua\dal\bin\Debug\dal.pdb
+E:\stu\wuzhihua\dal\bin\Debug\common.dll
+E:\stu\wuzhihua\dal\bin\Debug\EntityFramework.dll
+E:\stu\wuzhihua\dal\bin\Debug\EntityFramework.SqlServer.dll
+E:\stu\wuzhihua\dal\bin\Debug\EntityFramework.SqlServerCompact.dll
+E:\stu\wuzhihua\dal\bin\Debug\Log.dll
+E:\stu\wuzhihua\dal\bin\Debug\Model.dll
+E:\stu\wuzhihua\dal\bin\Debug\Models.dll
+E:\stu\wuzhihua\dal\bin\Debug\Newtonsoft.Json.dll
+E:\stu\wuzhihua\dal\bin\Debug\System.Data.SqlServerCe.dll
+E:\stu\wuzhihua\dal\bin\Debug\ChnCharInfo.dll
+E:\stu\wuzhihua\dal\bin\Debug\common.pdb
+E:\stu\wuzhihua\dal\bin\Debug\Log.pdb
+E:\stu\wuzhihua\dal\bin\Debug\Models.pdb
+E:\stu\wuzhihua\dal\bin\Debug\Models.dll.config
+E:\stu\wuzhihua\dal\bin\Debug\Model.pdb
+E:\stu\wuzhihua\dal\bin\Debug\EntityFramework.xml
+E:\stu\wuzhihua\dal\bin\Debug\EntityFramework.SqlServer.xml
+E:\stu\wuzhihua\dal\bin\Debug\EntityFramework.SqlServerCompact.xml
+E:\stu\wuzhihua\dal\bin\Debug\Newtonsoft.Json.xml
+E:\stu\wuzhihua\dal\obj\Debug\dal.csprojAssemblyReference.cache
+E:\stu\wuzhihua\dal\obj\Debug\dal.csproj.CoreCompileInputs.cache
+E:\stu\wuzhihua\dal\obj\Debug\dal.csproj.CopyComplete
+E:\stu\wuzhihua\dal\obj\Debug\dal.dll
+E:\stu\wuzhihua\dal\obj\Debug\dal.pdb
+E:\stu\wuzhihua - 副本 (3)\dal\obj\Debug\dal.csprojAssemblyReference.cache
+E:\stu\wuzhihua - 副本 (3)\dal\obj\Debug\dal.csproj.CoreCompileInputs.cache
+E:\stu\wuzhihua - 副本 (3)\dal\obj\Debug\dal.dll
+E:\stu\wuzhihua - 副本 (3)\dal\obj\Debug\dal.pdb
+E:\stu\wuzhihua - 副本 (3)\dal\bin\Debug\dal.dll.config
+E:\stu\wuzhihua - 副本 (3)\dal\bin\Debug\dal.xml
+E:\stu\wuzhihua - 副本 (3)\dal\bin\Debug\dal.dll
+E:\stu\wuzhihua - 副本 (3)\dal\bin\Debug\dal.pdb
+E:\stu\wuzhihua - 副本 (3)\dal\bin\Debug\common.dll
+E:\stu\wuzhihua - 副本 (3)\dal\bin\Debug\EntityFramework.dll
+E:\stu\wuzhihua - 副本 (3)\dal\bin\Debug\EntityFramework.SqlServer.dll
+E:\stu\wuzhihua - 副本 (3)\dal\bin\Debug\EntityFramework.SqlServerCompact.dll
+E:\stu\wuzhihua - 副本 (3)\dal\bin\Debug\Log.dll
+E:\stu\wuzhihua - 副本 (3)\dal\bin\Debug\Model.dll
+E:\stu\wuzhihua - 副本 (3)\dal\bin\Debug\Models.dll
+E:\stu\wuzhihua - 副本 (3)\dal\bin\Debug\Newtonsoft.Json.dll
+E:\stu\wuzhihua - 副本 (3)\dal\bin\Debug\System.Data.SqlServerCe.dll
+E:\stu\wuzhihua - 副本 (3)\dal\bin\Debug\ChnCharInfo.dll
+E:\stu\wuzhihua - 副本 (3)\dal\bin\Debug\common.pdb
+E:\stu\wuzhihua - 副本 (3)\dal\bin\Debug\Log.pdb
+E:\stu\wuzhihua - 副本 (3)\dal\bin\Debug\Models.pdb
+E:\stu\wuzhihua - 副本 (3)\dal\bin\Debug\Models.dll.config
+E:\stu\wuzhihua - 副本 (3)\dal\bin\Debug\Model.pdb
+E:\stu\wuzhihua - 副本 (3)\dal\bin\Debug\EntityFramework.xml
+E:\stu\wuzhihua - 副本 (3)\dal\bin\Debug\EntityFramework.SqlServer.xml
+E:\stu\wuzhihua - 副本 (3)\dal\bin\Debug\EntityFramework.SqlServerCompact.xml
+E:\stu\wuzhihua - 副本 (3)\dal\bin\Debug\Newtonsoft.Json.xml
+E:\stu\wuzhihua - 副本 (3)\dal\obj\Debug\dal.csproj.CopyComplete
+E:\stu\wuzhihua - 最终版\dal\bin\Debug\DAL.dll.config
+E:\stu\wuzhihua - 最终版\dal\bin\Debug\DAL.xml
+E:\stu\wuzhihua - 最终版\dal\bin\Debug\DAL.dll
+E:\stu\wuzhihua - 最终版\dal\bin\Debug\DAL.pdb
+E:\stu\wuzhihua - 最终版\dal\bin\Debug\common.dll
+E:\stu\wuzhihua - 最终版\dal\bin\Debug\EntityFramework.dll
+E:\stu\wuzhihua - 最终版\dal\bin\Debug\EntityFramework.SqlServer.dll
+E:\stu\wuzhihua - 最终版\dal\bin\Debug\EntityFramework.SqlServerCompact.dll
+E:\stu\wuzhihua - 最终版\dal\bin\Debug\EntityFromework.dll
+E:\stu\wuzhihua - 最终版\dal\bin\Debug\Log.dll
+E:\stu\wuzhihua - 最终版\dal\bin\Debug\Model.dll
+E:\stu\wuzhihua - 最终版\dal\bin\Debug\MOFA_U8API_API.dll
+E:\stu\wuzhihua - 最终版\dal\bin\Debug\MOFA_U8API_DBUtility.dll
+E:\stu\wuzhihua - 最终版\dal\bin\Debug\MySql.Data.dll
+E:\stu\wuzhihua - 最终版\dal\bin\Debug\Newtonsoft.Json.dll
+E:\stu\wuzhihua - 最终版\dal\bin\Debug\System.Data.SqlServerCe.dll
+E:\stu\wuzhihua - 最终版\dal\bin\Debug\ChnCharInfo.dll
+E:\stu\wuzhihua - 最终版\dal\bin\Debug\log4net.dll
+E:\stu\wuzhihua - 最终版\dal\bin\Debug\common.pdb
+E:\stu\wuzhihua - 最终版\dal\bin\Debug\Log.pdb
+E:\stu\wuzhihua - 最终版\dal\bin\Debug\EntityFromework.pdb
+E:\stu\wuzhihua - 最终版\dal\bin\Debug\EntityFromework.dll.config
+E:\stu\wuzhihua - 最终版\dal\bin\Debug\Model.pdb
+E:\stu\wuzhihua - 最终版\dal\bin\Debug\EntityFramework.xml
+E:\stu\wuzhihua - 最终版\dal\bin\Debug\EntityFramework.SqlServer.xml
+E:\stu\wuzhihua - 最终版\dal\bin\Debug\EntityFramework.SqlServerCompact.xml
+E:\stu\wuzhihua - 最终版\dal\bin\Debug\Newtonsoft.Json.xml
+E:\stu\wuzhihua - 最终版\dal\bin\Debug\log4net.xml
+E:\stu\wuzhihua - 最终版\dal\obj\Debug\dal.csprojAssemblyReference.cache
+E:\stu\wuzhihua - 最终版\dal\obj\Debug\dal.csproj.CoreCompileInputs.cache
+E:\stu\wuzhihua - 最终版\dal\obj\Debug\dal.csproj.CopyComplete
+E:\stu\wuzhihua - 最终版\dal\obj\Debug\DAL.dll
+E:\stu\wuzhihua - 最终版\dal\obj\Debug\DAL.pdb

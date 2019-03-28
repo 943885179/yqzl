@@ -1,0 +1,70 @@
+2019-01-23 10:08:52:SELECT 
+    [Extent1].[ID] AS [ID], 
+    [Extent1].[AcctName] AS [AcctName], 
+    [Extent1].[SubjectCode] AS [SubjectCode], 
+    [Extent2].[ccode_name] AS [ccode_name], 
+    [Extent1].[BankAcct] AS [BankAcct], 
+    [Extent1].[BankName] AS [BankName]
+    FROM  [dbo].[CN_AcctInfo] AS [Extent1]
+    INNER JOIN [dbo].[code] AS [Extent2] ON [Extent1].[SubjectCode] = [Extent2].[ccode]
+    WHERE ([Extent1].[lYear] = @p__linq__0) AND (1 = [Extent1].[IsUsed]) AND ( CAST( [Extent2].[iyear] AS int) = @p__linq__1)
+2019-01-23 10:09:01:SELECT 
+    [Extent1].[ID] AS [ID], 
+    [Extent1].[AcctName] AS [AcctName], 
+    [Extent1].[SubjectCode] AS [SubjectCode], 
+    [Extent2].[ccode_name] AS [ccode_name], 
+    [Extent1].[BankAcct] AS [BankAcct], 
+    [Extent1].[BankName] AS [BankName]
+    FROM  [dbo].[CN_AcctInfo] AS [Extent1]
+    INNER JOIN [dbo].[code] AS [Extent2] ON [Extent1].[SubjectCode] = [Extent2].[ccode]
+    WHERE ([Extent1].[lYear] = @p__linq__0) AND (1 = [Extent1].[IsUsed]) AND ( CAST( [Extent2].[iyear] AS int) = @p__linq__1)
+2019-01-23 10:09:44:SELECT 
+    [Extent1].[ID] AS [ID], 
+    [Extent1].[AcctName] AS [AcctName], 
+    [Extent1].[SubjectCode] AS [SubjectCode], 
+    [Extent2].[ccode_name] AS [ccode_name], 
+    [Extent1].[BankAcct] AS [BankAcct], 
+    [Extent1].[BankName] AS [BankName]
+    FROM  [dbo].[CN_AcctInfo] AS [Extent1]
+    INNER JOIN [dbo].[code] AS [Extent2] ON [Extent1].[SubjectCode] = [Extent2].[ccode]
+    WHERE ([Extent1].[lYear] = @p__linq__0) AND (1 = [Extent1].[IsUsed]) AND ( CAST( [Extent2].[iyear] AS int) = @p__linq__1)
+2019-01-23 10:17:53:SELECT 
+    [Extent1].[ID] AS [ID], 
+    [Extent1].[AcctName] AS [AcctName], 
+    [Extent1].[SubjectCode] AS [SubjectCode], 
+    [Extent2].[ccode_name] AS [ccode_name], 
+    [Extent1].[BankAcct] AS [BankAcct], 
+    [Extent1].[BankName] AS [BankName]
+    FROM  [dbo].[CN_AcctInfo] AS [Extent1]
+    INNER JOIN [dbo].[code] AS [Extent2] ON [Extent1].[SubjectCode] = [Extent2].[ccode]
+    WHERE ([Extent1].[lYear] = @p__linq__0) AND (1 = [Extent1].[IsUsed]) AND ( CAST( [Extent2].[iyear] AS int) = @p__linq__1)
+2019-01-23 10:19:34:SELECT 
+    [Extent1].[ID] AS [ID], 
+    [Extent1].[AcctName] AS [AcctName], 
+    [Extent1].[SubjectCode] AS [SubjectCode], 
+    [Extent2].[ccode_name] AS [ccode_name], 
+    [Extent1].[BankAcct] AS [BankAcct], 
+    [Extent1].[BankName] AS [BankName]
+    FROM  [dbo].[CN_AcctInfo] AS [Extent1]
+    INNER JOIN [dbo].[code] AS [Extent2] ON [Extent1].[SubjectCode] = [Extent2].[ccode]
+    WHERE ([Extent1].[lYear] = @p__linq__0) AND (1 = [Extent1].[IsUsed]) AND ( CAST( [Extent2].[iyear] AS int) = @p__linq__1)
+2019-01-23 10:20:36:SELECT 
+    [Extent1].[ID] AS [ID], 
+    [Extent1].[AcctName] AS [AcctName], 
+    [Extent1].[SubjectCode] AS [SubjectCode], 
+    [Extent2].[ccode_name] AS [ccode_name], 
+    [Extent1].[BankAcct] AS [BankAcct], 
+    [Extent1].[BankName] AS [BankName]
+    FROM  [dbo].[CN_AcctInfo] AS [Extent1]
+    INNER JOIN [dbo].[code] AS [Extent2] ON [Extent1].[SubjectCode] = [Extent2].[ccode]
+    WHERE ([Extent1].[lYear] = @p__linq__0) AND (1 = [Extent1].[IsUsed]) AND ( CAST( [Extent2].[iyear] AS int) = @p__linq__1)
+2019-01-23 10:21:48:SELECT 
+    [Extent1].[ID] AS [ID], 
+    [Extent1].[AcctName] AS [AcctName], 
+    [Extent1].[SubjectCode] AS [SubjectCode], 
+    [Extent2].[ccode_name] AS [ccode_name], 
+    [Extent1].[BankAcct] AS [BankAcct], 
+    [Extent1].[BankName] AS [BankName]
+    FROM  [dbo].[CN_AcctInfo] AS [Extent1]
+    INNER JOIN [dbo].[code] AS [Extent2] ON [Extent1].[SubjectCode] = [Extent2].[ccode]
+    WHERE ([Extent1].[lYear] = @p__linq__0) AND (1 = [Extent1].[IsUsed]) AND ( CAST( [Extent2].[iyear] AS int) = @p__linq__1)

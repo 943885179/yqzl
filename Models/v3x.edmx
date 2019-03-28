@@ -1,0 +1,1273 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+    <Schema Namespace="v3xModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2008" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+        <EntityType Name="col_body">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="bigint" Nullable="false" />
+          <Property Name="body_type" Type="nvarchar" MaxLength="20" />
+          <Property Name="content" Type="text" />
+          <Property Name="create_date" Type="datetime" />
+          <Property Name="update_date" Type="datetime" />
+          <Property Name="col_id" Type="bigint" Nullable="false" />
+          <Property Name="content_name" Type="nvarchar" MaxLength="32" />
+        </EntityType>
+        <EntityType Name="col_summary">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="bigint" Nullable="false" />
+          <Property Name="state" Type="int" />
+          <Property Name="subject" Type="nvarchar" MaxLength="255" />
+          <Property Name="deadline" Type="bigint" />
+          <Property Name="col_type" Type="int" />
+          <Property Name="can_archive" Type="tinyint" />
+          <Property Name="can_modify" Type="tinyint" />
+          <Property Name="can_due_reminder" Type="tinyint" />
+          <Property Name="can_forward" Type="tinyint" />
+          <Property Name="can_edit" Type="tinyint" />
+          <Property Name="can_track" Type="tinyint" />
+          <Property Name="remind_interval" Type="bigint" />
+          <Property Name="project_id" Type="bigint" />
+          <Property Name="important_level" Type="int" />
+          <Property Name="resent_time" Type="int" />
+          <Property Name="create_date" Type="datetime" />
+          <Property Name="start_date" Type="datetime" />
+          <Property Name="finish_date" Type="datetime" />
+          <Property Name="is_audited" Type="tinyint" />
+          <Property Name="archive_id" Type="bigint" />
+          <Property Name="start_member_id" Type="bigint" />
+          <Property Name="process_id" Type="nvarchar" MaxLength="110" />
+          <Property Name="case_id" Type="bigint" />
+          <Property Name="advance_remind" Type="bigint" />
+          <Property Name="identifier" Type="nvarchar" MaxLength="100" />
+          <Property Name="forward_member" Type="nvarchar" MaxLength="255" />
+          <Property Name="templete_id" Type="bigint" />
+          <Property Name="workflow_rule" Type="text" />
+          <Property Name="webservice_code" Type="nvarchar" MaxLength="60" />
+          <Property Name="body_type" Type="nvarchar" MaxLength="20" />
+          <Property Name="form_recordid" Type="bigint" />
+          <Property Name="formid" Type="bigint" />
+          <Property Name="form_appid" Type="bigint" />
+          <Property Name="org_department_id" Type="bigint" />
+          <Property Name="org_account_id" Type="bigint" />
+          <Property Name="source" Type="nvarchar" MaxLength="255" />
+          <Property Name="parentform_summaryid" Type="bigint" />
+          <Property Name="newflow_type" Type="int" />
+          <Property Name="can_edit_attachment" Type="tinyint" Nullable="false" />
+          <Property Name="is_vouch" Type="tinyint" />
+          <Property Name="over_worktime" Type="bigint" />
+          <Property Name="run_worktime" Type="bigint" />
+          <Property Name="over_time" Type="bigint" />
+          <Property Name="run_time" Type="bigint" />
+          <Property Name="can_autostopflow" Type="tinyint" />
+        </EntityType>
+        <EntityType Name="form_enumlist">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="bigint" Nullable="false" />
+          <Property Name="enumname" Type="nvarchar" MaxLength="255" Nullable="false" />
+          <Property Name="enumtype" Type="smallint" />
+          <Property Name="ref_apptypeid" Type="bigint" />
+          <Property Name="showtype" Type="smallint" />
+          <Property Name="ref_appmain_id" Type="bigint" />
+          <Property Name="sortnumber" Type="int" />
+          <Property Name="ifuse" Type="nvarchar" MaxLength="20" />
+          <Property Name="enumstate" Type="smallint" Nullable="false" />
+          <Property Name="description" Type="nvarchar" MaxLength="255" />
+          <Property Name="org_account_id" Type="bigint" />
+          <Property Name="parent_id" Type="bigint" />
+          <Property Name="is_formEnum" Type="smallint" />
+        </EntityType>
+        <EntityType Name="form_enumvalue">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="bigint" Nullable="false" />
+          <Property Name="ref_enumid" Type="bigint" Nullable="false" />
+          <Property Name="ref_apptypeid" Type="bigint" />
+          <Property Name="ref_appmain_id" Type="bigint" />
+          <Property Name="showValue" Type="nvarchar" MaxLength="255" />
+          <Property Name="enumvalue" Type="nvarchar" MaxLength="100" Nullable="false" />
+          <Property Name="sortnumber" Type="int" />
+          <Property Name="is_ref" Type="int" />
+          <Property Name="state" Type="int" />
+          <Property Name="output_switch" Type="int" />
+          <Property Name="ifuse" Type="nvarchar" MaxLength="20" />
+          <Property Name="writestate" Type="tinyint" />
+          <Property Name="querystate" Type="tinyint" />
+          <Property Name="org_account_id" Type="bigint" />
+          <Property Name="parent_id" Type="bigint" />
+          <Property Name="root_id" Type="bigint" />
+          <Property Name="level_num" Type="tinyint" />
+        </EntityType>
+        <EntityType Name="formmain_0190">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="decimal" Precision="20" Scale="0" Nullable="false" />
+          <Property Name="state" Type="decimal" Precision="10" Scale="0" />
+          <Property Name="start_member_id" Type="decimal" Precision="20" Scale="0" />
+          <Property Name="start_date" Type="datetime" />
+          <Property Name="approve_member_id" Type="decimal" Precision="20" Scale="0" />
+          <Property Name="approve_date" Type="datetime" />
+          <Property Name="finishedflag" Type="decimal" Precision="10" Scale="0" />
+          <Property Name="ratifyflag" Type="decimal" Precision="10" Scale="0" />
+          <Property Name="ratify_member_id" Type="decimal" Precision="20" Scale="0" />
+          <Property Name="ratify_date" Type="datetime" />
+          <Property Name="field0001" Type="varchar" MaxLength="255" />
+          <Property Name="field0002" Type="varchar" MaxLength="255" />
+          <Property Name="field0003" Type="varchar" MaxLength="255" />
+          <Property Name="field0004" Type="varchar" MaxLength="255" />
+          <Property Name="field0005" Type="varchar" MaxLength="255" />
+          <Property Name="field0006" Type="varchar" MaxLength="255" />
+          <Property Name="field0007" Type="varchar" MaxLength="255" />
+          <Property Name="field0008" Type="datetime" />
+          <Property Name="field0009" Type="datetime" />
+          <Property Name="field0010" Type="decimal" Precision="20" Scale="2" />
+          <Property Name="field0011" Type="varchar" MaxLength="255" />
+          <Property Name="field0012" Type="text" />
+          <Property Name="field0013" Type="text" />
+          <Property Name="field0014" Type="text" />
+          <Property Name="field0015" Type="text" />
+          <Property Name="field0016" Type="text" />
+          <Property Name="sort" Type="decimal" Precision="10" Scale="0" />
+          <Property Name="field0021" Type="text" />
+          <Property Name="field0022" Type="varchar" MaxLength="255" />
+          <Property Name="field0023" Type="varchar" MaxLength="255" />
+          <Property Name="field0024" Type="varchar" MaxLength="255" />
+          <Property Name="field0025" Type="varchar" MaxLength="255" />
+        </EntityType>
+        <EntityType Name="formmain_0545">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="decimal" Precision="20" Scale="0" Nullable="false" />
+          <Property Name="state" Type="decimal" Precision="10" Scale="0" />
+          <Property Name="start_member_id" Type="decimal" Precision="20" Scale="0" />
+          <Property Name="start_date" Type="datetime" />
+          <Property Name="approve_member_id" Type="decimal" Precision="20" Scale="0" />
+          <Property Name="approve_date" Type="datetime" />
+          <Property Name="finishedflag" Type="decimal" Precision="10" Scale="0" />
+          <Property Name="ratifyflag" Type="decimal" Precision="10" Scale="0" />
+          <Property Name="ratify_member_id" Type="decimal" Precision="20" Scale="0" />
+          <Property Name="ratify_date" Type="datetime" />
+          <Property Name="field0001" Type="varchar" MaxLength="255" />
+          <Property Name="field0002" Type="varchar" MaxLength="255" />
+          <Property Name="field0003" Type="varchar" MaxLength="255" />
+          <Property Name="field0004" Type="varchar" MaxLength="255" />
+          <Property Name="field0005" Type="varchar" MaxLength="255" />
+          <Property Name="field0006" Type="varchar" MaxLength="255" />
+          <Property Name="field0007" Type="varchar" MaxLength="255" />
+          <Property Name="field0008" Type="datetime" />
+          <Property Name="field0009" Type="datetime" />
+          <Property Name="field0010" Type="decimal" Precision="20" Scale="2" />
+          <Property Name="field0011" Type="varchar" MaxLength="255" />
+          <Property Name="field0012" Type="text" />
+          <Property Name="field0013" Type="text" />
+          <Property Name="field0014" Type="text" />
+          <Property Name="field0015" Type="text" />
+          <Property Name="field0016" Type="text" />
+          <Property Name="field0017" Type="varchar" MaxLength="255" />
+          <Property Name="field0018" Type="varchar" MaxLength="255" />
+          <Property Name="field0019" Type="varchar" MaxLength="255" />
+          <Property Name="field0020" Type="varchar" MaxLength="255" />
+          <Property Name="field0021" Type="decimal" Precision="20" Scale="2" />
+          <Property Name="field0022" Type="decimal" Precision="20" Scale="2" />
+          <Property Name="field0023" Type="varchar" MaxLength="255" />
+          <Property Name="sort" Type="decimal" Precision="10" Scale="0" />
+        </EntityType>
+        <EntityType Name="formmain_0593">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="decimal" Precision="20" Scale="0" Nullable="false" />
+          <Property Name="state" Type="decimal" Precision="10" Scale="0" />
+          <Property Name="start_member_id" Type="decimal" Precision="20" Scale="0" />
+          <Property Name="start_date" Type="datetime" />
+          <Property Name="approve_member_id" Type="decimal" Precision="20" Scale="0" />
+          <Property Name="approve_date" Type="datetime" />
+          <Property Name="finishedflag" Type="decimal" Precision="10" Scale="0" />
+          <Property Name="ratifyflag" Type="decimal" Precision="10" Scale="0" />
+          <Property Name="ratify_member_id" Type="decimal" Precision="20" Scale="0" />
+          <Property Name="ratify_date" Type="datetime" />
+          <Property Name="field0001" Type="varchar" MaxLength="255" />
+          <Property Name="field0002" Type="varchar" MaxLength="255" />
+          <Property Name="field0003" Type="varchar" MaxLength="255" />
+          <Property Name="field0004" Type="varchar" MaxLength="255" />
+          <Property Name="field0005" Type="varchar" MaxLength="255" />
+          <Property Name="field0006" Type="varchar" MaxLength="255" />
+          <Property Name="field0007" Type="varchar" MaxLength="255" />
+          <Property Name="field0008" Type="datetime" />
+          <Property Name="field0009" Type="datetime" />
+          <Property Name="field0010" Type="decimal" Precision="20" Scale="2" />
+          <Property Name="field0011" Type="varchar" MaxLength="255" />
+          <Property Name="field0012" Type="text" />
+          <Property Name="field0013" Type="text" />
+          <Property Name="field0014" Type="text" />
+          <Property Name="field0015" Type="text" />
+          <Property Name="field0016" Type="text" />
+          <Property Name="field0017" Type="varchar" MaxLength="255" />
+          <Property Name="field0018" Type="varchar" MaxLength="255" />
+          <Property Name="field0019" Type="varchar" MaxLength="255" />
+          <Property Name="field0020" Type="varchar" MaxLength="255" />
+          <Property Name="field0021" Type="varchar" MaxLength="255" />
+          <Property Name="field0022" Type="varchar" MaxLength="255" />
+          <Property Name="field0023" Type="varchar" MaxLength="255" />
+          <Property Name="field0024" Type="text" />
+          <Property Name="field0025" Type="text" />
+          <Property Name="sort" Type="decimal" Precision="10" Scale="0" />
+          <Property Name="field0034" Type="text" />
+        </EntityType>
+        <EntityType Name="formson_0191">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="decimal" Precision="20" Scale="0" Nullable="false" />
+          <Property Name="formmain_0190Id" Type="decimal" Precision="20" Scale="0" />
+          <Property Name="field0017" Type="varchar" MaxLength="255" />
+          <Property Name="field0018" Type="text" />
+          <Property Name="field0019" Type="decimal" Precision="20" Scale="2" />
+          <Property Name="field0020" Type="varchar" MaxLength="255" />
+          <Property Name="sort" Type="decimal" Precision="10" Scale="0" />
+        </EntityType>
+        <EntityType Name="formson_0546">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="decimal" Precision="20" Scale="0" Nullable="false" />
+          <Property Name="formmain_0545Id" Type="decimal" Precision="20" Scale="0" />
+          <Property Name="field0024" Type="varchar" MaxLength="255" />
+          <Property Name="field0025" Type="varchar" MaxLength="255" />
+          <Property Name="field0026" Type="varchar" MaxLength="255" />
+          <Property Name="field0027" Type="varchar" MaxLength="255" />
+          <Property Name="field0028" Type="decimal" Precision="20" Scale="2" />
+          <Property Name="field0029" Type="varchar" MaxLength="255" />
+          <Property Name="sort" Type="decimal" Precision="10" Scale="0" />
+        </EntityType>
+        <EntityType Name="formson_0594">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="decimal" Precision="20" Scale="0" Nullable="false" />
+          <Property Name="formmain_0593Id" Type="decimal" Precision="20" Scale="0" />
+          <Property Name="field0026" Type="varchar" MaxLength="255" />
+          <Property Name="field0027" Type="varchar" MaxLength="255" />
+          <Property Name="field0028" Type="varchar" MaxLength="255" />
+          <Property Name="field0029" Type="varchar" MaxLength="255" />
+          <Property Name="field0030" Type="decimal" Precision="20" Scale="2" />
+          <Property Name="field0031" Type="decimal" Precision="20" Scale="2" />
+          <Property Name="field0032" Type="varchar" MaxLength="255" />
+          <Property Name="field0033" Type="decimal" Precision="20" Scale="3" />
+          <Property Name="sort" Type="decimal" Precision="10" Scale="0" />
+        </EntityType>
+        <EntityType Name="v3x_affair">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="bigint" Nullable="false" />
+          <Property Name="is_over_time" Type="tinyint" />
+          <Property Name="member_id" Type="bigint" />
+          <Property Name="sender_id" Type="bigint" />
+          <Property Name="subject" Type="nvarchar" MaxLength="1000" />
+          <Property Name="app" Type="int" />
+          <Property Name="object_id" Type="bigint" />
+          <Property Name="sub_object_id" Type="bigint" />
+          <Property Name="state" Type="int" />
+          <Property Name="sub_state" Type="int" />
+          <Property Name="hasten_times" Type="int" />
+          <Property Name="remind_date" Type="bigint" />
+          <Property Name="deadline_date" Type="int" />
+          <Property Name="can_due_remind" Type="tinyint" />
+          <Property Name="create_date" Type="datetime" />
+          <Property Name="receive_time" Type="datetime" />
+          <Property Name="complete_time" Type="datetime" />
+          <Property Name="remind_interval" Type="int" />
+          <Property Name="is_delete" Type="tinyint" />
+          <Property Name="archive_id" Type="bigint" />
+          <Property Name="is_track" Type="tinyint" />
+          <Property Name="addition" Type="nvarchar" MaxLength="2000" />
+          <Property Name="ext_props" Type="nvarchar" MaxLength="2000" />
+          <Property Name="update_date" Type="datetime" />
+          <Property Name="is_finish" Type="tinyint" />
+          <Property Name="body_type" Type="nvarchar" MaxLength="20" />
+          <Property Name="important_level" Type="int" />
+          <Property Name="resent_time" Type="int" />
+          <Property Name="forward_member" Type="nvarchar" MaxLength="255" />
+          <Property Name="identifier" Type="nvarchar" MaxLength="20" />
+          <Property Name="transactor_id" Type="bigint" />
+          <Property Name="node_policy" Type="nvarchar" MaxLength="255" />
+          <Property Name="activity_id" Type="bigint" />
+          <Property Name="form_app_id" Type="bigint" />
+          <Property Name="form_id" Type="bigint" />
+          <Property Name="form_operation_id" Type="bigint" />
+          <Property Name="templete_id" Type="bigint" />
+          <Property Name="from_id" Type="bigint" />
+          <Property Name="over_worktime" Type="bigint" />
+          <Property Name="run_worktime" Type="bigint" />
+          <Property Name="over_time" Type="bigint" />
+          <Property Name="run_time" Type="bigint" />
+          <Property Name="deal_term_type" Type="tinyint" />
+          <Property Name="deal_term_userid" Type="bigint" />
+          <Property Name="sub_app" Type="int" />
+        </EntityType>
+        <EntityType Name="v3x_attachment">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="bigint" Nullable="false" />
+          <Property Name="reference" Type="bigint" Nullable="false" />
+          <Property Name="sub_reference" Type="bigint" />
+          <Property Name="category" Type="int" Nullable="false" />
+          <Property Name="type" Type="int" Nullable="false" />
+          <Property Name="filename" Type="nvarchar" MaxLength="1000" Nullable="false" />
+          <Property Name="file_url" Type="bigint" />
+          <Property Name="mime_type" Type="nvarchar" MaxLength="100" Nullable="false" />
+          <Property Name="createdate" Type="datetime" Nullable="false" />
+          <Property Name="attachment_size" Type="bigint" Nullable="false" />
+          <Property Name="description" Type="text" />
+          <Property Name="genesis_id" Type="bigint" />
+          <Property Name="sort" Type="int" />
+        </EntityType>
+        <EntityType Name="v3x_org_department">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="bigint" Nullable="false" />
+          <Property Name="name" Type="nvarchar" MaxLength="255" />
+          <Property Name="code" Type="nvarchar" MaxLength="255" />
+          <Property Name="path" Type="nvarchar" MaxLength="50" />
+          <Property Name="enable" Type="tinyint" />
+          <Property Name="is_internal" Type="tinyint" />
+          <Property Name="sort_id" Type="int" />
+          <Property Name="create_time" Type="datetime" />
+          <Property Name="update_time" Type="datetime" />
+          <Property Name="description" Type="text" />
+          <Property Name="org_account_id" Type="bigint" Nullable="false" />
+          <Property Name="is_deleted" Type="tinyint" />
+          <Property Name="status" Type="int" />
+          <Property Name="dept_short_name" Type="nvarchar" MaxLength="255" />
+        </EntityType>
+        <EntityType Name="v3x_org_member">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="bigint" Nullable="false" />
+          <Property Name="name" Type="nvarchar" MaxLength="255" />
+          <Property Name="code" Type="nvarchar" MaxLength="255" />
+          <Property Name="primary_languange" Type="nvarchar" MaxLength="20" />
+          <Property Name="enabled" Type="tinyint" />
+          <Property Name="sort_id" Type="int" />
+          <Property Name="state" Type="tinyint" />
+          <Property Name="type" Type="tinyint" />
+          <Property Name="is_internal" Type="tinyint" />
+          <Property Name="is_loginable" Type="tinyint" />
+          <Property Name="is_virtual" Type="tinyint" />
+          <Property Name="is_assigned" Type="tinyint" />
+          <Property Name="is_admin" Type="tinyint" />
+          <Property Name="create_time" Type="datetime" />
+          <Property Name="update_time" Type="datetime" />
+          <Property Name="description" Type="text" />
+          <Property Name="org_department_id" Type="bigint" Nullable="false" />
+          <Property Name="org_level_id" Type="bigint" Nullable="false" />
+          <Property Name="org_account_id" Type="bigint" Nullable="false" />
+          <Property Name="org_post_id" Type="bigint" Nullable="false" />
+          <Property Name="agent_id" Type="bigint" />
+          <Property Name="agent_to_id" Type="bigint" />
+          <Property Name="agent_time" Type="datetime" />
+          <Property Name="tel_number" Type="nvarchar" MaxLength="100" />
+          <Property Name="is_deleted" Type="tinyint" />
+          <Property Name="email_address" Type="nvarchar" MaxLength="100" />
+          <Property Name="status" Type="int" />
+          <Property Name="gender" Type="int" />
+          <Property Name="birthday" Type="datetime" />
+          <Property Name="org_duty_level_id" Type="bigint" />
+        </EntityType>
+        <Association Name="Refcol_summary64">
+          <End Role="col_summary" Type="Self.col_summary" Multiplicity="1" />
+          <End Role="col_body" Type="Self.col_body" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="col_summary">
+              <PropertyRef Name="id" />
+            </Principal>
+            <Dependent Role="col_body">
+              <PropertyRef Name="col_id" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <EntityContainer Name="v3xModelStoreContainer">
+          <EntitySet Name="col_body" EntityType="Self.col_body" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="col_summary" EntityType="Self.col_summary" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="form_enumlist" EntityType="Self.form_enumlist" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="form_enumvalue" EntityType="Self.form_enumvalue" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="formmain_0190" EntityType="Self.formmain_0190" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="formmain_0545" EntityType="Self.formmain_0545" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="formmain_0593" EntityType="Self.formmain_0593" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="formson_0191" EntityType="Self.formson_0191" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="formson_0546" EntityType="Self.formson_0546" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="formson_0594" EntityType="Self.formson_0594" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="v3x_affair" EntityType="Self.v3x_affair" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="v3x_attachment" EntityType="Self.v3x_attachment" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="v3x_org_department" EntityType="Self.v3x_org_department" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="v3x_org_member" EntityType="Self.v3x_org_member" Schema="dbo" store:Type="Tables" />
+          <AssociationSet Name="Refcol_summary64" Association="Self.Refcol_summary64">
+            <End Role="col_summary" EntitySet="col_summary" />
+            <End Role="col_body" EntitySet="col_body" />
+          </AssociationSet>
+        </EntityContainer>
+      </Schema></edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="v3xModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+        <EntityType Name="form_enumlist">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="Int64" Nullable="false" />
+          <Property Name="enumname" Type="String" MaxLength="255" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="enumtype" Type="Int16" />
+          <Property Name="ref_apptypeid" Type="Int64" />
+          <Property Name="showtype" Type="Int16" />
+          <Property Name="ref_appmain_id" Type="Int64" />
+          <Property Name="sortnumber" Type="Int32" />
+          <Property Name="ifuse" Type="String" MaxLength="20" FixedLength="false" Unicode="true" />
+          <Property Name="enumstate" Type="Int16" Nullable="false" />
+          <Property Name="description" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Name="org_account_id" Type="Int64" />
+          <Property Name="parent_id" Type="Int64" />
+          <Property Name="is_formEnum" Type="Int16" />
+        </EntityType>
+        <EntityType Name="form_enumvalue">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="Int64" Nullable="false" />
+          <Property Name="ref_enumid" Type="Int64" Nullable="false" />
+          <Property Name="ref_apptypeid" Type="Int64" />
+          <Property Name="ref_appmain_id" Type="Int64" />
+          <Property Name="showValue" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Name="enumvalue" Type="String" MaxLength="100" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="sortnumber" Type="Int32" />
+          <Property Name="is_ref" Type="Int32" />
+          <Property Name="state" Type="Int32" />
+          <Property Name="output_switch" Type="Int32" />
+          <Property Name="ifuse" Type="String" MaxLength="20" FixedLength="false" Unicode="true" />
+          <Property Name="writestate" Type="Byte" />
+          <Property Name="querystate" Type="Byte" />
+          <Property Name="org_account_id" Type="Int64" />
+          <Property Name="parent_id" Type="Int64" />
+          <Property Name="root_id" Type="Int64" />
+          <Property Name="level_num" Type="Byte" />
+        </EntityType>
+        <EntityContainer Name="v3xEntities1" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="form_enumlist" EntityType="Self.form_enumlist" />
+          <EntitySet Name="form_enumvalue" EntityType="Self.form_enumvalue" />
+          <EntitySet Name="col_body" EntityType="v3xModel.col_body" />
+          <EntitySet Name="v3x_affair" EntityType="v3xModel.v3x_affair" />
+          <EntitySet Name="v3x_attachment" EntityType="v3xModel.v3x_attachment" />
+          <EntitySet Name="formmain_0190" EntityType="v3xModel.formmain_0190" />
+          <EntitySet Name="formmain_0545" EntityType="v3xModel.formmain_0545" />
+          <EntitySet Name="formson_0191" EntityType="v3xModel.formson_0191" />
+          <EntitySet Name="formson_0546" EntityType="v3xModel.formson_0546" />
+          <EntitySet Name="v3x_org_department" EntityType="v3xModel.v3x_org_department" />
+          <EntitySet Name="v3x_org_member" EntityType="v3xModel.v3x_org_member" />
+          <EntitySet Name="col_summary" EntityType="v3xModel.col_summary" />
+          <AssociationSet Name="Refcol_summary64" Association="v3xModel.Refcol_summary64">
+            <End Role="col_summary" EntitySet="col_summary" />
+            <End Role="col_body" EntitySet="col_body" />
+          </AssociationSet>
+          <EntitySet Name="formmain_0593" EntityType="v3xModel.formmain_0593" />
+          <EntitySet Name="formson_0594" EntityType="v3xModel.formson_0594" />
+        </EntityContainer>
+        <EntityType Name="col_body">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="Int64" Nullable="false" />
+          <Property Name="body_type" Type="String" MaxLength="20" FixedLength="false" Unicode="true" />
+          <Property Name="content" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="create_date" Type="DateTime" Precision="3" />
+          <Property Name="update_date" Type="DateTime" Precision="3" />
+          <Property Name="col_id" Type="Int64" Nullable="false" />
+          <Property Name="content_name" Type="String" MaxLength="32" FixedLength="false" Unicode="true" />
+          <NavigationProperty Name="col_summary" Relationship="v3xModel.Refcol_summary64" FromRole="col_body" ToRole="col_summary" />
+        </EntityType>
+        <EntityType Name="v3x_affair">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="Int64" Nullable="false" />
+          <Property Name="is_over_time" Type="Byte" />
+          <Property Name="member_id" Type="Int64" />
+          <Property Name="sender_id" Type="Int64" />
+          <Property Name="subject" Type="String" MaxLength="1000" FixedLength="false" Unicode="true" />
+          <Property Name="app" Type="Int32" />
+          <Property Name="object_id" Type="Int64" />
+          <Property Name="sub_object_id" Type="Int64" />
+          <Property Name="state" Type="Int32" />
+          <Property Name="sub_state" Type="Int32" />
+          <Property Name="hasten_times" Type="Int32" />
+          <Property Name="remind_date" Type="Int64" />
+          <Property Name="deadline_date" Type="Int32" />
+          <Property Name="can_due_remind" Type="Byte" />
+          <Property Name="create_date" Type="DateTime" Precision="3" />
+          <Property Name="receive_time" Type="DateTime" Precision="3" />
+          <Property Name="complete_time" Type="DateTime" Precision="3" />
+          <Property Name="remind_interval" Type="Int32" />
+          <Property Name="is_delete" Type="Byte" />
+          <Property Name="archive_id" Type="Int64" />
+          <Property Name="is_track" Type="Byte" />
+          <Property Name="addition" Type="String" MaxLength="2000" FixedLength="false" Unicode="true" />
+          <Property Name="ext_props" Type="String" MaxLength="2000" FixedLength="false" Unicode="true" />
+          <Property Name="update_date" Type="DateTime" Precision="3" />
+          <Property Name="is_finish" Type="Byte" />
+          <Property Name="body_type" Type="String" MaxLength="20" FixedLength="false" Unicode="true" />
+          <Property Name="important_level" Type="Int32" />
+          <Property Name="resent_time" Type="Int32" />
+          <Property Name="forward_member" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Name="identifier" Type="String" MaxLength="20" FixedLength="false" Unicode="true" />
+          <Property Name="transactor_id" Type="Int64" />
+          <Property Name="node_policy" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Name="activity_id" Type="Int64" />
+          <Property Name="form_app_id" Type="Int64" />
+          <Property Name="form_id" Type="Int64" />
+          <Property Name="form_operation_id" Type="Int64" />
+          <Property Name="templete_id" Type="Int64" />
+          <Property Name="from_id" Type="Int64" />
+          <Property Name="over_worktime" Type="Int64" />
+          <Property Name="run_worktime" Type="Int64" />
+          <Property Name="over_time" Type="Int64" />
+          <Property Name="run_time" Type="Int64" />
+          <Property Name="deal_term_type" Type="Byte" />
+          <Property Name="deal_term_userid" Type="Int64" />
+          <Property Name="sub_app" Type="Int32" />
+        </EntityType>
+        <EntityType Name="v3x_attachment">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="Int64" Nullable="false" />
+          <Property Name="reference" Type="Int64" Nullable="false" />
+          <Property Name="sub_reference" Type="Int64" />
+          <Property Name="category" Type="Int32" Nullable="false" />
+          <Property Name="type" Type="Int32" Nullable="false" />
+          <Property Name="filename" Type="String" Nullable="false" MaxLength="1000" FixedLength="false" Unicode="true" />
+          <Property Name="file_url" Type="Int64" />
+          <Property Name="mime_type" Type="String" Nullable="false" MaxLength="100" FixedLength="false" Unicode="true" />
+          <Property Name="createdate" Type="DateTime" Nullable="false" Precision="3" />
+          <Property Name="attachment_size" Type="Int64" Nullable="false" />
+          <Property Name="description" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="genesis_id" Type="Int64" />
+          <Property Name="sort" Type="Int32" />
+        </EntityType>
+        <EntityType Name="formmain_0190">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="Decimal" Nullable="false" Precision="20" Scale="0" />
+          <Property Name="state" Type="Decimal" Precision="10" Scale="0" />
+          <Property Name="start_member_id" Type="Decimal" Precision="20" Scale="0" />
+          <Property Name="start_date" Type="DateTime" Precision="3" />
+          <Property Name="approve_member_id" Type="Decimal" Precision="20" Scale="0" />
+          <Property Name="approve_date" Type="DateTime" Precision="3" />
+          <Property Name="finishedflag" Type="Decimal" Precision="10" Scale="0" />
+          <Property Name="ratifyflag" Type="Decimal" Precision="10" Scale="0" />
+          <Property Name="ratify_member_id" Type="Decimal" Precision="20" Scale="0" />
+          <Property Name="ratify_date" Type="DateTime" Precision="3" />
+          <Property Name="field0001" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+          <Property Name="field0002" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+          <Property Name="field0003" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+          <Property Name="field0004" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+          <Property Name="field0005" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+          <Property Name="field0006" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+          <Property Name="field0007" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+          <Property Name="field0008" Type="DateTime" Precision="3" />
+          <Property Name="field0009" Type="DateTime" Precision="3" />
+          <Property Name="field0010" Type="Decimal" Precision="20" Scale="2" />
+          <Property Name="field0011" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+          <Property Name="field0012" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="field0013" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="field0014" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="field0015" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="field0016" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="sort" Type="Decimal" Precision="10" Scale="0" />
+          <Property Name="field0021" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="field0022" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+          <Property Name="field0023" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+          <Property Name="field0024" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+          <Property Name="field0025" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+        </EntityType>
+        <EntityType Name="formmain_0545">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="Decimal" Nullable="false" Precision="20" Scale="0" />
+          <Property Name="state" Type="Decimal" Precision="10" Scale="0" />
+          <Property Name="start_member_id" Type="Decimal" Precision="20" Scale="0" />
+          <Property Name="start_date" Type="DateTime" Precision="3" />
+          <Property Name="approve_member_id" Type="Decimal" Precision="20" Scale="0" />
+          <Property Name="approve_date" Type="DateTime" Precision="3" />
+          <Property Name="finishedflag" Type="Decimal" Precision="10" Scale="0" />
+          <Property Name="ratifyflag" Type="Decimal" Precision="10" Scale="0" />
+          <Property Name="ratify_member_id" Type="Decimal" Precision="20" Scale="0" />
+          <Property Name="ratify_date" Type="DateTime" Precision="3" />
+          <Property Name="field0001" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+          <Property Name="field0002" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+          <Property Name="field0003" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+          <Property Name="field0004" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+          <Property Name="field0005" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+          <Property Name="field0006" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+          <Property Name="field0007" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+          <Property Name="field0008" Type="DateTime" Precision="3" />
+          <Property Name="field0009" Type="DateTime" Precision="3" />
+          <Property Name="field0010" Type="Decimal" Precision="20" Scale="2" />
+          <Property Name="field0011" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+          <Property Name="field0012" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="field0013" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="field0014" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="field0015" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="field0016" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="field0017" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+          <Property Name="field0018" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+          <Property Name="field0019" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+          <Property Name="field0020" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+          <Property Name="field0021" Type="Decimal" Precision="20" Scale="2" />
+          <Property Name="field0022" Type="Decimal" Precision="20" Scale="2" />
+          <Property Name="field0023" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+          <Property Name="sort" Type="Decimal" Precision="10" Scale="0" />
+        </EntityType>
+        <EntityType Name="formson_0191">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="Decimal" Nullable="false" Precision="20" Scale="0" />
+          <Property Name="formmain_0190Id" Type="Decimal" Precision="20" Scale="0" />
+          <Property Name="field0017" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+          <Property Name="field0018" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="field0019" Type="Decimal" Precision="20" Scale="2" />
+          <Property Name="field0020" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+          <Property Name="sort" Type="Decimal" Precision="10" Scale="0" />
+        </EntityType>
+        <EntityType Name="formson_0546">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="Decimal" Nullable="false" Precision="20" Scale="0" />
+          <Property Name="formmain_0545Id" Type="Decimal" Precision="20" Scale="0" />
+          <Property Name="field0024" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+          <Property Name="field0025" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+          <Property Name="field0026" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+          <Property Name="field0027" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+          <Property Name="field0028" Type="Decimal" Precision="20" Scale="2" />
+          <Property Name="field0029" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+          <Property Name="sort" Type="Decimal" Precision="10" Scale="0" />
+        </EntityType>
+        <EntityType Name="v3x_org_department">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="Int64" Nullable="false" />
+          <Property Name="name" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Name="code" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Name="path" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="enable" Type="Byte" />
+          <Property Name="is_internal" Type="Byte" />
+          <Property Name="sort_id" Type="Int32" />
+          <Property Name="create_time" Type="DateTime" Precision="3" />
+          <Property Name="update_time" Type="DateTime" Precision="3" />
+          <Property Name="description" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="org_account_id" Type="Int64" Nullable="false" />
+          <Property Name="is_deleted" Type="Byte" />
+          <Property Name="status" Type="Int32" />
+          <Property Name="dept_short_name" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+        </EntityType>
+        <EntityType Name="v3x_org_member">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="Int64" Nullable="false" />
+          <Property Name="name" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Name="code" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Name="primary_languange" Type="String" MaxLength="20" FixedLength="false" Unicode="true" />
+          <Property Name="enabled" Type="Byte" />
+          <Property Name="sort_id" Type="Int32" />
+          <Property Name="state" Type="Byte" />
+          <Property Name="type" Type="Byte" />
+          <Property Name="is_internal" Type="Byte" />
+          <Property Name="is_loginable" Type="Byte" />
+          <Property Name="is_virtual" Type="Byte" />
+          <Property Name="is_assigned" Type="Byte" />
+          <Property Name="is_admin" Type="Byte" />
+          <Property Name="create_time" Type="DateTime" Precision="3" />
+          <Property Name="update_time" Type="DateTime" Precision="3" />
+          <Property Name="description" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="org_department_id" Type="Int64" Nullable="false" />
+          <Property Name="org_level_id" Type="Int64" Nullable="false" />
+          <Property Name="org_account_id" Type="Int64" Nullable="false" />
+          <Property Name="org_post_id" Type="Int64" Nullable="false" />
+          <Property Name="agent_id" Type="Int64" />
+          <Property Name="agent_to_id" Type="Int64" />
+          <Property Name="agent_time" Type="DateTime" Precision="3" />
+          <Property Name="tel_number" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+          <Property Name="is_deleted" Type="Byte" />
+          <Property Name="email_address" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+          <Property Name="status" Type="Int32" />
+          <Property Name="gender" Type="Int32" />
+          <Property Name="birthday" Type="DateTime" Precision="3" />
+          <Property Name="org_duty_level_id" Type="Int64" />
+        </EntityType>
+        <EntityType Name="col_summary">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="Int64" Nullable="false" />
+          <Property Name="state" Type="Int32" />
+          <Property Name="subject" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Name="deadline" Type="Int64" />
+          <Property Name="col_type" Type="Int32" />
+          <Property Name="can_archive" Type="Byte" />
+          <Property Name="can_modify" Type="Byte" />
+          <Property Name="can_due_reminder" Type="Byte" />
+          <Property Name="can_forward" Type="Byte" />
+          <Property Name="can_edit" Type="Byte" />
+          <Property Name="can_track" Type="Byte" />
+          <Property Name="remind_interval" Type="Int64" />
+          <Property Name="project_id" Type="Int64" />
+          <Property Name="important_level" Type="Int32" />
+          <Property Name="resent_time" Type="Int32" />
+          <Property Name="create_date" Type="DateTime" Precision="3" />
+          <Property Name="start_date" Type="DateTime" Precision="3" />
+          <Property Name="finish_date" Type="DateTime" Precision="3" />
+          <Property Name="is_audited" Type="Byte" />
+          <Property Name="archive_id" Type="Int64" />
+          <Property Name="start_member_id" Type="Int64" />
+          <Property Name="process_id" Type="String" MaxLength="110" FixedLength="false" Unicode="true" />
+          <Property Name="case_id" Type="Int64" />
+          <Property Name="advance_remind" Type="Int64" />
+          <Property Name="identifier" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+          <Property Name="forward_member" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Name="templete_id" Type="Int64" />
+          <Property Name="workflow_rule" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="webservice_code" Type="String" MaxLength="60" FixedLength="false" Unicode="true" />
+          <Property Name="body_type" Type="String" MaxLength="20" FixedLength="false" Unicode="true" />
+          <Property Name="form_recordid" Type="Int64" />
+          <Property Name="formid" Type="Int64" />
+          <Property Name="form_appid" Type="Int64" />
+          <Property Name="org_department_id" Type="Int64" />
+          <Property Name="org_account_id" Type="Int64" />
+          <Property Name="source" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Name="parentform_summaryid" Type="Int64" />
+          <Property Name="newflow_type" Type="Int32" />
+          <Property Name="can_edit_attachment" Type="Byte" Nullable="false" />
+          <Property Name="is_vouch" Type="Byte" />
+          <Property Name="over_worktime" Type="Int64" />
+          <Property Name="run_worktime" Type="Int64" />
+          <Property Name="over_time" Type="Int64" />
+          <Property Name="run_time" Type="Int64" />
+          <Property Name="can_autostopflow" Type="Byte" />
+          <NavigationProperty Name="col_body" Relationship="v3xModel.Refcol_summary64" FromRole="col_summary" ToRole="col_body" />
+        </EntityType>
+        <Association Name="Refcol_summary64">
+          <End Type="v3xModel.col_summary" Role="col_summary" Multiplicity="1" />
+          <End Type="v3xModel.col_body" Role="col_body" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="col_summary">
+              <PropertyRef Name="id" />
+            </Principal>
+            <Dependent Role="col_body">
+              <PropertyRef Name="col_id" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <EntityType Name="formmain_0593">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="Decimal" Nullable="false" Precision="20" Scale="0" />
+          <Property Name="state" Type="Decimal" Precision="10" Scale="0" />
+          <Property Name="start_member_id" Type="Decimal" Precision="20" Scale="0" />
+          <Property Name="start_date" Type="DateTime" Precision="3" />
+          <Property Name="approve_member_id" Type="Decimal" Precision="20" Scale="0" />
+          <Property Name="approve_date" Type="DateTime" Precision="3" />
+          <Property Name="finishedflag" Type="Decimal" Precision="10" Scale="0" />
+          <Property Name="ratifyflag" Type="Decimal" Precision="10" Scale="0" />
+          <Property Name="ratify_member_id" Type="Decimal" Precision="20" Scale="0" />
+          <Property Name="ratify_date" Type="DateTime" Precision="3" />
+          <Property Name="field0001" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+          <Property Name="field0002" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+          <Property Name="field0003" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+          <Property Name="field0004" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+          <Property Name="field0005" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+          <Property Name="field0006" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+          <Property Name="field0007" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+          <Property Name="field0008" Type="DateTime" Precision="3" />
+          <Property Name="field0009" Type="DateTime" Precision="3" />
+          <Property Name="field0010" Type="Decimal" Precision="20" Scale="2" />
+          <Property Name="field0011" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+          <Property Name="field0012" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="field0013" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="field0014" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="field0015" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="field0016" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="field0017" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+          <Property Name="field0018" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+          <Property Name="field0019" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+          <Property Name="field0020" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+          <Property Name="field0021" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+          <Property Name="field0022" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+          <Property Name="field0023" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+          <Property Name="field0024" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="field0025" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="sort" Type="Decimal" Precision="10" Scale="0" />
+          <Property Name="field0034" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+        </EntityType>
+        <EntityType Name="formson_0594">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="Decimal" Nullable="false" Precision="20" Scale="0" />
+          <Property Name="formmain_0593Id" Type="Decimal" Precision="20" Scale="0" />
+          <Property Name="field0026" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+          <Property Name="field0027" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+          <Property Name="field0028" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+          <Property Name="field0029" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+          <Property Name="field0030" Type="Decimal" Precision="20" Scale="2" />
+          <Property Name="field0031" Type="Decimal" Precision="20" Scale="2" />
+          <Property Name="field0032" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+          <Property Name="field0033" Type="Decimal" Precision="20" Scale="3" />
+          <Property Name="sort" Type="Decimal" Precision="10" Scale="0" />
+        </EntityType>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="v3xModelStoreContainer" CdmEntityContainer="v3xEntities1">
+          <EntitySetMapping Name="form_enumlist">
+            <EntityTypeMapping TypeName="v3xModel.form_enumlist">
+              <MappingFragment StoreEntitySet="form_enumlist">
+                <ScalarProperty Name="id" ColumnName="id" />
+                <ScalarProperty Name="enumname" ColumnName="enumname" />
+                <ScalarProperty Name="enumtype" ColumnName="enumtype" />
+                <ScalarProperty Name="ref_apptypeid" ColumnName="ref_apptypeid" />
+                <ScalarProperty Name="showtype" ColumnName="showtype" />
+                <ScalarProperty Name="ref_appmain_id" ColumnName="ref_appmain_id" />
+                <ScalarProperty Name="sortnumber" ColumnName="sortnumber" />
+                <ScalarProperty Name="ifuse" ColumnName="ifuse" />
+                <ScalarProperty Name="enumstate" ColumnName="enumstate" />
+                <ScalarProperty Name="description" ColumnName="description" />
+                <ScalarProperty Name="org_account_id" ColumnName="org_account_id" />
+                <ScalarProperty Name="parent_id" ColumnName="parent_id" />
+                <ScalarProperty Name="is_formEnum" ColumnName="is_formEnum" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="form_enumvalue">
+            <EntityTypeMapping TypeName="v3xModel.form_enumvalue">
+              <MappingFragment StoreEntitySet="form_enumvalue">
+                <ScalarProperty Name="id" ColumnName="id" />
+                <ScalarProperty Name="ref_enumid" ColumnName="ref_enumid" />
+                <ScalarProperty Name="ref_apptypeid" ColumnName="ref_apptypeid" />
+                <ScalarProperty Name="ref_appmain_id" ColumnName="ref_appmain_id" />
+                <ScalarProperty Name="showValue" ColumnName="showValue" />
+                <ScalarProperty Name="enumvalue" ColumnName="enumvalue" />
+                <ScalarProperty Name="sortnumber" ColumnName="sortnumber" />
+                <ScalarProperty Name="is_ref" ColumnName="is_ref" />
+                <ScalarProperty Name="state" ColumnName="state" />
+                <ScalarProperty Name="output_switch" ColumnName="output_switch" />
+                <ScalarProperty Name="ifuse" ColumnName="ifuse" />
+                <ScalarProperty Name="writestate" ColumnName="writestate" />
+                <ScalarProperty Name="querystate" ColumnName="querystate" />
+                <ScalarProperty Name="org_account_id" ColumnName="org_account_id" />
+                <ScalarProperty Name="parent_id" ColumnName="parent_id" />
+                <ScalarProperty Name="root_id" ColumnName="root_id" />
+                <ScalarProperty Name="level_num" ColumnName="level_num" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="col_body">
+            <EntityTypeMapping TypeName="v3xModel.col_body">
+              <MappingFragment StoreEntitySet="col_body">
+                <ScalarProperty Name="content_name" ColumnName="content_name" />
+                <ScalarProperty Name="col_id" ColumnName="col_id" />
+                <ScalarProperty Name="update_date" ColumnName="update_date" />
+                <ScalarProperty Name="create_date" ColumnName="create_date" />
+                <ScalarProperty Name="content" ColumnName="content" />
+                <ScalarProperty Name="body_type" ColumnName="body_type" />
+                <ScalarProperty Name="id" ColumnName="id" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="v3x_affair">
+            <EntityTypeMapping TypeName="v3xModel.v3x_affair">
+              <MappingFragment StoreEntitySet="v3x_affair">
+                <ScalarProperty Name="sub_app" ColumnName="sub_app" />
+                <ScalarProperty Name="deal_term_userid" ColumnName="deal_term_userid" />
+                <ScalarProperty Name="deal_term_type" ColumnName="deal_term_type" />
+                <ScalarProperty Name="run_time" ColumnName="run_time" />
+                <ScalarProperty Name="over_time" ColumnName="over_time" />
+                <ScalarProperty Name="run_worktime" ColumnName="run_worktime" />
+                <ScalarProperty Name="over_worktime" ColumnName="over_worktime" />
+                <ScalarProperty Name="from_id" ColumnName="from_id" />
+                <ScalarProperty Name="templete_id" ColumnName="templete_id" />
+                <ScalarProperty Name="form_operation_id" ColumnName="form_operation_id" />
+                <ScalarProperty Name="form_id" ColumnName="form_id" />
+                <ScalarProperty Name="form_app_id" ColumnName="form_app_id" />
+                <ScalarProperty Name="activity_id" ColumnName="activity_id" />
+                <ScalarProperty Name="node_policy" ColumnName="node_policy" />
+                <ScalarProperty Name="transactor_id" ColumnName="transactor_id" />
+                <ScalarProperty Name="identifier" ColumnName="identifier" />
+                <ScalarProperty Name="forward_member" ColumnName="forward_member" />
+                <ScalarProperty Name="resent_time" ColumnName="resent_time" />
+                <ScalarProperty Name="important_level" ColumnName="important_level" />
+                <ScalarProperty Name="body_type" ColumnName="body_type" />
+                <ScalarProperty Name="is_finish" ColumnName="is_finish" />
+                <ScalarProperty Name="update_date" ColumnName="update_date" />
+                <ScalarProperty Name="ext_props" ColumnName="ext_props" />
+                <ScalarProperty Name="addition" ColumnName="addition" />
+                <ScalarProperty Name="is_track" ColumnName="is_track" />
+                <ScalarProperty Name="archive_id" ColumnName="archive_id" />
+                <ScalarProperty Name="is_delete" ColumnName="is_delete" />
+                <ScalarProperty Name="remind_interval" ColumnName="remind_interval" />
+                <ScalarProperty Name="complete_time" ColumnName="complete_time" />
+                <ScalarProperty Name="receive_time" ColumnName="receive_time" />
+                <ScalarProperty Name="create_date" ColumnName="create_date" />
+                <ScalarProperty Name="can_due_remind" ColumnName="can_due_remind" />
+                <ScalarProperty Name="deadline_date" ColumnName="deadline_date" />
+                <ScalarProperty Name="remind_date" ColumnName="remind_date" />
+                <ScalarProperty Name="hasten_times" ColumnName="hasten_times" />
+                <ScalarProperty Name="sub_state" ColumnName="sub_state" />
+                <ScalarProperty Name="state" ColumnName="state" />
+                <ScalarProperty Name="sub_object_id" ColumnName="sub_object_id" />
+                <ScalarProperty Name="object_id" ColumnName="object_id" />
+                <ScalarProperty Name="app" ColumnName="app" />
+                <ScalarProperty Name="subject" ColumnName="subject" />
+                <ScalarProperty Name="sender_id" ColumnName="sender_id" />
+                <ScalarProperty Name="member_id" ColumnName="member_id" />
+                <ScalarProperty Name="is_over_time" ColumnName="is_over_time" />
+                <ScalarProperty Name="id" ColumnName="id" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="v3x_attachment">
+            <EntityTypeMapping TypeName="v3xModel.v3x_attachment">
+              <MappingFragment StoreEntitySet="v3x_attachment">
+                <ScalarProperty Name="sort" ColumnName="sort" />
+                <ScalarProperty Name="genesis_id" ColumnName="genesis_id" />
+                <ScalarProperty Name="description" ColumnName="description" />
+                <ScalarProperty Name="attachment_size" ColumnName="attachment_size" />
+                <ScalarProperty Name="createdate" ColumnName="createdate" />
+                <ScalarProperty Name="mime_type" ColumnName="mime_type" />
+                <ScalarProperty Name="file_url" ColumnName="file_url" />
+                <ScalarProperty Name="filename" ColumnName="filename" />
+                <ScalarProperty Name="type" ColumnName="type" />
+                <ScalarProperty Name="category" ColumnName="category" />
+                <ScalarProperty Name="sub_reference" ColumnName="sub_reference" />
+                <ScalarProperty Name="reference" ColumnName="reference" />
+                <ScalarProperty Name="id" ColumnName="id" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="formmain_0190">
+            <EntityTypeMapping TypeName="v3xModel.formmain_0190">
+              <MappingFragment StoreEntitySet="formmain_0190">
+                <ScalarProperty Name="field0025" ColumnName="field0025" />
+                <ScalarProperty Name="field0024" ColumnName="field0024" />
+                <ScalarProperty Name="field0023" ColumnName="field0023" />
+                <ScalarProperty Name="field0022" ColumnName="field0022" />
+                <ScalarProperty Name="field0021" ColumnName="field0021" />
+                <ScalarProperty Name="sort" ColumnName="sort" />
+                <ScalarProperty Name="field0016" ColumnName="field0016" />
+                <ScalarProperty Name="field0015" ColumnName="field0015" />
+                <ScalarProperty Name="field0014" ColumnName="field0014" />
+                <ScalarProperty Name="field0013" ColumnName="field0013" />
+                <ScalarProperty Name="field0012" ColumnName="field0012" />
+                <ScalarProperty Name="field0011" ColumnName="field0011" />
+                <ScalarProperty Name="field0010" ColumnName="field0010" />
+                <ScalarProperty Name="field0009" ColumnName="field0009" />
+                <ScalarProperty Name="field0008" ColumnName="field0008" />
+                <ScalarProperty Name="field0007" ColumnName="field0007" />
+                <ScalarProperty Name="field0006" ColumnName="field0006" />
+                <ScalarProperty Name="field0005" ColumnName="field0005" />
+                <ScalarProperty Name="field0004" ColumnName="field0004" />
+                <ScalarProperty Name="field0003" ColumnName="field0003" />
+                <ScalarProperty Name="field0002" ColumnName="field0002" />
+                <ScalarProperty Name="field0001" ColumnName="field0001" />
+                <ScalarProperty Name="ratify_date" ColumnName="ratify_date" />
+                <ScalarProperty Name="ratify_member_id" ColumnName="ratify_member_id" />
+                <ScalarProperty Name="ratifyflag" ColumnName="ratifyflag" />
+                <ScalarProperty Name="finishedflag" ColumnName="finishedflag" />
+                <ScalarProperty Name="approve_date" ColumnName="approve_date" />
+                <ScalarProperty Name="approve_member_id" ColumnName="approve_member_id" />
+                <ScalarProperty Name="start_date" ColumnName="start_date" />
+                <ScalarProperty Name="start_member_id" ColumnName="start_member_id" />
+                <ScalarProperty Name="state" ColumnName="state" />
+                <ScalarProperty Name="id" ColumnName="id" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="formmain_0545">
+            <EntityTypeMapping TypeName="v3xModel.formmain_0545">
+              <MappingFragment StoreEntitySet="formmain_0545">
+                <ScalarProperty Name="sort" ColumnName="sort" />
+                <ScalarProperty Name="field0023" ColumnName="field0023" />
+                <ScalarProperty Name="field0022" ColumnName="field0022" />
+                <ScalarProperty Name="field0021" ColumnName="field0021" />
+                <ScalarProperty Name="field0020" ColumnName="field0020" />
+                <ScalarProperty Name="field0019" ColumnName="field0019" />
+                <ScalarProperty Name="field0018" ColumnName="field0018" />
+                <ScalarProperty Name="field0017" ColumnName="field0017" />
+                <ScalarProperty Name="field0016" ColumnName="field0016" />
+                <ScalarProperty Name="field0015" ColumnName="field0015" />
+                <ScalarProperty Name="field0014" ColumnName="field0014" />
+                <ScalarProperty Name="field0013" ColumnName="field0013" />
+                <ScalarProperty Name="field0012" ColumnName="field0012" />
+                <ScalarProperty Name="field0011" ColumnName="field0011" />
+                <ScalarProperty Name="field0010" ColumnName="field0010" />
+                <ScalarProperty Name="field0009" ColumnName="field0009" />
+                <ScalarProperty Name="field0008" ColumnName="field0008" />
+                <ScalarProperty Name="field0007" ColumnName="field0007" />
+                <ScalarProperty Name="field0006" ColumnName="field0006" />
+                <ScalarProperty Name="field0005" ColumnName="field0005" />
+                <ScalarProperty Name="field0004" ColumnName="field0004" />
+                <ScalarProperty Name="field0003" ColumnName="field0003" />
+                <ScalarProperty Name="field0002" ColumnName="field0002" />
+                <ScalarProperty Name="field0001" ColumnName="field0001" />
+                <ScalarProperty Name="ratify_date" ColumnName="ratify_date" />
+                <ScalarProperty Name="ratify_member_id" ColumnName="ratify_member_id" />
+                <ScalarProperty Name="ratifyflag" ColumnName="ratifyflag" />
+                <ScalarProperty Name="finishedflag" ColumnName="finishedflag" />
+                <ScalarProperty Name="approve_date" ColumnName="approve_date" />
+                <ScalarProperty Name="approve_member_id" ColumnName="approve_member_id" />
+                <ScalarProperty Name="start_date" ColumnName="start_date" />
+                <ScalarProperty Name="start_member_id" ColumnName="start_member_id" />
+                <ScalarProperty Name="state" ColumnName="state" />
+                <ScalarProperty Name="id" ColumnName="id" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="formson_0191">
+            <EntityTypeMapping TypeName="v3xModel.formson_0191">
+              <MappingFragment StoreEntitySet="formson_0191">
+                <ScalarProperty Name="sort" ColumnName="sort" />
+                <ScalarProperty Name="field0020" ColumnName="field0020" />
+                <ScalarProperty Name="field0019" ColumnName="field0019" />
+                <ScalarProperty Name="field0018" ColumnName="field0018" />
+                <ScalarProperty Name="field0017" ColumnName="field0017" />
+                <ScalarProperty Name="formmain_0190Id" ColumnName="formmain_0190Id" />
+                <ScalarProperty Name="id" ColumnName="id" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="formson_0546">
+            <EntityTypeMapping TypeName="v3xModel.formson_0546">
+              <MappingFragment StoreEntitySet="formson_0546">
+                <ScalarProperty Name="sort" ColumnName="sort" />
+                <ScalarProperty Name="field0029" ColumnName="field0029" />
+                <ScalarProperty Name="field0028" ColumnName="field0028" />
+                <ScalarProperty Name="field0027" ColumnName="field0027" />
+                <ScalarProperty Name="field0026" ColumnName="field0026" />
+                <ScalarProperty Name="field0025" ColumnName="field0025" />
+                <ScalarProperty Name="field0024" ColumnName="field0024" />
+                <ScalarProperty Name="formmain_0545Id" ColumnName="formmain_0545Id" />
+                <ScalarProperty Name="id" ColumnName="id" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="v3x_org_department">
+            <EntityTypeMapping TypeName="v3xModel.v3x_org_department">
+              <MappingFragment StoreEntitySet="v3x_org_department">
+                <ScalarProperty Name="dept_short_name" ColumnName="dept_short_name" />
+                <ScalarProperty Name="status" ColumnName="status" />
+                <ScalarProperty Name="is_deleted" ColumnName="is_deleted" />
+                <ScalarProperty Name="org_account_id" ColumnName="org_account_id" />
+                <ScalarProperty Name="description" ColumnName="description" />
+                <ScalarProperty Name="update_time" ColumnName="update_time" />
+                <ScalarProperty Name="create_time" ColumnName="create_time" />
+                <ScalarProperty Name="sort_id" ColumnName="sort_id" />
+                <ScalarProperty Name="is_internal" ColumnName="is_internal" />
+                <ScalarProperty Name="enable" ColumnName="enable" />
+                <ScalarProperty Name="path" ColumnName="path" />
+                <ScalarProperty Name="code" ColumnName="code" />
+                <ScalarProperty Name="name" ColumnName="name" />
+                <ScalarProperty Name="id" ColumnName="id" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="v3x_org_member">
+            <EntityTypeMapping TypeName="v3xModel.v3x_org_member">
+              <MappingFragment StoreEntitySet="v3x_org_member">
+                <ScalarProperty Name="org_duty_level_id" ColumnName="org_duty_level_id" />
+                <ScalarProperty Name="birthday" ColumnName="birthday" />
+                <ScalarProperty Name="gender" ColumnName="gender" />
+                <ScalarProperty Name="status" ColumnName="status" />
+                <ScalarProperty Name="email_address" ColumnName="email_address" />
+                <ScalarProperty Name="is_deleted" ColumnName="is_deleted" />
+                <ScalarProperty Name="tel_number" ColumnName="tel_number" />
+                <ScalarProperty Name="agent_time" ColumnName="agent_time" />
+                <ScalarProperty Name="agent_to_id" ColumnName="agent_to_id" />
+                <ScalarProperty Name="agent_id" ColumnName="agent_id" />
+                <ScalarProperty Name="org_post_id" ColumnName="org_post_id" />
+                <ScalarProperty Name="org_account_id" ColumnName="org_account_id" />
+                <ScalarProperty Name="org_level_id" ColumnName="org_level_id" />
+                <ScalarProperty Name="org_department_id" ColumnName="org_department_id" />
+                <ScalarProperty Name="description" ColumnName="description" />
+                <ScalarProperty Name="update_time" ColumnName="update_time" />
+                <ScalarProperty Name="create_time" ColumnName="create_time" />
+                <ScalarProperty Name="is_admin" ColumnName="is_admin" />
+                <ScalarProperty Name="is_assigned" ColumnName="is_assigned" />
+                <ScalarProperty Name="is_virtual" ColumnName="is_virtual" />
+                <ScalarProperty Name="is_loginable" ColumnName="is_loginable" />
+                <ScalarProperty Name="is_internal" ColumnName="is_internal" />
+                <ScalarProperty Name="type" ColumnName="type" />
+                <ScalarProperty Name="state" ColumnName="state" />
+                <ScalarProperty Name="sort_id" ColumnName="sort_id" />
+                <ScalarProperty Name="enabled" ColumnName="enabled" />
+                <ScalarProperty Name="primary_languange" ColumnName="primary_languange" />
+                <ScalarProperty Name="code" ColumnName="code" />
+                <ScalarProperty Name="name" ColumnName="name" />
+                <ScalarProperty Name="id" ColumnName="id" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="col_summary">
+            <EntityTypeMapping TypeName="v3xModel.col_summary">
+              <MappingFragment StoreEntitySet="col_summary">
+                <ScalarProperty Name="can_autostopflow" ColumnName="can_autostopflow" />
+                <ScalarProperty Name="run_time" ColumnName="run_time" />
+                <ScalarProperty Name="over_time" ColumnName="over_time" />
+                <ScalarProperty Name="run_worktime" ColumnName="run_worktime" />
+                <ScalarProperty Name="over_worktime" ColumnName="over_worktime" />
+                <ScalarProperty Name="is_vouch" ColumnName="is_vouch" />
+                <ScalarProperty Name="can_edit_attachment" ColumnName="can_edit_attachment" />
+                <ScalarProperty Name="newflow_type" ColumnName="newflow_type" />
+                <ScalarProperty Name="parentform_summaryid" ColumnName="parentform_summaryid" />
+                <ScalarProperty Name="source" ColumnName="source" />
+                <ScalarProperty Name="org_account_id" ColumnName="org_account_id" />
+                <ScalarProperty Name="org_department_id" ColumnName="org_department_id" />
+                <ScalarProperty Name="form_appid" ColumnName="form_appid" />
+                <ScalarProperty Name="formid" ColumnName="formid" />
+                <ScalarProperty Name="form_recordid" ColumnName="form_recordid" />
+                <ScalarProperty Name="body_type" ColumnName="body_type" />
+                <ScalarProperty Name="webservice_code" ColumnName="webservice_code" />
+                <ScalarProperty Name="workflow_rule" ColumnName="workflow_rule" />
+                <ScalarProperty Name="templete_id" ColumnName="templete_id" />
+                <ScalarProperty Name="forward_member" ColumnName="forward_member" />
+                <ScalarProperty Name="identifier" ColumnName="identifier" />
+                <ScalarProperty Name="advance_remind" ColumnName="advance_remind" />
+                <ScalarProperty Name="case_id" ColumnName="case_id" />
+                <ScalarProperty Name="process_id" ColumnName="process_id" />
+                <ScalarProperty Name="start_member_id" ColumnName="start_member_id" />
+                <ScalarProperty Name="archive_id" ColumnName="archive_id" />
+                <ScalarProperty Name="is_audited" ColumnName="is_audited" />
+                <ScalarProperty Name="finish_date" ColumnName="finish_date" />
+                <ScalarProperty Name="start_date" ColumnName="start_date" />
+                <ScalarProperty Name="create_date" ColumnName="create_date" />
+                <ScalarProperty Name="resent_time" ColumnName="resent_time" />
+                <ScalarProperty Name="important_level" ColumnName="important_level" />
+                <ScalarProperty Name="project_id" ColumnName="project_id" />
+                <ScalarProperty Name="remind_interval" ColumnName="remind_interval" />
+                <ScalarProperty Name="can_track" ColumnName="can_track" />
+                <ScalarProperty Name="can_edit" ColumnName="can_edit" />
+                <ScalarProperty Name="can_forward" ColumnName="can_forward" />
+                <ScalarProperty Name="can_due_reminder" ColumnName="can_due_reminder" />
+                <ScalarProperty Name="can_modify" ColumnName="can_modify" />
+                <ScalarProperty Name="can_archive" ColumnName="can_archive" />
+                <ScalarProperty Name="col_type" ColumnName="col_type" />
+                <ScalarProperty Name="deadline" ColumnName="deadline" />
+                <ScalarProperty Name="subject" ColumnName="subject" />
+                <ScalarProperty Name="state" ColumnName="state" />
+                <ScalarProperty Name="id" ColumnName="id" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="formmain_0593">
+            <EntityTypeMapping TypeName="v3xModel.formmain_0593">
+              <MappingFragment StoreEntitySet="formmain_0593">
+                <ScalarProperty Name="field0034" ColumnName="field0034" />
+                <ScalarProperty Name="sort" ColumnName="sort" />
+                <ScalarProperty Name="field0025" ColumnName="field0025" />
+                <ScalarProperty Name="field0024" ColumnName="field0024" />
+                <ScalarProperty Name="field0023" ColumnName="field0023" />
+                <ScalarProperty Name="field0022" ColumnName="field0022" />
+                <ScalarProperty Name="field0021" ColumnName="field0021" />
+                <ScalarProperty Name="field0020" ColumnName="field0020" />
+                <ScalarProperty Name="field0019" ColumnName="field0019" />
+                <ScalarProperty Name="field0018" ColumnName="field0018" />
+                <ScalarProperty Name="field0017" ColumnName="field0017" />
+                <ScalarProperty Name="field0016" ColumnName="field0016" />
+                <ScalarProperty Name="field0015" ColumnName="field0015" />
+                <ScalarProperty Name="field0014" ColumnName="field0014" />
+                <ScalarProperty Name="field0013" ColumnName="field0013" />
+                <ScalarProperty Name="field0012" ColumnName="field0012" />
+                <ScalarProperty Name="field0011" ColumnName="field0011" />
+                <ScalarProperty Name="field0010" ColumnName="field0010" />
+                <ScalarProperty Name="field0009" ColumnName="field0009" />
+                <ScalarProperty Name="field0008" ColumnName="field0008" />
+                <ScalarProperty Name="field0007" ColumnName="field0007" />
+                <ScalarProperty Name="field0006" ColumnName="field0006" />
+                <ScalarProperty Name="field0005" ColumnName="field0005" />
+                <ScalarProperty Name="field0004" ColumnName="field0004" />
+                <ScalarProperty Name="field0003" ColumnName="field0003" />
+                <ScalarProperty Name="field0002" ColumnName="field0002" />
+                <ScalarProperty Name="field0001" ColumnName="field0001" />
+                <ScalarProperty Name="ratify_date" ColumnName="ratify_date" />
+                <ScalarProperty Name="ratify_member_id" ColumnName="ratify_member_id" />
+                <ScalarProperty Name="ratifyflag" ColumnName="ratifyflag" />
+                <ScalarProperty Name="finishedflag" ColumnName="finishedflag" />
+                <ScalarProperty Name="approve_date" ColumnName="approve_date" />
+                <ScalarProperty Name="approve_member_id" ColumnName="approve_member_id" />
+                <ScalarProperty Name="start_date" ColumnName="start_date" />
+                <ScalarProperty Name="start_member_id" ColumnName="start_member_id" />
+                <ScalarProperty Name="state" ColumnName="state" />
+                <ScalarProperty Name="id" ColumnName="id" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="formson_0594">
+            <EntityTypeMapping TypeName="v3xModel.formson_0594">
+              <MappingFragment StoreEntitySet="formson_0594">
+                <ScalarProperty Name="sort" ColumnName="sort" />
+                <ScalarProperty Name="field0033" ColumnName="field0033" />
+                <ScalarProperty Name="field0032" ColumnName="field0032" />
+                <ScalarProperty Name="field0031" ColumnName="field0031" />
+                <ScalarProperty Name="field0030" ColumnName="field0030" />
+                <ScalarProperty Name="field0029" ColumnName="field0029" />
+                <ScalarProperty Name="field0028" ColumnName="field0028" />
+                <ScalarProperty Name="field0027" ColumnName="field0027" />
+                <ScalarProperty Name="field0026" ColumnName="field0026" />
+                <ScalarProperty Name="formmain_0593Id" ColumnName="formmain_0593Id" />
+                <ScalarProperty Name="id" ColumnName="id" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="false" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="true" />
+        <DesignerProperty Name="UseLegacyProvider" Value="false" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="无" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams></Diagrams>
+  </Designer>
+</edmx:Edmx>

@@ -1,0 +1,354 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="OAtoU8DATAModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2008" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="ChangeBankMiddle">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="tabName" Type="varchar" MaxLength="255" Nullable="false" />
+    <Property Name="fid" Type="bigint" Nullable="false" />
+    <Property Name="allstr" Type="varchar" MaxLength="255" Nullable="false" />
+    <Property Name="supplier" Type="varchar" MaxLength="255" />
+    <Property Name="bank" Type="varchar" MaxLength="255" />
+    <Property Name="bankCarId" Type="varchar" MaxLength="80" />
+    <Property Name="isSave" Type="bit" />
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+  </EntityType>
+  <EntityType Name="contrast">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="baoxiaoId" Type="bigint" Nullable="false" />
+    <Property Name="yuzhiId" Type="bigint" Nullable="false" />
+    <Property Name="l4" Type="decimal" Precision="18" Scale="2" />
+    <Property Name="l5" Type="decimal" Precision="18" Scale="2" />
+    <Property Name="l6" Type="decimal" Precision="18" Scale="2" />
+    <Property Name="l7" Type="decimal" Precision="18" Scale="2" />
+    <Property Name="l13" Type="decimal" Precision="18" Scale="2" />
+  </EntityType>
+  <EntityType Name="dbConfig">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="name" Type="varchar" MaxLength="255" Nullable="false" />
+    <Property Name="yydbConfigName" Type="varchar" MaxLength="255" Nullable="false" />
+    <Property Name="oaFormmainTab" Type="varchar" MaxLength="255" />
+    <Property Name="oaFormsonTab" Type="varchar" MaxLength="255" />
+    <Property Name="oaFormainId" Type="bigint" />
+    <Property Name="oaCreateName" Type="varchar" MaxLength="255" />
+    <Property Name="oachuangjinshijin" Type="varchar" MaxLength="255" />
+    <Property Name="oafaqiren" Type="varchar" MaxLength="255" />
+    <Property Name="oacompany" Type="varchar" MaxLength="255" />
+    <Property Name="oaphone" Type="varchar" MaxLength="255" />
+    <Property Name="oalAmount" Type="varchar" MaxLength="255" />
+    <Property Name="oacAmount" Type="varchar" MaxLength="255" />
+    <Property Name="oashouyibumen" Type="varchar" MaxLength="255" />
+    <Property Name="oabody_type" Type="varchar" MaxLength="255" />
+    <Property Name="oatitle" Type="varchar" MaxLength="255" />
+    <Property Name="oafinish_date" Type="varchar" MaxLength="255" />
+    <Property Name="oafaqibumen" Type="varchar" MaxLength="255" />
+    <Property Name="oacolId" Type="varchar" MaxLength="255" />
+    <Property Name="oamid" Type="varchar" MaxLength="255" />
+    <Property Name="oatype" Type="varchar" MaxLength="255" />
+  </EntityType>
+  <EntityType Name="ecs_region">
+    <Key>
+      <PropertyRef Name="region_id" />
+    </Key>
+    <Property Name="region_id" Type="smallint" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="parent_id" Type="smallint" Nullable="false" />
+    <Property Name="region_name" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="region_type" Type="int" Nullable="false" />
+    <Property Name="agency_id" Type="smallint" Nullable="false" />
+  </EntityType>
+  <EntityType Name="FinancialRecords">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="liushuiId" Type="varchar" MaxLength="50" />
+    <Property Name="beginFinancial" Type="varchar" MaxLength="255" />
+    <Property Name="endFinancial" Type="varchar" MaxLength="255" />
+    <Property Name="createDate" Type="datetime" />
+    <Property Name="createMan" Type="varchar" MaxLength="255" />
+  </EntityType>
+  <EntityType Name="MessageShow">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="msg" Type="varchar" MaxLength="4000" />
+    <Property Name="createdate" Type="datetime" />
+    <Property Name="isOut" Type="int" />
+    <Property Name="phone" Type="varchar" MaxLength="255" />
+    <Property Name="name" Type="varchar" MaxLength="255" />
+  </EntityType>
+  <EntityType Name="PrintRecord">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="colid" Type="bigint" Nullable="false" />
+    <Property Name="createdate" Type="datetime" Nullable="false" />
+    <Property Name="num" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="PrintRecordBody">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="userid" Type="int" Nullable="false" />
+    <Property Name="colid" Type="bigint" Nullable="false" />
+    <Property Name="createdate" Type="datetime" Nullable="false" />
+    <Property Name="pid" Type="int" Nullable="false" />
+    <Property Name="ip" Type="varchar" MaxLength="255" Nullable="false" />
+  </EntityType>
+  <EntityType Name="producehelp">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="col_id" Type="bigint" Nullable="false" />
+    <Property Name="isShow" Type="int" Nullable="false" />
+    <Property Name="intoForm" Type="bigint" Nullable="false" />
+  </EntityType>
+  <EntityType Name="RecordTable">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Pid" Type="nvarchar" MaxLength="200" />
+    <Property Name="IsIntoBook" Type="int" />
+    <Property Name="IsIntoCloseBill" Type="int" />
+    <Property Name="IsIntoAccvouch" Type="int" />
+    <Property Name="PayingBank" Type="nvarchar(max)" />
+    <Property Name="voucher" Type="nvarchar" MaxLength="100" />
+    <Property Name="updateTime" Type="datetime" />
+    <Property Name="updateTime2" Type="datetime" />
+    <Property Name="updateTime3" Type="datetime" />
+    <Property Name="ip" Type="nvarchar" MaxLength="50" />
+    <Property Name="ip2" Type="nvarchar" MaxLength="50" />
+    <Property Name="ip3" Type="nvarchar" MaxLength="50" />
+    <Property Name="Bid" Type="int" />
+    <Property Name="contents" Type="nvarchar" MaxLength="50" />
+    <Property Name="voucherno" Type="nvarchar" MaxLength="50" />
+    <Property Name="piaojuId" Type="int" />
+    <Property Name="liushuihao" Type="nvarchar(max)" />
+    <Property Name="type" Type="int" />
+    <Property Name="amountMoney" Type="decimal" Precision="18" Scale="2" />
+    <Property Name="chunabianhao" Type="nvarchar" MaxLength="50" />
+    <Property Name="pingzhenhao" Type="nvarchar" MaxLength="50" />
+    <Property Name="danjubianhao" Type="nvarchar" MaxLength="50" />
+    <Property Name="userName" Type="nvarchar" MaxLength="50" />
+    <Property Name="l4" Type="decimal" Precision="18" Scale="2" />
+    <Property Name="l5" Type="decimal" Precision="18" Scale="2" />
+    <Property Name="l6" Type="decimal" Precision="18" Scale="2" />
+    <Property Name="l7" Type="decimal" Precision="18" Scale="2" />
+    <Property Name="l13" Type="decimal" Precision="18" Scale="2" />
+    <Property Name="isDel" Type="bit" />
+    <Property Name="yyDate" Type="date" />
+  </EntityType>
+  <EntityType Name="triggerSummary">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="state" Type="int" />
+    <Property Name="subject" Type="nvarchar" MaxLength="255" />
+    <Property Name="create_date" Type="datetime" />
+    <Property Name="start_date" Type="datetime" />
+    <Property Name="finish_date" Type="datetime" />
+    <Property Name="templete_id" Type="bigint" />
+    <Property Name="start_member_id" Type="bigint" />
+  </EntityType>
+  <EntityType Name="userInfo">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="name" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="password" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="start" Type="bit" Nullable="false" />
+    <Property Name="type" Type="int" Nullable="false" />
+    <Property Name="phnoe" Type="nvarchar" MaxLength="50" />
+    <Property Name="mac" Type="varchar" MaxLength="255" />
+    <Property Name="company" Type="int" />
+    <Property Name="zhaohangport" Type="varchar" MaxLength="255" />
+    <Property Name="pinganport" Type="varchar" MaxLength="255" />
+    <Property Name="zhaohangUser" Type="varchar" MaxLength="255" />
+    <Property Name="pinganYqdm" Type="varchar" MaxLength="255" />
+  </EntityType>
+  <EntityType Name="userOATab">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+  </EntityType>
+  <EntityType Name="yq_certificates">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="code" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="name" Type="varchar" MaxLength="50" Nullable="false" />
+  </EntityType>
+  <EntityType Name="yq_cityCode">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="code" Type="int" Nullable="false" />
+    <Property Name="name" Type="varchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="yq_cityCode_zhaohang">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="code" Type="varchar" MaxLength="4" Nullable="false" />
+    <Property Name="name" Type="varchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="yq_code">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" Nullable="false" />
+    <Property Name="code" Type="varchar" MaxLength="6" Nullable="false" />
+    <Property Name="describe" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="iskey" Type="varchar" MaxLength="5" />
+  </EntityType>
+  <EntityType Name="yq_customerAccount">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="acctNo" Type="varchar" MaxLength="20" Nullable="false" />
+    <Property Name="acctName" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="acctBankName" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="acctRecCode" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="acctProvinceCode" Type="varchar" MaxLength="10" />
+    <Property Name="acctCityName" Type="varchar" MaxLength="12" />
+    <Property Name="iDNo" Type="varchar" MaxLength="50" />
+    <Property Name="iDType" Type="int" />
+  </EntityType>
+  <EntityType Name="yq_error">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="errCode" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="errMessage" Type="varchar(max)" />
+  </EntityType>
+  <EntityType Name="yq_log">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="createTime" Type="datetime" Nullable="false" />
+    <Property Name="yqCode" Type="varchar" MaxLength="6" Nullable="false" />
+    <Property Name="message" Type="varchar(max)" Nullable="false" />
+    <Property Name="userName" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="ip" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="requestXml" Type="varchar(max)" Nullable="false" />
+    <Property Name="responseXml" Type="varchar(max)" Nullable="false" />
+  </EntityType>
+  <EntityType Name="yq_paymentRecord">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="payCode" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="thirdVoucher" Type="varchar" MaxLength="60" Nullable="false" />
+    <Property Name="cstInnerFlowNo" Type="varchar" MaxLength="60" />
+    <Property Name="ccyCode" Type="varchar" MaxLength="3" Nullable="false" />
+    <Property Name="outAcctNo" Type="varchar" MaxLength="60" Nullable="false" />
+    <Property Name="outAcctName" Type="varchar" MaxLength="100" Nullable="false" />
+    <Property Name="outAcctAddr" Type="varchar" MaxLength="100" />
+    <Property Name="inAcctBankNode" Type="varchar" MaxLength="12" />
+    <Property Name="inAcctRecCode" Type="varchar" MaxLength="12" />
+    <Property Name="inAcctNo" Type="varchar" MaxLength="32" Nullable="false" />
+    <Property Name="inAcctName" Type="varchar" MaxLength="100" Nullable="false" />
+    <Property Name="inAcctBankName" Type="varchar" MaxLength="100" Nullable="false" />
+    <Property Name="inAcctProvinceCode" Type="varchar" MaxLength="100" />
+    <Property Name="inAcctCityName" Type="varchar" MaxLength="100" />
+    <Property Name="tranAmount" Type="money" Nullable="false" />
+    <Property Name="useEx" Type="varchar" MaxLength="100" />
+    <Property Name="unionFlag" Type="varchar" MaxLength="6" Nullable="false" />
+    <Property Name="sysFlag" Type="varchar" MaxLength="100" />
+    <Property Name="addrFlag" Type="int" Nullable="false" />
+    <Property Name="mainAcctNo" Type="varchar" MaxLength="100" />
+    <Property Name="inIDType" Type="varchar" MaxLength="100" />
+    <Property Name="inIDNo" Type="varchar" MaxLength="100" />
+    <Property Name="frontLogNo" Type="varchar" MaxLength="100" />
+    <Property Name="fee1" Type="money" />
+    <Property Name="fee2" Type="money" />
+    <Property Name="hostFlowNo" Type="varchar" MaxLength="100" />
+    <Property Name="hostTxDate" Type="varchar" MaxLength="100" />
+    <Property Name="stt" Type="varchar" MaxLength="100" />
+    <Property Name="errCode" Type="varchar" MaxLength="100" />
+    <Property Name="errMessage" Type="varchar" MaxLength="255" />
+    <Property Name="createTime" Type="datetime" />
+    <Property Name="createMan" Type="nvarchar" MaxLength="50" />
+    <Property Name="updateTime" Type="datetime" />
+    <Property Name="updateMan" Type="nvarchar" MaxLength="50" />
+    <Property Name="isBack" Type="int" />
+    <Property Name="backRem" Type="varchar" MaxLength="255" />
+    <Property Name="eptdat" Type="varchar" MaxLength="255" />
+    <Property Name="epttim" Type="varchar" MaxLength="255" />
+    <Property Name="requestdata" Type="varchar(max)" />
+    <Property Name="responsedata" Type="varchar(max)" />
+    <Property Name="isApproval" Type="bit" />
+    <Property Name="approvalMan" Type="varchar" MaxLength="50" />
+    <Property Name="approvalDate" Type="datetime" />
+    <Property Name="requestModelYY" Type="varchar(max)" />
+    <Property Name="requestModelYQ" Type="varchar(max)" />
+    <Property Name="company" Type="int" />
+    <Property Name="isDel" Type="bit" />
+  </EntityType>
+  <EntityType Name="yq_userAccount">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="yqdm" Type="bigint" Nullable="false" />
+    <Property Name="accountId" Type="varchar" MaxLength="20" Nullable="false" />
+    <Property Name="accountName" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="bank" Type="varchar" MaxLength="20" />
+    <Property Name="carType" Type="nvarchar" MaxLength="80" />
+    <Property Name="carId" Type="varchar" MaxLength="80" />
+  </EntityType>
+  <EntityType Name="yq_zhaohang_yhCode">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="name" Type="varchar" MaxLength="200" Nullable="false" />
+    <Property Name="code" Type="varchar" MaxLength="20" Nullable="false" />
+  </EntityType>
+  <EntityContainer Name="OAtoU8DATAModelStoreContainer">
+    <EntitySet Name="ChangeBankMiddle" EntityType="Self.ChangeBankMiddle" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="contrast" EntityType="Self.contrast" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="dbConfig" EntityType="Self.dbConfig" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="ecs_region" EntityType="Self.ecs_region" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="FinancialRecords" EntityType="Self.FinancialRecords" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="MessageShow" EntityType="Self.MessageShow" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="PrintRecord" EntityType="Self.PrintRecord" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="PrintRecordBody" EntityType="Self.PrintRecordBody" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="producehelp" EntityType="Self.producehelp" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="RecordTable" EntityType="Self.RecordTable" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="triggerSummary" EntityType="Self.triggerSummary" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="userInfo" EntityType="Self.userInfo" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="userOATab" EntityType="Self.userOATab" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="yq_certificates" EntityType="Self.yq_certificates" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="yq_cityCode" EntityType="Self.yq_cityCode" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="yq_cityCode_zhaohang" EntityType="Self.yq_cityCode_zhaohang" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="yq_code" EntityType="Self.yq_code" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="yq_customerAccount" EntityType="Self.yq_customerAccount" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="yq_error" EntityType="Self.yq_error" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="yq_log" EntityType="Self.yq_log" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="yq_paymentRecord" EntityType="Self.yq_paymentRecord" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="yq_userAccount" EntityType="Self.yq_userAccount" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="yq_zhaohang_yhCode" EntityType="Self.yq_zhaohang_yhCode" Schema="dbo" store:Type="Tables" />
+  </EntityContainer>
+</Schema>

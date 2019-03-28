@@ -1,0 +1,66 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v2.1",
+    "signature": "da39a3ee5e6b4b0d3255bfef95601890afd80709"
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v2.1": {
+      "BaiduAiTest/1.0.0": {
+        "dependencies": {
+          "BaiduAI": "1.0.0"
+        },
+        "runtime": {
+          "BaiduAiTest.dll": {}
+        }
+      },
+      "BaiduAI/1.0.0": {
+        "dependencies": {
+          "AipSdk": "3.6.6.0",
+          "Newtonsoft.Json": "10.0.0.0"
+        },
+        "runtime": {
+          "BaiduAI.dll": {}
+        }
+      },
+      "AipSdk.Reference/3.6.6.0": {
+        "runtime": {
+          "AipSdk.dll": {
+            "assemblyVersion": "3.6.6.0",
+            "fileVersion": "3.6.6.0"
+          }
+        }
+      },
+      "Newtonsoft.Json.Reference/10.0.0.0": {
+        "runtime": {
+          "Newtonsoft.Json.dll": {
+            "assemblyVersion": "10.0.0.0",
+            "fileVersion": "10.0.3.21018"
+          }
+        }
+      }
+    }
+  },
+  "libraries": {
+    "BaiduAiTest/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "BaiduAI/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "AipSdk.Reference/3.6.6.0": {
+      "type": "reference",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Newtonsoft.Json.Reference/10.0.0.0": {
+      "type": "reference",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

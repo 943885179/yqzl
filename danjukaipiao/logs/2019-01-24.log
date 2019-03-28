@@ -1,0 +1,32 @@
+
+ 
+记录时间：2019-01-24 09:18:52,465 
+线程ID:[8] 
+日志级别：  INFO  
+出错类：dal.U8DAL property: [(null)] - 
+错误描述：用户登录记录:蒙祖军
+ 
+
+ 
+记录时间：2019-01-24 09:18:52,477 
+线程ID:[8] 
+日志级别：  INFO  
+出错类：danjukaipiao.Controllers.api.UserInfoController property: [(null)] - 
+错误描述：账号:蒙祖军在：IP为::1登录
+ 
+
+ 
+记录时间：2019-01-24 11:13:32,386 
+线程ID:[10] 
+日志级别：  INFO  
+出错类：dal.U8DAL property: [(null)] - 
+错误描述：用户登录记录:蒙祖军
+ 
+
+ 
+记录时间：2019-01-24 11:13:32,398 
+线程ID:[10] 
+日志级别：  INFO  
+出错类：danjukaipiao.Controllers.api.UserInfoController property: [(null)] - 
+错误描述：账号:蒙祖军在：IP为::1登录
+ 

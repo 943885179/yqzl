@@ -1,0 +1,17 @@
+E:\stu\wuzhihua - 最终版\BaiduAiTest\bin\Debug\netcoreapp2.1\BaiduAiTest.deps.json
+E:\stu\wuzhihua - 最终版\BaiduAiTest\bin\Debug\netcoreapp2.1\BaiduAiTest.runtimeconfig.json
+E:\stu\wuzhihua - 最终版\BaiduAiTest\bin\Debug\netcoreapp2.1\BaiduAiTest.runtimeconfig.dev.json
+E:\stu\wuzhihua - 最终版\BaiduAiTest\bin\Debug\netcoreapp2.1\BaiduAiTest.dll
+E:\stu\wuzhihua - 最终版\BaiduAiTest\bin\Debug\netcoreapp2.1\BaiduAiTest.pdb
+E:\stu\wuzhihua - 最终版\BaiduAiTest\bin\Debug\netcoreapp2.1\BaiduAI.dll
+E:\stu\wuzhihua - 最终版\BaiduAiTest\bin\Debug\netcoreapp2.1\AipSdk.dll
+E:\stu\wuzhihua - 最终版\BaiduAiTest\bin\Debug\netcoreapp2.1\Newtonsoft.Json.dll
+E:\stu\wuzhihua - 最终版\BaiduAiTest\bin\Debug\netcoreapp2.1\BaiduAI.pdb
+E:\stu\wuzhihua - 最终版\BaiduAiTest\bin\Debug\netcoreapp2.1\Newtonsoft.Json.xml
+E:\stu\wuzhihua - 最终版\BaiduAiTest\obj\Debug\netcoreapp2.1\BaiduAiTest.csprojAssemblyReference.cache
+E:\stu\wuzhihua - 最终版\BaiduAiTest\obj\Debug\netcoreapp2.1\BaiduAiTest.csproj.CoreCompileInputs.cache
+E:\stu\wuzhihua - 最终版\BaiduAiTest\obj\Debug\netcoreapp2.1\BaiduAiTest.AssemblyInfoInputs.cache
+E:\stu\wuzhihua - 最终版\BaiduAiTest\obj\Debug\netcoreapp2.1\BaiduAiTest.AssemblyInfo.cs
+E:\stu\wuzhihua - 最终版\BaiduAiTest\obj\Debug\netcoreapp2.1\BaiduAiTest.csproj.CopyComplete
+E:\stu\wuzhihua - 最终版\BaiduAiTest\obj\Debug\netcoreapp2.1\BaiduAiTest.dll
+E:\stu\wuzhihua - 最终版\BaiduAiTest\obj\Debug\netcoreapp2.1\BaiduAiTest.pdb

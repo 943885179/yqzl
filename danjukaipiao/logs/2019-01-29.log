@@ -1,0 +1,112 @@
+
+ 
+记录时间：2019-01-29 15:31:37,371 
+线程ID:[6] 
+日志级别：  INFO  
+出错类：dal.U8DAL property: [(null)] - 
+错误描述：用户登录记录:陈永鹏
+ 
+
+ 
+记录时间：2019-01-29 15:31:37,428 
+线程ID:[6] 
+日志级别：  INFO  
+出错类：danjukaipiao.Controllers.api.UserInfoController property: [(null)] - 
+错误描述：账号:陈永鹏在：IP为::1登录
+ 
+
+ 
+记录时间：2019-01-29 15:59:19,833 
+线程ID:[6] 
+日志级别：  INFO  
+出错类：dal.U8DAL property: [(null)] - 
+错误描述：用户登录记录:陈永鹏
+ 
+
+ 
+记录时间：2019-01-29 15:59:19,846 
+线程ID:[6] 
+日志级别：  INFO  
+出错类：danjukaipiao.Controllers.api.UserInfoController property: [(null)] - 
+错误描述：账号:陈永鹏在：IP为::1登录
+ 
+
+ 
+记录时间：2019-01-29 16:11:50,946 
+线程ID:[10] 
+日志级别：  INFO  
+出错类：dal.U8DAL property: [(null)] - 
+错误描述：用户登录记录:陈永鹏
+ 
+
+ 
+记录时间：2019-01-29 16:11:50,977 
+线程ID:[10] 
+日志级别：  INFO  
+出错类：danjukaipiao.Controllers.api.UserInfoController property: [(null)] - 
+错误描述：账号:陈永鹏在：IP为::1登录
+ 
+
+ 
+记录时间：2019-01-29 17:25:07,065 
+线程ID:[5] 
+日志级别：  INFO  
+出错类：dal.U8DAL property: [(null)] - 
+错误描述：用户登录记录:陈永鹏
+ 
+
+ 
+记录时间：2019-01-29 17:25:07,093 
+线程ID:[5] 
+日志级别：  INFO  
+出错类：danjukaipiao.Controllers.api.UserInfoController property: [(null)] - 
+错误描述：账号:陈永鹏在：IP为::1登录
+ 
+
+ 
+记录时间：2019-01-29 17:37:15,137 
+线程ID:[6] 
+日志级别：  INFO  
+出错类：dal.U8DAL property: [(null)] - 
+错误描述：用户登录记录:陈永鹏
+ 
+
+ 
+记录时间：2019-01-29 17:37:15,157 
+线程ID:[6] 
+日志级别：  INFO  
+出错类：danjukaipiao.Controllers.api.UserInfoController property: [(null)] - 
+错误描述：账号:陈永鹏在：IP为::1登录
+ 
+
+ 
+记录时间：2019-01-29 17:49:09,098 
+线程ID:[8] 
+日志级别：  INFO  
+出错类：dal.U8DAL property: [(null)] - 
+错误描述：用户登录记录:陈永鹏
+ 
+
+ 
+记录时间：2019-01-29 17:49:09,115 
+线程ID:[8] 
+日志级别：  INFO  
+出错类：danjukaipiao.Controllers.api.UserInfoController property: [(null)] - 
+错误描述：账号:陈永鹏在：IP为::1登录
+ 
+
+ 
+记录时间：2019-01-29 18:28:12,466 
+线程ID:[8] 
+日志级别：  INFO  
+出错类：dal.U8DAL property: [(null)] - 
+错误描述：用户登录记录:陈永鹏
+ 
+
+ 
+记录时间：2019-01-29 18:28:12,502 
+线程ID:[8] 
+日志级别：  INFO  
+出错类：danjukaipiao.Controllers.api.UserInfoController property: [(null)] - 
+错误描述：账号:陈永鹏在：IP为::1登录
+ 

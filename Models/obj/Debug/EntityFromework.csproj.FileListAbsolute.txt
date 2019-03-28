@@ -1,0 +1,14 @@
+E:\stu\wuzhihua - 最终版\Models\bin\Debug\EntityFromework.dll.config
+E:\stu\wuzhihua - 最终版\Models\bin\Debug\EntityFromework.dll
+E:\stu\wuzhihua - 最终版\Models\bin\Debug\EntityFromework.pdb
+E:\stu\wuzhihua - 最终版\Models\bin\Debug\EntityFramework.dll
+E:\stu\wuzhihua - 最终版\Models\bin\Debug\EntityFramework.SqlServer.dll
+E:\stu\wuzhihua - 最终版\Models\bin\Debug\EntityFramework.xml
+E:\stu\wuzhihua - 最终版\Models\bin\Debug\EntityFramework.SqlServer.xml
+E:\stu\wuzhihua - 最终版\Models\bin\Debug\zh-Hans\EntityFramework.resources.dll
+E:\stu\wuzhihua - 最终版\Models\bin\Debug\zh-Hans\EntityFramework.SqlServer.resources.dll
+E:\stu\wuzhihua - 最终版\Models\obj\Debug\EntityFromework.csproj.CoreCompileInputs.cache
+E:\stu\wuzhihua - 最终版\Models\obj\Debug\EntityFromework.csproj.CopyComplete
+E:\stu\wuzhihua - 最终版\Models\obj\Debug\EntityFromework.dll
+E:\stu\wuzhihua - 最终版\Models\obj\Debug\EntityFromework.pdb
+E:\stu\wuzhihua - 最终版\Models\obj\Debug\EntityFromework.csprojAssemblyReference.cache

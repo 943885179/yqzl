@@ -1,0 +1,7 @@
+E:\stu\wuzhihua - 最终版\MessageShowExe\bin\Release\MessageShowExe.exe.config
+E:\stu\wuzhihua - 最终版\MessageShowExe\bin\Release\MessageShowExe.exe
+E:\stu\wuzhihua - 最终版\MessageShowExe\bin\Release\MessageShowExe.pdb
+E:\stu\wuzhihua - 最终版\MessageShowExe\obj\Release\MessageShowExe.csprojAssemblyReference.cache
+E:\stu\wuzhihua - 最终版\MessageShowExe\obj\Release\MessageShowExe.csproj.CoreCompileInputs.cache
+E:\stu\wuzhihua - 最终版\MessageShowExe\obj\Release\MessageShowExe.exe
+E:\stu\wuzhihua - 最终版\MessageShowExe\obj\Release\MessageShowExe.pdb

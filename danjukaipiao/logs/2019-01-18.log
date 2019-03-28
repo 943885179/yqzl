@@ -1,0 +1,136 @@
+
+ 
+记录时间：2019-01-18 10:23:24,405 
+线程ID:[45] 
+日志级别：  INFO  
+出错类：dal.U8DAL property: [(null)] - 
+错误描述：日记账成功,出纳编号为付-00336
+ 
+
+ 
+记录时间：2019-01-18 10:34:27,975 
+线程ID:[10] 
+日志级别：  INFO  
+出错类：dal.U8DAL property: [(null)] - 
+错误描述：用户登录记录:陈永鹏
+ 
+
+ 
+记录时间：2019-01-18 10:34:27,990 
+线程ID:[10] 
+日志级别：  INFO  
+出错类：danjukaipiao.Controllers.api.UserInfoController property: [(null)] - 
+错误描述：账号:陈永鹏在：IP为::1登录
+ 
+
+ 
+记录时间：2019-01-18 11:02:30,649 
+线程ID:[5] 
+日志级别：  INFO  
+出错类：dal.U8DAL property: [(null)] - 
+错误描述：用户登录记录:陈永鹏
+ 
+
+ 
+记录时间：2019-01-18 11:02:30,660 
+线程ID:[5] 
+日志级别：  INFO  
+出错类：danjukaipiao.Controllers.api.UserInfoController property: [(null)] - 
+错误描述：账号:陈永鹏在：IP为::1登录
+ 
+
+ 
+记录时间：2019-01-18 11:15:55,955 
+线程ID:[7] 
+日志级别：  INFO  
+出错类：dal.U8DAL property: [(null)] - 
+错误描述：用户登录记录:陈永鹏
+ 
+
+ 
+记录时间：2019-01-18 11:15:56,049 
+线程ID:[7] 
+日志级别：  INFO  
+出错类：danjukaipiao.Controllers.api.UserInfoController property: [(null)] - 
+错误描述：账号:陈永鹏在：IP为::1登录
+ 
+
+ 
+记录时间：2019-01-18 11:34:10,667 
+线程ID:[6] 
+日志级别：  INFO  
+出错类：dal.U8DAL property: [(null)] - 
+错误描述：用户登录记录:陈永鹏
+ 
+
+ 
+记录时间：2019-01-18 11:34:10,687 
+线程ID:[6] 
+日志级别：  INFO  
+出错类：danjukaipiao.Controllers.api.UserInfoController property: [(null)] - 
+错误描述：账号:陈永鹏在：IP为::1登录
+ 
+
+ 
+记录时间：2019-01-18 11:52:03,623 
+线程ID:[10] 
+日志级别：  INFO  
+出错类：dal.U8DAL property: [(null)] - 
+错误描述：用户登录记录:陈永鹏
+ 
+
+ 
+记录时间：2019-01-18 11:52:03,643 
+线程ID:[10] 
+日志级别：  INFO  
+出错类：danjukaipiao.Controllers.api.UserInfoController property: [(null)] - 
+错误描述：账号:陈永鹏在：IP为::1登录
+ 
+
+ 
+记录时间：2019-01-18 11:58:08,589 
+线程ID:[6] 
+日志级别：  INFO  
+出错类：dal.U8DAL property: [(null)] - 
+错误描述：用户登录记录:陈永鹏
+ 
+
+ 
+记录时间：2019-01-18 11:58:08,610 
+线程ID:[6] 
+日志级别：  INFO  
+出错类：danjukaipiao.Controllers.api.UserInfoController property: [(null)] - 
+错误描述：账号:陈永鹏在：IP为::1登录
+ 
+
+ 
+记录时间：2019-01-18 13:38:08,803 
+线程ID:[10] 
+日志级别：  INFO  
+出错类：dal.U8DAL property: [(null)] - 
+错误描述：用户登录记录:陈永鹏
+ 
+
+ 
+记录时间：2019-01-18 13:38:08,808 
+线程ID:[8] 
+日志级别：  INFO  
+出错类：dal.U8DAL property: [(null)] - 
+错误描述：用户登录记录:陈永鹏
+ 
+
+ 
+记录时间：2019-01-18 13:38:08,839 
+线程ID:[8] 
+日志级别：  INFO  
+出错类：danjukaipiao.Controllers.api.UserInfoController property: [(null)] - 
+错误描述：账号:陈永鹏在：IP为::1登录
+ 
+
+ 
+记录时间：2019-01-18 13:38:08,829 
+线程ID:[10] 
+日志级别：  INFO  
+出错类：danjukaipiao.Controllers.api.UserInfoController property: [(null)] - 
+错误描述：账号:陈永鹏在：IP为::1登录
+ 

@@ -1,0 +1,16 @@
+
+ 
+记录时间：2019-01-31 13:39:54,816 
+线程ID:[10] 
+日志级别：  INFO  
+出错类：dal.U8DAL property: [(null)] - 
+错误描述：用户登录记录:陈永鹏
+ 
+
+ 
+记录时间：2019-01-31 13:39:54,896 
+线程ID:[10] 
+日志级别：  INFO  
+出错类：danjukaipiao.Controllers.api.UserInfoController property: [(null)] - 
+错误描述：账号:陈永鹏在：IP为::1登录
+ 

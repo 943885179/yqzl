@@ -1,0 +1,442 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <!-- Meta, title, CSS, favicons, etc. -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" href="images/favicon.ico" type="image/ico" />
+
+    <title>单据无纸化 </title>
+
+    <!-- Bootstrap -->
+    <link href="../vendors/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link href="../vendors/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+    <!-- NProgress -->
+    <link href="../vendors/nprogress/nprogress.css" rel="stylesheet">
+    <!-- iCheck -->
+    <link href="../vendors/iCheck/skins/flat/green.css" rel="stylesheet">
+
+    <!-- bootstrap-progressbar -->
+    <link href="../vendors/bootstrap-progressbar/css/bootstrap-progressbar-3.3.4.min.css" rel="stylesheet">
+    <!-- JQVMap -->
+    <link href="../vendors/jqvmap/dist/jqvmap.min.css" rel="stylesheet" />
+    <!-- bootstrap-daterangepicker -->
+    <link href="../vendors/bootstrap-daterangepicker/daterangepicker.css" rel="stylesheet">
+
+    <!-- Custom Theme Style -->
+    <link href="../build/css/custom.min.css" rel="stylesheet">
+
+    <link href="../Content/sweetalert2.min.css" rel="stylesheet" />
+    <link href="../Content/bootstrap-datetimepicker.min.css" rel="stylesheet" media="screen">
+    <link href="../Content/datatables.min.css" rel="stylesheet" />
+
+    <style type="text/css">
+        .loading {
+            padding-left: 50%;
+            padding-top: 20%;
+            display: none;
+            width: 100%;
+            height: 100%;
+            z-index: 2;
+            position: absolute;
+        }
+
+        .form-control1 {
+            height: 34px;
+            padding: 6px 12px;
+            font-size: 14px;
+            line-height: 1.428571429;
+            color: #555555;
+            vertical-align: middle;
+            background-color: #ffffff;
+            border: 1px solid #cccccc;
+            border-radius: 0px;
+            -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+            box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+            -webkit-transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s;
+            transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s;
+        }
+
+        td.details-control {
+            background: url('../Img/details_open.png') no-repeat center center;
+            cursor: pointer;
+        }
+
+        tr.shown td.details-control {
+            background: url('../Img/details_close.png') no-repeat center center;
+        }
+
+        .btn {
+            -webkit-border-radius: 0;
+            -moz-border-radius: 0;
+            border-radius: 0;
+        }
+    </style>
+</head>
+
+<body class="nav-md">
+    <div class="container body">
+        <div class="main_container" ng-app="myApp" ng-controller="myCtrl">
+            <div class="col-md-3 left_col">
+                <div class="left_col scroll-view">
+                    <div class="navbar nav_title" style="border: 0;">
+                        <a href="index.html" class="site_title"><i class="fa fa-wheelchair"></i> <span>单据无纸化</span></a>
+                    </div>
+                    <div class="clearfix"></div>
+                    <!-- sidebar menu -->
+                    <div id="sidebar-menu" class="main_menu_side hidden-print main_menu">
+                        <div class="menu_section">
+                            <ul class="nav side-menu">
+                                <li><a href="index.html"><i class="fa fa-bookmark"></i>财务单据列表</a></li>
+                                <li><a href="FinancialRecords.html"><i class="fa fa-edit"></i> 审单财务转移记录</a></li>
+                                <li><a href="#"><i class="fa fa-edit"></i> 付款记录</a></li>
+                            </ul>
+                        </div>
+
+                    </div>
+                    <!-- /sidebar menu -->
+                </div>
+            </div>
+
+            <!-- top navigation -->
+            <div class="top_nav">
+                <div class="nav_menu">
+                    <nav>
+                        <div class="nav toggle">
+                            <a id="menu_toggle"><i class="fa fa-bars"></i></a>
+                        </div>
+
+                        <ul class="nav navbar-nav navbar-right">
+                            <li class="">
+                                <a href="javascript:;" class="user-profile dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
+                                    <img src="images/img.jpg" alt="">{{userInfo.name}}
+                                    <span class=" fa fa-angle-down"></span>
+                                </a>
+                                <ul class="dropdown-menu dropdown-usermenu pull-right">
+                                    <li><a href="login.html"><i class="fa fa-sign-out pull-right"></i> 退出登录</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+            <!-- /top navigation -->
+            <!-- page content -->
+            <div class="right_col" role="main">
+                <div class="loading">
+                    <img src="../Img/loading.gif" />
+                </div>
+                <div>
+
+                    <form class="navbar-form pull-left">
+                        <label class="control-label">账号:</label>
+                        <select class="form-control1" ng-init="selectedName = types[0]" ng-model="param.AcctNo">
+                            <option value="11002923034501">平安测试六零零零三三八二八五九八</option>
+                            <option value="0122100598214">平安测试零零一五九二四零三一九五</option>
+                            <option value="11007429009401">平安测试六零零零三四零五六二五零</option>
+                            <option value="6013822000619348934">PA晓</option>
+                        </select>
+                        <label class="control-label">选择记账日期:</label>
+                        <input type="text" placeholder="开始日期" value="" class="form-control1" id="BeginDate" ng-model="param.BeginDate"> --
+                        <input type="text" value="" placeholder="结束日期" class="form-control1" id="EndDate" ng-model="param.EndDate">
+                        &nbsp; &nbsp;<button type="button" class="btn btn-primary" id="search" ng-click="search()">
+                            <span class="fa fa-search" aria-hidden="true"></span>查询
+                        </button>
+                    </form>
+                    <div id="tabDiv">
+                        <table id="table" class="display" style="width:100%"></table>
+                    </div>
+                </div>
+            </div>
+            <!-- /page content -->
+            <!-- footer content -->
+            <footer>
+                <div class="pull-right">
+                    单据无纸化
+                </div>
+                <div class="clearfix"></div>
+            </footer>
+            <!-- /footer content -->
+        </div>
+    </div>
+
+    <!-- jQuery -->
+    <script src="../vendors/jquery/dist/jquery.min.js"></script>
+    <!-- Bootstrap -->
+    <script src="../vendors/bootstrap/dist/js/bootstrap.min.js"></script>
+    <!-- FastClick -->
+    <script src="../vendors/fastclick/lib/fastclick.js"></script>
+    <!-- NProgress -->
+    <script src="../vendors/nprogress/nprogress.js"></script>
+    <!-- Chart.js -->
+    <script src="../vendors/Chart.js/dist/Chart.min.js"></script>
+    <!-- gauge.js -->
+    <script src="../vendors/gauge.js/dist/gauge.min.js"></script>
+    <!-- bootstrap-progressbar -->
+    <script src="../vendors/bootstrap-progressbar/bootstrap-progressbar.min.js"></script>
+    <!-- iCheck -->
+    <script src="../vendors/iCheck/icheck.min.js"></script>
+    <!-- Skycons -->
+    <script src="../vendors/skycons/skycons.js"></script>
+    <!-- Flot -->
+    <script src="../vendors/Flot/jquery.flot.js"></script>
+    <script src="../vendors/Flot/jquery.flot.pie.js"></script>
+    <script src="../vendors/Flot/jquery.flot.time.js"></script>
+    <script src="../vendors/Flot/jquery.flot.stack.js"></script>
+    <script src="../vendors/Flot/jquery.flot.resize.js"></script>
+    <!-- Flot plugins -->
+    <script src="../vendors/flot.orderbars/js/jquery.flot.orderBars.js"></script>
+    <script src="../vendors/flot-spline/js/jquery.flot.spline.min.js"></script>
+    <script src="../vendors/flot.curvedlines/curvedLines.js"></script>
+    <!-- DateJS -->
+    <script src="../vendors/DateJS/build/date.js"></script>
+    <!-- JQVMap -->
+    <script src="../vendors/jqvmap/dist/jquery.vmap.js"></script>
+    <script src="../vendors/jqvmap/dist/maps/jquery.vmap.world.js"></script>
+    <script src="../vendors/jqvmap/examples/js/jquery.vmap.sampledata.js"></script>
+    <!-- bootstrap-daterangepicker -->
+    <script src="../vendors/moment/min/moment.min.js"></script>
+    <script src="../vendors/bootstrap-daterangepicker/daterangepicker.js"></script>
+
+    <!-- Custom Theme Scripts -->
+    <script src="../build/js/custom.min.js"></script>
+
+    <script type="text/javascript" src="../Scripts/bootstrap-datetimepicker.js" charset="UTF-8"></script>
+    <script type="text/javascript" src="../Scripts/locales/bootstrap-datetimepicker.zh-CN.js" charset="UTF-8"></script>
+    <script src="../Scripts/angular.min.js"></script>
+    <script src="../Scripts/datatables.min.js"></script>
+    <script src="../Scripts/xlsx.full.min.js"></script>
+    <script src="../Scripts/sweetalert2.min.js"></script>
+    <script src="../Scripts/fnReloadAjax.js"></script>
+    <script>
+
+        $('#BeginDate').datetimepicker({
+            format: 'yyyy/mm/dd',
+            language: "zh-CN", //汉化
+            todayBtn: "true",  //显示今天按钮
+            autoclose: true,   //选择日期后自动关闭日期选择框
+            todayHighlight: true,   //当天高亮显示
+            minView: "month",   //不显示时分秒hour
+            showMeridian: 1,
+            pickerPosition: "bottom-left",
+            // startDate: new Date(new Date() - 1000 * 60 * 60 * 24 * 365),  //只显示一年的日期365天
+            endDate: new Date()
+        }).on('click', function (e) {
+            //$("#startDate2").datetimepicker("setEndDate", $("#endDate2").val());
+        });
+        $('#EndDate').datetimepicker({
+            format: 'yyyy/mm/dd',
+            language: "zh-CN",
+            todayBtn: "true",
+            autoclose: true,
+            todayHighlight: true,
+            minView: "month",
+            pickerPosition: "bottom-left",
+            //startDate: new Date(new Date() - 1000 * 60 * 60 * 24 * 365),
+            endDate: new Date()
+        }).on('click', function (e) {
+            //$("#endDate2").datetimepicker("setStartDate", $("#startDate2").val());
+        });
+        var userInfo = [];
+        var app = angular.module('myApp', []);
+        app.controller('myCtrl', function ($scope, $http) {
+            $scope.getSesstion = function () {
+                $http({
+                    method: 'Post',
+                    url: '../api/UserInfo/getUserInfo',
+                    // params: search
+                }).success(function (data) {
+                    if (data == null || data.type == 2) {
+                        window.location.href = "login.html";
+                    }
+                    $scope.userInfo = data;
+                    userInfo = data;
+                    //  $scope.getList();
+                }).error(function (msg) {
+                    window.location.href = "login.html";
+                })
+            }
+            $scope.param = { AcctNo: "11002923034501", BeginDate: new Date().getFullYear() + "/" + (new Date().getMonth() + 1) + "/" + new Date().getDate(), EndDate: new Date().getFullYear() + "/" + (new Date().getMonth() + 1) + "/" + new Date().getDate() }
+            // param.CcyCode = "";
+            $scope.search = function () {
+                pinganList($scope.param);
+            }
+            $scope.getSesstion();
+            $scope.getList = function () {
+                $(".loading").css("display", "block");
+                $http({
+                    method: 'get',
+                    url: '../api/PinganApi/qryDtl',
+                    // params: search
+                    //data: search
+                }).success(function (list) {
+                    $scope.list = list;
+                    console.log($scope.list);
+                    tableShow($scope.list);
+                    $(".loading").css("display", "none");
+                }).error(function (msg) {
+                    console.log(msg);
+                    $(".loading").css("display", "none");
+                })
+            }
+        });
+        function tableShow(dataList) {
+            $('#table tbody').on('click', 'td.details-control', function () {
+                var tr = $(this).closest('tr');
+                var row = table.row(tr);
+                if (row.child.isShown()) {
+                    row.child.hide();
+                    tr.removeClass('shown');
+                }
+                else { row.child(format(row.data())).show(); tr.addClass('shown'); }
+
+            })
+            /*$('#table').dataTable().fnClearTable();   //将数据清除
+            $("#table").dataTable().fnDestroy();*/
+            //点击表格+时触发事件
+        }
+
+        //详细信息，点击表格的+号显示详细信息
+        function format(data) {
+            return '<table class=" " >' +
+                '<tr style="background:#AEEEEE">' +
+                '<td>用途:</td>' +
+                '<td>' + data.useEx + '</td>' +
+                '<tr style="background:#AEEEEE">' +
+                '<td>银行流水号:</td>' +
+                '<td>' + data.frontLogNo + '</td>' +
+                '</tr>' +
+                '<tr style="background:#AEEEEE">' +
+                '<td>银行返回流水号:</td>' +
+                '<td>' + data.hostFlowNo + '</td>' +
+                '</tr>' +
+                '<tr style="background:#AEEEEE">' +
+                '<td>手续费:</td>' +
+                '<td>￥' + data.fee1 + '</td>' +
+                '</tr>' +
+                '<tr style="background:#AEEEEE">' +
+                '<td>邮电费:</td>' +
+                '<td>￥' + data.fee2 + '</td>' +
+                '<tr style="background:#AEEEEE">' +
+                '<td>记账日期:</td>' +
+                '<td>' + data.hostTxDate + '</td>' +
+                '<tr style="background:#AEEEEE">' +
+                '<td>退票:</td>' +
+                '<td>' + data.isBack + '</td>' +
+                '</tr>' +
+                '<tr style="background:#AEEEEE">' +
+                '<td>支付失败/退票原因描述:</td>' +
+                '<td>￥' + data.backRem + '</td>' +
+                '</tr>' +
+                '<tr style="background:#AEEEEE">' +
+                '<td>货币类型:</td>' +
+                '<td>' + data.ccyCode + '</td>' +
+                '</tr>' +
+                '<tr>' +
+                '<td>旭子账号:</td>' +
+                '<td>' + data.mainAcctNo + '</td>' +
+                '</tr>' +
+                '</table>';
+        }
+        function pinganList(codetype) {
+            //提示信息
+            var lang = {
+                "sProcessing": "处理中...",
+                "sLengthMenu": "每页 _MENU_ 项",
+                "sZeroRecords": "没有匹配结果",
+                "sInfo": "当前显示第 _START_ 至 _END_ 项，共 _TOTAL_ 项。",
+                "sInfoEmpty": "当前显示第 0 至 0 项，共 0 项",
+                "sInfoFiltered": "(由 _MAX_ 项结果过滤)",
+                "sInfoPostFix": "",
+                "sSearch": "搜索:",
+                "sUrl": "",
+                "sEmptyTable": "表中数据为空",
+                "sLoadingRecords": "载入中...",
+                "sInfoThousands": ",",
+                "oPaginate": {
+                    "sFirst": "首页",
+                    "sPrevious": "上页",
+                    "sNext": "下页",
+                    "sLast": "末页",
+                    "sJump": "跳转"
+                },
+                "oAria": {
+                    "sSortAscending": ": 以升序排列此列",
+                    "sSortDescending": ": 以降序排列此列"
+                }
+            };
+            // $n.dataTable().fnReloadAjax();
+            //初始化表格
+            var table = $("#table").dataTable({
+                language: lang,  //提示信息
+                autoWidth: false,  //禁用自动调整列宽
+                stripeClasses: ["odd", "even"],  //为奇偶行加上样式，兼容不支持CSS伪类的场合
+                processing: true,  //隐藏加载提示,自行处理
+                serverSide: true,  //启用服务器端分页
+                searching: false,  //禁用原生搜索
+                orderMulti: false,  //启用多列排序
+                order: [],  //取消默认排序查询,否则复选框一列会出现小箭头
+                renderer: "bootstrap",  //渲染样式：Bootstrap和jquery-ui
+                pagingType: "simple_numbers",  //分页样式：simple,simple_numbers,full,full_numbers
+                pageLength: 30,
+                aLengthMenu: [[30, 100, 200, 1000], [30, 100, 200, 1000]],
+                retrieve: true,
+                //destroy: true,
+                columnDefs: [{
+                    "targets": 'nosort',  //列的样式名
+                    "orderable": false    //包含上样式名‘nosort’的禁止排序
+                }],
+                ajax: function (data, callback, settings) {
+                    //封装请求参数
+                    console.log(data);
+                    var param = {};
+                    param.PageSize = data.length;//页面显示记录条数，在页面显示每页显示多少项的时候
+                    // param.start = data.start;//开始的记录序号
+                    param.PageNo = (data.start / data.length) + 1;//当前页码
+                    param.AcctNo = codetype.AcctNo;
+                    // param.CcyCode = "";
+                    param.BeginDate = codetype.BeginDate;
+                    param.EndDate = codetype.EndDate;
+                    // param.order = data.order[0]
+                    //console.log(param);
+                    //ajax请求数据
+                    $.ajax({
+                        type: "post",
+                        url: "../api/PinganApi/qryDtl",
+                        cache: false,  //禁用缓存
+                        data: param,  //传入组装的参数
+                        dataType: "json",
+                        success: function (result) {
+                            //setTimeout仅为测试延迟效果
+                            setTimeout(function () {
+                                //封装返回数据
+                                var returnData = {};
+                                returnData.draw = data.draw;//这里直接自行返回了draw计数器,应该由后台返回
+                                returnData.recordsTotal = result.result.PageRecCount;//返回数据全部记录
+                                returnData.recordsFiltered = result.result.PageRecCount;//后台不实现过滤功能，每次查询均视作全部结果
+                                returnData.data = result.result.list;//返回的数据列表
+                                //调用DataTables提供的callback方法，代表数据已封装完成并传回DataTables进行渲染
+                                //此时的数据需确保正确无误，异常判断应在执行此回调前自行处理完毕
+                                callback(returnData);
+                            }, 200);
+                        }
+                    });
+                },
+                //列表表头字段
+                columns: [
+                    { "data": "InAcctName" },
+                    { "data": "InAcctNo" },
+                    { "data": "OutAcctName" },
+                    { "data": "OutAcctNo" },
+                    { "data": "TranAmount" },
+                    { "data": "HostDate" }
+                ]
+            }).api();//此处需调用api()方法,否则返回的是JQuery对象而不是DataTables的API对象
+            $("#table").dataTable().fnReloadAjax();
+        }
+    </script>
+</body>
+</html>

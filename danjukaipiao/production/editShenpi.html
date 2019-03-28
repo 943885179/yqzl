@@ -1,0 +1,434 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <!-- Meta, title, CSS, favicons, etc. -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" href="images/favicon.ico" type="image/ico" />
+
+    <title>单据无纸化 </title>
+
+    <!-- Bootstrap -->
+    <link href="../vendors/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link href="../vendors/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+    <!-- NProgress -->
+    <link href="../vendors/nprogress/nprogress.css" rel="stylesheet">
+    <!-- iCheck -->
+    <link href="../vendors/iCheck/skins/flat/green.css" rel="stylesheet">
+
+    <!-- bootstrap-progressbar -->
+    <link href="../vendors/bootstrap-progressbar/css/bootstrap-progressbar-3.3.4.min.css" rel="stylesheet">
+    <!-- JQVMap -->
+    <link href="../vendors/jqvmap/dist/jqvmap.min.css" rel="stylesheet" />
+    <!-- bootstrap-daterangepicker -->
+    <link href="../vendors/bootstrap-daterangepicker/daterangepicker.css" rel="stylesheet">
+
+    <!-- Custom Theme Style -->
+    <link href="../build/css/custom.min.css" rel="stylesheet">
+
+    <link href="../Content/bootstrap-datetimepicker.min.css" rel="stylesheet" media="screen">
+    <link href="../Content/datatables.min.css" rel="stylesheet" />
+
+    <style type="text/css">
+        .loading {
+            padding-left: 50%;
+            padding-top: 20%;
+            display: none;
+            width: 100%;
+            height: 100%;
+            z-index: 2;
+            position: absolute;
+        }
+
+        .form-control1 {
+            height: 34px;
+            padding: 6px 12px;
+            font-size: 14px;
+            line-height: 1.428571429;
+            color: #555555;
+            vertical-align: middle;
+            background-color: #ffffff;
+            border: 1px solid #cccccc;
+            border-radius: 0px;
+            -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+            box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+            -webkit-transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s;
+            transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s;
+        }
+
+        td.details-control {
+            background: url('../Img/details_open.png') no-repeat center center;
+            cursor: pointer;
+        }
+
+        tr.shown td.details-control {
+            background: url('../Img/details_close.png') no-repeat center center;
+        }
+
+        .btn {
+            -webkit-border-radius: 0;
+            -moz-border-radius: 0;
+            border-radius: 0;
+        }
+    </style>
+</head>
+
+<body class="nav-md">
+    <div class="container body">
+        <div class="main_container" ng-app="myApp" ng-controller="myCtrl">
+            <div class="col-md-3 left_col">
+                <div class="left_col scroll-view">
+                    <div class="navbar nav_title" style="border: 0;">
+                        <a href="userIndex.html" target="_top" class="site_title"><i class="fa fa-wheelchair"></i> <span>单据无纸化</span></a>
+                    </div>
+                    <div class="clearfix"></div>
+                    <!-- sidebar menu -->
+                    <div id="sidebar-menu" class="main_menu_side hidden-print main_menu">
+                        <div class="menu_section">
+                            <ul class="nav side-menu">
+                                <li><a href="index.html"><i class="fa fa-bookmark"></i>财务单据列表</a></li>
+                                 <li><a href="editShenpi.html"><i class="fa fa-edit"></i> 付款审批单修改</a></li>
+                                 <li><a href="javascript:void(0)"><i class="fa fa-bookmark"></i> 差旅费报销单修改</a></li>
+                                 <li><a href="javascript:void(0)"><i class="fa fa-life-bouy"></i> 预支单修改</a></li>
+                            </ul>
+                        </div>
+
+                    </div>
+                    <!-- /sidebar menu -->
+                </div>
+            </div>
+
+            <!-- top navigation -->
+            <div class="top_nav">
+                <div class="nav_menu">
+                    <nav>
+                        <div class="nav toggle">
+                            <a id="menu_toggle"><i class="fa fa-bars"></i></a>
+                        </div>
+
+                        <ul class="nav navbar-nav navbar-right">
+                            <li class="">
+                                <a href="javascript:;" class="user-profile dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
+                                    <img src="images/img.jpg" alt="">{{userInfo.name}}
+                                    <span class=" fa fa-angle-down"></span>
+                                </a>
+                                <ul class="dropdown-menu dropdown-usermenu pull-right">
+                                    <li><a href="login.html" target="_top"><i class="fa fa-sign-out pull-right"></i> 退出登录</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+            <!-- /top navigation -->
+            <!-- page content -->
+            <div class="right_col" role="main">
+                <div class="loading">
+                    <img src="../Img/loading.gif" />
+                </div>
+                <!--<div class="row">
+                    <form class="navbar-form pull-left">
+                        <label class="control-label">单据类型:</label>
+                        <select class="form-control1" ng-init="selectedName = types[0]" ng-model="condition.type" ng-options="x for x in types"></select>
+                        <label class="control-label">流水号:</label>
+                        <input type="text" placeholder="流水号" onkeyup="value=value.replace(/[^\d-]/g,'')" class="form-control1" ng-model="condition.liuShui">
+
+                        <button type="button" class="btn btn-primary" id="search" ng-click="search()"><span class="glyphicon glyphicon-search" aria-hidden="true"></span>查询</button>
+                    </form>
+                </div>-->
+                <div class="row">
+                    <!-- form input mask -->
+                    <div class="col-md-12 col-sm-12 col-xs-12">
+                        <div class="x_panel">
+                            <div class="x_title">
+                                <h2>表单数据</h2>
+                              
+                                <div class="clearfix"></div>
+                            </div>
+                            <div class="x_content">
+                                <br />
+
+                                <form class="form-horizontal form-label-left input_mask">
+
+                                    <div class="form-group">
+                                        <label class="control-label col-md-3 col-sm-3 col-xs-6">
+                                            流水号
+                                        </label>
+                                        <div class="col-md-2 col-sm-2 col-xs-6">
+                                            <input type="text" class="form-control has-feedback-left" id="inputSuccess2" placeholder="流水号" >
+                                            <span class="fa fa-search form-control-feedback right" ng-click="search()"></span>
+
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label class="control-label col-md-1 col-sm-2 col-xs-6">
+                                            发起人
+                                        </label>
+                                        <div class=" col-md-3  col-sm-3 col-xs-6">
+                                            <input type="text" class="form-control has-feedback-left" id="" placeholder="发起人" readonly>
+                                        </div>
+                                        <label class="control-label col-md-1 col-sm-2  col-xs-6">
+                                            申请时间
+                                        </label>
+                                        <div class=" col-md-3  col-sm-3 col-xs-6">
+                                            <input type="text" class="form-control has-feedback-left" id="" placeholder="申请时间" readonly>
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label class="control-label col-md-1 col-sm-2 col-xs-6">
+                                            报销部门
+                                        </label>
+                                        <div class=" col-md-3  col-sm-3 col-xs-6">
+                                            <input type="text" class="form-control has-feedback-left" id="" placeholder="报销部门">
+                                        </div>
+                                        <label class="control-label col-md-1 col-sm-2  col-xs-6">
+                                            受益部门 <span class="required">*</span>
+                                        </label>
+                                        <div class=" col-md-3  col-sm-3 col-xs-6">
+                                            <input type="text" class="form-control has-feedback-left" id="" placeholder="受益部门">
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label class="control-label col-md-1 col-sm-2 col-xs-6">
+                                            收款单位/个人 <span class="required">*</span>
+                                        </label>
+                                        <div class=" col-md-3  col-sm-3 col-xs-6">
+                                            <input type="text" class="form-control has-feedback-left" id="" placeholder="发起人">
+                                        </div>
+                                        <label class="control-label col-md-1 col-sm-2  col-xs-6">
+                                            收款银行 <span class="required">*</span>
+                                        </label>
+                                        <div class=" col-md-3  col-sm-3 col-xs-6">
+                                            <input type="text" class="form-control has-feedback-left" id="" placeholder="申请时间">
+                                        </div>
+                                        <label class="control-label col-md-1 col-sm-2  col-xs-6">
+                                            收款账号 <span class="required">*</span>
+                                        </label>
+                                        <div class=" col-md-3  col-sm-3 col-xs-6">
+                                            <input type="text" class="form-control has-feedback-left" id="" placeholder="申请时间">
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label class="control-label col-md-1 col-sm-2 col-xs-6">
+                                            审单财务 <span class="required">*</span>
+                                        </label>
+                                        <div class=" col-md-3  col-sm-3 col-xs-6">
+                                            <input type="text" class="form-control has-feedback-left" id="" placeholder="审单财务">
+                                        </div>
+                                        <label class="control-label col-md-1 col-sm-2  col-xs-6">
+                                            预计付款日期 <span class="required">*</span>
+                                        </label>
+                                        <div class=" col-md-3  col-sm-3 col-xs-6">
+                                            <input type="text" class="form-control has-feedback-left" id="" placeholder="预计付款日期">
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label class="control-label col-md-1 col-sm-2 col-xs-12">
+                                            备注
+                                        </label>
+                                        <div class=" col-md-11  col-sm-11 col-xs-12">
+                                            <textarea type="text" class="form-control has-feedback-left" id="" placeholder="发起人"></textarea>
+                                        </div>
+                                    </div>
+                                    <div class="from-group">
+                                        <table class="col-md-12 col-sm-12 col-xs-12 table table-bordered">
+                                            <thead>
+                                                <tr>
+                                                    <th>费用申请事项（摘要）</th>
+                                                    <th>费用科目</th>
+                                                    <th>受益部门</th>
+                                                    <th>不含税金额</th>
+                                                    <th>税额</th>
+                                                    <th>价税合计</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td> <input type="text" class="form-control has-feedback-left" id="" placeholder="费用申请事项"></td>
+                                                    <td> <input type="text" class="form-control has-feedback-left" id="" placeholder="费用科目"></td>
+                                                    <td> <input type="text" class="form-control has-feedback-left" id="" placeholder="受益部门"></td>
+                                                    <td> <input type="text" class="form-control has-feedback-left" id="" placeholder="不含税金额"></td>
+                                                    <td> <input type="text" class="form-control has-feedback-left" id="" placeholder="税额"></td>
+                                                    <td> <input type="text" class="form-control has-feedback-left" id="" placeholder="价税合计"></td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                    <!--<div class="form-group">
+                                        <label class="control-label col-md-1 col-sm-1 col-xs-6">
+                                            费用申请事项（摘要）
+                                        </label>
+                                        <div class=" col-md-1 col-sm-1 col-xs-6">
+                                            <input type="text" class="form-control has-feedback-left" id="" placeholder="费用申请事项">
+                                        </div>
+                                        <label class="control-label col-md-1 col-sm-2 col-xs-12">
+                                            费用科目
+                                        </label>
+                                        <div class="  col-md-1 col-sm-1 col-xs-6">
+                                            <input type="text" class="form-control has-feedback-left" id="" placeholder="费用科目">
+                                        </div>
+                                        <label class="control-label col-md-1 col-sm-1 col-xs-6">
+                                            受益部门
+                                        </label>
+                                        <div class=" col-md-1 col-sm-1 col-xs-6">
+                                            <input type="text" class="form-control has-feedback-left" id="" placeholder="受益部门">
+                                        </div>
+                                        <label class="control-label  col-md-1 col-sm-1 col-xs-6">
+                                            不含税金额
+                                        </label>
+                                        <div class="  col-md-1 col-sm-1 col-xs-6">
+                                            <input type="text" class="form-control has-feedback-left" id="" placeholder="受益部门">
+                                        </div>
+                                        <label class="control-label  col-md-1 col-sm-1 col-xs-6">
+                                            税额
+                                        </label>
+                                        <div class="  col-md-1 col-sm-1 col-xs-6">
+                                            <input type="text" class="form-control has-feedback-left" id="" placeholder="受益部门">
+                                        </div>
+                                        <label class="control-label col-md-1 col-sm-1 col-xs-6">
+                                            价税合计
+                                        </label>
+                                        <div class=" col-md-1  col-sm-1 col-xs-6">
+                                            <input type="text" class="form-control has-feedback-left" id="" placeholder="受益部门">
+                                        </div>
+                                    </div>-->
+                                    <div class="form-group">
+                                        <label class="control-label col-md-1 col-sm-2 col-xs-6">
+                                            合计金额
+                                        </label>
+                                        <div class=" col-md-3  col-sm-3 col-xs-6">
+                                            <input type="text" class="form-control has-feedback-left" id="" placeholder="合计金额">
+                                        </div>
+                                        <label class="control-label col-md-1 col-sm-2  col-xs-6">
+                                            合计大写 <span class="required">*</span>
+                                        </label>
+                                        <div class=" col-md-3  col-sm-3 col-xs-6">
+                                            <input type="text" class="form-control has-feedback-left" id="" placeholder="合计大写">
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label class="control-label col-md-1 col-sm-2 col-xs-6">
+                                            预支金额
+                                        </label>
+                                        <div class=" col-md-3  col-sm-3 col-xs-6">
+                                            <input type="text" class="form-control has-feedback-left" id="" placeholder="预支金额">
+                                        </div>
+                                        <label class="control-label col-md-1 col-sm-2  col-xs-6">
+                                            应退/应补金额 <span class="required">*</span>
+                                        </label>
+                                        <div class=" col-md-3  col-sm-3 col-xs-6">
+                                            <input type="text" class="form-control has-feedback-left" id="" placeholder="  应退/应补金额">
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <div class="col-md-12 col-sm-12 col-xs-12 col-md-offset-3">
+                                            <!--<button type="button" class="btn btn-primary">Cancel</button>
+                                             <button class="btn btn-primary" type="reset">Reset</button>-->
+                                            <button type="submit" class="btn btn-success" ng-click="search()">修改</button>
+                                        </div>
+                                    </div>
+
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- /form input mask -->
+                </div>
+
+
+            </div>
+            <!-- /page content -->
+            <!-- footer content -->
+            <footer>
+                <div class="pull-right">
+                    单据无纸化
+                </div>
+                <div class="clearfix"></div>
+            </footer>
+            <!-- /footer content -->
+        </div>
+    </div>
+
+    <!-- jQuery -->
+    <script src="../vendors/jquery/dist/jquery.min.js"></script>
+    <!-- Bootstrap -->
+    <script src="../vendors/bootstrap/dist/js/bootstrap.min.js"></script>
+    <!-- FastClick -->
+    <script src="../vendors/fastclick/lib/fastclick.js"></script>
+    <!-- NProgress -->
+    <script src="../vendors/nprogress/nprogress.js"></script>
+    <!-- Chart.js -->
+    <script src="../vendors/Chart.js/dist/Chart.min.js"></script>
+    <!-- gauge.js -->
+    <script src="../vendors/gauge.js/dist/gauge.min.js"></script>
+    <!-- bootstrap-progressbar -->
+    <script src="../vendors/bootstrap-progressbar/bootstrap-progressbar.min.js"></script>
+    <!-- iCheck -->
+    <script src="../vendors/iCheck/icheck.min.js"></script>
+    <!-- Skycons -->
+    <script src="../vendors/skycons/skycons.js"></script>
+    <!-- Flot -->
+    <script src="../vendors/Flot/jquery.flot.js"></script>
+    <script src="../vendors/Flot/jquery.flot.pie.js"></script>
+    <script src="../vendors/Flot/jquery.flot.time.js"></script>
+    <script src="../vendors/Flot/jquery.flot.stack.js"></script>
+    <script src="../vendors/Flot/jquery.flot.resize.js"></script>
+    <!-- Flot plugins -->
+    <script src="../vendors/flot.orderbars/js/jquery.flot.orderBars.js"></script>
+    <script src="../vendors/flot-spline/js/jquery.flot.spline.min.js"></script>
+    <script src="../vendors/flot.curvedlines/curvedLines.js"></script>
+    <!-- DateJS -->
+    <script src="../vendors/DateJS/build/date.js"></script>
+    <!-- JQVMap -->
+    <script src="../vendors/jqvmap/dist/jquery.vmap.js"></script>
+    <script src="../vendors/jqvmap/dist/maps/jquery.vmap.world.js"></script>
+    <script src="../vendors/jqvmap/examples/js/jquery.vmap.sampledata.js"></script>
+    <!-- bootstrap-daterangepicker -->
+    <script src="../vendors/moment/min/moment.min.js"></script>
+    <script src="../vendors/bootstrap-daterangepicker/daterangepicker.js"></script>
+
+    <!-- Custom Theme Scripts -->
+    <script src="../build/js/custom.min.js"></script>
+
+    <script type="text/javascript" src="../Scripts/bootstrap-datetimepicker.js" charset="UTF-8"></script>
+    <script type="text/javascript" src="../Scripts/locales/bootstrap-datetimepicker.zh-CN.js" charset="UTF-8"></script>
+    <script src="../Scripts/angular.min.js"></script>
+    <script src="../Scripts/datatables.min.js"></script>
+
+    <script>
+        var app = angular.module('myApp', []);
+        app.controller('myCtrl', function ($scope, $http) {
+            $scope.getSesstion = function () {
+                $http({
+                    method: 'Post',
+                    url: '../api/UserInfo/getUserInfo',
+                    // params: search
+                }).success(function (data) {
+
+                    console.log(data);
+                    if (data == null) {
+                        window.location.href = "login.html";
+                    }
+                    $scope.userInfo = data;
+
+                }).error(function (msg) {
+                    window.location.href = "login.html";
+                })
+            }
+            $scope.getSesstion();
+            $(document).keyup(function (event) {
+                if (event.keyCode == 13) {
+                    $scope.search();
+                }
+            });
+            $scope.search = function () {
+                event.stopPropagation();
+                alert(123);
+            }
+        });
+    </script>
+</body>
+</html>

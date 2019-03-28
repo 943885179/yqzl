@@ -1,0 +1,36 @@
+2019-03-26 17:14:47:请求：请求参数：<?xml version="1.0" encoding="gb2312"?>
+<CMBSDKPGK xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <INFO>
+    <FUNNAM>GetTransInfo</FUNNAM>
+    <DATTYP>2</DATTYP>
+    <LGNNAM>yueji1</LGNNAM>
+  </INFO>
+  <SDKTSINFX>
+    <C_BBKNBR>重庆</C_BBKNBR>
+    <ACCNBR>123910567210501</ACCNBR>
+    <BGNDAT>20190325</BGNDAT>
+    <ENDDAT>20190325</ENDDAT>
+    <LOWAMT>0</LOWAMT>
+    <HGHAMT>0</HGHAMT>
+  </SDKTSINFX>
+</CMBSDKPGK>
+返回参数：
+
+2019-03-26 17:15:07:请求：请求参数：<?xml version="1.0" encoding="gb2312"?>
+<CMBSDKPGK xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <INFO>
+    <FUNNAM>GetTransInfo</FUNNAM>
+    <DATTYP>2</DATTYP>
+    <LGNNAM>yueji1</LGNNAM>
+  </INFO>
+  <SDKTSINFX>
+    <C_BBKNBR>重庆</C_BBKNBR>
+    <ACCNBR>123910567210501</ACCNBR>
+    <BGNDAT>20190325</BGNDAT>
+    <ENDDAT>20190325</ENDDAT>
+    <LOWAMT>0</LOWAMT>
+    <HGHAMT>0</HGHAMT>
+  </SDKTSINFX>
+</CMBSDKPGK>
+返回参数：
+

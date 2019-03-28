@@ -1,0 +1,334 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <!-- Meta, title, CSS, favicons, etc. -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" href="images/favicon.ico" type="image/ico" />
+
+    <title>单据无纸化 </title>
+
+    <!-- Bootstrap -->
+    <link href="../vendors/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link href="../vendors/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+    <!-- NProgress -->
+    <link href="../vendors/nprogress/nprogress.css" rel="stylesheet">
+    <!-- iCheck -->
+    <link href="../vendors/iCheck/skins/flat/green.css" rel="stylesheet">
+
+    <!-- bootstrap-progressbar -->
+    <link href="../vendors/bootstrap-progressbar/css/bootstrap-progressbar-3.3.4.min.css" rel="stylesheet">
+    <!-- JQVMap -->
+    <link href="../vendors/jqvmap/dist/jqvmap.min.css" rel="stylesheet" />
+    <!-- bootstrap-daterangepicker -->
+    <link href="../vendors/bootstrap-daterangepicker/daterangepicker.css" rel="stylesheet">
+
+    <!-- Custom Theme Style -->
+    <link href="../build/css/custom.min.css" rel="stylesheet">
+
+    <link href="../Content/sweetalert2.min.css" rel="stylesheet" />
+    <link href="../Content/bootstrap-datetimepicker.min.css" rel="stylesheet" media="screen">
+    <link href="../Content/datatables.min.css" rel="stylesheet" />
+
+    <style type="text/css">
+        .loading {
+            padding-left: 50%;
+            padding-top: 20%;
+            display: none;
+            width: 100%;
+            height: 100%;
+            z-index: 2;
+            position: absolute;
+        }
+
+        .form-control1 {
+            height: 34px;
+            padding: 6px 12px;
+            font-size: 14px;
+            line-height: 1.428571429;
+            color: #555555;
+            vertical-align: middle;
+            background-color: #ffffff;
+            border: 1px solid #cccccc;
+            border-radius: 0px;
+            -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+            box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+            -webkit-transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s;
+            transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s;
+        }
+
+        td.details-control {
+            background: url('../Img/details_open.png') no-repeat center center;
+            cursor: pointer;
+        }
+
+        tr.shown td.details-control {
+            background: url('../Img/details_close.png') no-repeat center center;
+        }
+
+        .btn {
+            -webkit-border-radius: 0;
+            -moz-border-radius: 0;
+            border-radius: 0;
+        }
+    </style>
+</head>
+
+<body class="nav-md">
+    <div class="container body">
+        <div class="main_container" ng-app="myApp" ng-controller="myCtrl">
+            <div class="col-md-3 left_col">
+                <div class="left_col scroll-view">
+                    <div class="navbar nav_title" style="border: 0;">
+                        <a href="index.html" class="site_title"><i class="fa fa-wheelchair"></i> <span>单据无纸化</span></a>
+                    </div>
+                    <div class="clearfix"></div>
+                    <!-- sidebar menu -->
+                    <div id="sidebar-menu" class="main_menu_side hidden-print main_menu">
+                        <div class="menu_section">
+                            <ul class="nav side-menu">
+                                <li><a href="index.html"><i class="fa fa-bookmark"></i>财务单据列表</a></li>
+                                <li><a href="FinancialRecords.html"><i class="fa fa-edit"></i> 审单财务转移记录</a></li>
+                                <li><a href="yq.html"><i class="fa fa-paypal"></i> 系统付款记录(待审批)</a></li>
+                                <li><a href="yqOready.html"><i class="fa fa-paypal"></i> 系统付款记录(已审批)</a></li>
+                                <li><a href="yqlist.html"><i class="fa fa-cc-mastercard"></i> 银行收款记录</a></li>
+                                <li><a href="yqpaylist.html"><i class="fa fa-google-wallet"></i> 银行付款记录</a></li>
+                                <li><a href="yqzllist.html"><i class="fa fa-google-wallet"></i> 银行记录(包含收付款，对账日记账专用)</a></li>
+                                <li><a href="yqsp.html"><i class="fa fa-cc-amex"></i> 付款审批</a></li>
+
+                            </ul>
+                        </div>
+
+                    </div>
+                    <!-- /sidebar menu -->
+                </div>
+            </div>
+
+            <!-- top navigation -->
+            <div class="top_nav">
+                <div class="nav_menu">
+                    <nav>
+                        <div class="nav toggle">
+                            <a id="menu_toggle"><i class="fa fa-bars"></i></a>
+                        </div>
+
+                        <ul class="nav navbar-nav navbar-right">
+                            <li class="">
+                                <a href="javascript:;" class="user-profile dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
+                                    <img src="images/img.jpg" alt="">{{userInfo.name}}
+                                    <span class=" fa fa-angle-down"></span>
+                                </a>
+                                <ul class="dropdown-menu dropdown-usermenu pull-right">
+                                    <li><a href="login.html"><i class="fa fa-sign-out pull-right"></i> 退出登录</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+            <!-- /top navigation -->
+            <!-- page content -->
+            <div class="right_col" role="main">
+                <div class="loading">
+                    <img src="../Img/loading.gif" />
+                </div>
+                <div>
+                    <div id="tabDiv">
+                        <table id="table" class="display" style="width:100%"></table>
+                    </div>
+                </div>
+            </div>
+            <!-- /page content -->
+            <!-- footer content -->
+            <footer>
+                <div class="pull-right">
+                    单据无纸化
+                </div>
+                <div class="clearfix"></div>
+            </footer>
+            <!-- /footer content -->
+        </div>
+    </div>
+
+    <!-- jQuery -->
+    <script src="../vendors/jquery/dist/jquery.min.js"></script>
+    <!-- Bootstrap -->
+    <script src="../vendors/bootstrap/dist/js/bootstrap.min.js"></script>
+    <!-- FastClick -->
+    <script src="../vendors/fastclick/lib/fastclick.js"></script>
+    <!-- NProgress -->
+    <script src="../vendors/nprogress/nprogress.js"></script>
+    <!-- Chart.js -->
+    <script src="../vendors/Chart.js/dist/Chart.min.js"></script>
+    <!-- gauge.js -->
+    <script src="../vendors/gauge.js/dist/gauge.min.js"></script>
+    <!-- bootstrap-progressbar -->
+    <script src="../vendors/bootstrap-progressbar/bootstrap-progressbar.min.js"></script>
+    <!-- iCheck -->
+    <script src="../vendors/iCheck/icheck.min.js"></script>
+    <!-- Skycons -->
+    <script src="../vendors/skycons/skycons.js"></script>
+    <!-- Flot -->
+    <script src="../vendors/Flot/jquery.flot.js"></script>
+    <script src="../vendors/Flot/jquery.flot.pie.js"></script>
+    <script src="../vendors/Flot/jquery.flot.time.js"></script>
+    <script src="../vendors/Flot/jquery.flot.stack.js"></script>
+    <script src="../vendors/Flot/jquery.flot.resize.js"></script>
+    <!-- Flot plugins -->
+    <script src="../vendors/flot.orderbars/js/jquery.flot.orderBars.js"></script>
+    <script src="../vendors/flot-spline/js/jquery.flot.spline.min.js"></script>
+    <script src="../vendors/flot.curvedlines/curvedLines.js"></script>
+    <!-- DateJS -->
+    <script src="../vendors/DateJS/build/date.js"></script>
+    <!-- JQVMap -->
+    <script src="../vendors/jqvmap/dist/jquery.vmap.js"></script>
+    <script src="../vendors/jqvmap/dist/maps/jquery.vmap.world.js"></script>
+    <script src="../vendors/jqvmap/examples/js/jquery.vmap.sampledata.js"></script>
+    <!-- bootstrap-daterangepicker -->
+    <script src="../vendors/moment/min/moment.min.js"></script>
+    <script src="../vendors/bootstrap-daterangepicker/daterangepicker.js"></script>
+
+    <!-- Custom Theme Scripts -->
+    <script src="../build/js/custom.min.js"></script>
+
+    <script type="text/javascript" src="../Scripts/bootstrap-datetimepicker.js" charset="UTF-8"></script>
+    <script type="text/javascript" src="../Scripts/locales/bootstrap-datetimepicker.zh-CN.js" charset="UTF-8"></script>
+    <script src="../Scripts/angular.min.js"></script>
+    <script src="../Scripts/datatables.min.js"></script>
+    <script src="../Scripts/xlsx.full.min.js"></script>
+    <script src="../Scripts/sweetalert2.min.js"></script>
+    <script>
+        var app = angular.module('myApp', []);
+        app.controller('myCtrl', function ($scope, $http) {
+            $scope.getSesstion = function () {
+                $http({
+                    method: 'Post',
+                    url: '../api/UserInfo/getUserInfo',
+                    // params: search
+                }).success(function (data) {
+                    if (data == null || data.type == 2) {
+                        window.location.href = "login.html";
+                    }
+                    $scope.userInfo = data;
+
+                }).error(function (msg) {
+                    window.location.href = "login.html";
+                })
+            }
+            $scope.getSesstion();
+            $scope.getList = function (search) {
+                $(".loading").css("display", "block");
+                $http({
+                    method: 'get',
+                    url: '../api/List/getFinancialList',
+                    // params: search
+                }).success(function (list) {
+                    tableShow(list);
+                    $(".loading").css("display", "none");
+                }).error(function (msg) {
+                    console.log(msg);
+                    $(".loading").css("display", "none");
+                })
+            }
+            $scope.getList($scope.condition);
+        });
+        function tableShow(dataList) {
+            //显示给用户看的视图
+            //由于datatables会有一个缓存问题，导致保存了上一次该行的内容会造成多次请求，先销毁这个table再重构table就不会有这个问题了
+            $("#tabDiv").html("");
+            $("#tabDiv").html(' <table id="table" class="display" style="width:100%"></table>');
+            var table = $('#table').DataTable({
+                data: dataList,
+                "bFilter": false,
+                "ordering": true,
+                "info": false,
+                "destroy": true,
+                bAutoWidth: false,//自动宽度
+                paging: true,
+                searching: true,
+                stateSave: true,
+                // "pagingType": "full_numbers"
+                "language": {
+                    "decimal": ",",
+                    "thousands": "."
+                },
+                "oLanguage": { // 国际化配置
+                    "sProcessing": "正在获取数据，请稍后...",
+                    "sLengthMenu": "显示 _MENU_ 条",
+                    "sZeroRecords": "没有找到数据",
+                    "sInfo": "从 _START_ 到  _END_ 条记录 总记录数为 _TOTAL_ 条",
+                    "sInfoEmpty": "记录数为0",
+                    "sInfoFiltered": "(全部记录数 _MAX_ 条)",
+                    "sInfoPostFix": "",
+                    "sSearch": "快速查询",
+                    "sUrl": "",
+                    "oPaginate": {
+                        "sFirst": "第一页",
+                        "sPrevious": "上一页",
+                        "sNext": "下一页",
+                        "sLast": "最后一页"
+                    }
+                },
+                // "scrollX": true,//x方向滚动
+                /* 'ajax': {
+                     'url': '../api/List/getList'
+                 },*/
+                columns: [
+                    // CONSTANT.DATA_TABLES.COLUMN.CHECKBOX,左侧多选按钮
+                    //下面会显示按钮选择，先不做视觉体验了
+                    /* {
+                         'title': '<input type="checkbox" class="iCheck">',
+                         "orderable": true, // 禁用排序
+                         "defaultContent": "",
+                         "render": function (data, type, row, meta) {
+                             return '<input type="checkbox" class="iCheck">';
+                         }
+                     },*/
+                    {
+                        'title': '转移单据编号',
+                        "orderable": true, // 禁用排序
+                        "defaultContent": "",
+                        "render": function (data, type, row, meta) {
+                            return row.liushuiId;
+                        }
+                    },
+                   {
+                        'title': '转移前财务',
+                        "orderable": true, // 禁用排序
+                        "defaultContent": "",
+                        "render": function (data, type, row, meta) {
+                            return row.beginFinancial;
+                        }
+                    }, {
+                        'title': '转移后财务',
+                        "orderable": true, // 禁用排序
+                        "defaultContent": "",
+                        "render": function (data, type, row, meta) {
+                            return row.endFinancial;
+                        }
+                    }, {
+                        'title': '转移时间',
+                        "orderable": true, // 禁用排序
+                        "defaultContent": "",
+                        "render": function (data, type, row, meta) {
+                            return row.createDate;
+                        }
+                    }, {
+                        'title': '操作员',
+                        "orderable": true, // 禁用排序
+                        "defaultContent": "",
+                        "render": function (data, type, row, meta) {
+                            return row.createMan;
+                        }
+                    }
+                ]
+            });
+            /*$('#table').dataTable().fnClearTable();   //将数据清除
+            $("#table").dataTable().fnDestroy();*/
+        }
+    </script>
+</body>
+</html>

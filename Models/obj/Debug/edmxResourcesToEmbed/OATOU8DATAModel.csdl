@@ -1,0 +1,354 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="OAtoU8DATAModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityContainer Name="OAtoU8DATAEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="triggerSummary" EntityType="OAtoU8DATAModel.triggerSummary" />
+    <EntitySet Name="producehelp" EntityType="OAtoU8DATAModel.producehelp" />
+    <EntitySet Name="userInfo" EntityType="OAtoU8DATAModel.userInfo" />
+    <EntitySet Name="contrast" EntityType="OAtoU8DATAModel.contrast" />
+    <EntitySet Name="MessageShow" EntityType="OAtoU8DATAModel.MessageShow" />
+    <EntitySet Name="PrintRecordBody" EntityType="OAtoU8DATAModel.PrintRecordBody" />
+    <EntitySet Name="PrintRecord" EntityType="OAtoU8DATAModel.PrintRecord" />
+    <EntitySet Name="ChangeBankMiddle" EntityType="OAtoU8DATAModel.ChangeBankMiddle" />
+    <EntitySet Name="dbConfig" EntityType="OAtoU8DATAModel.dbConfig" />
+    <EntitySet Name="FinancialRecords" EntityType="OAtoU8DATAModel.FinancialRecords" />
+    <EntitySet Name="userOATab" EntityType="OAtoU8DATAModel.userOATab" />
+    <EntitySet Name="yq_certificates" EntityType="OAtoU8DATAModel.yq_certificates" />
+    <EntitySet Name="yq_cityCode" EntityType="OAtoU8DATAModel.yq_cityCode" />
+    <EntitySet Name="yq_code" EntityType="OAtoU8DATAModel.yq_code" />
+    <EntitySet Name="yq_customerAccount" EntityType="OAtoU8DATAModel.yq_customerAccount" />
+    <EntitySet Name="yq_log" EntityType="OAtoU8DATAModel.yq_log" />
+    <EntitySet Name="yq_userAccount" EntityType="OAtoU8DATAModel.yq_userAccount" />
+    <EntitySet Name="yq_error" EntityType="OAtoU8DATAModel.yq_error" />
+    <EntitySet Name="yq_cityCode_zhaohang" EntityType="OAtoU8DATAModel.yq_cityCode_zhaohang" />
+    <EntitySet Name="yq_paymentRecord" EntityType="OAtoU8DATAModel.yq_paymentRecord" />
+    <EntitySet Name="RecordTable" EntityType="OAtoU8DATAModel.RecordTable" />
+    <EntitySet Name="ecs_region" EntityType="OAtoU8DATAModel.ecs_region" />
+    <EntitySet Name="yq_zhaohang_yhCode" EntityType="OAtoU8DATAModel.yq_zhaohang_yhCode" />
+  </EntityContainer>
+  <EntityType Name="triggerSummary">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="state" Type="Int32" />
+    <Property Name="subject" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="create_date" Type="DateTime" Precision="3" />
+    <Property Name="start_date" Type="DateTime" Precision="3" />
+    <Property Name="finish_date" Type="DateTime" Precision="3" />
+    <Property Name="templete_id" Type="Int64" />
+    <Property Name="start_member_id" Type="Int64" />
+  </EntityType>
+  <EntityType Name="producehelp">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="col_id" Type="Int64" Nullable="false" />
+    <Property Name="isShow" Type="Int32" Nullable="false" />
+    <Property Name="intoForm" Type="Int64" Nullable="false" />
+  </EntityType>
+  <EntityType Name="userInfo">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="name" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="password" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="start" Type="Boolean" Nullable="false" />
+    <Property Name="type" Type="Int32" Nullable="false" />
+    <Property Name="phnoe" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="mac" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+    <Property Name="company" Type="Int32" />
+    <Property Name="zhaohangport" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+    <Property Name="pinganport" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+    <Property Name="zhaohangUser" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+    <Property Name="pinganYqdm" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="contrast">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="baoxiaoId" Type="Int64" Nullable="false" />
+    <Property Name="yuzhiId" Type="Int64" Nullable="false" />
+    <Property Name="l4" Type="Decimal" Precision="18" Scale="2" />
+    <Property Name="l5" Type="Decimal" Precision="18" Scale="2" />
+    <Property Name="l6" Type="Decimal" Precision="18" Scale="2" />
+    <Property Name="l7" Type="Decimal" Precision="18" Scale="2" />
+    <Property Name="l13" Type="Decimal" Precision="18" Scale="2" />
+  </EntityType>
+  <EntityType Name="MessageShow">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="msg" Type="String" MaxLength="4000" FixedLength="false" Unicode="false" />
+    <Property Name="createdate" Type="DateTime" Precision="3" />
+    <Property Name="isOut" Type="Int32" />
+    <Property Name="phone" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+    <Property Name="name" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="PrintRecordBody">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="userid" Type="Int32" Nullable="false" />
+    <Property Name="colid" Type="Int64" Nullable="false" />
+    <Property Name="createdate" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="pid" Type="Int32" Nullable="false" />
+    <Property Name="ip" Type="String" Nullable="false" MaxLength="255" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="PrintRecord">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="colid" Type="Int64" Nullable="false" />
+    <Property Name="createdate" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="num" Type="Int32" Nullable="false" />
+  </EntityType>
+  <EntityType Name="ChangeBankMiddle">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="tabName" Type="String" Nullable="false" MaxLength="255" FixedLength="false" Unicode="false" />
+    <Property Name="fid" Type="Int64" Nullable="false" />
+    <Property Name="allstr" Type="String" Nullable="false" MaxLength="255" FixedLength="false" Unicode="false" />
+    <Property Name="supplier" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+    <Property Name="bank" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+    <Property Name="bankCarId" Type="String" MaxLength="80" FixedLength="false" Unicode="false" />
+    <Property Name="isSave" Type="Boolean" />
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+  </EntityType>
+  <EntityType Name="dbConfig">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="name" Type="String" Nullable="false" MaxLength="255" FixedLength="false" Unicode="false" />
+    <Property Name="yydbConfigName" Type="String" Nullable="false" MaxLength="255" FixedLength="false" Unicode="false" />
+    <Property Name="oaFormmainTab" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+    <Property Name="oaFormsonTab" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+    <Property Name="oaFormainId" Type="Int64" />
+    <Property Name="oaCreateName" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+    <Property Name="oachuangjinshijin" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+    <Property Name="oafaqiren" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+    <Property Name="oacompany" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+    <Property Name="oaphone" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+    <Property Name="oalAmount" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+    <Property Name="oacAmount" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+    <Property Name="oashouyibumen" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+    <Property Name="oabody_type" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+    <Property Name="oatitle" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+    <Property Name="oafinish_date" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+    <Property Name="oafaqibumen" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+    <Property Name="oacolId" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+    <Property Name="oamid" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+    <Property Name="oatype" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="FinancialRecords">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="liushuiId" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="beginFinancial" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+    <Property Name="endFinancial" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+    <Property Name="createDate" Type="DateTime" Precision="3" />
+    <Property Name="createMan" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="userOATab">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+  </EntityType>
+  <EntityType Name="yq_certificates">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="code" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="name" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="yq_cityCode">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="code" Type="Int32" Nullable="false" />
+    <Property Name="name" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="yq_code">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" />
+    <Property Name="code" Type="String" Nullable="false" MaxLength="6" FixedLength="false" Unicode="false" />
+    <Property Name="describe" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="iskey" Type="String" MaxLength="5" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="yq_customerAccount">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="acctNo" Type="String" Nullable="false" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="acctName" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="acctBankName" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="acctRecCode" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="acctProvinceCode" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+    <Property Name="acctCityName" Type="String" MaxLength="12" FixedLength="false" Unicode="false" />
+    <Property Name="iDNo" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="iDType" Type="Int32" />
+  </EntityType>
+  <EntityType Name="yq_log">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="createTime" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="yqCode" Type="String" Nullable="false" MaxLength="6" FixedLength="false" Unicode="false" />
+    <Property Name="message" Type="String" Nullable="false" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="userName" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="ip" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="requestXml" Type="String" Nullable="false" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="responseXml" Type="String" Nullable="false" MaxLength="Max" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="yq_userAccount">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="yqdm" Type="Int64" Nullable="false" />
+    <Property Name="accountId" Type="String" Nullable="false" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="accountName" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="bank" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="carType" Type="String" MaxLength="80" FixedLength="false" Unicode="true" />
+    <Property Name="carId" Type="String" MaxLength="80" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="yq_error">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="errCode" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="errMessage" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="yq_cityCode_zhaohang">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="code" Type="String" Nullable="false" MaxLength="4" FixedLength="false" Unicode="false" />
+    <Property Name="name" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="yq_paymentRecord">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="payCode" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="thirdVoucher" Type="String" Nullable="false" MaxLength="60" FixedLength="false" Unicode="false" />
+    <Property Name="cstInnerFlowNo" Type="String" MaxLength="60" FixedLength="false" Unicode="false" />
+    <Property Name="ccyCode" Type="String" Nullable="false" MaxLength="3" FixedLength="false" Unicode="false" />
+    <Property Name="outAcctNo" Type="String" Nullable="false" MaxLength="60" FixedLength="false" Unicode="false" />
+    <Property Name="outAcctName" Type="String" Nullable="false" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="outAcctAddr" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="inAcctBankNode" Type="String" MaxLength="12" FixedLength="false" Unicode="false" />
+    <Property Name="inAcctRecCode" Type="String" MaxLength="12" FixedLength="false" Unicode="false" />
+    <Property Name="inAcctNo" Type="String" Nullable="false" MaxLength="32" FixedLength="false" Unicode="false" />
+    <Property Name="inAcctName" Type="String" Nullable="false" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="inAcctBankName" Type="String" Nullable="false" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="inAcctProvinceCode" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="inAcctCityName" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="tranAmount" Type="Decimal" Nullable="false" Precision="19" Scale="4" />
+    <Property Name="useEx" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="unionFlag" Type="String" Nullable="false" MaxLength="6" FixedLength="false" Unicode="false" />
+    <Property Name="sysFlag" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="addrFlag" Type="Int32" Nullable="false" />
+    <Property Name="mainAcctNo" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="inIDType" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="inIDNo" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="frontLogNo" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="fee1" Type="Decimal" Precision="19" Scale="4" />
+    <Property Name="fee2" Type="Decimal" Precision="19" Scale="4" />
+    <Property Name="hostFlowNo" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="hostTxDate" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="stt" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="errCode" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="errMessage" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+    <Property Name="createTime" Type="DateTime" Precision="3" />
+    <Property Name="createMan" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="updateTime" Type="DateTime" Precision="3" />
+    <Property Name="updateMan" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="isBack" Type="Int32" />
+    <Property Name="backRem" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+    <Property Name="eptdat" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+    <Property Name="epttim" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+    <Property Name="requestdata" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="responsedata" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="isApproval" Type="Boolean" />
+    <Property Name="approvalMan" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="approvalDate" Type="DateTime" Precision="3" />
+    <Property Name="requestModelYY" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="requestModelYQ" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="company" Type="Int32" />
+    <Property Name="isDel" Type="Boolean" />
+  </EntityType>
+  <EntityType Name="RecordTable">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Pid" Type="String" MaxLength="200" FixedLength="false" Unicode="true" />
+    <Property Name="IsIntoBook" Type="Int32" />
+    <Property Name="IsIntoCloseBill" Type="Int32" />
+    <Property Name="IsIntoAccvouch" Type="Int32" />
+    <Property Name="PayingBank" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="voucher" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="updateTime" Type="DateTime" Precision="3" />
+    <Property Name="updateTime2" Type="DateTime" Precision="3" />
+    <Property Name="updateTime3" Type="DateTime" Precision="3" />
+    <Property Name="ip" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="ip2" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="ip3" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Bid" Type="Int32" />
+    <Property Name="contents" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="voucherno" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="piaojuId" Type="Int32" />
+    <Property Name="liushuihao" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="type" Type="Int32" />
+    <Property Name="amountMoney" Type="Decimal" Precision="18" Scale="2" />
+    <Property Name="chunabianhao" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="pingzhenhao" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="danjubianhao" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="userName" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="l4" Type="Decimal" Precision="18" Scale="2" />
+    <Property Name="l5" Type="Decimal" Precision="18" Scale="2" />
+    <Property Name="l6" Type="Decimal" Precision="18" Scale="2" />
+    <Property Name="l7" Type="Decimal" Precision="18" Scale="2" />
+    <Property Name="l13" Type="Decimal" Precision="18" Scale="2" />
+    <Property Name="isDel" Type="Boolean" />
+    <Property Name="yyDate" Type="DateTime" Precision="0" />
+  </EntityType>
+  <EntityType Name="ecs_region">
+    <Key>
+      <PropertyRef Name="region_id" />
+    </Key>
+    <Property Name="region_id" Type="Int16" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="parent_id" Type="Int16" Nullable="false" />
+    <Property Name="region_name" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="region_type" Type="Int32" Nullable="false" />
+    <Property Name="agency_id" Type="Int16" Nullable="false" />
+  </EntityType>
+  <EntityType Name="yq_zhaohang_yhCode">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="name" Type="String" Nullable="false" MaxLength="200" FixedLength="false" Unicode="false" />
+    <Property Name="code" Type="String" Nullable="false" MaxLength="20" FixedLength="false" Unicode="false" />
+  </EntityType>
+</Schema>

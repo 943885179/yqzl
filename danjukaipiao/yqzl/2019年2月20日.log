@@ -1,0 +1,116 @@
+2019-02-20 13:49:17:开始请求付款。。。。
+
+2019-02-20 13:50:57:开始请求付款。。。。
+
+2019-02-20 13:51:56:开始请求付款。。。。
+
+2019-02-20 13:55:19:开始请求付款。。。。
+
+2019-02-20 13:56:11:开始请求付款。。。。
+
+2019-02-20 14:01:58:开始请求付款。。。。
+
+2019-02-20 14:08:51:开始请求付款。。。。
+
+2019-02-20 14:09:16:开始请求付款。。。。
+
+2019-02-20 14:12:14:开始请求付款。。。。
+
+2019-02-20 14:12:16:请求：4004
+请求参数：A0010101010030307980000011700000000006894004  000000120190220134201YQMFPA20190220134201000000                                                                                                    000001            00000000000<?xml version ="1.0" encoding="GB2312"?><Result><ThirdVoucher>20190220130142</ThirdVoucher><CstInnerFlowNo>032019021200010</CstInnerFlowNo><CcyCode>RMB</CcyCode><OutAcctNo>11002923034501</OutAcctNo><OutAcctName>平安测试六零零零三三八二八五九八</OutAcctName><OutAcctAddr/><InAcctBankNode/><InAcctRecCode/><InAcctNo>3602113219100000154</InAcctNo><InAcctName>广州颐和大酒店有限公司</InAcctName><InAcctBankName>中国工商银行股份有限公司广州天平架支行</InAcctBankName><TranAmount>2</TranAmount><AmountCode/><UseEx>行政部李云报销广州颐和大酒店有限公司2019.1.26年会酒店尾款的费用</UseEx><UnionFlag>1</UnionFlag><SysFlag>N</SysFlag><AddrFlag>1</AddrFlag><RealFlag>2</RealFlag><MainAcctNo/></Result>
+返回参数：
+A0010101010030307980000011700000000000004004  000000220190220134201YQMFPA20190220134201RE1342:[RE1342]输入的卡号[3602113219100000154]不存在或者已经销卡                                          000001            00000000000
+2019-02-20 14:13:42:开始请求付款。。。。
+
+2019-02-20 14:13:42:请求：4004
+请求参数：A0010101010030307980000011700000000006894004  000000120190220134201YQMFPA20190220134201000000                                                                                                    000001            00000000000<?xml version ="1.0" encoding="GB2312"?><Result><ThirdVoucher>20190220130142</ThirdVoucher><CstInnerFlowNo>032019021200010</CstInnerFlowNo><CcyCode>RMB</CcyCode><OutAcctNo>11002923034501</OutAcctNo><OutAcctName>平安测试六零零零三三八二八五九八</OutAcctName><OutAcctAddr/><InAcctBankNode/><InAcctRecCode/><InAcctNo>3602113219100000154</InAcctNo><InAcctName>广州颐和大酒店有限公司</InAcctName><InAcctBankName>中国工商银行股份有限公司广州天平架支行</InAcctBankName><TranAmount>2</TranAmount><AmountCode/><UseEx>行政部李云报销广州颐和大酒店有限公司2019.1.26年会酒店尾款的费用</UseEx><UnionFlag>1</UnionFlag><SysFlag>N</SysFlag><AddrFlag>1</AddrFlag><RealFlag>2</RealFlag><MainAcctNo/></Result>
+返回参数：
+A0010101010030307980000011700000000000004004  000000220190220134201YQMFPA20190220134201MA4045:重复的第三方流水号或凭证号                                                                         000001            00000000000
+2019-02-20 14:19:52:开始请求付款。。。。
+
+2019-02-20 14:19:54:请求：4004
+请求参数：A0010101010030307980000011700000000006894004  000000120190220134201YQMFPA20190220134201000000                                                                                                    000001            00000000000<?xml version ="1.0" encoding="GB2312"?><Result><ThirdVoucher>20190220130142</ThirdVoucher><CstInnerFlowNo>032019021200010</CstInnerFlowNo><CcyCode>RMB</CcyCode><OutAcctNo>11002923034501</OutAcctNo><OutAcctName>平安测试六零零零三三八二八五九八</OutAcctName><OutAcctAddr/><InAcctBankNode/><InAcctRecCode/><InAcctNo>3602113219100000154</InAcctNo><InAcctName>广州颐和大酒店有限公司</InAcctName><InAcctBankName>中国工商银行股份有限公司广州天平架支行</InAcctBankName><TranAmount>2</TranAmount><AmountCode/><UseEx>行政部李云报销广州颐和大酒店有限公司2019.1.26年会酒店尾款的费用</UseEx><UnionFlag>1</UnionFlag><SysFlag>N</SysFlag><AddrFlag>1</AddrFlag><RealFlag>2</RealFlag><MainAcctNo/></Result>
+返回参数：
+A0010101010030307980000011700000000000004004  000000220190220134201YQMFPA20190220134201MA4045:重复的第三方流水号或凭证号                                                                         000001            00000000000
+2019-02-20 14:20:04:开始请求付款。。。。
+
+2019-02-20 14:20:04:请求：4004
+请求参数：A0010101010030307980000011700000000006894004  000000120190220134201YQMFPA20190220134201000000                                                                                                    000001            00000000000<?xml version ="1.0" encoding="GB2312"?><Result><ThirdVoucher>20190220130142</ThirdVoucher><CstInnerFlowNo>032019021200010</CstInnerFlowNo><CcyCode>RMB</CcyCode><OutAcctNo>11002923034501</OutAcctNo><OutAcctName>平安测试六零零零三三八二八五九八</OutAcctName><OutAcctAddr/><InAcctBankNode/><InAcctRecCode/><InAcctNo>3602113219100000154</InAcctNo><InAcctName>广州颐和大酒店有限公司</InAcctName><InAcctBankName>中国工商银行股份有限公司广州天平架支行</InAcctBankName><TranAmount>2</TranAmount><AmountCode/><UseEx>行政部李云报销广州颐和大酒店有限公司2019.1.26年会酒店尾款的费用</UseEx><UnionFlag>0</UnionFlag><SysFlag>N</SysFlag><AddrFlag>1</AddrFlag><RealFlag>2</RealFlag><MainAcctNo/></Result>
+返回参数：
+A0010101010030307980000011700000000000004004  000000220190220134201YQMFPA20190220134201MA4045:重复的第三方流水号或凭证号                                                                         000001            00000000000
+2019-02-20 14:22:55:开始请求付款。。。。
+
+2019-02-20 14:22:56:请求：4004
+请求参数：A0010101010030307980000011700000000007024004  000000120190220142227YQMFPA20190220142227000000                                                                                                    000001            00000000000<?xml version ="1.0" encoding="GB2312"?><Result><ThirdVoucher>20190220142722</ThirdVoucher><CstInnerFlowNo>032018110900056</CstInnerFlowNo><CcyCode>RMB</CcyCode><OutAcctNo>11002923034501</OutAcctNo><OutAcctName>平安测试六零零零三三八二八五九八</OutAcctName><OutAcctAddr/><InAcctBankNode/><InAcctRecCode/><InAcctNo>3602065209200224227</InAcctNo><InAcctName>广州辰沐生物科技有限公司</InAcctName><InAcctBankName>中国工商银行广州机场支行</InAcctBankName><TranAmount>1</TranAmount><AmountCode/><UseEx>采购一部周晓琴报销广州辰沐生物科技有限公司支付广州辰沐生物科技有限公司10月原料货款的费用</UseEx><UnionFlag>1</UnionFlag><SysFlag>N</SysFlag><AddrFlag>1</AddrFlag><RealFlag>2</RealFlag><MainAcctNo/></Result>
+返回参数：
+A0010101010030307980000011700000000000004004  000000220190220142227YQMFPA20190220142227RE1342:[RE1342]输入的卡号[3602065209200224227]不存在或者已经销卡                                          000001            00000000000
+2019-02-20 14:23:35:开始请求付款。。。。
+
+2019-02-20 14:23:36:请求：4004
+请求参数：A0010101010030307980000011700000000007024004  000000120190220142227YQMFPA20190220142227000000                                                                                                    000001            00000000000<?xml version ="1.0" encoding="GB2312"?><Result><ThirdVoucher>20190220142722</ThirdVoucher><CstInnerFlowNo>032018110900056</CstInnerFlowNo><CcyCode>RMB</CcyCode><OutAcctNo>11002923034501</OutAcctNo><OutAcctName>平安测试六零零零三三八二八五九八</OutAcctName><OutAcctAddr/><InAcctBankNode/><InAcctRecCode/><InAcctNo>3602065209200224227</InAcctNo><InAcctName>广州辰沐生物科技有限公司</InAcctName><InAcctBankName>中国工商银行广州机场支行</InAcctBankName><TranAmount>1</TranAmount><AmountCode/><UseEx>采购一部周晓琴报销广州辰沐生物科技有限公司支付广州辰沐生物科技有限公司10月原料货款的费用</UseEx><UnionFlag>1</UnionFlag><SysFlag>N</SysFlag><AddrFlag>1</AddrFlag><RealFlag>2</RealFlag><MainAcctNo/></Result>
+返回参数：
+A0010101010030307980000011700000000000004004  000000220190220142227YQMFPA20190220142227MA4045:重复的第三方流水号或凭证号                                                                         000001            00000000000
+2019-02-20 14:24:01:开始请求付款。。。。
+
+2019-02-20 14:24:01:请求：4004
+请求参数：A0010101010030307980000011700000000007024004  000000120190220142227YQMFPA20190220142227000000                                                                                                    000001            00000000000<?xml version ="1.0" encoding="GB2312"?><Result><ThirdVoucher>20190220142722</ThirdVoucher><CstInnerFlowNo>032018110900056</CstInnerFlowNo><CcyCode>RMB</CcyCode><OutAcctNo>11002923034501</OutAcctNo><OutAcctName>平安测试六零零零三三八二八五九八</OutAcctName><OutAcctAddr/><InAcctBankNode/><InAcctRecCode/><InAcctNo>3602065209200224227</InAcctNo><InAcctName>广州辰沐生物科技有限公司</InAcctName><InAcctBankName>中国工商银行广州机场支行</InAcctBankName><TranAmount>1</TranAmount><AmountCode/><UseEx>采购一部周晓琴报销广州辰沐生物科技有限公司支付广州辰沐生物科技有限公司10月原料货款的费用</UseEx><UnionFlag>0</UnionFlag><SysFlag>N</SysFlag><AddrFlag>1</AddrFlag><RealFlag>2</RealFlag><MainAcctNo/></Result>
+返回参数：
+A0010101010030307980000011700000000000004004  000000220190220142227YQMFPA20190220142227MA4045:重复的第三方流水号或凭证号                                                                         000001            00000000000
+2019-02-20 14:27:53:开始请求付款。。。。
+
+2019-02-20 14:27:55:请求：4004
+请求参数：A0010101010030307980000011700000000007024004  000000120190220142227YQMFPA20190220142227000000                                                                                                    000001            00000000000<?xml version ="1.0" encoding="GB2312"?><Result><ThirdVoucher>20190220142722</ThirdVoucher><CstInnerFlowNo>032018110900056</CstInnerFlowNo><CcyCode>RMB</CcyCode><OutAcctNo>11002923034501</OutAcctNo><OutAcctName>平安测试六零零零三三八二八五九八</OutAcctName><OutAcctAddr/><InAcctBankNode/><InAcctRecCode/><InAcctNo>3602065209200224227</InAcctNo><InAcctName>广州辰沐生物科技有限公司</InAcctName><InAcctBankName>中国工商银行广州机场支行</InAcctBankName><TranAmount>1</TranAmount><AmountCode/><UseEx>采购一部周晓琴报销广州辰沐生物科技有限公司支付广州辰沐生物科技有限公司10月原料货款的费用</UseEx><UnionFlag>1</UnionFlag><SysFlag>N</SysFlag><AddrFlag>1</AddrFlag><RealFlag>2</RealFlag><MainAcctNo/></Result>
+返回参数：
+A0010101010030307980000011700000000000004004  000000220190220142227YQMFPA20190220142227MA4045:重复的第三方流水号或凭证号                                                                         000001            00000000000
+2019-02-20 14:30:47:开始请求付款。。。。
+
+2019-02-20 14:31:20:开始请求付款。。。。
+
+2019-02-20 14:39:50:开始请求付款。。。。
+
+2019-02-20 14:40:06:请求：4004
+请求参数：A0010101010030307980000011700000000006894004  000000120190220134201YQMFPA20190220134201000000                                                                                                    000001            00000000000<?xml version ="1.0" encoding="GB2312"?><Result><ThirdVoucher>20190220130142</ThirdVoucher><CstInnerFlowNo>032019021200010</CstInnerFlowNo><CcyCode>RMB</CcyCode><OutAcctNo>11002923034501</OutAcctNo><OutAcctName>平安测试六零零零三三八二八五九八</OutAcctName><OutAcctAddr/><InAcctBankNode/><InAcctRecCode/><InAcctNo>3602113219100000154</InAcctNo><InAcctName>广州颐和大酒店有限公司</InAcctName><InAcctBankName>中国工商银行股份有限公司广州天平架支行</InAcctBankName><TranAmount>2</TranAmount><AmountCode/><UseEx>行政部李云报销广州颐和大酒店有限公司2019.1.26年会酒店尾款的费用</UseEx><UnionFlag>1</UnionFlag><SysFlag>N</SysFlag><AddrFlag>1</AddrFlag><RealFlag>2</RealFlag><MainAcctNo/></Result>
+返回参数：
+A0010101010030307980000011700000000000004004  000000120190220134201YQMFPA20190220134201E00006:服务方响应错误                                                                                     000001            00000000000
+2019-02-20 14:40:37:开始请求付款。。。。
+
+2019-02-20 14:40:52:请求：4004
+请求参数：A0010101010030307980000011700000000006894004  000000120190220134201YQMFPA20190220134201000000                                                                                                    000001            00000000000<?xml version ="1.0" encoding="GB2312"?><Result><ThirdVoucher>20190220130142</ThirdVoucher><CstInnerFlowNo>032019021200010</CstInnerFlowNo><CcyCode>RMB</CcyCode><OutAcctNo>11002923034501</OutAcctNo><OutAcctName>平安测试六零零零三三八二八五九八</OutAcctName><OutAcctAddr/><InAcctBankNode/><InAcctRecCode/><InAcctNo>3602113219100000154</InAcctNo><InAcctName>广州颐和大酒店有限公司</InAcctName><InAcctBankName>中国工商银行股份有限公司广州天平架支行</InAcctBankName><TranAmount>2</TranAmount><AmountCode/><UseEx>行政部李云报销广州颐和大酒店有限公司2019.1.26年会酒店尾款的费用</UseEx><UnionFlag>1</UnionFlag><SysFlag>N</SysFlag><AddrFlag>1</AddrFlag><RealFlag>2</RealFlag><MainAcctNo/></Result>
+返回参数：
+A0010101010030307980000011700000000000004004  000000120190220134201YQMFPA20190220134201E00006:服务方响应错误                                                                                     000001            00000000000
+2019-02-20 16:31:49:开始请求付款。。。。
+
+2019-02-20 16:31:49:请求：4004
+请求参数：A0010101010030307980000011700000000006894004  000000120190220134201YQMFPA20190220134201000000                                                                                                    000001            00000000000<?xml version ="1.0" encoding="GB2312"?><Result><ThirdVoucher>20190220130142</ThirdVoucher><CstInnerFlowNo>032019021200010</CstInnerFlowNo><CcyCode>RMB</CcyCode><OutAcctNo>11002923034501</OutAcctNo><OutAcctName>平安测试六零零零三三八二八五九八</OutAcctName><OutAcctAddr/><InAcctBankNode/><InAcctRecCode/><InAcctNo>3602113219100000154</InAcctNo><InAcctName>广州颐和大酒店有限公司</InAcctName><InAcctBankName>中国工商银行股份有限公司广州天平架支行</InAcctBankName><TranAmount>2</TranAmount><AmountCode/><UseEx>行政部李云报销广州颐和大酒店有限公司2019.1.26年会酒店尾款的费用</UseEx><UnionFlag>1</UnionFlag><SysFlag>N</SysFlag><AddrFlag>1</AddrFlag><RealFlag>2</RealFlag><MainAcctNo/></Result>
+返回参数：
+A0010101010030307980000011700000000000004004  000000220190220134201YQMFPA20190220134201MA4045:重复的第三方流水号或凭证号                                                                         000001            00000000000
+2019-02-20 16:32:17:开始请求付款。。。。
+
+2019-02-20 16:32:18:请求：4004
+请求参数：A0010101010030307980000011700000000006894004  000000120190220134201YQMFPA20190220134201000000                                                                                                    000001            00000000000<?xml version ="1.0" encoding="GB2312"?><Result><ThirdVoucher>20190220160132</ThirdVoucher><CstInnerFlowNo>032019021200010</CstInnerFlowNo><CcyCode>RMB</CcyCode><OutAcctNo>11002923034501</OutAcctNo><OutAcctName>平安测试六零零零三三八二八五九八</OutAcctName><OutAcctAddr/><InAcctBankNode/><InAcctRecCode/><InAcctNo>3602113219100000154</InAcctNo><InAcctName>广州颐和大酒店有限公司</InAcctName><InAcctBankName>中国工商银行股份有限公司广州天平架支行</InAcctBankName><TranAmount>2</TranAmount><AmountCode/><UseEx>行政部李云报销广州颐和大酒店有限公司2019.1.26年会酒店尾款的费用</UseEx><UnionFlag>0</UnionFlag><SysFlag>N</SysFlag><AddrFlag>1</AddrFlag><RealFlag>2</RealFlag><MainAcctNo/></Result>
+返回参数：
+A0010101010030307980000011700000000006704004  000000220190220134201YQMFPA20190220134201000000:交易受理成功                                                                                       000001            00000000000<?xml version="1.0" encoding="GBK" ?><Result><ThirdVoucher>20190220160132</ThirdVoucher><FrontLogNo>8043431902206185940243</FrontLogNo><CcyCode>RMB</CcyCode><OutAcctName>平安测试六零零零三三八二八五九八</OutAcctName><OutAcctNo>11002923034501</OutAcctNo><InAcctBankName>中国工商银行股份有限公司广州天平架支行</InAcctBankName><InAcctNo>3602113219100000154</InAcctNo><InAcctName>广州颐和大酒店有限公司</InAcctName><TranAmount>2.00</TranAmount><UnionFlag>0</UnionFlag><Fee1>4.00</Fee1><Fee2>0.00</Fee2><SOA_VOUCHER></SOA_VOUCHER><hostFlowNo></hostFlowNo><hostTxDate>20190220</hostTxDate><Mobile></Mobile><CstInnerFlowNo>032019021200010</CstInnerFlowNo><stt>40</stt></Result>
+2019-02-20 16:33:26:开始请求付款。。。。
+
+2019-02-20 16:33:27:请求：4004
+请求参数：A0010101010030307980000011700000000006894004  000000120190220134201YQMFPA20190220134201000000                                                                                                    000001            00000000000<?xml version ="1.0" encoding="GB2312"?><Result><ThirdVoucher>20190220130142</ThirdVoucher><CstInnerFlowNo>032019021200010</CstInnerFlowNo><CcyCode>RMB</CcyCode><OutAcctNo>11002923034501</OutAcctNo><OutAcctName>平安测试六零零零三三八二八五九八</OutAcctName><OutAcctAddr/><InAcctBankNode/><InAcctRecCode/><InAcctNo>3602113219100000154</InAcctNo><InAcctName>广州颐和大酒店有限公司</InAcctName><InAcctBankName>中国工商银行股份有限公司广州天平架支行</InAcctBankName><TranAmount>2</TranAmount><AmountCode/><UseEx>行政部李云报销广州颐和大酒店有限公司2019.1.26年会酒店尾款的费用</UseEx><UnionFlag>1</UnionFlag><SysFlag>N</SysFlag><AddrFlag>1</AddrFlag><RealFlag>2</RealFlag><MainAcctNo/></Result>
+返回参数：
+A0010101010030307980000011700000000000004004  000000220190220134201YQMFPA20190220134201MA4045:重复的第三方流水号或凭证号                                                                         000001            00000000000
+2019-02-20 16:33:34:开始请求付款。。。。
+
+2019-02-20 16:33:35:请求：4004
+请求参数：A0010101010030307980000011700000000006894004  000000120190220134201YQMFPA20190220134201000000                                                                                                    000001            00000000000<?xml version ="1.0" encoding="GB2312"?><Result><ThirdVoucher>20190220163033</ThirdVoucher><CstInnerFlowNo>032019021200010</CstInnerFlowNo><CcyCode>RMB</CcyCode><OutAcctNo>11002923034501</OutAcctNo><OutAcctName>平安测试六零零零三三八二八五九八</OutAcctName><OutAcctAddr/><InAcctBankNode/><InAcctRecCode/><InAcctNo>3602113219100000154</InAcctNo><InAcctName>广州颐和大酒店有限公司</InAcctName><InAcctBankName>中国工商银行股份有限公司广州天平架支行</InAcctBankName><TranAmount>2</TranAmount><AmountCode/><UseEx>行政部李云报销广州颐和大酒店有限公司2019.1.26年会酒店尾款的费用</UseEx><UnionFlag>0</UnionFlag><SysFlag>N</SysFlag><AddrFlag>1</AddrFlag><RealFlag>2</RealFlag><MainAcctNo/></Result>
+返回参数：
+A0010101010030307980000011700000000006704004  000000220190220134201YQMFPA20190220134201000000:交易受理成功                                                                                       000001            00000000000<?xml version="1.0" encoding="GBK" ?><Result><ThirdVoucher>20190220163033</ThirdVoucher><FrontLogNo>8043431902206185940384</FrontLogNo><CcyCode>RMB</CcyCode><OutAcctName>平安测试六零零零三三八二八五九八</OutAcctName><OutAcctNo>11002923034501</OutAcctNo><InAcctBankName>中国工商银行股份有限公司广州天平架支行</InAcctBankName><InAcctNo>3602113219100000154</InAcctNo><InAcctName>广州颐和大酒店有限公司</InAcctName><TranAmount>2.00</TranAmount><UnionFlag>0</UnionFlag><Fee1>4.00</Fee1><Fee2>0.00</Fee2><SOA_VOUCHER></SOA_VOUCHER><hostFlowNo></hostFlowNo><hostTxDate>20190220</hostTxDate><Mobile></Mobile><CstInnerFlowNo>032019021200010</CstInnerFlowNo><stt>40</stt></Result>
+2019-02-20 16:45:28:开始请求付款。。。。
+
+2019-02-20 16:45:33:请求：4004
+请求参数：A0010101010030307980000011700000000006894004  000000120190220134201YQMFPA20190220134201000000                                                                                                    000001            00000000000<?xml version ="1.0" encoding="GB2312"?><Result><ThirdVoucher>20190220130142</ThirdVoucher><CstInnerFlowNo>032019021200010</CstInnerFlowNo><CcyCode>RMB</CcyCode><OutAcctNo>11002923034501</OutAcctNo><OutAcctName>平安测试六零零零三三八二八五九八</OutAcctName><OutAcctAddr/><InAcctBankNode/><InAcctRecCode/><InAcctNo>3602113219100000154</InAcctNo><InAcctName>广州颐和大酒店有限公司</InAcctName><InAcctBankName>中国工商银行股份有限公司广州天平架支行</InAcctBankName><TranAmount>2</TranAmount><AmountCode/><UseEx>行政部李云报销广州颐和大酒店有限公司2019.1.26年会酒店尾款的费用</UseEx><UnionFlag>1</UnionFlag><SysFlag>N</SysFlag><AddrFlag>1</AddrFlag><RealFlag>2</RealFlag><MainAcctNo/></Result>
+返回参数：
+A0010101010030307980000011700000000000004004  000000220190220134201YQMFPA20190220134201MA4045:重复的第三方流水号或凭证号                                                                         000001            00000000000
+2019-02-20 16:45:57:开始请求付款。。。。
+
+2019-02-20 16:46:02:请求：4004
+请求参数：A0010101010030307980000011700000000006894004  000000120190220134201YQMFPA20190220134201000000                                                                                                    000001            00000000000<?xml version ="1.0" encoding="GB2312"?><Result><ThirdVoucher>20190220164645</ThirdVoucher><CstInnerFlowNo>032019021200010</CstInnerFlowNo><CcyCode>RMB</CcyCode><OutAcctNo>11002923034501</OutAcctNo><OutAcctName>平安测试六零零零三三八二八五九八</OutAcctName><OutAcctAddr/><InAcctBankNode/><InAcctRecCode/><InAcctNo>3602113219100000154</InAcctNo><InAcctName>广州颐和大酒店有限公司</InAcctName><InAcctBankName>中国工商银行股份有限公司广州天平架支行</InAcctBankName><TranAmount>2</TranAmount><AmountCode/><UseEx>行政部李云报销广州颐和大酒店有限公司2019.1.26年会酒店尾款的费用</UseEx><UnionFlag>0</UnionFlag><SysFlag>N</SysFlag><AddrFlag>1</AddrFlag><RealFlag>2</RealFlag><MainAcctNo/></Result>
+返回参数：
+A0010101010030307980000011700000000006704004  000000220190220134201YQMFPA20190220134201000000:交易受理成功                                                                                       000001            00000000000<?xml version="1.0" encoding="GBK" ?><Result><ThirdVoucher>20190220164645</ThirdVoucher><FrontLogNo>8043431902206185941776</FrontLogNo><CcyCode>RMB</CcyCode><OutAcctName>平安测试六零零零三三八二八五九八</OutAcctName><OutAcctNo>11002923034501</OutAcctNo><InAcctBankName>中国工商银行股份有限公司广州天平架支行</InAcctBankName><InAcctNo>3602113219100000154</InAcctNo><InAcctName>广州颐和大酒店有限公司</InAcctName><TranAmount>2.00</TranAmount><UnionFlag>0</UnionFlag><Fee1>4.00</Fee1><Fee2>0.00</Fee2><SOA_VOUCHER></SOA_VOUCHER><hostFlowNo></hostFlowNo><hostTxDate>20190220</hostTxDate><Mobile></Mobile><CstInnerFlowNo>032019021200010</CstInnerFlowNo><stt>40</stt></Result>

@@ -1,0 +1,114 @@
+2019-02-16 9:09:54:开始请求付款。。。。
+
+2019-02-16 9:23:35:开始请求付款。。。。
+
+2019-02-16 9:25:11:开始请求付款。。。。
+
+2019-02-16 9:26:24:开始请求付款。。。。
+
+2019-02-16 9:27:49:开始请求付款。。。。
+
+2019-02-16 9:48:28:开始请求付款。。。。
+
+2019-02-16 9:49:38:开始请求付款。。。。
+
+2019-02-16 9:51:24:请求交易记录。。。。
+
+2019-02-16 9:51:25:请求：4004
+请求参数：A0010101010030307980000011700000000002384013  000000120190216095124YQMFPA20190216095124000000                                                                                                    000001            00000000000<?xml version="1.0" encoding="GBK"?><Result><AcctNo></AcctNo><CcyCode>RMB</CcyCode><BeginDate>20190216</BeginDate><EndDate>20190216</EndDate><PageNo>1</PageNo><PageSize>1000</PageSize><Reserve></Reserve><OrderMode>001</OrderMode></Result>
+返回参数：
+A0010101010030307980000011700000000000004013  000000220190216095124YQMFPA20190216095124YQ9990:企业本账户没有开通此交易--交易未上送账户                                                           000001            00000000000
+2019-02-16 9:51:40:请求交易记录。。。。
+
+2019-02-16 9:51:40:请求：4004
+请求参数：A0010101010030307980000011700000000002384013  000000120190216095140YQMFPA20190216095140000000                                                                                                    000001            00000000000<?xml version="1.0" encoding="GBK"?><Result><AcctNo></AcctNo><CcyCode>RMB</CcyCode><BeginDate>20180818</BeginDate><EndDate>20180818</EndDate><PageNo>1</PageNo><PageSize>1000</PageSize><Reserve></Reserve><OrderMode>001</OrderMode></Result>
+返回参数：
+A0010101010030307980000011700000000000004013  000000220190216095140YQMFPA20190216095140YQ9990:企业本账户没有开通此交易--交易未上送账户                                                           000001            00000000000
+2019-02-16 9:56:14:请求交易记录。。。。
+
+2019-02-16 9:57:34:请求交易记录。。。。
+
+2019-02-16 10:02:12:请求交易记录。。。。
+
+2019-02-16 10:05:07:请求交易记录。。。。
+
+2019-02-16 10:06:28:请求交易记录。。。。
+
+2019-02-16 13:36:37:请求交易记录。。。。
+
+2019-02-16 13:36:39:请求：4004
+请求参数：A0010101010030307980000011700000000002524013  000000120190216133637YQMFPA20190216133637000000                                                                                                    000001            00000000000<?xml version="1.0" encoding="GBK"?><Result><AcctNo>11002923034501</AcctNo><CcyCode>RMB</CcyCode><BeginDate>20190216</BeginDate><EndDate>20190216</EndDate><PageNo>1</PageNo><PageSize>1000</PageSize><Reserve></Reserve><OrderMode>001</OrderMode></Result>
+返回参数：
+A0010101010030307980000011700000000012774013  000000220190216133637YQMFPA20190216133637000000:交易受理成功                                                                                       000001            00000000000<?xml version="1.0" encoding="GBK" ?><Result><AcctNo>11002923034501</AcctNo><CcyCode>RMB</CcyCode><EndFlag>Y</EndFlag><Reserve></Reserve><PageRecCount>1</PageRecCount><PageNo>1</PageNo><PageSize>100</PageSize><list><AcctDate>20180824</AcctDate><TxTime>113055</TxTime><HostTrace>3240791808244000563888</HostTrace><DetailSerialNo>1000001</DetailSerialNo><BussSeqNo>8043431902156185295987</BussSeqNo><OutNode>0800</OutNode><OutBankNo></OutBankNo><OutBankName>平安银行总行营业部</OutBankName><OutAcctNo>30205735204007</OutAcctNo><OutAcctName>平安测试智能收款专户</OutAcctName><CcyCode>RMB</CcyCode><TranAmount>10013.27</TranAmount><InNode>0821</InNode><InBankNo></InBankNo><InBankName>平安银行</InBankName><InAcctNo>11002923034501</InAcctNo><InAcctName>平安测试六零零零三三八二八五九八</InAcctName><DcFlag>C</DcFlag><AbstractStr>WEB</AbstractStr><VoucherNo></VoucherNo><TranFee></TranFee><PostFee></PostFee><AcctBalance>594704363.25</AcctBalance><Purpose>产品还款</Purpose><AbstractStr_Desc>网银</AbstractStr_Desc><CVoucherNo></CVoucherNo><ProxyPayAcc></ProxyPayAcc><ProxyPayName></ProxyPayName><ProxyPayBankName></ProxyPayBankName><TranChannel>804343</TranChannel><TranCode>G1001</TranCode><HostDate>20190215</HostDate><TranSeqNo>8043431902156185295987</TranSeqNo></list></Result>
+2019-02-16 14:03:24:开始请求付款。。。。
+
+2019-02-16 14:03:28:请求：4004
+请求参数：A0010101010030307980000011700000000006784004  000000120190216140324YQMFPA20190216140324000000                                                                                                    000001            00000000000<?xml version ="1.0" encoding="GB2312"?><Result><ThirdVoucher>20190216142003</ThirdVoucher><CstInnerFlowNo>032018110900063</CstInnerFlowNo><CcyCode>RMB</CcyCode><OutAcctNo>11002923034501</OutAcctNo><OutAcctName>平安测试六零零零三三八二八五九八</OutAcctName><OutAcctAddr/><InAcctBankNode/><InAcctRecCode/><InAcctNo>3602028509200126651</InAcctNo><InAcctName>广州市百好博有限公司</InAcctName><InAcctBankName>工商银行花城支行</InAcctBankName><TranAmount>1</TranAmount><AmountCode/><UseEx>采购一部周晓琴报销广州市百好博有限公司支付广州市百好博有限公司10月货款的费用</UseEx><UnionFlag>1</UnionFlag><SysFlag>N</SysFlag><AddrFlag>1</AddrFlag><RealFlag>2</RealFlag><MainAcctNo/></Result>
+返回参数：
+A0010101010030307980000011700000000000004004  000000220190216140324YQMFPA20190216140324RE1342:[RE1342]输入的卡号[3602028509200126651]不存在或者已经销卡                                          000001            00000000000
+2019-02-16 14:12:56:开始请求付款。。。。
+
+2019-02-16 14:12:57:请求：4004
+请求参数：A0010101010030307980000011700000000006784004  000000120190216141256YQMFPA20190216141256000000                                                                                                    000001            00000000000<?xml version ="1.0" encoding="GB2312"?><Result><ThirdVoucher>20190216145312</ThirdVoucher><CstInnerFlowNo>032018110900063</CstInnerFlowNo><CcyCode>RMB</CcyCode><OutAcctNo>11002923034501</OutAcctNo><OutAcctName>平安测试六零零零三三八二八五九八</OutAcctName><OutAcctAddr/><InAcctBankNode/><InAcctRecCode/><InAcctNo>3602028509200126651</InAcctNo><InAcctName>广州市百好博有限公司</InAcctName><InAcctBankName>工商银行花城支行</InAcctBankName><TranAmount>1</TranAmount><AmountCode/><UseEx>采购一部周晓琴报销广州市百好博有限公司支付广州市百好博有限公司10月货款的费用</UseEx><UnionFlag>1</UnionFlag><SysFlag>N</SysFlag><AddrFlag>1</AddrFlag><RealFlag>2</RealFlag><MainAcctNo/></Result>
+返回参数：
+A0010101010030307980000011700000000000004004  000000220190216141256YQMFPA20190216141256RE1342:[RE1342]输入的卡号[3602028509200126651]不存在或者已经销卡                                          000001            00000000000
+2019-02-16 14:14:57:开始请求付款。。。。
+
+2019-02-16 14:15:02:请求：4004
+请求参数：A0010101010030307980000011700000000006784004  000000120190216141457YQMFPA20190216141457000000                                                                                                    000001            00000000000<?xml version ="1.0" encoding="GB2312"?><Result><ThirdVoucher>20190216145714</ThirdVoucher><CstInnerFlowNo>032018110900063</CstInnerFlowNo><CcyCode>RMB</CcyCode><OutAcctNo>11002923034501</OutAcctNo><OutAcctName>平安测试六零零零三三八二八五九八</OutAcctName><OutAcctAddr/><InAcctBankNode/><InAcctRecCode/><InAcctNo>3602028509200126651</InAcctNo><InAcctName>广州市百好博有限公司</InAcctName><InAcctBankName>工商银行花城支行</InAcctBankName><TranAmount>1</TranAmount><AmountCode/><UseEx>采购一部周晓琴报销广州市百好博有限公司支付广州市百好博有限公司10月货款的费用</UseEx><UnionFlag>0</UnionFlag><SysFlag>N</SysFlag><AddrFlag>1</AddrFlag><RealFlag>2</RealFlag><MainAcctNo/></Result>
+返回参数：
+A0010101010030307980000011700000000006464004  000000220190216141457YQMFPA20190216141457000000:交易受理成功                                                                                       000001            00000000000<?xml version="1.0" encoding="GBK" ?><Result><ThirdVoucher>20190216145714</ThirdVoucher><FrontLogNo>8043431902166185442278</FrontLogNo><CcyCode>RMB</CcyCode><OutAcctName>平安测试六零零零三三八二八五九八</OutAcctName><OutAcctNo>11002923034501</OutAcctNo><InAcctBankName>工商银行花城支行</InAcctBankName><InAcctNo>3602028509200126651</InAcctNo><InAcctName>广州市百好博有限公司</InAcctName><TranAmount>1.00</TranAmount><UnionFlag>0</UnionFlag><Fee1>1.00</Fee1><Fee2>0.00</Fee2><SOA_VOUCHER></SOA_VOUCHER><hostFlowNo></hostFlowNo><hostTxDate>20190216</hostTxDate><Mobile></Mobile><CstInnerFlowNo>032018110900063</CstInnerFlowNo><stt>40</stt></Result>
+2019-02-16 15:47:57:开始请求付款。。。。
+
+2019-02-16 15:48:01:请求：4004
+请求参数：A0010101010030307980000011700000000001044005  000000120190216154757YQMFPA20190216154757000000                                                                                                    000001            00000000000<?xml version="1.0" encoding="GBK"?><Result><OrigThirdVoucher>20190216145714</OrigThirdVoucher></Result>
+返回参数：
+A0010101010030307980000011700000000009364005  000000220190216154757YQMFPA20190216141457000000:交易受理成功                                                                                       000001            00000000000<?xml version="1.0" encoding="GBK" ?><Result><OrigThirdVoucher>20190216145714</OrigThirdVoucher><FrontLogNo>8043431902166185442278</FrontLogNo><CcyCode>RMB</CcyCode><OutAcctBankName></OutAcctBankName><OutAcctNo>11002923034501</OutAcctNo><InAcctBankName>工商银行花城支行</InAcctBankName><InAcctNo>3602028509200126651</InAcctNo><InAcctName>广州市百好博有限公司</InAcctName><TranAmount>1.00</TranAmount><UnionFlag>0</UnionFlag><Yhcljg>MA9111:交易处理中</Yhcljg><Fee>1.00</Fee><CstInnerFlowNo>032018110900063</CstInnerFlowNo><Stt>40</Stt><IsBack>0</IsBack><BackRem>处理中</BackRem><SysFlag>N</SysFlag><TransBsn>4004</TransBsn><submitTime>20190216141458</submitTime><AccountDate></AccountDate><InAcctBankNode></InAcctBankNode><hostFlowNo></hostFlowNo><hostErrorCode></hostErrorCode><kType>0</kType><dType>0</dType><subBatchNo></subBatchNo><ProxyPayName></ProxyPayName><ProxyPayAcc></ProxyPayAcc><ProxyPayBankName></ProxyPayBankName></Result>
+2019-02-16 15:48:02:开始请求付款。。。。
+
+2019-02-16 15:48:02:请求：4004
+请求参数：A0010101010030307980000011700000000001044005  000000120190216154802YQMFPA20190216154802000000                                                                                                    000001            00000000000<?xml version="1.0" encoding="GBK"?><Result><OrigThirdVoucher>20190216145714</OrigThirdVoucher></Result>
+返回参数：
+A0010101010030307980000011700000000000004005  000000120190216154802YQMFPA20190216154802EA9971:交易请求频率过高,交易拒绝                                                                          000001            00000000000
+2019-02-16 15:48:11:开始请求付款。。。。
+
+2019-02-16 15:48:12:请求：4004
+请求参数：A0010101010030307980000011700000000001044005  000000120190216154811YQMFPA20190216154811000000                                                                                                    000001            00000000000<?xml version="1.0" encoding="GBK"?><Result><OrigThirdVoucher>20190216145714</OrigThirdVoucher></Result>
+返回参数：
+A0010101010030307980000011700000000009364005  000000220190216154811YQMFPA20190216141457000000:交易受理成功                                                                                       000001            00000000000<?xml version="1.0" encoding="GBK" ?><Result><OrigThirdVoucher>20190216145714</OrigThirdVoucher><FrontLogNo>8043431902166185442278</FrontLogNo><CcyCode>RMB</CcyCode><OutAcctBankName></OutAcctBankName><OutAcctNo>11002923034501</OutAcctNo><InAcctBankName>工商银行花城支行</InAcctBankName><InAcctNo>3602028509200126651</InAcctNo><InAcctName>广州市百好博有限公司</InAcctName><TranAmount>1.00</TranAmount><UnionFlag>0</UnionFlag><Yhcljg>MA9111:交易处理中</Yhcljg><Fee>1.00</Fee><CstInnerFlowNo>032018110900063</CstInnerFlowNo><Stt>40</Stt><IsBack>0</IsBack><BackRem>处理中</BackRem><SysFlag>N</SysFlag><TransBsn>4004</TransBsn><submitTime>20190216141458</submitTime><AccountDate></AccountDate><InAcctBankNode></InAcctBankNode><hostFlowNo></hostFlowNo><hostErrorCode></hostErrorCode><kType>0</kType><dType>0</dType><subBatchNo></subBatchNo><ProxyPayName></ProxyPayName><ProxyPayAcc></ProxyPayAcc><ProxyPayBankName></ProxyPayBankName></Result>
+2019-02-16 15:50:33:开始请求付款。。。。
+
+2019-02-16 15:50:52:请求：4004
+请求参数：A0010101010030307980000011700000000001044005  000000120190216155019YQMFPA20190216155019000000                                                                                                    000001            00000000000<?xml version="1.0" encoding="GBK"?><Result><OrigThirdVoucher>20190216145714</OrigThirdVoucher></Result>
+返回参数：
+A0010101010030307980000011700000000009364005  000000220190216155019YQMFPA20190216141457000000:交易受理成功                                                                                       000001            00000000000<?xml version="1.0" encoding="GBK" ?><Result><OrigThirdVoucher>20190216145714</OrigThirdVoucher><FrontLogNo>8043431902166185442278</FrontLogNo><CcyCode>RMB</CcyCode><OutAcctBankName></OutAcctBankName><OutAcctNo>11002923034501</OutAcctNo><InAcctBankName>工商银行花城支行</InAcctBankName><InAcctNo>3602028509200126651</InAcctNo><InAcctName>广州市百好博有限公司</InAcctName><TranAmount>1.00</TranAmount><UnionFlag>0</UnionFlag><Yhcljg>MA9111:交易处理中</Yhcljg><Fee>1.00</Fee><CstInnerFlowNo>032018110900063</CstInnerFlowNo><Stt>40</Stt><IsBack>0</IsBack><BackRem>处理中</BackRem><SysFlag>N</SysFlag><TransBsn>4004</TransBsn><submitTime>20190216141458</submitTime><AccountDate></AccountDate><InAcctBankNode></InAcctBankNode><hostFlowNo></hostFlowNo><hostErrorCode></hostErrorCode><kType>0</kType><dType>0</dType><subBatchNo></subBatchNo><ProxyPayName></ProxyPayName><ProxyPayAcc></ProxyPayAcc><ProxyPayBankName></ProxyPayBankName></Result>
+2019-02-16 15:51:57:开始请求付款。。。。
+
+2019-02-16 15:51:58:请求：4004
+请求参数：A0010101010030307980000011700000000001044005  000000120190216155157YQMFPA20190216155157000000                                                                                                    000001            00000000000<?xml version="1.0" encoding="GBK"?><Result><OrigThirdVoucher>20190216152821</OrigThirdVoucher></Result>
+返回参数：
+A0010101010030307980000011700000000000004005  000000220190216155157YQMFPA20190216155157MA0103:没有满足条件纪录                                                                                   000001            00000000000
+2019-02-16 17:15:57:开始请求付款。。。。
+
+2019-02-16 17:15:58:请求：4004
+请求参数：A0010101010030307980000011700000000001044005  000000120190216171557YQMFPA20190216171557000000                                                                                                    000001            00000000000<?xml version="1.0" encoding="GBK"?><Result><OrigThirdVoucher>20190216145714</OrigThirdVoucher></Result>
+返回参数：
+A0010101010030307980000011700000000009364005  000000220190216171557YQMFPA20190216141457000000:交易受理成功                                                                                       000001            00000000000<?xml version="1.0" encoding="GBK" ?><Result><OrigThirdVoucher>20190216145714</OrigThirdVoucher><FrontLogNo>8043431902166185442278</FrontLogNo><CcyCode>RMB</CcyCode><OutAcctBankName></OutAcctBankName><OutAcctNo>11002923034501</OutAcctNo><InAcctBankName>工商银行花城支行</InAcctBankName><InAcctNo>3602028509200126651</InAcctNo><InAcctName>广州市百好博有限公司</InAcctName><TranAmount>1.00</TranAmount><UnionFlag>0</UnionFlag><Yhcljg>MA9111:交易处理中</Yhcljg><Fee>1.00</Fee><CstInnerFlowNo>032018110900063</CstInnerFlowNo><Stt>40</Stt><IsBack>0</IsBack><BackRem>处理中</BackRem><SysFlag>N</SysFlag><TransBsn>4004</TransBsn><submitTime>20190216141458</submitTime><AccountDate></AccountDate><InAcctBankNode></InAcctBankNode><hostFlowNo></hostFlowNo><hostErrorCode></hostErrorCode><kType>0</kType><dType>0</dType><subBatchNo></subBatchNo><ProxyPayName></ProxyPayName><ProxyPayAcc></ProxyPayAcc><ProxyPayBankName></ProxyPayBankName></Result>
+2019-02-16 17:18:17:开始请求付款。。。。
+
+2019-02-16 17:18:18:请求：4004
+请求参数：A0010101010030307980000011700000000001044005  000000120190216171817YQMFPA20190216171817000000                                                                                                    000001            00000000000<?xml version="1.0" encoding="GBK"?><Result><OrigThirdVoucher>20190216145714</OrigThirdVoucher></Result>
+返回参数：
+A0010101010030307980000011700000000009364005  000000220190216171817YQMFPA20190216141457000000:交易受理成功                                                                                       000001            00000000000<?xml version="1.0" encoding="GBK" ?><Result><OrigThirdVoucher>20190216145714</OrigThirdVoucher><FrontLogNo>8043431902166185442278</FrontLogNo><CcyCode>RMB</CcyCode><OutAcctBankName></OutAcctBankName><OutAcctNo>11002923034501</OutAcctNo><InAcctBankName>工商银行花城支行</InAcctBankName><InAcctNo>3602028509200126651</InAcctNo><InAcctName>广州市百好博有限公司</InAcctName><TranAmount>1.00</TranAmount><UnionFlag>0</UnionFlag><Yhcljg>MA9111:交易处理中</Yhcljg><Fee>1.00</Fee><CstInnerFlowNo>032018110900063</CstInnerFlowNo><Stt>40</Stt><IsBack>0</IsBack><BackRem>处理中</BackRem><SysFlag>N</SysFlag><TransBsn>4004</TransBsn><submitTime>20190216141458</submitTime><AccountDate></AccountDate><InAcctBankNode></InAcctBankNode><hostFlowNo></hostFlowNo><hostErrorCode></hostErrorCode><kType>0</kType><dType>0</dType><subBatchNo></subBatchNo><ProxyPayName></ProxyPayName><ProxyPayAcc></ProxyPayAcc><ProxyPayBankName></ProxyPayBankName></Result>
+2019-02-16 17:31:43:开始请求付款。。。。
+
+2019-02-16 17:31:44:请求：4004
+请求参数：A0010101010030307980000011700000000001044005  000000120190216173143YQMFPA20190216173143000000                                                                                                    000001            00000000000<?xml version="1.0" encoding="GBK"?><Result><OrigThirdVoucher>20190216145714</OrigThirdVoucher></Result>
+返回参数：
+A0010101010030307980000011700000000009364005  000000220190216173143YQMFPA20190216141457000000:交易受理成功                                                                                       000001            00000000000<?xml version="1.0" encoding="GBK" ?><Result><OrigThirdVoucher>20190216145714</OrigThirdVoucher><FrontLogNo>8043431902166185442278</FrontLogNo><CcyCode>RMB</CcyCode><OutAcctBankName></OutAcctBankName><OutAcctNo>11002923034501</OutAcctNo><InAcctBankName>工商银行花城支行</InAcctBankName><InAcctNo>3602028509200126651</InAcctNo><InAcctName>广州市百好博有限公司</InAcctName><TranAmount>1.00</TranAmount><UnionFlag>0</UnionFlag><Yhcljg>MA9111:交易处理中</Yhcljg><Fee>1.00</Fee><CstInnerFlowNo>032018110900063</CstInnerFlowNo><Stt>40</Stt><IsBack>0</IsBack><BackRem>处理中</BackRem><SysFlag>N</SysFlag><TransBsn>4004</TransBsn><submitTime>20190216141458</submitTime><AccountDate></AccountDate><InAcctBankNode></InAcctBankNode><hostFlowNo></hostFlowNo><hostErrorCode></hostErrorCode><kType>0</kType><dType>0</dType><subBatchNo></subBatchNo><ProxyPayName></ProxyPayName><ProxyPayAcc></ProxyPayAcc><ProxyPayBankName></ProxyPayBankName></Result>
+2019-02-16 18:18:10:请求交易记录。。。。
+
+2019-02-16 18:18:12:请求：4004
+请求参数：A0010101010030307980000011700000000002524013  000000120190216181810YQMFPA20190216181810000000                                                                                                    000001            00000000000<?xml version="1.0" encoding="GBK"?><Result><AcctNo>11002923034501</AcctNo><CcyCode>RMB</CcyCode><BeginDate>20190216</BeginDate><EndDate>20190216</EndDate><PageNo>1</PageNo><PageSize>1000</PageSize><Reserve></Reserve><OrderMode>001</OrderMode></Result>
+返回参数：
+A0010101010030307980000011700000000012774013  000000220190216181810YQMFPA20190216181810000000:交易受理成功                                                                                       000001            00000000000<?xml version="1.0" encoding="GBK" ?><Result><AcctNo>11002923034501</AcctNo><CcyCode>RMB</CcyCode><EndFlag>Y</EndFlag><Reserve></Reserve><PageRecCount>1</PageRecCount><PageNo>1</PageNo><PageSize>100</PageSize><list><AcctDate>20180824</AcctDate><TxTime>113055</TxTime><HostTrace>3240791808244000563888</HostTrace><DetailSerialNo>1000001</DetailSerialNo><BussSeqNo>8043431902156185295987</BussSeqNo><OutNode>0800</OutNode><OutBankNo></OutBankNo><OutBankName>平安银行总行营业部</OutBankName><OutAcctNo>30205735204007</OutAcctNo><OutAcctName>平安测试智能收款专户</OutAcctName><CcyCode>RMB</CcyCode><TranAmount>10013.27</TranAmount><InNode>0821</InNode><InBankNo></InBankNo><InBankName>平安银行</InBankName><InAcctNo>11002923034501</InAcctNo><InAcctName>平安测试六零零零三三八二八五九八</InAcctName><DcFlag>C</DcFlag><AbstractStr>WEB</AbstractStr><VoucherNo></VoucherNo><TranFee></TranFee><PostFee></PostFee><AcctBalance>594704363.25</AcctBalance><Purpose>产品还款</Purpose><AbstractStr_Desc>网银</AbstractStr_Desc><CVoucherNo></CVoucherNo><ProxyPayAcc></ProxyPayAcc><ProxyPayName></ProxyPayName><ProxyPayBankName></ProxyPayBankName><TranChannel>804343</TranChannel><TranCode>G1001</TranCode><HostDate>20190215</HostDate><TranSeqNo>8043431902156185295987</TranSeqNo></list></Result>

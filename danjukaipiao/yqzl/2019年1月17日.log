@@ -1,0 +1,6 @@
+2019-01-17 14:37:39:开始请求付款。。。。
+
+2019-01-17 14:37:42:请求：4004
+请求参数：A0010101010030307980000011700000000006964004  000000120190117143739YQMFPA20190117143739000000                                                                                                    000001            00000000000<?xml version ="1.0" encoding="GB2312"?><Result><ThirdVoucher>201937171439</ThirdVoucher><CstInnerFlowNo>032018122400322</CstInnerFlowNo><CcyCode>RMB</CcyCode><OutAcctNo>11002923034501</OutAcctNo><OutAcctName>平安测试六零零零三三八二八五九八</OutAcctName><OutAcctAddr/><InAcctBankNode/><InAcctRecCode/><InAcctNo>871903382710505</InAcctNo><InAcctName>昆明仟草生物科技有限公司</InAcctName><InAcctBankName>招行昆明经济开发区支行</InAcctBankName><TranAmount>28600</TranAmount><AmountCode/><UseEx>采购部许舒莉报销昆明仟草生物科技有限公司支付昆明仟草生物科技有限公司11月原料货款的费用</UseEx><UnionFlag>1</UnionFlag><SysFlag>N</SysFlag><AddrFlag>1</AddrFlag><RealFlag>2</RealFlag><MainAcctNo/></Result>
+返回参数：
+A0010101010030307980000011700000000000004004  000000220190117143739YQMFPA20190117143739RE1130:[RE1130]客户账号[871903382710505]不存在。                                                          000001            00000000000

@@ -1,0 +1,256 @@
+
+ 
+记录时间：2019-02-21 11:33:59,442 
+线程ID:[5] 
+日志级别：  INFO  
+出错类：dal.YYDal property: [(null)] - 
+错误描述：用户登录记录:陈永鹏
+ 
+
+ 
+记录时间：2019-02-21 11:33:59,534 
+线程ID:[5] 
+日志级别：  INFO  
+出错类：BLL.UserInfoBll property: [(null)] - 
+错误描述：账号:陈永鹏在：IP为::1登录
+ 
+
+ 
+记录时间：2019-02-21 14:46:08,042 
+线程ID:[6] 
+日志级别：  INFO  
+出错类：dal.YYDal property: [(null)] - 
+错误描述：用户登录记录:李欢欢_admin
+ 
+
+ 
+记录时间：2019-02-21 14:46:08,054 
+线程ID:[6] 
+日志级别：  INFO  
+出错类：BLL.UserInfoBll property: [(null)] - 
+错误描述：账号:李欢欢_admin在：IP为::1登录
+ 
+
+ 
+记录时间：2019-02-21 14:46:27,151 
+线程ID:[10] 
+日志级别：  INFO  
+出错类：dal.YYDal property: [(null)] - 
+错误描述：用户登录记录:李欢欢_admin
+ 
+
+ 
+记录时间：2019-02-21 14:46:27,152 
+线程ID:[10] 
+日志级别：  INFO  
+出错类：BLL.UserInfoBll property: [(null)] - 
+错误描述：账号:李欢欢_admin在：IP为::1登录
+ 
+
+ 
+记录时间：2019-02-21 14:47:33,609 
+线程ID:[11] 
+日志级别：  INFO  
+出错类：dal.YYDal property: [(null)] - 
+错误描述：用户登录记录:李欢欢_admin
+ 
+
+ 
+记录时间：2019-02-21 14:47:33,610 
+线程ID:[11] 
+日志级别：  INFO  
+出错类：BLL.UserInfoBll property: [(null)] - 
+错误描述：账号:李欢欢_admin在：IP为::1登录
+ 
+
+ 
+记录时间：2019-02-21 14:48:23,801 
+线程ID:[10] 
+日志级别：  INFO  
+出错类：dal.YYDal property: [(null)] - 
+错误描述：用户登录记录:李欢欢_admin
+ 
+
+ 
+记录时间：2019-02-21 14:48:23,802 
+线程ID:[10] 
+日志级别：  INFO  
+出错类：BLL.UserInfoBll property: [(null)] - 
+错误描述：账号:李欢欢_admin在：IP为::1登录
+ 
+
+ 
+记录时间：2019-02-21 14:56:49,815 
+线程ID:[19] 
+日志级别：  INFO  
+出错类：dal.YYDal property: [(null)] - 
+错误描述：日记账成功,出纳编号为010101收-01131
+ 
+
+ 
+记录时间：2019-02-21 15:01:43,434 
+线程ID:[23] 
+日志级别：  INFO  
+出错类：dal.YYDal property: [(null)] - 
+错误描述：日记账成功,出纳编号为010101付-01131
+ 
+
+ 
+记录时间：2019-02-21 16:39:18,976 
+线程ID:[5] 
+日志级别：  INFO  
+出错类：dal.YYDal property: [(null)] - 
+错误描述：用户登录记录:陈永鹏
+ 
+
+ 
+记录时间：2019-02-21 16:39:42,181 
+线程ID:[6] 
+日志级别：  INFO  
+出错类：dal.YYDal property: [(null)] - 
+错误描述：用户登录记录:蒙祖军
+ 
+
+ 
+记录时间：2019-02-21 16:39:42,190 
+线程ID:[6] 
+日志级别：  INFO  
+出错类：BLL.UserInfoBll property: [(null)] - 
+错误描述：账号:蒙祖军在：IP为::1登录
+ 
+
+ 
+记录时间：2019-02-21 16:50:16,908 
+线程ID:[5] 
+日志级别：  INFO  
+出错类：dal.YYDal property: [(null)] - 
+错误描述：用户登录记录:蒙祖军
+ 
+
+ 
+记录时间：2019-02-21 16:50:16,929 
+线程ID:[5] 
+日志级别：  INFO  
+出错类：BLL.UserInfoBll property: [(null)] - 
+错误描述：账号:蒙祖军在：IP为::1登录
+ 
+
+ 
+记录时间：2019-02-21 17:10:42,203 
+线程ID:[9] 
+日志级别：  INFO  
+出错类：dal.YYDal property: [(null)] - 
+错误描述：用户登录记录:李亚玲_admin
+ 
+
+ 
+记录时间：2019-02-21 17:10:42,221 
+线程ID:[9] 
+日志级别：  INFO  
+出错类：BLL.UserInfoBll property: [(null)] - 
+错误描述：账号:李亚玲_admin在：IP为::1登录
+ 
+
+ 
+记录时间：2019-02-21 17:18:29,046 
+线程ID:[5] 
+日志级别：  INFO  
+出错类：dal.YYDal property: [(null)] - 
+错误描述：用户登录记录:李亚玲_admin
+ 
+
+ 
+记录时间：2019-02-21 17:18:29,067 
+线程ID:[5] 
+日志级别：  INFO  
+出错类：BLL.UserInfoBll property: [(null)] - 
+错误描述：账号:李亚玲_admin在：IP为::1登录
+ 
+
+ 
+记录时间：2019-02-21 17:20:39,067 
+线程ID:[6] 
+日志级别：  INFO  
+出错类：dal.YYDal property: [(null)] - 
+错误描述：日记账成功,出纳编号为付-00346
+ 
+
+ 
+记录时间：2019-02-21 17:23:05,411 
+线程ID:[8] 
+日志级别：  INFO  
+出错类：dal.YYDal property: [(null)] - 
+错误描述：用户登录记录:李亚玲_admin
+ 
+
+ 
+记录时间：2019-02-21 17:23:05,424 
+线程ID:[8] 
+日志级别：  INFO  
+出错类：BLL.UserInfoBll property: [(null)] - 
+错误描述：账号:李亚玲_admin在：IP为::1登录
+ 
+
+ 
+记录时间：2019-02-21 17:31:02,753 
+线程ID:[10] 
+日志级别：  INFO  
+出错类：dal.YYDal property: [(null)] - 
+错误描述：用户登录记录:李亚玲_admin
+ 
+
+ 
+记录时间：2019-02-21 17:31:02,771 
+线程ID:[10] 
+日志级别：  INFO  
+出错类：BLL.UserInfoBll property: [(null)] - 
+错误描述：账号:李亚玲_admin在：IP为::1登录
+ 
+
+ 
+记录时间：2019-02-21 17:33:48,181 
+线程ID:[7] 
+日志级别：  INFO  
+出错类：dal.YYDal property: [(null)] - 
+错误描述：用户登录记录:黄晓姝_admin
+ 
+
+ 
+记录时间：2019-02-21 17:33:48,183 
+线程ID:[7] 
+日志级别：  INFO  
+出错类：BLL.UserInfoBll property: [(null)] - 
+错误描述：账号:黄晓姝_admin在：IP为::1登录
+ 
+
+ 
+记录时间：2019-02-21 17:34:22,895 
+线程ID:[13] 
+日志级别：  INFO  
+出错类：dal.YYDal property: [(null)] - 
+错误描述：用户登录记录:黄晓姝_admin
+ 
+
+ 
+记录时间：2019-02-21 17:34:22,898 
+线程ID:[13] 
+日志级别：  INFO  
+出错类：BLL.UserInfoBll property: [(null)] - 
+错误描述：账号:黄晓姝_admin在：IP为::1登录
+ 
+
+ 
+记录时间：2019-02-21 17:52:40,569 
+线程ID:[17] 
+日志级别：  INFO  
+出错类：dal.YYDal property: [(null)] - 
+错误描述：用户登录记录:黄晓姝_admin
+ 
+
+ 
+记录时间：2019-02-21 17:52:40,585 
+线程ID:[17] 
+日志级别：  INFO  
+出错类：BLL.UserInfoBll property: [(null)] - 
+错误描述：账号:黄晓姝_admin在：IP为::1登录
+ 
